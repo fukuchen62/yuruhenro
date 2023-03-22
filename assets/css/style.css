@@ -1,0 +1,107 @@
+body {
+    background-color: antiquewhite;
+    font-family: 'Kosugi Maru';
+}
+
+
+header {
+    background-color: rgb(231, 177, 177);
+}
+
+.logo {
+    text-align: center;
+}
+.logo img {
+    width: 200px;
+    height: auto;
+}
+.gnav {
+    text-align: center;
+    padding: 0;
+}
+.gnav li {
+    display:inline-block;
+}
+
+.gnav li a {
+    padding: 30px;
+}
+
+.kv {
+    text-align: center;
+}
+
+.kv {
+    position: relative;
+}
+
+.kv p {
+    position: absolute;
+    top: 30%;
+    left: 43%;
+    font-size: 30px;
+    font-weight: bold;
+    writing-mode: vertical-rl;
+    -webkit-text-stroke:0.01px white;
+}
+
+.insta {
+    display: inline-block;
+}
+.insta img {
+    width: 200px;
+    height: auto;
+}
+.sec {
+        margin-top: 100px;
+}
+.about1 {
+    text-align: center;
+    background-color: rgb(248, 246, 246);
+    margin: 0 35%;
+}
+.title {
+    background-color: rgb(231, 177, 177);
+}
+
+.about2 {
+    text-align: center;
+    margin: 0 35%;
+}
+.sec3 {
+    background-color: rgb(151, 234, 255);
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+.sec4 p {
+    font-weight: bold;
+}
+
+.foot {
+    text-align: center;
+}
+
+.foot img {
+    width: 50%;
+    height: auto;
+}
+
+.footer {
+    background-color: rgb(231, 177, 177);
+}
+.footer img {
+    margin: 0 0 0 30%;
+}
+
+.footer small {
+    padding: 0 0 100px 0;
+    font-weight: bold;
+}
+
+.obi {
+    text-align: center;
+    background-color: rgb(255, 210, 154);
+}
