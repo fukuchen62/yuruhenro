@@ -177,6 +177,9 @@
 line-height: 2em;
 margin-bottom: 20px;
 }
+.footer_nav_b {
+    font-weight: bold;
+}
 
 .footer_nav ul:not(:last-child),
 .sp_none {
