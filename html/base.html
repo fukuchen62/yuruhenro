@@ -27,11 +27,22 @@
     <div class="body_inner">
         <!-- headerここから -->
         <header>
-            <div class="header_inner">
+            <div class="header_inner flex">
                 <div class="header_logo">
                     <img src="../assets/img/header_logo_01.png" alt="とくしま１日＃ゆるへんろロゴ">
                 </div>
-                <ul class="header_gnav">
+
+                <div class="header_menu">
+                <!-- ハンバーガーボタン -->
+                <div class="header_hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <!-- ナビゲーションメニュー -->
+                <nav class="header_gnav flex">
+                    <ul>
                         <a href="#">
                             <li>＃ゆるへんろって？</li>
                         </a>
@@ -53,10 +64,10 @@
                         <a href="#">
                             <li>ページ内検索</li>
                         </a>
-                </ul>
+                    </ul>
+                </nav>
+                </div>
             </div>
-
-            <!--ハンバーガー仕込む-->
 
         </header>
         <!-- headerここまで -->
@@ -72,11 +83,12 @@
         <!-- mainここまで -->
         <!-- footerここから -->
         <footer>
+            <div class="footer_wrap">
             <div class="footer_inner">
-                <div class="footer_insta">
-                    <a href="#" target=_blank>
+                <div class="footer_insta flex">
+                    <a href="#" target=_blank class="flex">
                         <i class="fa-brands fa-instagram"></i>
-                        <p class="footer_insta_id">@yuru_henro</p>
+                        <p>@yuru_henro</p>
                     </a>
                 </div>
 
@@ -103,7 +115,7 @@
                 <div class="footer_nav">
 
                     <a href="#">
-                        <img src="../assets/img/header_logo_02.png" alt="とくしま１日＃ゆるへんろロゴ">
+                        <img src="../assets/img/header_logo_02.png" alt="とくしま１日＃ゆるへんろロゴ" class="footer_logo">
                     </a>
 
                     <ul>
@@ -140,23 +152,23 @@
                         </a>
                     </ul>
 
-                    <ul class="footer_nav_b">
-                        <a href="">
+                    <ul>
+                        <a href="" class="sp_none">
                             <li>マイブックマーク</li>
                         </a>
-                        <a href="">
+                        <a href="" class="sp_none">
                             <li>条件検索</li>
                         </a>
-                        <a href="">
+                        <a href="" class="sp_none">
                             <li>Q&A</li>
                         </a>
-                        <a href="">
+                        <a href="#">
                             <li>このサイトについて</li>
                         </a>
-                        <a href="">
+                        <a href="#">
                             <li>プライバシーポリシー</li>
                         </a>
-                        <a href="">
+                        <a href="#">
                             <li>サイト制作にあたって</li>
                         </a>
                     </ul>
@@ -164,12 +176,13 @@
 
                 <small>Copyright©とくしま１日＃ゆるへんろ</small>
             </div>
-            <!-- jsプラグイン読み込み -->
-
-            <!-- オリジナルjs読み込み -->
-
+            </div>
         </footer>
         <!-- footerここまで -->
     </div>
+    <!-- jsプラグイン読み込み -->
+
+    <!-- オリジナルjs読み込み -->
+    <script src="../assets/js/common_script.js"></script>
 </body>
 </html>
