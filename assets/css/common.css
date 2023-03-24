@@ -149,6 +149,10 @@
     margin: 0 auto;
 }
 
+.footer_links {
+    display: none;
+}
+
 /*インスタマーク*/
 .footer_insta {
     justify-content: center;
