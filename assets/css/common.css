@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+/****************/
+/*     共通     */
+/****************/
+
+.body_inner {
+    background-color: #FBFAF5;
+    font-family: 'Kosugi Maru';
+    font-size: 16px;
+    color: #754C24;
+}
+
+/****************/
+/***  header  ***/
+/****************/
+
+.header_inner {
+    height: 80px;
+    background-color: #FFFFFF;
+    padding: 17px;
+}
+
+.header_logo img {
+    width: 180px;
+    height: auto;
+}
+
+/* .header_gnav {
+    text-align: center;
+}
+
+.gnav li {
+    display:inline-block;
+}
+
+.gnav li a {
+    padding: 30px;
+}
+
+.kv {
+    text-align: center;
+}
+
+.kv {
+    position: relative;
+}
+
+.kv p {
+    position: absolute;
+    top: 30%;
+    left: 43%;
+    font-size: 30px;
+    font-weight: bold;
+    writing-mode: vertical-rl;
+    -webkit-text-stroke:0.01px white;
+}
+
+.insta {
+    display: inline-block;
+}
+.insta img {
+    width: 200px;
+    height: auto;
+}
+.sec {
+        margin-top: 100px;
+}
+.about1 {
+    text-align: center;
+    background-color: rgb(248, 246, 246);
+    margin: 0 35%;
+}
+.title {
+    background-color: rgb(231, 177, 177);
+}
+
+.about2 {
+    text-align: center;
+    margin: 0 35%;
+}
+.sec3 {
+    background-color: rgb(151, 234, 255);
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+.sec4 p {
+    font-weight: bold;
+} */
+
+
+/****************/
+/***  footer  ***/
+/****************/
+.footer_inner {
+    color: #FBFAF5;
+    background-color: #B1A995;
+}
+
+.footer_insta {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.footer_insta .fa-instagram {
+    font-size: 40px;
+}
+
+.footer_insta p {
+    display: inline;
+}
+
+.footer_inner ul {
+    margin: 0 auto;
+}
+
+/* .footer_links li {
+    width: 100px;
+    height: 50px;
+    border: 1px solid #6A3C2B;
+    margin: 20px;
+} */
+
+.footer_nav img {
+    width: 170px;
+}
+
+
+/* small {
+
+} */
+
+/*
+
+.foot img {
+    width: 50%;
+    height: auto;
+}
+
+.footer {
+    background-color: rgb(231, 177, 177);
+}
+.footer img {
+    margin: 0 0 0 30%;
+}
+
+.footer small {
+    padding: 0 0 100px 0;
+    font-weight: bold;
+}
+
+.obi {
+    text-align: center;
+    background-color: rgb(255, 210, 154);
+} */
+
+/****************/
+/* ユーティリティ */
+/****************/
+
+.flex {
+    display: inline-flex;
+}
