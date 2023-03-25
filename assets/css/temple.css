@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+/****************/
+/*     共通     */
+/****************/
+
+.wrap {
+  background: #fbfaf5;
+  color: #754c24;
+  padding: 0 30px;
+}
+
+p {
+  font-size: 16px;
+}
+
+img {
+  width: 100%;
+}
+
+/****************/
+/*     main     */
+/****************/
+
+h1 {
+  /* width: 320px; */
+  height: 58px;
+  position: relative;
+  margin: 100px auto 40px;
+  padding: 20px 60px;
+  color: #fbfaf5;
+  background-color: #cd5e3c;
+  font-size: 20px;
+  text-align: center;
+}
+
+h1:before {
+  position: absolute;
+  top: -7px;
+  left: -7px;
+  width: 100%;
+  height: 100%;
+  border-top: 1px solid #6a3c2b;
+  border-bottom: 1px solid #6a3c2b;
+  content: "";
+}
+
+.temple_img {
+  /* width: 330px; */
+  height: 186px;
+  background: gray;
+  margin: 0 auto 40px;
+}
+
+h2 {
+  font-size: 18px;
+  text-align: center;
+  border-bottom: 3px solid #c69c6d;
+  margin: 0 auto 40px;
+  padding: 10px 20px;
+  color: #754c24; /**/
+}
+
+.temple_slider_img {
+  height: 245px;
+  background: gray;
+  margin: 0 auto 40px;
+}
+
+.about_temple {
+  padding-bottom: 40px;
+}
+
+.temple_info_map {
+  height: 246px;
+  margin: 0 auto 40px;
+}
+
+.temple_info_table {
+  width: 100%;
+  margin: 0 auto 40px;
+}
+
+.temple_info_table tr {
+  border: 1px solid #c69c6d;
+}
