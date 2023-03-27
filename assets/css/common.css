@@ -38,6 +38,7 @@
 
 .h1_cap {
     text-align: center;
+    line-height: 1.5em;
     margin-bottom: 80px;
 }
 
@@ -208,6 +209,12 @@
     margin: 0 auto;
 }
 
+/* 404*/
+.link {
+    padding: 0 10px;
+    border-bottom: 1px solid;
+}
+
 /****************/
 /***  footer  ***/
 /****************/
@@ -290,7 +297,6 @@ margin-bottom: 20px;
     font-size: 16px;
     list-style: none;
 }
-
 }
 
 /****************/
