@@ -5,11 +5,47 @@
 /****************/
 
 .wrap {
-    background-color: #FBFAF5;
+    width: 100%;
     font-family: 'Kiwi Maru';
     font-size: 16px;
     color: #754C24;
+    background-color: #FBFAF5;
+}
+
+/* h1装飾 */
+.h1_bg {
+    position: relative;
+    width: 10em;
+    font-family: 'Kosugi Maru';
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: #CD5E3C;
+    padding: 10px 30px 20px;
+    margin: 40px auto;
+}
+
+.h1_bg::before {
+    position: absolute;
+    content: "";
+    left: -10px;
+    top: -3px;
+    border-top: 1px solid #6A3C2B;
+    border-bottom: 1px solid #6A3C2B;
     width: 100%;
+    height: 100%;
+}
+
+.h1_cap {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.h2_bg {
+    width: 15em;
+    text-align: center;
+    border-bottom: 3px solid #C69C6D;
+    margin: 0 auto;
 }
 
 /****************/
@@ -17,6 +53,10 @@
 /****************/
 
 .header_inner {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
     height: 80px;
     background-color: #FFFFFF;
 }
@@ -83,10 +123,6 @@
 /**********************/
 /***メニュー部分***/
 .header_nav {
-    position: fixed;
-    z-index: -1;
-    right: 0;
-    top: 0;
     opacity: 0;
     width: 100%;
     height: 100vh;
@@ -126,6 +162,9 @@
 
 /***ハンバーガーボタンが押されたとき表示***/
 .header_nav.active {
+    position: fixed;
+    right: 0;
+    top: 0;
     z-index: 9;
     opacity: 1;
 }
@@ -158,6 +197,15 @@
     margin-bottom: 0;
     line-height: 1em;
 }
+}
+
+/****************/
+/***   main   ***/
+/****************/
+
+.main_inner {
+    padding: 80px 10px 0;
+    margin: 0 auto;
 }
 
 /****************/
@@ -251,4 +299,20 @@ margin-bottom: 20px;
 
 .flex {
     display: flex;
+}
+
+.mb_20 {
+    margin-bottom: 20px;
+}
+
+.mb_40 {
+    margin-bottom: 40px;
+}
+
+.mb_100 {
+    margin-bottom: 100px;
+}
+
+section {
+    margin-bottom: 40px;
 }
