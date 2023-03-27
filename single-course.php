@@ -3,5 +3,5 @@
 */
 ?>
 <?php get_header(); ?>
-<h1>コース紹介</h1>
+<h1>コース紹介.</h1>
 <?php get_footer(); ?>
