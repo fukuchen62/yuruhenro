@@ -12,7 +12,7 @@
       </div>
 
       <div class="temple_img">
-        <img src="" alt="お寺の写真(霊山寺)" />
+        <img src="<?php the_field('t_eyecatch'); ?> " alt="お寺の写真(霊山寺)" />
       </div>
 
       <h2>霊山寺について</h2>
