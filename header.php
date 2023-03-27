@@ -46,7 +46,7 @@
                     <!-- ナビゲーションメニュー -->
                     <nav class="header_nav flex">
                         <ul>
-                            <li><a href="<?php echo get_template_directory_uri(); ?>/page">tstゆるへんろって？</a></li>
+                            <li><a href="<?php echo get_template_directory_uri(); ?>/single-temple">tstゆるへんろって？</a></li>
                             <li><a href="#">参拝スタイル</a></li>
                             <li><a href="#">コース紹介</a></li>
                             <li><a href="#">マイブックマーク</a></li>
