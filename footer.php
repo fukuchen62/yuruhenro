@@ -28,30 +28,30 @@
                 </li>
                 <li>
                     <ul class="sp_none">
-                        <li class="footer_nav_b"><a href="#">＃ゆるへんろとは</a></li>
-                        <li><a href="#">＃ゆるへんろとは</a></li>
-                        <li><a href="#">おへんろのお作法</a></li>
-                        <li><a href="#">参拝スタイル</a></li>
+                        <li class="footer_nav_b"><a href="<?php echo get_template_directory_uri(); ?>/page-about">＃ゆるへんろとは</a></li>
+                        <li><a href="<?php echo get_template_directory_uri(); ?>/page-about">＃ゆるへんろとは</a></li>
+                        <li><a href="<?php echo get_template_directory_uri(); ?>/page-about">おへんろのお作法</a></li>
+                        <li><a href="<?php echo get_template_directory_uri(); ?>/page-checkpoint">参拝スタイル</a></li>
                     </ul>
                 </li>
                 <li>
                     <ul class="sp_none">
-                        <li class="footer_nav_b"><a href="#">コース紹介</a></li>
-                        <li><a href="#">コース名1</a></li>
-                        <li><a href="#">コース名2</a></li>
-                        <li><a href="#">コース名3</a></li>
-                        <li><a href="#">コース名4</a></li>
-                        <li><a href="#">コース名5</a></li>
+                        <li class="footer_nav_b"><a href="<?php echo get_template_directory_uri(); ?>/single-course">コース紹介</a></li>
+                        <li><a href="<?php echo get_template_directory_uri(); ?>/single-course">コース名1</a></li>
+                        <li><a href="<?php echo get_template_directory_uri(); ?>/single-course">コース名2</a></li>
+                        <li><a href="<?php echo get_template_directory_uri(); ?>/single-course">コース名3</a></li>
+                        <li><a href="<?php echo get_template_directory_uri(); ?>/single-course">コース名4</a></li>
+                        <li><a href="<?php echo get_template_directory_uri(); ?>/single-course">コース名5</a></li>
                     </ul>
                 </li>
                 <li>
                     <ul class="footer_nav_b">
-                        <li><a href="#" class="sp_none">マイブックマーク</a></li>
-                        <li><a href="#" class="sp_none">条件検索</a></li>
-                        <li><a href="#" class="sp_none">Q&A</a></li>
-                        <li><a href="#">このサイトについて</a></li>
-                        <li><a href="#">プライバシーポリシー</a></li>
-                        <li><a href="#">サイト制作にあたって</a></li>
+                        <li><a href="<?php echo get_template_directory_uri(); ?>/page-bookmark" class="sp_none">マイブックマーク</a></li>
+                        <li><a href="<?php echo get_template_directory_uri(); ?>/search-form" class="sp_none">条件検索</a></li>
+                        <li><a href="<?php echo get_template_directory_uri(); ?>/page-qanda" class="sp_none">Q&A</a></li>
+                        <li><a href="<?php echo get_template_directory_uri(); ?>/page-sitemap">このサイトについて</a></li>
+                        <li><a href="<?php echo get_template_directory_uri(); ?>/page-privacy">プライバシーポリシー</a></li>
+                        <li><a href="<?php echo get_template_directory_uri(); ?>/about-us">サイト制作にあたって</a></li>
                     </ul>
                 </li>
             </ul>

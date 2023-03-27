@@ -3,5 +3,5 @@
 */
 ?>
 <?php get_header(); ?>
-条件検索ページ
+<h1>条件検索ページ</h1>
 <?php get_footer(); ?>
