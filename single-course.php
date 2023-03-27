@@ -1,7 +1,7 @@
 <?php
-/*Template Name:search-form
+/*Template Name: single-course
 */
 ?>
 <?php get_header(); ?>
-条件検索ページ
+<h1>コース紹介</h1>
 <?php get_footer(); ?>

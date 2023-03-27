@@ -22,7 +22,7 @@
         <nav class="footer_nav">
             <ul>
                 <li>
-                    <a href="#">
+                    <a href="<?php echo home_url(); ?>">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/header_logo_02.png" alt="とくしま１日＃ゆるへんろロゴ" class="footer_logo">
                     </a>
                 </li>

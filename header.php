@@ -30,7 +30,7 @@
         <header>
             <div class="header_inner flex">
                 <div class="header_logo">
-                    <a href="#">
+                    <a href="<?php echo home_url(); ?>">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/header_logo_01.png" alt="とくしま１日＃ゆるへんろロゴ">
                     </a>
                 </div>
@@ -46,12 +46,12 @@
                     <!-- ナビゲーションメニュー -->
                     <nav class="header_nav flex">
                         <ul>
-                            <li><a href="<?php echo get_template_directory_uri(); ?>/single-temple">tstゆるへんろって？</a></li>
-                            <li><a href="#">参拝スタイル</a></li>
-                            <li><a href="#">コース紹介</a></li>
-                            <li><a href="#">マイブックマーク</a></li>
-                            <li><a href="#">検索</a></li>
-                            <li><a href="#">Q&A</a></li>
+                            <li><a href="<?php echo get_template_directory_uri(); ?>/page-about">＃ゆるへんろって？</a></li>
+                            <li><a href="<?php echo get_template_directory_uri(); ?>/page-checkpoint">参拝スタイル</a></li>
+                            <li><a href="<?php echo get_template_directory_uri(); ?>/single-course">コース紹介</a></li>
+                            <li><a href="<?php echo get_template_directory_uri(); ?>/page-bookmark">マイブックマーク</a></li>
+                            <li><a href="<?php echo get_template_directory_uri(); ?>/search-form">検索</a></li>
+                            <li><a href="<?php echo get_template_directory_uri(); ?>/page-qanda">Q&A</a></li>
                         </ul>
                     </nav>
                 </div>
