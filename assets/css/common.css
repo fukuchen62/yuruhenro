@@ -19,7 +19,6 @@
     font-size: 24px;
     text-align: center;
     background-color: #b1a995;
-    /* padding: 25px 0; */
     margin: 0 auto 40px;
 }
 
@@ -94,6 +93,7 @@
 @media screen and (min-width: 1400px) {
     .h1_bg {
         height: 150px;
+        margin-bottom: 100px;
     }
 }
 
