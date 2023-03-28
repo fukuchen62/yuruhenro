@@ -19,6 +19,8 @@
 
     <!-- オリジナルCSS -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/common.css" />
+    <!-- コース用CSS -->
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/course.css" />
     <!-- jQuery読み込み -->
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery-3.6.3.min.js"></script>
     <?php wp_head(); ?>
