@@ -66,8 +66,7 @@
 <!-- jsプラグイン読み込み -->
 
 <!-- オリジナルjs読み込み -->
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/common_script.js"></script>
-<script src="<?php echo get_template_directory_uri(); ?>/assets/js/course_script.js"></script>
+
 <?php wp_footer(); ?>
 </body>
 
