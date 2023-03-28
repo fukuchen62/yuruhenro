@@ -67,11 +67,6 @@
   margin-bottom: 40px;
 }
 
-.test {
-  width: 500px;
-  margin: 0 auto;
-}
-
 /* コースボタン */
 .course_btn {
   font-size: 20px;
@@ -359,6 +354,6 @@
   margin-bottom: 100px;
 }
 
-section {
+.sec_mb40 {
   margin-bottom: 40px;
 }
