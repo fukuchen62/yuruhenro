@@ -1,184 +1,211 @@
 <!DOCTYPE html>
 <html lang="ja">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>お寺情報テスト用</title>
-        <link rel="stylesheet" href="../assets/css/destyle.css" />
-        <link rel="stylesheet" href="../assets/css/temple.css" />
-    </head>
-    <body>
-        <div class="wrap">
-            <header>
-                <!-- ヘッダーのコードを入れる -->
-            </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>お寺情報テスト用</title>
+    <!-- CSS読み込み -->
+    <!-- リセットCSS -->
+    <link rel="stylesheet" href="../assets/css/destyle.css" />
+    <!-- Googleフォント Kosugi Maru,Kiwi Maru -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&family=Kosugi+Maru&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Instagramアイコンフォント(font awesome) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- js用CSS -->
 
-            <main>
-                <div>
-                    <section class="temple">
-                        <h1>一番札所　霊山寺</h1>
-                        <div class="bookmark">
-                            <p>☆</p>
-                            <p>ブックマーク</p>
-                        </div>
+    <!-- オリジナルCSS -->
+    <link rel="stylesheet" href="../assets/css/common.css" />
+    <link rel="stylesheet" href="../assets/css/temple.css" />
+    <!-- jQuery読み込み -->
+    <script src="../assets/js/jquery-3.6.3.min.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <!-- ヘッダーのコードを入れる -->
+      </header>
 
-                        <div class="temple_img">
-                            <img src="" alt="お寺の写真(霊山寺)" />
-                        </div>
+      <main>
+        <div>
+          <section class="temple">
+            <h1 class="h1_bg">一番札所　霊山寺</h1>
+            <div class="bookmark">
+              <p>☆</p>
+              <p>ブックマーク</p>
+            </div>
 
-                        <h2>霊山寺について</h2>
+            <div class="temple_img">
+              <img src="" alt="お寺の写真(霊山寺)" />
+            </div>
 
-                        <div class="temple_about">
-                            <div class="temple_slider_img">
-                                <img src="" alt="霊山寺の写真スライド" />
-                            </div>
+            <h2 class="h2_bg">霊山寺について</h2>
 
-                            <div class="temple_about_text">
-                                <p class="small_cap">
-                                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                                </p>
-                            </div>
-                        </div>
+            <div class="temple_about">
+              <div class="temple_slider_img">
+                <img src="" alt="霊山寺の写真スライド" />
+              </div>
 
-                        <h2>お寺情報</h2>
-                        <div class="temple_info">
-                            <div class="temple_info_map">
-                                <!-- google My map -->
-                                <iframe
-                                    src=""
-                                    width="330"
-                                    height="246"
-                                    frameborder="0"
-                                ></iframe>
-                            </div>
-                            <!-- google My map -->
+              <div class="temple_about_text">
+                <p class="small_cap">
+                  テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                </p>
+              </div>
+            </div>
 
-                            <table class="temple_info_table">
-                                <tr>
-                                    <th>本尊</th>
-                                </tr>
-                                <tr>
-                                    <td>テキストテキストテキストテキスト</td>
-                                </tr>
-                                <tr>
-                                    <th>真言</th>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>宿坊</th>
-                                </tr>
-                                <tr>
-                                    <td>テキストテキストテキストテキスト</td>
-                                </tr>
-                                <tr>
-                                    <th>電話</th>
-                                </tr>
-                                <tr>
-                                    <td>テキストテキストテキストテキスト</td>
-                                </tr>
-                                <tr>
-                                    <th>所在地</th>
-                                </tr>
-                                <tr>
-                                    <td>テキストテキストテキストテキスト</td>
-                                </tr>
-                                <tr>
-                                    <th>公式HP</th>
-                                </tr>
-                                <tr>
-                                    <td>テキストテキストテキストテキスト</td>
-                                </tr>
-                            </table>
-                        </div>
-                    </section>
+            <h2 class="h2_bg">お寺情報</h2>
+            <div class="temple_info">
+              <div class="temple_info_map">
+                <!-- google My map -->
+                <iframe
+                  src=""
+                  width="330"
+                  height="246"
+                  frameborder="0"
+                ></iframe>
+              </div>
+              <!-- google My map -->
 
-                    <section class="shop_info">
-                        <h2>周辺施設</h2>
-                        <div class="shop_info_list">
-                            <div class="shop_info_card">
-                                <div class="shop_info_caption">
-                                    <img src="" alt="各施設の画像" />
-                                </div>
-                                <div class="shop_info_title">
-                                    <p>タイトル(施設名)</p>
-                                </div>
-                                <div class="shop_info_text">
-                                    <p>営業時間：10時～17時</p>
-                                    <p>休業日：火曜日</p>
-                                    <p>駐車場：あり</p>
-                                    <p>TEL：000-000-0000</p>
-                                    <p>公式HP：example.site</p>
-                                    <p>
-                                        １２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０
-                                    </p>
-                                </div>
-                            </div>
+              <table class="temple_info_table">
+                <tr>
+                  <th>本尊</th>
+                </tr>
+                <tr>
+                  <td>テキストテキストテキストテキスト</td>
+                </tr>
+                <tr>
+                  <th>真言</th>
+                </tr>
+                <tr>
+                  <td>
+                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                  </td>
+                </tr>
+                <tr>
+                  <th>宿坊</th>
+                </tr>
+                <tr>
+                  <td>テキストテキストテキストテキスト</td>
+                </tr>
+                <tr>
+                  <th>電話</th>
+                </tr>
+                <tr>
+                  <td>テキストテキストテキストテキスト</td>
+                </tr>
+                <tr>
+                  <th>所在地</th>
+                </tr>
+                <tr>
+                  <td>テキストテキストテキストテキスト</td>
+                </tr>
+                <tr>
+                  <th>公式HP</th>
+                </tr>
+                <tr>
+                  <td>テキストテキストテキストテキスト</td>
+                </tr>
+              </table>
+            </div>
+          </section>
 
-                            <div class="shop_info_card">
-                                <div class="shop_info_caption">
-                                    <img src="" alt="各施設の画像" />
-                                </div>
-                                <div class="shop_info_title">
-                                    <p>タイトル(施設名)</p>
-                                </div>
-                                <div class="shop_info_text">
-                                    <p>営業時間：10時～17時</p>
-                                    <p>休業日：火曜日</p>
-                                    <p>駐車場：あり</p>
-                                    <p>TEL：000-000-0000</p>
-                                    <p>公式HP：example.site</p>
-                                    <p>一言：カレーがオススメ！</p>
-                                </div>
-                            </div>
-
-                            <div class="shop_info_card">
-                                <div class="shop_info_caption">
-                                    <img src="" alt="各施設の画像" />
-                                </div>
-                                <div class="shop_info_title">
-                                    <p>タイトル(施設名)</p>
-                                </div>
-                                <div class="shop_info_text">
-                                    <p>営業時間：10時～17時</p>
-                                    <p>休業日：火曜日</p>
-                                    <p>駐車場：あり</p>
-                                    <p>TEL：000-000-0000</p>
-                                    <p>公式HP：example.site</p>
-                                    <p>一言：カレーがオススメ！</p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="course">
-                        <h2>コース一覧</h2>
-                        <button class="course_btn btn1">
-                            ＃ゆるへんろ　入門コース<br />第１番札所～第3番札所＞＞＞
-                        </button>
-                        <button class="course_btn btn2">
-                            ＃ゆるへんろ　入門コース<br />第１番札所～第3番札所＞＞＞
-                        </button>
-                        <button class="course_btn btn3">
-                            ＃ゆるへんろ　入門コース<br />第１番札所～第3番札所＞＞＞
-                        </button>
-                        <button class="course_btn btn4">
-                            ＃ゆるへんろ　入門コース<br />第１番札所～第3番札所＞＞＞
-                        </button>
-                        <button class="course_btn btn5">
-                            ＃ゆるへんろ　入門コース<br />第１番札所～第3番札所＞＞＞
-                        </button>
-                    </section>
+          <section class="shop_info">
+            <h2 class="h2_bg">周辺施設</h2>
+            <div class="shop_info_list">
+              <div class="shop_info_card">
+                <div class="shop_info_caption">
+                  <img src="" alt="各施設の画像" />
                 </div>
-            </main>
+                <div class="shop_info_title">
+                  <p>タイトル(施設名)</p>
+                </div>
+                <div class="shop_info_text">
+                  <p>営業時間：10時～17時</p>
+                  <p>休業日：火曜日</p>
+                  <p>駐車場：あり</p>
+                  <p>TEL：000-000-0000</p>
+                  <p>公式HP：example.site</p>
+                  <p>
+                    １２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０
+                  </p>
+                </div>
+              </div>
+
+              <div class="shop_info_card">
+                <div class="shop_info_caption">
+                  <img src="" alt="各施設の画像" />
+                </div>
+                <div class="shop_info_title">
+                  <p>タイトル(施設名)</p>
+                </div>
+                <div class="shop_info_text">
+                  <p>営業時間：10時～17時</p>
+                  <p>休業日：火曜日</p>
+                  <p>駐車場：あり</p>
+                  <p>TEL：000-000-0000</p>
+                  <p>公式HP：example.site</p>
+                  <p>一言：カレーがオススメ！</p>
+                </div>
+              </div>
+
+              <div class="shop_info_card">
+                <div class="shop_info_caption">
+                  <img src="" alt="各施設の画像" />
+                </div>
+                <div class="shop_info_title">
+                  <p>タイトル(施設名)</p>
+                </div>
+                <div class="shop_info_text">
+                  <p>営業時間：10時～17時</p>
+                  <p>休業日：火曜日</p>
+                  <p>駐車場：あり</p>
+                  <p>TEL：000-000-0000</p>
+                  <p>公式HP：example.site</p>
+                  <p>一言：カレーがオススメ！</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section class="course">
+            <h2 class="h2_bg">コース一覧</h2>
+            <button class="course_btn btn1">
+              ＃ゆるへんろ　入門コース<br />第１番札所～第3番札所＞＞＞
+            </button>
+            <button class="course_btn btn2">
+              ＃ゆるへんろ　入門コース<br />第１番札所～第3番札所＞＞＞
+            </button>
+            <button class="course_btn btn3">
+              ＃ゆるへんろ　入門コース<br />第１番札所～第3番札所＞＞＞
+            </button>
+            <button class="course_btn btn4">
+              ＃ゆるへんろ　入門コース<br />第１番札所～第3番札所＞＞＞
+            </button>
+            <button class="course_btn btn5">
+              ＃ゆるへんろ　入門コース<br />第１番札所～第3番札所＞＞＞
+            </button>
+          </section>
         </div>
-        <!-- wrap -->
-        <footer>
-            <!-- footerのコードを入力 -->
-        </footer>
-    </body>
+      </main>
+
+      <!-- wrap -->
+      <footer>
+        <!-- footerのコードを入力 -->
+      </footer>
+    </div>
+    <!-- jsプラグイン読み込み -->
+
+    <!-- オリジナルjs読み込み -->
+    <script src="../assets/js/common_script.js"></script>
+    <script src="../assets/js/course_script.js"></script>
+  </body>
 </html>
