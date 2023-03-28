@@ -1,564 +1,662 @@
 <!DOCTYPE html>
 <html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>タイトル</title>
+        <!-- CSS読み込み -->
+        <!-- リセットCSS -->
+        <link rel="stylesheet" href="../assets/css/destyle.css" />
+        <!-- Googleフォント Kosugi Maru,Kiwi Maru -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&family=Kosugi+Maru&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Instagramアイコンフォント(font awesome) -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+            integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+        <!-- js用CSS -->
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>タイトル</title>
-    <!-- CSS読み込み -->
-    <!-- リセットCSS -->
-    <link rel="stylesheet" href="../assets/css/destyle.css" />
-    <!-- Googleフォント Kosugi Maru,Kiwi Maru -->
-    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&family=Kosugi+Maru&display=swap" rel="stylesheet">
-    <!-- Instagramアイコンフォント(font awesome) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- js用CSS -->
-
-    <!-- オリジナルCSS -->
-    <link rel="stylesheet" href="../assets/css/common.css" />
+        <!-- オリジナルCSS -->
+        <link rel="stylesheet" href="../assets/css/common.css" />
         <!-- コースページのみ読み込み -->
-        <link rel="stylesheet" href="../assets/css/course.css">
-    <!-- jQuery読み込み -->
-    <script src="../assets/js/jquery-3.6.3.min.js"></script>
-
-</head>
-<body>
-    <div class="wrap">
-        <!-- headerここから -->
-        <header>
-            <div class="header_inner flex">
-                <div class="header_logo">
-                    <a href="#">
-                        <img src="../assets/img/header_logo_01.png" alt="とくしま１日＃ゆるへんろロゴ">
-                    </a>
-                </div>
-
-                <div class="header_menu">
-                    <!-- ハンバーガーボタン -->
-                    <div class="header_hamburger">
-                        <span></span>
-                        <span></span>
-                        <span></span>
+        <link rel="stylesheet" href="../assets/css/course.css" />
+        <!-- jQuery読み込み -->
+        <script src="../assets/js/jquery-3.6.3.min.js"></script>
+    </head>
+    <body>
+        <div class="wrap">
+            <!-- headerここから -->
+            <header>
+                <div class="header_inner flex">
+                    <div class="header_logo">
+                        <a href="#">
+                            <img
+                                src="../assets/img/header_logo_01.png"
+                                alt="とくしま１日＃ゆるへんろロゴ"
+                            />
+                        </a>
                     </div>
 
-                    <!-- ナビゲーションメニュー -->
-                    <nav class="header_nav flex">
+                    <div class="header_menu">
+                        <!-- ハンバーガーボタン -->
+                        <div class="header_hamburger">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <!-- ナビゲーションメニュー -->
+                        <nav class="header_nav flex">
+                            <ul>
+                                <li><a href="#">＃ゆるへんろって？</a></li>
+                                <li><a href="#">参拝スタイル</a></li>
+                                <li><a href="#">コース紹介</a></li>
+                                <li><a href="#">マイブックマーク</a></li>
+                                <li><a href="#">検索</a></li>
+                                <li><a href="#">Q&A</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <!-- headerここまで -->
+            <!-- mainここから -->
+            <main>
+                <div class="main_inner">
+                    <h1 class="h1_bg">コース紹介</h1>
+                    <p class="big_cap">
+                        コース紹介全体の簡単なキャプション
+                        <br />
+                        コース紹介全体の簡単なキャプション
+                        <br />
+                        コース紹介全体の簡単なキャプション
+                    </p>
+
+                    <div class="course_tab">
+                        <!-- タブ -->
+                        <ul class="course_tabWrap flex">
+                            <li><a href="#course_cont1">入門コース</a></li>
+                            <li><a href="#course_cont2">車入門コース</a></li>
+                            <li><a href="#course_cont3">県西コース</a></li>
+                            <li><a href="#course_cont4">県南コース</a></li>
+                            <li><a href="#course_cont5">市街地コース</a></li>
+                        </ul>
+
+                        <!-- タブ内容 -->
+                        <div class="course_mainWrap">
+                            <div id="course_cont1" class="course_tabCont">
+                                <!-- コースキャプション -->
+                                <p class="middle_cap mb_100">
+                                    コース概要説明文テキストテキストテキストテキストテキストテキストテキスト<br />
+                                    コース概要説明文テキストテキストテキストテキストテキストテキストテキスト<br />
+                                    コース概要説明文テキストテキストテキストテキストテキストテキストテキスト
+                                </p>
+
+                                <section class="sec_mb">
+                                    <h2 class="h2_bg mb_40">参考マップ</h2>
+                                    <div>Googleマイマップはここ</div>
+                                </section>
+
+                                <section class="sec_mb">
+                                    <h2 class="h2_bg mb_40">モデルルート</h2>
+                                    <div class="course_rootCap mb_40">画像</div>
+
+                                    <div class="course_flag mb_20">START</div>
+
+                                    <p class="mb_20">AM 9:00</p>
+
+                                    <div class="course_contWrap">
+                                        <div>
+                                            <img
+                                                src="../assets/img/kv.png"
+                                                alt="お寺の名前"
+                                                class="course_contPhoto mb_20"
+                                            />
+                                        </div>
+                                        <p class="small_cap mb_40">
+                                            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                        </p>
+                                        <a href="#"
+                                            ><div class="more_btn"></div
+                                        ></a>
+                                    </div>
+
+                                    <div class="course_contInfo mb_40 flex">
+                                        <div class="course_contIcon">
+                                            アイコン
+                                        </div>
+                                        <div class="course_contTime">
+                                            徒歩で30分（約1.5km）
+                                        </div>
+                                    </div>
+
+                                    <p class="mb_20">AM 10:30</p>
+
+                                    <div class="course_contWrap">
+                                        <img
+                                            src="../assets/img/kv.png"
+                                            alt="お寺の名前"
+                                            class="course_contPhoto mb_20"
+                                        />
+
+                                        <p class="small_cap mb_40">
+                                            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                        </p>
+                                        <div class="more_btn"></div>
+                                    </div>
+
+                                    <div class="course_contInfo mb_40 flex">
+                                        <div class="course_contIcon">
+                                            アイコン
+                                        </div>
+                                        <div class="course_contTime">
+                                            徒歩で30分（約1.5km）
+                                        </div>
+                                    </div>
+
+                                    <p class="mb_20">AM 11:30</p>
+
+                                    <div class="course_contWrap">
+                                        <img
+                                            src="../assets/img/kv.png"
+                                            alt="お寺の名前"
+                                            class="course_contPhoto mb_20"
+                                        />
+                                        <p
+                                            class="small_cap course_contCap mb_40"
+                                        >
+                                            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                        </p>
+                                        <div class="more_btn"></div>
+                                    </div>
+
+                                    <div class="course_flag">GOAL</div>
+                                </section>
+
+                                <section class="sec_mb">
+                                    <h2 class="h2_bg mb_40">周辺施設</h2>
+                                    ※お寺ページからもらう
+                                </section>
+                            </div>
+                            <div id="course_cont2" class="course_tabCont">
+                                <!-- コースキャプション -->
+                                <p class="mb_100">
+                                    コース概要説明文テキストテキストテキストテキストテキストテキストテキスト<br />
+                                    コース概要説明文テキストテキストテキストテキストテキストテキストテキスト<br />
+                                    コース概要説明文テキストテキストテキストテキストテキストテキストテキスト
+                                </p>
+
+                                <section>
+                                    <h2 class="h2_bg mb_40">参考マップ</h2>
+                                    <div>Googleマイマップはここ</div>
+                                </section>
+
+                                <section>
+                                    <h2 class="h2_bg mb_40">モデルルート</h2>
+                                    <div class="mb_40">
+                                        画像？コーディング？
+                                    </div>
+
+                                    <div class="course_btn mb_20">START</div>
+
+                                    <p class="mb_20">AM 9:00</p>
+
+                                    <div class="course_contWrap">
+                                        <img
+                                            src="../assets/img/kv.png"
+                                            alt="お寺の名前"
+                                            class="course_contPhoto mb_20"
+                                        />
+                                        <p class="course_contCap mb_40">
+                                            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                        </p>
+                                        <a href="#">
+                                            <div class="more_btn"></div>
+                                        </a>
+                                    </div>
+
+                                    <div class="course_contInfo mb_40 flex">
+                                        <div class="course_contIcon">
+                                            アイコン
+                                        </div>
+                                        <div class="course_contTime">
+                                            徒歩で30分（約1.5km）
+                                        </div>
+                                        <div class="more_btn"></div>
+                                    </div>
+
+                                    <p class="mb_20">AM 10:30</p>
+
+                                    <div class="course_contWrap">
+                                        <img
+                                            src="../assets/img/kv.png"
+                                            alt="お寺の名前"
+                                            class="course_contPhoto mb_20"
+                                        />
+
+                                        <p class="course_contCap mb_40">
+                                            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                        </p>
+                                        <div class="more_btn"></div>
+                                    </div>
+
+                                    <div class="course_contInfo mb_40 flex">
+                                        <div class="course_contIcon">
+                                            アイコン
+                                        </div>
+                                        <div class="course_contTime">
+                                            徒歩で30分（約1.5km）
+                                        </div>
+                                        <div class="more_btn"></div>
+                                    </div>
+
+                                    <p class="mb_20">AM 11:30</p>
+
+                                    <div class="course_contWrap">
+                                        <img
+                                            src="../assets/img/kv.png"
+                                            alt="お寺の名前"
+                                            class="course_contPhoto mb_20"
+                                        />
+                                        <p class="course_contCap mb_40">
+                                            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                        </p>
+                                        <div class="more_btn"></div>
+                                    </div>
+
+                                    <div class="course_btn">GOAL</div>
+                                </section>
+
+                                <section>
+                                    <h2 class="h2_bg mb_40">周辺施設</h2>
+                                    ※お寺ページからもらう
+                                </section>
+                            </div>
+                            <div id="course_cont3" class="course_tabCont">
+                                <!-- コースキャプション -->
+                                <p class="mb_100">
+                                    コース概要説明文テキストテキストテキストテキストテキストテキストテキスト<br />
+                                    コース概要説明文テキストテキストテキストテキストテキストテキストテキスト<br />
+                                    コース概要説明文テキストテキストテキストテキストテキストテキストテキスト
+                                </p>
+
+                                <section>
+                                    <h2 class="h2_bg mb_40">参考マップ</h2>
+                                    <div>Googleマイマップはここ</div>
+                                </section>
+
+                                <section>
+                                    <h2 class="h2_bg mb_40">モデルルート</h2>
+                                    <div class="mb_40">
+                                        画像？コーディング？
+                                    </div>
+
+                                    <div class="course_btn mb_20">START</div>
+
+                                    <p class="mb_20">AM 9:00</p>
+
+                                    <div class="course_contWrap">
+                                        <img
+                                            src="../assets/img/kv.png"
+                                            alt="お寺の名前"
+                                            class="course_contPhoto mb_20"
+                                        />
+                                        <p class="course_contCap mb_40">
+                                            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                        </p>
+                                        <a href="#">
+                                            <div class="more_btn"></div>
+                                        </a>
+                                    </div>
+
+                                    <div class="course_contInfo mb_40 flex">
+                                        <div class="course_contIcon">
+                                            アイコン
+                                        </div>
+                                        <div class="course_contTime">
+                                            徒歩で30分（約1.5km）
+                                        </div>
+                                        <div class="more_btn"></div>
+                                    </div>
+
+                                    <p class="mb_20">AM 10:30</p>
+
+                                    <div class="course_contWrap">
+                                        <img
+                                            src="../assets/img/kv.png"
+                                            alt="お寺の名前"
+                                            class="course_contPhoto mb_20"
+                                        />
+
+                                        <p class="course_contCap mb_40">
+                                            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                        </p>
+                                        <div class="more_btn"></div>
+                                    </div>
+
+                                    <div class="course_contInfo mb_40 flex">
+                                        <div class="course_contIcon">
+                                            アイコン
+                                        </div>
+                                        <div class="course_contTime">
+                                            徒歩で30分（約1.5km）
+                                        </div>
+                                        <div class="more_btn"></div>
+                                    </div>
+
+                                    <p class="mb_20">AM 11:30</p>
+
+                                    <div class="course_contWrap">
+                                        <img
+                                            src="../assets/img/kv.png"
+                                            alt="お寺の名前"
+                                            class="course_contPhoto mb_20"
+                                        />
+                                        <p class="course_contCap mb_40">
+                                            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                        </p>
+                                        <div class="more_btn"></div>
+                                    </div>
+
+                                    <div class="course_btn">GOAL</div>
+                                </section>
+
+                                <section>
+                                    <h2 class="h2_bg mb_40">周辺施設</h2>
+                                    ※お寺ページからもらう
+                                </section>
+                            </div>
+                            <div id="course_cont4" class="course_tabCont">
+                                <!-- コースキャプション -->
+                                <p class="mb_100">
+                                    コース概要説明文テキストテキストテキストテキストテキストテキストテキスト<br />
+                                    コース概要説明文テキストテキストテキストテキストテキストテキストテキスト<br />
+                                    コース概要説明文テキストテキストテキストテキストテキストテキストテキスト
+                                </p>
+
+                                <section>
+                                    <h2 class="h2_bg mb_40">参考マップ</h2>
+                                    <div>Googleマイマップはここ</div>
+                                </section>
+
+                                <section>
+                                    <h2 class="h2_bg mb_40">モデルルート</h2>
+                                    <div class="mb_40">
+                                        画像？コーディング？
+                                    </div>
+
+                                    <div class="course_btn mb_20">START</div>
+
+                                    <p class="mb_20">AM 9:00</p>
+
+                                    <div class="course_contWrap">
+                                        <img
+                                            src="../assets/img/kv.png"
+                                            alt="お寺の名前"
+                                            class="course_contPhoto mb_20"
+                                        />
+                                        <p class="course_contCap mb_40">
+                                            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                        </p>
+                                        <a href="#">
+                                            <div class="more_btn"></div>
+                                        </a>
+                                    </div>
+
+                                    <div class="course_contInfo mb_40 flex">
+                                        <div class="course_contIcon">
+                                            アイコン
+                                        </div>
+                                        <div class="course_contTime">
+                                            徒歩で30分（約1.5km）
+                                        </div>
+                                        <div class="more_btn"></div>
+                                    </div>
+
+                                    <p class="mb_20">AM 10:30</p>
+
+                                    <div class="course_contWrap">
+                                        <img
+                                            src="../assets/img/kv.png"
+                                            alt="お寺の名前"
+                                            class="course_contPhoto mb_20"
+                                        />
+
+                                        <p class="course_contCap mb_40">
+                                            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                        </p>
+                                        <div class="more_btn"></div>
+                                    </div>
+
+                                    <div class="course_contInfo mb_40 flex">
+                                        <div class="course_contIcon">
+                                            アイコン
+                                        </div>
+                                        <div class="course_contTime">
+                                            徒歩で30分（約1.5km）
+                                        </div>
+                                        <div class="more_btn"></div>
+                                    </div>
+
+                                    <p class="mb_20">AM 11:30</p>
+
+                                    <div class="course_contWrap">
+                                        <img
+                                            src="../assets/img/kv.png"
+                                            alt="お寺の名前"
+                                            class="course_contPhoto mb_20"
+                                        />
+                                        <p class="course_contCap mb_40">
+                                            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                        </p>
+                                        <div class="more_btn"></div>
+                                    </div>
+
+                                    <div class="course_btn">GOAL</div>
+                                </section>
+
+                                <section>
+                                    <h2 class="h2_bg mb_40">周辺施設</h2>
+                                    ※お寺ページからもらう
+                                </section>
+                            </div>
+                            <div id="course_cont5" class="course_tabCont">
+                                <!-- コースキャプション -->
+                                <p class="mb_100">
+                                    コース概要説明文テキストテキストテキストテキストテキストテキストテキスト<br />
+                                    コース概要説明文テキストテキストテキストテキストテキストテキストテキスト<br />
+                                    コース概要説明文テキストテキストテキストテキストテキストテキストテキスト
+                                </p>
+
+                                <section>
+                                    <h2 class="h2_bg mb_40">参考マップ</h2>
+                                    <div>Googleマイマップはここ</div>
+                                </section>
+
+                                <section>
+                                    <h2 class="h2_bg mb_40">モデルルート</h2>
+                                    <div class="mb_40">
+                                        画像？コーディング？
+                                    </div>
+
+                                    <div class="course_btn mb_20">START</div>
+
+                                    <p class="mb_20">AM 9:00</p>
+
+                                    <div class="course_contWrap">
+                                        <img
+                                            src="../assets/img/kv.png"
+                                            alt="お寺の名前"
+                                            class="course_contPhoto mb_20"
+                                        />
+                                        <p class="course_contCap mb_40">
+                                            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                        </p>
+                                        <a href="#">
+                                            <div class="more_btn"></div>
+                                        </a>
+                                    </div>
+
+                                    <div class="course_contInfo mb_40 flex">
+                                        <div class="course_contIcon">
+                                            アイコン
+                                        </div>
+                                        <div class="course_contTime">
+                                            徒歩で30分（約1.5km）
+                                        </div>
+                                        <div class="more_btn"></div>
+                                    </div>
+
+                                    <p class="mb_20">AM 10:30</p>
+
+                                    <div class="course_contWrap">
+                                        <img
+                                            src="../assets/img/kv.png"
+                                            alt="お寺の名前"
+                                            class="course_contPhoto mb_20"
+                                        />
+
+                                        <p class="course_contCap mb_40">
+                                            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                        </p>
+                                        <div class="more_btn"></div>
+                                    </div>
+
+                                    <div class="course_contInfo mb_40 flex">
+                                        <div class="course_contIcon">
+                                            アイコン
+                                        </div>
+                                        <div class="course_contTime">
+                                            徒歩で30分（約1.5km）
+                                        </div>
+                                        <div class="more_btn"></div>
+                                    </div>
+
+                                    <p class="mb_20">AM 11:30</p>
+
+                                    <div class="course_contWrap">
+                                        <img
+                                            src="../assets/img/kv.png"
+                                            alt="お寺の名前"
+                                            class="course_contPhoto mb_20"
+                                        />
+                                        <p class="course_contCap mb_40">
+                                            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                        </p>
+                                        <div class="more_btn"></div>
+                                    </div>
+
+                                    <div class="course_btn">GOAL</div>
+                                </section>
+
+                                <section>
+                                    <h2 class="h2_bg mb_40">周辺施設</h2>
+                                    ※お寺ページからもらう
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <!-- mainここまで -->
+            <!-- footerここから -->
+            <footer>
+                <!-- <div class="footer_wrap"> -->
+                <div class="footer_inner">
+                    <div class="footer_insta flex">
+                        <a
+                            href="https://www.instagram.com/yuru_henro/"
+                            target="_blank"
+                            class="flex"
+                        >
+                            <i class="fa-brands fa-instagram"></i>
+                            <p>@yuru_henro</p>
+                        </a>
+                    </div>
+
+                    <div class="footer_links">
+                        <ul class="flex">
+                            <li><a href="#" target="_blank">バナー1</a></li>
+                            <li><a href="#" target="_blank">バナー2</a></li>
+                            <li><a href="#" target="_blank">バナー3</a></li>
+                            <li><a href="#" target="_blank">バナー4</a></li>
+                            <li><a href="#" target="_blank">バナー5</a></li>
+                        </ul>
+                    </div>
+
+                    <nav class="footer_nav">
                         <ul>
-                            <li><a href="#">＃ゆるへんろって？</a></li>
-                            <li><a href="#">参拝スタイル</a></li>
-                            <li><a href="#">コース紹介</a></li>
-                            <li><a href="#">マイブックマーク</a></li>
-                            <li><a href="#">検索</a></li>
-                            <li><a href="#">Q&A</a></li>
+                            <li>
+                                <a href="#">
+                                    <img
+                                        src="../assets/img/header_logo_02.png"
+                                        alt="とくしま１日＃ゆるへんろロゴ"
+                                        class="footer_logo"
+                                    />
+                                </a>
+                            </li>
+                            <li>
+                                <ul class="sp_none">
+                                    <li class="footer_nav_b">
+                                        <a href="#">＃ゆるへんろとは</a>
+                                    </li>
+                                    <li><a href="#">＃ゆるへんろとは</a></li>
+                                    <li><a href="#">おへんろのお作法</a></li>
+                                    <li><a href="#">参拝スタイル</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="sp_none">
+                                    <li class="footer_nav_b">
+                                        <a href="#">コース紹介</a>
+                                    </li>
+                                    <li><a href="#">コース名1</a></li>
+                                    <li><a href="#">コース名2</a></li>
+                                    <li><a href="#">コース名3</a></li>
+                                    <li><a href="#">コース名4</a></li>
+                                    <li><a href="#">コース名5</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="footer_nav_b">
+                                    <li>
+                                        <a href="#" class="sp_none"
+                                            >マイブックマーク</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a href="#" class="sp_none">条件検索</a>
+                                    </li>
+                                    <li><a href="#" class="sp_none">Q&A</a></li>
+                                    <li><a href="#">このサイトについて</a></li>
+                                    <li>
+                                        <a href="#">プライバシーポリシー</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">サイト制作にあたって</a>
+                                    </li>
+                                </ul>
+                            </li>
                         </ul>
                     </nav>
+
+                    <small>Copyright©とくしま１日＃ゆるへんろ</small>
                 </div>
-            </div>
-
-        </header>
-        <!-- headerここまで -->
-        <!-- mainここから -->
-        <main>
-            <div class="main_inner">
-                <h1 class="h1_bg">コース紹介</h1>
-                <p class="h1_cap">コース紹介全体の簡単なキャプション</p>
-
-                <div class="course_tab">
-
-                    <!-- タブ -->
-                    <ul class="course_tabWrap flex">
-                        <li><a href="#course_cont1">入門コース</a></li>
-                        <li><a href="#course_cont2">車入門コース</a></li>
-                        <li><a href="#course_cont3">県西コース</a></li>
-                        <li><a href="#course_cont4">県南コース</a></li>
-                        <li><a href="#course_cont5">市街地コース</a></li>
-                    </ul>
-
-                    <!-- タブ内容 -->
-                    <div class="course_mainWrap">
-                        <div id="course_cont1" class="course_tabCont">
-                            <!-- コースキャプション -->
-                            <p class="mb_100">
-                                コース概要説明文テキストテキストテキストテキストテキストテキストテキスト<br>
-                                コース概要説明文テキストテキストテキストテキストテキストテキストテキスト<br>
-                                コース概要説明文テキストテキストテキストテキストテキストテキストテキスト
-                            </p>
-
-                            <section>
-                                <h2 class="h2_bg mb_40">参考マップ</h2>
-                                <div>Googleマイマップはここ
-                                </div>
-                            </section>
-
-                            <section>
-                                <h2 class="h2_bg mb_40">モデルルート</h2>
-                                <div class="course_rootCap mb_40">画像？コーディング？</div>
-
-                                <div class="course_btn mb_20">START</div>
-
-                                <p class="mb_20">AM 9:00</p>
-
-                                <div class="course_contWrap">
-                                    <div >
-                                        <img src="../assets/img/kv.png" alt="お寺の名前" class="course_contPhoto mb_20">
-                                        </div>
-                                        <p class="course_contCap mb_40">
-                                        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                                        </p>
-                                    <a href="#"><div class="more_btn"></div></a>
-                                </div>
-
-                                <div class="course_contInfo mb_40 flex">
-                                    <div class="course_contIcon">
-                                        アイコン
-                                    </div>
-                                    <div class="course_contTime">
-                                        徒歩で30分（約1.5km）
-                                    </div>
-                                </div>
-
-                                <p class="mb_20">AM 10:30</p>
-
-                                <div class="course_contWrap">
-                                    <img src="../assets/img/kv.png" alt="お寺の名前" class="course_contPhoto mb_20">
-
-                                        <p class="course_contCap mb_40">
-                                            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                                        </p>
-                                    <div class="more_btn"></div>
-                                </div>
-
-                                <div class="course_contInfo mb_40 flex">
-                                    <div class="course_contIcon">
-                                        アイコン
-                                    </div>
-                                    <div class="course_contTime">
-                                        徒歩で30分（約1.5km）
-                                    </div>
-                                </div>
-
-                                <p class="mb_20">AM 11:30</p>
-
-                                <div class="course_contWrap">
-                                    <img src="../assets/img/kv.png" alt="お寺の名前" class="course_contPhoto mb_20">
-                                        <p class="course_contCap mb_40">
-                                            テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                                        </p>
-                                    <div class="more_btn"></div>
-                                </div>
-
-                                <div class="course_btn">GOAL</div>
-                            </section>
-
-                            <section>
-                                <h2 class="h2_bg mb_40">周辺施設</h2>
-                                ※お寺ページからもらう
-                            </section>
-
-                        </div>
-                        <div id="course_cont2" class="course_tabCont">
-                            <!-- コースキャプション -->
-                            <p class="mb_100">
-                                                            コース概要説明文テキストテキストテキストテキストテキストテキストテキスト<br>
-                                                            コース概要説明文テキストテキストテキストテキストテキストテキストテキスト<br>
-                                                            コース概要説明文テキストテキストテキストテキストテキストテキストテキスト
-                                                        </p>
-
-                            <section>
-                                <h2 class="h2_bg mb_40">参考マップ</h2>
-                                <div>Googleマイマップはここ
-                                </div>
-                            </section>
-
-                            <section>
-                                <h2 class="h2_bg mb_40">モデルルート</h2>
-                                <div class="mb_40">画像？コーディング？</div>
-
-                                <div class="course_btn mb_20">START</div>
-
-                                <p class="mb_20">AM 9:00</p>
-
-                                <div class="course_contWrap">
-                                    <img src="../assets/img/kv.png" alt="お寺の名前" class="course_contPhoto mb_20">
-                                    <p class="course_contCap mb_40">
-                                                                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                                                                    </p>
-                                    <a href="#">
-                                        <div class="more_btn"></div>
-                                    </a>
-                                </div>
-
-                                <div class="course_contInfo mb_40 flex">
-                                    <div class="course_contIcon">
-                                        アイコン
-                                    </div>
-                                    <div class="course_contTime">
-                                        徒歩で30分（約1.5km）
-                                    </div>
-                                    <div class="more_btn"></div>
-                                </div>
-
-                                <p class="mb_20">AM 10:30</p>
-
-                                <div class="course_contWrap">
-                                    <img src="../assets/img/kv.png" alt="お寺の名前" class="course_contPhoto mb_20">
-
-                                    <p class="course_contCap mb_40">
-                                                                        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                                                                    </p>
-                                    <div class="more_btn"></div>
-                                </div>
-
-                                <div class="course_contInfo mb_40 flex">
-                                    <div class="course_contIcon">
-                                        アイコン
-                                    </div>
-                                    <div class="course_contTime">
-                                        徒歩で30分（約1.5km）
-                                    </div>
-                                    <div class="more_btn"></div>
-                                </div>
-
-                                <p class="mb_20">AM 11:30</p>
-
-                                <div class="course_contWrap">
-                                    <img src="../assets/img/kv.png" alt="お寺の名前" class="course_contPhoto mb_20">
-                                    <p class="course_contCap mb_40">
-                                                                        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                                                                    </p>
-                                    <div class="more_btn"></div>
-                                </div>
-
-                                <div class="course_btn">GOAL</div>
-                            </section>
-
-                            <section>
-                                <h2 class="h2_bg mb_40">周辺施設</h2>
-                                ※お寺ページからもらう
-                            </section>
-                        </div>
-                        <div id="course_cont3" class="course_tabCont">
-                            <!-- コースキャプション -->
-                            <p class="mb_100">
-                                                            コース概要説明文テキストテキストテキストテキストテキストテキストテキスト<br>
-                                                            コース概要説明文テキストテキストテキストテキストテキストテキストテキスト<br>
-                                                            コース概要説明文テキストテキストテキストテキストテキストテキストテキスト
-                                                        </p>
-
-                            <section>
-                                <h2 class="h2_bg mb_40">参考マップ</h2>
-                                <div>Googleマイマップはここ
-                                </div>
-                            </section>
-
-                            <section>
-                                <h2 class="h2_bg mb_40">モデルルート</h2>
-                                <div class="mb_40">画像？コーディング？</div>
-
-                                <div class="course_btn mb_20">START</div>
-
-                                <p class="mb_20">AM 9:00</p>
-
-                                <div class="course_contWrap">
-                                    <img src="../assets/img/kv.png" alt="お寺の名前" class="course_contPhoto mb_20">
-                                    <p class="course_contCap mb_40">
-                                                                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                                                                    </p>
-                                    <a href="#">
-                                        <div class="more_btn"></div>
-                                    </a>
-                                </div>
-
-                                <div class="course_contInfo mb_40 flex">
-                                    <div class="course_contIcon">
-                                        アイコン
-                                    </div>
-                                    <div class="course_contTime">
-                                        徒歩で30分（約1.5km）
-                                    </div>
-                                    <div class="more_btn"></div>
-                                </div>
-
-                                <p class="mb_20">AM 10:30</p>
-
-                                <div class="course_contWrap">
-                                    <img src="../assets/img/kv.png" alt="お寺の名前" class="course_contPhoto mb_20">
-
-                                    <p class="course_contCap mb_40">
-                                                                        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                                                                    </p>
-                                    <div class="more_btn"></div>
-                                </div>
-
-                                <div class="course_contInfo mb_40 flex">
-                                    <div class="course_contIcon">
-                                        アイコン
-                                    </div>
-                                    <div class="course_contTime">
-                                        徒歩で30分（約1.5km）
-                                    </div>
-                                    <div class="more_btn"></div>
-                                </div>
-
-                                <p class="mb_20">AM 11:30</p>
-
-                                <div class="course_contWrap">
-                                    <img src="../assets/img/kv.png" alt="お寺の名前" class="course_contPhoto mb_20">
-                                    <p class="course_contCap mb_40">
-                                                                        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                                                                    </p>
-                                    <div class="more_btn"></div>
-                                </div>
-
-                                <div class="course_btn">GOAL</div>
-                            </section>
-
-                            <section>
-                                <h2 class="h2_bg mb_40">周辺施設</h2>
-                                ※お寺ページからもらう
-                            </section>
-                        </div>
-                        <div id="course_cont4" class="course_tabCont">
-                            <!-- コースキャプション -->
-                            <p class="mb_100">
-                                                            コース概要説明文テキストテキストテキストテキストテキストテキストテキスト<br>
-                                                            コース概要説明文テキストテキストテキストテキストテキストテキストテキスト<br>
-                                                            コース概要説明文テキストテキストテキストテキストテキストテキストテキスト
-                                                        </p>
-
-                            <section>
-                                <h2 class="h2_bg mb_40">参考マップ</h2>
-                                <div>Googleマイマップはここ
-                                </div>
-                            </section>
-
-                            <section>
-                                <h2 class="h2_bg mb_40">モデルルート</h2>
-                                <div class="mb_40">画像？コーディング？</div>
-
-                                <div class="course_btn mb_20">START</div>
-
-                                <p class="mb_20">AM 9:00</p>
-
-                                <div class="course_contWrap">
-                                    <img src="../assets/img/kv.png" alt="お寺の名前" class="course_contPhoto mb_20">
-                                    <p class="course_contCap mb_40">
-                                                                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                                                                    </p>
-                                    <a href="#">
-                                        <div class="more_btn"></div>
-                                    </a>
-                                </div>
-
-                                <div class="course_contInfo mb_40 flex">
-                                    <div class="course_contIcon">
-                                        アイコン
-                                    </div>
-                                    <div class="course_contTime">
-                                        徒歩で30分（約1.5km）
-                                    </div>
-                                    <div class="more_btn"></div>
-                                </div>
-
-                                <p class="mb_20">AM 10:30</p>
-
-                                <div class="course_contWrap">
-                                    <img src="../assets/img/kv.png" alt="お寺の名前" class="course_contPhoto mb_20">
-
-                                    <p class="course_contCap mb_40">
-                                                                        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                                                                    </p>
-                                    <div class="more_btn"></div>
-                                </div>
-
-                                <div class="course_contInfo mb_40 flex">
-                                    <div class="course_contIcon">
-                                        アイコン
-                                    </div>
-                                    <div class="course_contTime">
-                                        徒歩で30分（約1.5km）
-                                    </div>
-                                    <div class="more_btn"></div>
-                                </div>
-
-                                <p class="mb_20">AM 11:30</p>
-
-                                <div class="course_contWrap">
-                                    <img src="../assets/img/kv.png" alt="お寺の名前" class="course_contPhoto mb_20">
-                                    <p class="course_contCap mb_40">
-                                                                        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                                                                    </p>
-                                    <div class="more_btn"></div>
-                                </div>
-
-                                <div class="course_btn">GOAL</div>
-                            </section>
-
-                            <section>
-                                <h2 class="h2_bg mb_40">周辺施設</h2>
-                                ※お寺ページからもらう
-                            </section>
-                        </div>
-                        <div id="course_cont5" class="course_tabCont">
-                            <!-- コースキャプション -->
-                            <p class="mb_100">
-                                                            コース概要説明文テキストテキストテキストテキストテキストテキストテキスト<br>
-                                                            コース概要説明文テキストテキストテキストテキストテキストテキストテキスト<br>
-                                                            コース概要説明文テキストテキストテキストテキストテキストテキストテキスト
-                                                        </p>
-
-                            <section>
-                                <h2 class="h2_bg mb_40">参考マップ</h2>
-                                <div>Googleマイマップはここ
-                                </div>
-                            </section>
-
-                            <section>
-                                <h2 class="h2_bg mb_40">モデルルート</h2>
-                                <div class="mb_40">画像？コーディング？</div>
-
-                                <div class="course_btn mb_20">START</div>
-
-                                <p class="mb_20">AM 9:00</p>
-
-                                <div class="course_contWrap">
-                                    <img src="../assets/img/kv.png" alt="お寺の名前" class="course_contPhoto mb_20">
-                                    <p class="course_contCap mb_40">
-                                                                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                                                                    </p>
-                                    <a href="#">
-                                        <div class="more_btn"></div>
-                                    </a>
-                                </div>
-
-                                <div class="course_contInfo mb_40 flex">
-                                    <div class="course_contIcon">
-                                        アイコン
-                                    </div>
-                                    <div class="course_contTime">
-                                        徒歩で30分（約1.5km）
-                                    </div>
-                                    <div class="more_btn"></div>
-                                </div>
-
-                                <p class="mb_20">AM 10:30</p>
-
-                                <div class="course_contWrap">
-                                    <img src="../assets/img/kv.png" alt="お寺の名前" class="course_contPhoto mb_20">
-
-                                    <p class="course_contCap mb_40">
-                                                                        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                                                                    </p>
-                                    <div class="more_btn"></div>
-                                </div>
-
-                                <div class="course_contInfo mb_40 flex">
-                                    <div class="course_contIcon">
-                                        アイコン
-                                    </div>
-                                    <div class="course_contTime">
-                                        徒歩で30分（約1.5km）
-                                    </div>
-                                    <div class="more_btn"></div>
-                                </div>
-
-                                <p class="mb_20">AM 11:30</p>
-
-                                <div class="course_contWrap">
-                                    <img src="../assets/img/kv.png" alt="お寺の名前" class="course_contPhoto mb_20">
-                                    <p class="course_contCap mb_40">
-                                                                        テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                                                                    </p>
-                                    <div class="more_btn"></div>
-                                </div>
-
-                                <div class="course_btn">GOAL</div>
-                            </section>
-
-                            <section>
-                                <h2 class="h2_bg mb_40">周辺施設</h2>
-                                ※お寺ページからもらう
-                            </section>
-                        </div>
-                    </div>
-
-                </div>
-
-
-            </div>
-        </main>
-        <!-- mainここまで -->
-        <!-- footerここから -->
-        <footer>
-            <!-- <div class="footer_wrap"> -->
-            <div class="footer_inner">
-                <div class="footer_insta flex">
-                    <a href="https://www.instagram.com/yuru_henro/" target="_blank" class="flex">
-                        <i class="fa-brands fa-instagram"></i>
-                        <p>@yuru_henro</p>
-                    </a>
-                </div>
-
-                <div class="footer_links">
-                    <ul class="flex">
-                        <li><a href="#" target=_blank>バナー1</a></li>
-                        <li><a href="#" target=_blank>バナー2</a></li>
-                        <li><a href="#" target=_blank>バナー3</a></li>
-                        <li><a href="#" target=_blank>バナー4</a></li>
-                        <li><a href="#" target=_blank>バナー5</a></li>
-                    </ul>
-                </div>
-
-                <nav class="footer_nav">
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <img src="../assets/img/header_logo_02.png" alt="とくしま１日＃ゆるへんろロゴ" class="footer_logo">
-                            </a>
-                        </li>
-                        <li>
-                            <ul class="sp_none">
-                                <li class="footer_nav_b"><a href="#">＃ゆるへんろとは</a></li>
-                                <li><a href="#">＃ゆるへんろとは</a></li>
-                                <li><a href="#">おへんろのお作法</a></li>
-                                <li><a href="#">参拝スタイル</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <ul class="sp_none">
-                                <li class="footer_nav_b"><a href="#">コース紹介</a></li>
-                                <li><a href="#">コース名1</a></li>
-                                <li><a href="#">コース名2</a></li>
-                                <li><a href="#">コース名3</a></li>
-                                <li><a href="#">コース名4</a></li>
-                                <li><a href="#">コース名5</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <ul class="footer_nav_b">
-                                <li><a href="#" class="sp_none">マイブックマーク</a></li>
-                                <li><a href="#" class="sp_none">条件検索</a></li>
-                                <li><a href="#" class="sp_none">Q&A</a></li>
-                                <li><a href="#">このサイトについて</a></li>
-                                <li><a href="#">プライバシーポリシー</a></li>
-                                <li><a href="#">サイト制作にあたって</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-
-                <small>Copyright©とくしま１日＃ゆるへんろ</small>
-            </div>
-            <!-- </div> -->
-        </footer>
-        <!-- footerここまで -->
+                <!-- </div> -->
+            </footer>
+            <!-- footerここまで -->
         </div>
         <!-- jsプラグイン読み込み -->
 
         <!-- オリジナルjs読み込み -->
         <script src="../assets/js/common_script.js"></script>
         <script src="../assets/js/course_script.js"></script>
-        </body>
-
-        </html>
+    </body>
+</html>
