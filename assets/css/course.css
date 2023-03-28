@@ -11,13 +11,13 @@
     flex-wrap: wrap;
     margin: 0 auto;
 }
-.course_tabWrap li a{
+.course_tabWrap li a {
     display: block;
     font-size: 12px;
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
-    border: 1px solid #754C24;
+    border: 1px solid #754c24;
     border-radius: 5px 5px 0 0;
 }
 
@@ -26,22 +26,22 @@
 }
 
 .course_tabWrap li:nth-child(1) a {
-    background: #C5A22B;
+    background: #c5a22b;
 }
 .course_tabWrap li:nth-child(2) a {
-    background: #CD5E3C;
+    background: #cd5e3c;
 }
 .course_tabWrap li:nth-child(3) a {
-    background: #8AB53E;
+    background: #8ab53e;
 }
 .course_tabWrap li:nth-child(4) a {
-    background: #79AFAF;
+    background: #79afaf;
 }
 .course_tabWrap li:nth-child(5) a {
-    background: #BC786A;
+    background: #bc786a;
 }
 /*押されたタブ背景が白くなる*/
-.course_tabWrap li.active a{
+.course_tabWrap li.active a {
     background: #fff;
 }
 
@@ -60,38 +60,39 @@
 }
 
 @keyframes displayAnime {
-    from{
+    from {
         opacity: 0;
-    } to {
+    }
+    to {
         opacity: 1;
     }
 }
 
 /* タブ内容 */
 .course_mainWrap {
-    border: 2px solid #754C24;
+    border: 2px solid #754c24;
     margin: 0 auto 100px;
 }
 
 /*コース内容デザイン*/
-.course_rootCap{
+.course_rootCap {
     margin: 0 auto;
 }
 
-.course_tabCont>p {
+.course_tabCont > p {
     text-align: center;
 }
 
-.course_btn{
+.course_flag {
     width: 8em;
     text-align: center;
-    background-color: #FAEAB5;
+    background-color: #faeab5;
     border-radius: 100px;
-    border: 2px solid #754C24;
+    border: 2px solid #754c24;
     padding: 10px 15px;
 }
 
-.course_contPhoto{
+.course_contPhoto {
     object-fit: cover;
     max-width: 300px;
     border-radius: 10px;
@@ -109,15 +110,14 @@
     padding-left: 10px;
 }
 
-@media screen and (min-width:650px) {
+@media screen and (min-width: 650px) {
     .course_contWrap {
         display: flex;
         margin-bottom: 40px;
     }
 }
 
-
-@media screen and (min-width:750px) {
+@media screen and (min-width: 750px) {
     .course_tabWrap li a {
         font-size: 16px;
     }
@@ -132,7 +132,7 @@
     }
 }
 
-@media screen and (min-width:1000px) {
+@media screen and (min-width: 1000px) {
     .course_contPhoto {
         max-width: 450px;
     }
