@@ -22,7 +22,10 @@
     <!-- コース用CSS -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/course.css" />
     <!-- jQuery読み込み -->
-    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery-3.6.3.min.js"></script>
+    <?php
+wp_deregister_script('jquery');
+wp_enqueue_script('jquery','https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js',array(),'3.6.3');
+?>
     <?php wp_head(); ?>
 </head>
 
