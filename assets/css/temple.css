@@ -8,79 +8,6 @@
   padding: 0 30px;
 }
 
-/* h1装飾 */
-/* .h1_bg {
-  position: relative;
-  width: 320px;
-  font-family: "Kosugi Maru";
-  font-size: 20px;
-  color: #fbfaf5;
-  text-align: center;
-  background-color: #cd5e3c;
-  padding: 20px 60px;
-  margin: 40px auto;
-}
-
-.h1_bg::before {
-  position: absolute;
-  content: "";
-  left: -10px;
-  top: -3px;
-  border-top: 1px solid #754c24;
-  border-bottom: 1px solid #754c24;
-  width: 100%;
-  height: 100%;
-} */
-
-/* h2装飾 */
-/* .h2_bg {
-  width: 15em;
-  font-size: 18px;
-  text-align: center;
-  border-bottom: 3px solid #c69c6d;
-  padding: 10px 20px;
-  margin: 0 auto 40px;
-} */
-
-/* h3装飾 */
-/* .h3_bg {
-  font-weight: bold; */
-/* text-align: center; */
-/* margin: 0 auto 10px;
-} */
-
-/* h1下のキャプション */
-/* .big_cap {
-  text-align: center;
-  line-height: 1.5em;
-  margin-bottom: 40px;
-} */
-
-/* 画像などの説明キャプション */
-/* .small_cap {
-  font-size: 14px;
-  line-height: 1.5em;
-  margin-bottom: 40px;
-}
-
-.test {
-  width: 500px;
-  margin: 0 auto;
-} */
-
-/* コースボタン */
-/* .course_btn {
-  font-size: 20px;
-  text-align: center;
-  width: 300px;
-  height: 80px;
-  border-radius: 5px;
-  color: #fbfaf5;
-  margin: 0 15px 30px;
-  background-color: #79afaf;
-  box-shadow: 6px 6px 6px gray;
-} */
-
 img {
   width: 100%;
 }
@@ -96,28 +23,6 @@ img {
 /*     main     */
 /****************/
 
-/* h1 {
-  width: 320px;
-  position: relative;
-  margin: 100px auto 40px;
-  padding: 20px 60px;
-  color: #fbfaf5;
-  background-color: #cd5e3c;
-  font-size: 20px;
-  text-align: center;
-}
-
-h1:before {
-  position: absolute;
-  top: -7px;
-  left: -7px;
-  width: 100%;
-  height: 100%;
-  border-top: 1px solid #6a3c2b;
-  border-bottom: 1px solid #6a3c2b;
-  content: "";
-} */
-
 .temple_img {
   height: 186px;
   background-color: gray;
@@ -131,7 +36,7 @@ h1:before {
   text-align: end;
 }
 
-h2 {
+/* h2 {
   width: 257px;
   font-size: 18px;
   text-align: center;
@@ -139,7 +44,7 @@ h2 {
   margin: 0 auto 40px;
   padding: 10px 20px;
   color: #754c24;
-}
+} */
 
 .temple_about {
   margin-bottom: 40px;
@@ -152,9 +57,9 @@ h2 {
   margin-bottom: 40px;
 }
 
-.temple_about_text {
+/* .temple_about_text {
   letter-spacing: 0.5em;
-}
+} */
 
 .temple_info_map {
   /* height: 246px; */
@@ -184,17 +89,17 @@ h2 {
 }
 
 .temple_info_table tr td {
-  vertical-align: middle;
+  /* vertical-align: middle; */
   padding-left: 36px;
 }
 
 /* デスクトップ版のメディアクエリ */
 
 @media screen and (min-width: 1100px) {
-  .h1 {
+  /* .h1 {
     margin-left: 360px;
     margin-right: 360px;
-  }
+  } */
   .temple_img {
     height: 619px;
   }
