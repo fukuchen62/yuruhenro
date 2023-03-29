@@ -24,8 +24,8 @@
         <?php if (have_posts()):?>
         <?php while (have_posts()) : the_post();?>
         <?php $args = array(
-        'post_type' => 'yougo',
-        'posts_per_page' => 5 //表示件数（-1で全ての記事を表示
+        'post_type' => 'glossary',
+        'posts_per_page' => -1 //表示件数（-1で全ての記事を表示
         );
         $the_query = new WP_Query( $args );
         if ( $the_query->have_posts() ) :
