@@ -33,7 +33,7 @@
         <section class="mb_40">
             <div class="qa flex">
                 <span class="q_mark">Q</span>
-                <p class="qa_phrase"><?php the_field('yougo');?></p>
+                <p class="qa_phrase"><?php the_field('glossary');?></p>
             </div>
             <div class="qa flex">
                 <span class="a_mark">A</span>
