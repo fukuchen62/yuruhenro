@@ -21,23 +21,24 @@
         </div>
 
         <!-- 以下、Q&A開始 -->
-        <?php if (have_posts()):?>
-        <?php while (have_posts()) : the_post();?>
-        <?php $args = array(
+
+        <section class="section_line mb_40 js-fadeUp">
+            <?php if (have_posts()):?>
+            <?php while (have_posts()) : the_post();?>
+            <?php $args = array(
         'post_type' => 'qanda',
         'posts_per_page' => -1 //表示件数（-1で全ての記事を表示
         );
         $the_query = new WP_Query( $args );
         if ( $the_query->have_posts() ) :
         while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-        <section class="mb_40">
-            <div class="qa flex">
-                <span class="q_mark">Q</span>
-                <p class="qa_phrase"><?php the_title();?></p>
+            <div class="rowLine flex">
+                <span class="circle_mark1">Q</span>
+                <p><?php the_title();?></p>
             </div>
-            <div class="qa flex">
-                <span class="a_mark">A</span>
-                <p class="qa_phrase"><?php the_field('answer');?></p>
+            <div class="rowLine flex">
+                <span class="circle_mark2">A</span>
+                <p><?php the_field('answer');?></p>
             </div>
             <hr>
             <?php endwhile;?>
