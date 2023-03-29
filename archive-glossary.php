@@ -37,7 +37,7 @@
             </div>
             <div class="qa flex">
                 <span class="a_mark">A</span>
-                <p class="qa_phrase"><?php the_content();?></p>
+                <p class="qa_phrase"><?php the_field('mean');?></p>
             </div>
             <hr>
             <?php endwhile;?>
