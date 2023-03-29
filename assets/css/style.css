@@ -1,1 +1,27 @@
 @charset "UTF-8";
+
+/****************/
+/*     Q&A     */
+/****************/
+.qa {
+    align-items: center;
+    padding: 10px 30px;
+}
+
+.q_mark,
+.a_mark {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    text-align: center;
+    padding: 10px 0;
+    margin-right: 20px;
+}
+
+.q_mark {
+    background-color: #ffc09c;
+}
+
+.a_mark {
+    background-color: #baddb4;
+}

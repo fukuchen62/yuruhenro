@@ -278,7 +278,7 @@
 /*TOPへ戻るボタン*/
 .page-top {
     position: fixed;
-    bottom: 300px;
+    bottom: 150px;
     right: 20px;
     font-size: 14px;
     line-height: 1;
@@ -287,7 +287,7 @@
 
 .page-top a {
     position: fixed;
-    bottom: 300px;
+    bottom: 150px;
     right: 20px;
     font-size: 14px;
     line-height: 1;
@@ -360,12 +360,12 @@
 
     /*TOPへ戻るボタン*/
     .page-top {
-        bottom: 350px;
+        bottom: 100px;
         right: 100px;
     }
 
     .page-top a {
-        bottom: 350px;
+        bottom: 100px;
         right: 100px;
     }
     .page-top img {
