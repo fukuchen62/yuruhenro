@@ -1,5 +1,5 @@
 <?php
-/*Template Name:archive-yougo
+/*Template Name:archive-glossary
 */
 ?>
 <?php get_header(); ?>
@@ -33,11 +33,11 @@
         <section class="mb_40">
             <div class="qa flex">
                 <span class="q_mark">Q</span>
-                <p class="qa_phrase"><?php the_field('glossary');?></p>
+                <p class="qa_phrase"><?php the_title();?></p>
             </div>
             <div class="qa flex">
                 <span class="a_mark">A</span>
-                <p class="qa_phrase"><?php the_field('imi');?></p>
+                <p class="qa_phrase"><?php the_content();?></p>
             </div>
             <hr>
             <?php endwhile;?>
