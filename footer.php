@@ -2,6 +2,11 @@
 <footer>
     <!-- <div class="footer_wrap"> -->
     <div class="footer_inner">
+        <p class="page-top">
+                        <a href="#"
+                            ><img src="<?php echo get_template_directory_uri();?>/assets/img/flower01.png" alt=""
+                        /></a>
+                    </p>
         <div class="footer_insta flex">
             <a href="https://www.instagram.com/yuru_henro/" target="_blank" class="flex">
                 <i class="fa-brands fa-instagram"></i>
