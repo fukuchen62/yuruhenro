@@ -1,5 +1,5 @@
 <?php
-/*Template Name:archive-qanda
+/*Template Name:archive-yougo
 */
 ?>
 <?php get_header(); ?>
@@ -24,7 +24,7 @@
         <?php if (have_posts()):?>
         <?php while (have_posts()) : the_post();?>
         <?php $args = array(
-        'post_type' => 'qanda',
+        'post_type' => 'yougo',
         'posts_per_page' => 5 //表示件数（-1で全ての記事を表示
         );
         $the_query = new WP_Query( $args );
@@ -33,11 +33,11 @@
         <section class="mb_40">
             <div class="qa flex">
                 <span class="q_mark">Q</span>
-                <p class="qa_phrase"><?php the_field('question');?></p>
+                <p class="qa_phrase"><?php the_field('yougo');?></p>
             </div>
             <div class="qa flex">
                 <span class="a_mark">A</span>
-                <p class="qa_phrase"><?php the_field('anser');?></p>
+                <p class="qa_phrase"><?php the_field('imi');?></p>
             </div>
             <hr>
             <?php endwhile;?>
