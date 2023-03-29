@@ -22,7 +22,7 @@
 
         <!-- 以下、Q&A開始 -->
 
-        <section class="section_line mb_40 ">
+        <section class="section_line mb_40 js-fadeUp">
             <?php if (have_posts()):?>
             <?php while (have_posts()) : the_post();?>
             <?php $args = array(

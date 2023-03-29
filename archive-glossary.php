@@ -8,21 +8,20 @@
     <div class="main_inner">
         <!-- h1 -->
         <div class="h1_bg">
-            <h1>Q&A</h1>
+            <h1>用語集</h1>
         </div>
         <!-- section -->
 
         <div class="sec_mb40">
-            <h2 class="h2_bg">よくあるご質問</h2>
+            <h2 class="h2_bg">用語質問箱</h2>
             <p class="big_cap">
-                            よくあるご質問をまとめています。<br />
-                            おへんろ活動のご参考にどうぞ。
+                            見かけるけど良く知らないおへんろの言葉を集めました。
                         </p>
         </div>
 
         <!-- 以下、Q&A開始 -->
 
-        <section class="section_line mb_40 ">
+        <section class="section_line mb_40 js-fadeUp">
             <?php if (have_posts()):?>
             <?php while (have_posts()) : the_post();?>
             <?php $args = array(
