@@ -140,6 +140,18 @@
 }
 
 /****************/
+/* ブックマーク */
+/*   条件検索   */
+/****************/
+
+.display_area {
+    background-color: #fff;
+    border: 2px solid #754c24;
+    border-radius: 10px;
+    padding: 40px;
+}
+
+/****************/
 /*  Q&Aと用語集  */
 /****************/
 .section_line {
