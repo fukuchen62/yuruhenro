@@ -44,6 +44,10 @@ function add_my_files() {
         'jquery-3.6.3',
         get_template_directory_uri() . '/assets/js/jquery-3.6.3.min.js'
     );
+        wp_enqueue_script(
+        'jqueryinviewmin',
+        get_template_directory_uri() . '/assets/js/jquery.inview.min.js'
+    );
     wp_enqueue_script(
         'common_script',
         get_template_directory_uri() . '/assets/js/common_script.js',
