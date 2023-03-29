@@ -24,9 +24,19 @@
                 <div id="course_cont1" class="course_tabCont">
                     <!-- コースキャプション -->
                     <p class="mb_100">
+                                <?php
                                 コース概要説明文テキストテキストテキストテキストテキストテキストテキスト<br>
                                 コース概要説明文テキストテキストテキストテキストテキストテキストテキスト<br>
-                                コース概要説明文テキストテキストテキストテキストテキストテキストテキスト
+                                コース概要説明文テキストテキストテキストテキストテキストテキストテキスト<br>
+                                //the_field('t_discription', 92);
+
+                                $post_type = 'temple'; //カスタム投稿タイプのスラッグ
+                                $data      = get_page_by_path('01-2', OBJECT, $post_type);
+                                $post_id   = $data->ID;
+                                // var_dump($post_id);
+                                the_field('t_discription', $post_id);
+                                ?>
+
                             </p>
 
                     <section>
