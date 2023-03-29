@@ -1,27 +1,45 @@
 @charset "UTF-8";
 
 /****************/
-/*     Q&A     */
+/*  Q&Aと用語集  */
 /****************/
-.qa {
-    align-items: center;
-    padding: 10px 30px;
+.section_line {
+    border-bottom: 2px dotted #c69c6d;
+    padding: 0 20px;
+    margin: 0 auto 20px;
 }
 
-.q_mark,
-.a_mark {
+.rowLine {
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* .rowLine > span  */
+.circle_mark1,
+.circle_mark2 {
     width: 40px;
     height: 40px;
     border-radius: 100%;
     text-align: center;
-    padding: 10px 0;
+    line-height: 40px;
     margin-right: 20px;
 }
 
-.q_mark {
+.circle_mark1 {
     background-color: #ffc09c;
 }
 
-.a_mark {
+.circle_mark2 {
     background-color: #baddb4;
+}
+
+@media screen and (min-width: 1400px) {
+    .rowLine > span {
+        width: 60px;
+        height: 60px;
+        font-size: 18px;
+        line-height: 60px;
+        margin-right: 20px;
+    }
 }
