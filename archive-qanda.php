@@ -1,5 +1,5 @@
 <?php
-/*Template Name:page-qanda
+/*Template Name:archive-qanda
 */
 ?>
 <?php get_header(); ?>
