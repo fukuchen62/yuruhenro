@@ -32,11 +32,13 @@
         while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
         <section class="mb_40">
             <div class="qa flex">
-                <span class="q_mark">Q</span>
+                <span class="q_mark">用語</span>
                 <p class="qa_phrase"><?php the_title();?></p>
             </div>
             <div class="qa flex">
-                <span class="a_mark">A</span>
+                <span class="a_mark">
+                    <nobr>意味</nobr>
+                </span>
                 <p class="qa_phrase"><?php the_field('mean');?></p>
             </div>
             <hr>
