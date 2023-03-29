@@ -39,11 +39,12 @@
                 <span class="a_mark">A</span>
                 <p class="qa_phrase"><?php the_field('anser');?></p>
             </div>
+            <?php endwhile;?>
+            <?php endif;?>
         </section>
 
     </div>
-    <?php endwhile;?>
-    <?php endif;?>
+
     <?php endwhile;?>
     <?php endif;?>
 </main>
