@@ -70,9 +70,10 @@ text-align: left;
     padding: 40px 0 0 40px;
 }
 
-/* h3装飾 */
+/* h3装飾_ex */
 .h3_bg_ex {
-    min-width: 300px;
+    min-width: 15em;
+    width: fit-content;
     font-size: 18px;
     text-align: center;
     border-bottom: 3px solid #c69c6d;
