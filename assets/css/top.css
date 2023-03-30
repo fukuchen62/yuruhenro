@@ -20,17 +20,25 @@ img {
 /*  メイン部分  */
 /****************/
 
-.kv {
-}
-
-.catch_phrase {
-  font-size: 36px;
-  line-height: 1.5em;
+.kv_inner {
+  position: relative;
 }
 
 .vertical {
   writing-mode: vertical-rl; /* 縦向きにする */
   text-orientation: upright;
+}
+
+.catch_phrase {
+  position: absolute;
+  /* top: 0;
+  left: 0; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 36px;
+  color: #fbfaf5;
+  line-height: 1.5em;
 }
 
 /* 周辺情報の写真 */
@@ -43,4 +51,38 @@ img {
 .nearby_info_box img {
   width: 150px;
   height: auto;
+}
+
+/* h2装飾 */
+.h2_bg {
+  position: relative;
+  width: 320px;
+  font-family: "Kosugi Maru";
+  font-size: 20px;
+  color: #fbfaf5;
+  text-align: center;
+  background-color: #cd5e3c;
+  padding: 20px 60px;
+  margin: 40px auto;
+}
+
+.h2_bg::before {
+  position: absolute;
+  content: "";
+  left: -10px;
+  top: -3px;
+  border-top: 1px solid #754c24;
+  border-bottom: 1px solid #754c24;
+  width: 100%;
+  height: 100%;
+}
+
+/* h3装飾 */
+.h3_bg {
+  width: 15em;
+  font-size: 18px;
+  text-align: center;
+  border-bottom: 3px solid #c69c6d;
+  padding: 10px 20px;
+  margin: 0 auto 40px;
 }
