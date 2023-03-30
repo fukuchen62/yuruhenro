@@ -95,6 +95,15 @@ iframe {
     background-color: #79afaf;
     box-shadow: 6px 6px 6px gray;
 }
+/* コースボタン押し込み */
+.course_btn:active {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+    border-bottom: none;
+    box-shadow: 0px 0px 0px;
+  }
+
+
 
 /* もっと知るボタン */
 .button18 a {
