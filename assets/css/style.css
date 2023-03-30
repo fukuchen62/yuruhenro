@@ -118,8 +118,11 @@
 }
 
 .course_col {
-    display: flex;
     flex-direction: column;
+}
+
+.course_col .button18 {
+    align-self: flex-start;
 }
 
 @media screen and (min-width: 800px) {
