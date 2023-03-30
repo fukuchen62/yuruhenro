@@ -92,8 +92,6 @@ img {
     display: flex;
     justify-content: space-between;
   }
-  .temple_about_slider {
-  }
 
   .temple_about_slider img {
     width: 400px;
@@ -164,9 +162,6 @@ img {
 /****************/
 /*  コース一覧  */
 /****************/
-
-.course {
-}
 
 .btn1 {
   background-color: #79afaf;
