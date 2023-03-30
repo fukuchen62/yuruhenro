@@ -159,6 +159,11 @@
     padding: 40px;
 }
 
+.bookmark_wrap {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 /****************/
 /*  Q&Aと用語集  */
 /****************/
