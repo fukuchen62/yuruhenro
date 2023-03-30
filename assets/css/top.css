@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+/****************/
+/*     共通     */
+/****************/
+
+.wrap {
+  width: 100%;
+  font-family: "Kiwi Maru";
+  font-size: 16px;
+  color: #754c24;
+  background-color: #fbfaf5;
+}
+
+img {
+  width: 100%;
+}
+
+/****************/
+/*  メイン部分  */
+/****************/
+
+.kv {
+}
+
+.catch_phrase {
+  font-size: 36px;
+  line-height: 1.5em;
+}
+
+.vertical {
+  writing-mode: vertical-rl; /* 縦向きにする */
+  text-orientation: upright;
+}
+
+/* 周辺情報の写真 */
+
+.nearby_info_list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nearby_info_box img {
+  width: 150px;
+  height: auto;
+}
