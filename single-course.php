@@ -37,7 +37,7 @@
 
                     <section>
                         <h2 class="h2_bg mb_40">参考マップ</h2>
-                        <div>
+                        <div class="iframe_size">
                             Googleマイマップはここ<br>
 
                             <?php

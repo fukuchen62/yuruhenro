@@ -4,6 +4,11 @@
 /*     共通     */
 /****************/
 
+.iframe_size {
+    width:100%;
+    aspect-ratio: 4:3;
+}
+
 .wrap {
     width: 100%;
     font-family: "Kiwi Maru";
