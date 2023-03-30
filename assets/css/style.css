@@ -156,12 +156,7 @@
     background-color: #fff;
     border: 2px solid #754c24;
     border-radius: 10px;
-    padding: 40px;
-}
-
-.bookmark_wrap {
-    flex-wrap: wrap;
-    justify-content: space-between;
+    padding: 10px;
 }
 
 /****************/
