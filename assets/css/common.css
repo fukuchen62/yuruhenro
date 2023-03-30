@@ -426,12 +426,12 @@ iframe {
     /*TOPへ戻るボタン*/
     .page-top {
         bottom: 100px;
-        right: 100px;
+        right: 60px;
     }
 
     .page-top a {
         bottom: 100px;
-        right: 100px;
+        right: 60px;
     }
     .page-top img {
         width: 100px;
