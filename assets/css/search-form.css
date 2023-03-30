@@ -1,40 +1,59 @@
 @charset "utf-8";
-*{border: 1px solid royalblue;}
+/* *{border: 1px solid royalblue;} */
 /*========= レイアウトのためのCSS ===============*/
 
-.searchBox{
+.search-form{
     margin: 0 auto;
     max-width: 1000px;
-    /* background-color: #fff; */
+    background-color: #fff;
     border-radius: 8px;
-    text-align: center;
 }
 
+
+.search-form_checkarea{
+    margin: 0 auto;
+    max-width: 1000px;
+    background-color: #fff;
+    border-radius: 8px;
+}
 
 .checkbox{
 margin: 15px 5px 15px 20px;
 width:180px;
 height: 60px;
 padding: 20px;
-border-radius: 8px;
+/* border-radius: 8px; */
 background-color: #fff;
 }
-
 
 .checkarea{
 margin-bottom: 50px;
 }
 
+.searchBtnsArea{
+text-align: center;
+}
+
+
 .searchBtns{
 text-align: center;
-width: 200px;
+width: 150px;
 margin: 40px 10px;
 padding: 10px;
-font-size: 1em;
+font-size: 20px;
 color: #fff;
-background-color: #4e90f3;
+background-color: #4A86A4;
+box-shadow: 4px 4px 4px gray;
+
 border-radius: 8px;
 }
+
+  .searchBtns:active {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+    border-bottom: none;
+    box-shadow: 0px 0px 0px;
+  }
 
 .searchkinds{
 display: flex;
@@ -42,6 +61,16 @@ flex-direction: column;
 align-items: center;
 text-align: left;
 }
+
+
+.search-form_headline {
+    width: 15em;
+    font-size: 18px;
+    text-align: left;
+    padding: 40px 0 0 40px;
+}
+
+
 
 /* *************************
 チェックボックスに関するCSS
@@ -66,7 +95,7 @@ input[type="checkbox"] {
     border: 1px solid #754c24;
     width: 18px;/*チェックボックスの横幅*/
     height: 18px;/*チェックボックスの縦幅*/
-    transform: translateY(-50%);
+    transform: translateY(-57%);
     top: 50%;
     left: 5px;
     }
@@ -113,15 +142,14 @@ margin: 0 auto;
 .searchresult_content::after {
     content: " ";
         display: block;
-        width: 390px;
+        width: 300px;
     }
 
 
 .searchresultList {
 padding: 20px;
-max-width: 350px;
+max-width: 260px;
 margin: 20px 20px;
-/* border: 1px solid #754c24; */
 border-radius: 8px;
 background-color: #fff;
 }
@@ -141,7 +169,7 @@ text-align: left;
 .searchresultList_btn {
 width: 80%;
 border-radius: 8px;
-background-color: #3fa9f5;
+background-color: #4A86A4;
 color: #fff;
 font-size: 20px;
 padding: 16px 0;
@@ -166,13 +194,3 @@ margin-left: 45px;
     flex-wrap: wrap;
 }
 }
-
-/* *************
-ユーティリティ
-************* */
-
-.search-form_text_left{
-    text-align: left;
-}
-
-
