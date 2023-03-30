@@ -117,6 +117,14 @@
     padding-left: 10px;
 }
 
+.course_col {
+    flex-direction: column;
+}
+
+.course_col .button18 {
+    align-self: flex-start;
+}
+
 @media screen and (min-width: 800px) {
     .course_contWrap {
         display: flex;
