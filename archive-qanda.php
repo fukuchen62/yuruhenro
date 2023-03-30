@@ -20,9 +20,7 @@
 
 
             <!-- 以下、Q&A開始 -->
-            <section class=" section-_line mb_40 js-fadeUp">
-                <?php if (have_posts()):?>
-                <?php while (have_posts()) : the_post();?>
+            <section class=" mb_40 js-fadeUp">
                 <?php $args = array(
         'post_type' => 'qanda',
         'posts_per_page' => -1 //表示件数（-1で全ての記事を表示
@@ -30,23 +28,21 @@
         $the_query = new WP_Query( $args );
         if ( $the_query->have_posts() ) :
         while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-
-                <div class="rowLine flex">
-                    <span class="circle_mark1">Q</span>
-                    <p><?php the_title();?></p>
-                </div>
-                <div class="rowLine flex">
-                    <span class=" circle_mark2">A</span>
-                    <p><?php the_field('answer');?></p>
+                <div class="section_line">
+                    <div class="rowLine flex">
+                        <span class="circle_mark1">Q</span>
+                        <p><?php the_title();?></p>
+                    </div>
+                    <div class="rowLine flex">
+                        <span class=" circle_mark2">A</span>
+                        <p><?php the_field('answer');?></p>
+                    </div>
                 </div>
                 <?php endwhile;?>
                 <?php endif;?>
         </div>
         </section>
     </div>
-    </div>
-    <?php endwhile;?>
-    <?php endif;?>
 </main>
 <!-- mainここまで -->
 <?php get_footer(); ?>
