@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/* *{border: 1px solid royalblue;} */
+*{border: 1px solid royalblue;}
 
 /****************/
 /*     共通     */
@@ -163,27 +163,6 @@ img {
 /*   周辺情報   */
 /****************/
 .shop_info_list {
-    display: flex;
-    flex-wrap: wrap;
-    /* justify-content: space-around; */
-    /* gap: 20px; */
-}
-
-
-
-
-.shop_info_card {
-    width: 300px;
-    height: auto;
-    background-color: #ffffff;
-    margin: 0 auto 40px;
-    padding: 10px 15px 20px;
-    border-radius: 10px;
-}
-
-
-
-.shop_info_list {
     margin: 0 auto;
     text-align: center;
     display: flex;
@@ -191,6 +170,9 @@ img {
     flex-direction: column;
     align-items: center;
     text-align: center;
+
+    /* justify-content: space-around; */
+    /* gap: 20px; */
 }
 
 .shop_info_list::after {
@@ -198,6 +180,29 @@ img {
         display: block;
         width: 300px;
     }
+
+
+
+.shop_info_card {
+    /* width: 300px;
+    height: auto;
+    background-color: #ffffff;
+    margin: 0 auto 40px;
+    padding: 10px 15px 20px;
+    border-radius: 10px; */
+
+    padding: 20px;
+    max-width: 260px;
+    margin: 20px 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    
+
+}
+
+
+
+
 
 
 
@@ -233,7 +238,7 @@ img {
 
 /* デスクトップ版のメディアクエリ */
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 750px) {
     .shop_info_list  {
         justify-content: center;
         flex-direction: row;
@@ -263,8 +268,30 @@ img {
 .course_flex::after {
     content: " ";
     display: block;
-    width: 312px;
+    width: 300px;
 }
+
+/* コースボタン */
+.course_btn {
+    font-size: 18px;
+    text-align: center;
+    width: 260px;
+    height: 80px;
+    border-radius: 5px;
+    color: #fbfaf5;
+    margin: 20px 20px;
+    background-color: #79afaf;
+    box-shadow: 6px 6px 6px gray;
+  }
+  /* コースボタン押し込み */
+  .course_btn:active {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+    border-bottom: none;
+    box-shadow: 0px 0px 0px;
+  }
+  
+
 
 .btn1 {
     background-color: #79afaf;
@@ -289,7 +316,7 @@ img {
 
 /* デスクトップ版のメディアクエリ */
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 750px) {
     /* .course {
     padding: 0;
   } */

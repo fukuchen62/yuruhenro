@@ -118,11 +118,11 @@ input[type="checkbox"] {
 /*****************
 検索結果表示部分
 *****************/
-.searchresult{
+/* .searchresult{
 margin: 40px auto 0;
 text-align: center;
 max-width: 1440px;
-}
+} */
 
 .searchresult_inner {
 padding: 0 20px;
