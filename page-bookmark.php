@@ -6,7 +6,6 @@
 <main>
     <div class="main_inner">
         <h1>マイブックマーク固定ページ</h1>
-        '); ?>
     </div>
 </main>
 
