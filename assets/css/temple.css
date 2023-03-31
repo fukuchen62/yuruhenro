@@ -1,5 +1,5 @@
 @charset "UTF-8";
-*{border: 1px solid royalblue;}
+/* *{border: 1px solid royalblue;} */
 
 /****************/
 /*     共通     */
@@ -32,30 +32,34 @@ img {
 /* ***********スライダー*********** */
 
 .temple_about_slider {
-    position: relative;
-    margin-bottom: 40px;
+    /* position: relative;
+    margin-bottom: 40px; */
+    max-height: 300px;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 .temple_about_slider img {
     aspect-ratio: 4/3;
-    object-fit: cover;
-    position: absolute;
-    left: 0;
-    bottom: auto;  /* 最初は0になっていたので上にずれていた */
+    /* object-fit: cover; */
+    /* position: absolute; */
+    /* left: 0; */
+    /* bottom: auto;   */
+    /* 最初は0になっていたので上にずれていた */
     /* padding: 0 32px; */
 }
 
 /* ********スライドここまで******* */
 
 .temple_about {
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
     display: flex;
     flex-direction: column;
 }
 
-.temple_info_map {
+/* .temple_info_map {
     margin-bottom: 40px;
-}
+} */
 
 .temple_info_map iframe {
     background-color: gray;
@@ -96,7 +100,7 @@ img {
 .temple_info{
     display: flex;
     flex-direction: column;
-flew}
+}
 
 
 
@@ -131,10 +135,10 @@ flew}
     .temple_about_slider img {
         width: 400px;
     }
-    .temple_about_text {
+    /* .temple_about_text {
         width: 460px;
         height: 310px;
-    }
+    } */
     .temple_info {
         display: flex;
         justify-content: space-around;
