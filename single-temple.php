@@ -7,29 +7,29 @@
         <h1 class="h1_bg">お寺紹介</h1>
         <div>
             <section class="contents_width">
-                <h1 class="h2_bg">一番札所　霊山寺</h1>
+                <h1 class="h2_bg"><?php the_title();?></h1>
                 <div class="bookmark">
                     <p>☆</p>
                     <p>ブックマーク</p>
                 </div>
 
                 <div class="temple_img">
-                    <img src="" alt="お寺の写真(霊山寺)" />
+                    <img src="<?php the_field('t_eyecatch')?>" alt="お寺の写真(霊山寺)" />
                 </div>
 
-                <h2 class="h3_bg">霊山寺について</h2>
+                <h2 class="h3_bg"><?php the_field('t_name')?>について</h2>
 
                 <div class="temple_about">
                     <div class="temple_about_slider">
-                        <img src="<?php echo get_template_directory_uri();?>/assets/img/01ryozenji.jpg" alt="1" />
-                        <img src="<?php echo get_template_directory_uri();?>/assets/img/01ryozenji.jpg" alt="2" />
-                        <img src="<?php echo get_template_directory_uri();?>/assets/img/01ryozenji.jpg" alt="3" />
-                        <img src="<?php echo get_template_directory_uri();?>/assets/img/01ryozenji.jpg" alt="4" />
+                        <img src="<?php the_field('t_pic1')?>" alt=" 1" />
+                        <img src="<?php the_field('t_pic2')?>" alt="2" />
+                        <img src="<?php the_field('t_pic3')?>" alt="3" />
+                        <img src="<?php the_field('t_pic1')?>" alt="4" />
                     </div>
 
                     <div class="temple_about_text">
                         <p class="small_cap">
-                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                            <?php the_field('t_discription')?>
                 </p>
                     </div>
                 </div>
@@ -38,7 +38,7 @@
                 <div class="temple_info">
                     <div class="temple_info_map">
                         <!-- google My map -->
-                        <iframe src="" frameborder="0"></iframe>
+                        <?php the_field('t_map')?>;
                     </div>
                     <!-- google My map -->
 
@@ -47,39 +47,39 @@
                             <th>本尊</th>
                         </tr>
                         <tr>
-                            <td>テキストテキストテキストテキスト</td>
+                            <td><?php the_field('honzon')?></td>
                         </tr>
                         <tr>
                             <th>真言</th>
                         </tr>
                         <tr>
                             <td>
-                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                <?php the_field('mantra')?>
                             </td>
                         </tr>
                         <tr>
                             <th>宿坊</th>
                         </tr>
                         <tr>
-                            <td>テキストテキストテキストテキスト</td>
+                            <td><?php the_field('inn')?></td>
                         </tr>
                         <tr>
                             <th>電話</th>
                         </tr>
                         <tr>
-                            <td>テキストテキストテキストテキスト</td>
+                            <td><?php the_field('t_tell')?></td>
                         </tr>
                         <tr>
                             <th>所在地</th>
                         </tr>
                         <tr>
-                            <td>テキストテキストテキストテキスト</td>
+                            <td><?php the_field('t_area')?></td>
                         </tr>
                         <tr>
                             <th>公式HP</th>
                         </tr>
                         <tr>
-                            <td>テキストテキストテキストテキスト</td>
+                            <td><a href="<?php echo get_field('t_url')?>"><?php the_field('t_url')?></a></td>
                         </tr>
                     </table>
                 </div>
