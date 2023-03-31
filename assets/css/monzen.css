@@ -5,14 +5,19 @@
 /*****************
     テーブルのcss
  *****************/
-
+.monzen_info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 
 .monzen_table {
     border-collapse: collapse;
-    margin: 20px;
+    margin-left: 10px;
     padding: 0;
     max-width: 500px;
     width: auto;
+    background-color: #fff;
 }
 
 .monzen_table tr {
@@ -21,7 +26,7 @@
 }
 
 .monzen_table thead {
-    border-bottom: 5px solid #ff9900;
+    border-bottom: 5px solid #754C24;
 }
 
 .monzen_table tr:last-child {
@@ -30,7 +35,7 @@
 
 .monzen_table th,
 .monzen_table td {
-    padding: 1em 10px 1em 1em;
+    padding: .5em 1em .5em 1em;
     border-right: 1px solid #bbb;
     min-width: 70px;
     line-height:1.5em;
@@ -52,7 +57,21 @@
 }
 
 
+.monzen_map {
+    position: relative;
+    width: 50%;
+    margin: 10px auto;
+    min-width: 360px;
+}
+
+
 @media screen and (max-width: 1050px) {
+    .monzen_info{
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+
     .monzen_table_field {
         flex-direction: column;
     }
@@ -107,5 +126,16 @@
     .monzen_table td:last-child {
         border-bottom: 0;
     }
+    .monzen_table {
+        margin: 10px auto;
+    }
+    
+
+    .monzen_map {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
 
 }
