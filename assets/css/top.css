@@ -20,17 +20,31 @@ img {
 /*  メイン部分  */
 /****************/
 
-.kv {
+.kv_inner {
+  position: relative;
 }
 
-.catch_phrase {
-  font-size: 36px;
-  line-height: 1.5em;
+.kv img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
 }
 
 .vertical {
   writing-mode: vertical-rl; /* 縦向きにする */
   text-orientation: upright;
+}
+
+.catch_phrase {
+  position: absolute;
+  /* top: 0;
+  left: 0; */
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 36px;
+  color: #fbfaf5;
+  line-height: 1.5em;
 }
 
 /* 周辺情報の写真 */
