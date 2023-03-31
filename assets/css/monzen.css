@@ -1,0 +1,141 @@
+@charset "utf-8";
+/* *{border: 1px solid royalblue;} */
+/*========= レイアウトのためのCSS ===============*/
+
+/*****************
+    テーブルのcss
+ *****************/
+.monzen_info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.monzen_table {
+    border-collapse: collapse;
+    margin-left: 10px;
+    padding: 0;
+    max-width: 500px;
+    width: auto;
+    background-color: #fff;
+}
+
+.monzen_table tr {
+    padding: .35em;
+    border-bottom: 1px solid #bbb;
+}
+
+.monzen_table thead {
+    border-bottom: 5px solid #754C24;
+}
+
+.monzen_table tr:last-child {
+    border-bottom: none
+}
+
+.monzen_table th,
+.monzen_table td {
+    padding: .5em 1em .5em 1em;
+    border-right: 1px solid #bbb;
+    min-width: 70px;
+    line-height:1.5em;
+}
+
+.monzen_table th:last-child,
+.monzen_table td:last-child {
+    border: none;
+}
+
+.tbody th {
+    color: #754C24;
+    width: auto;
+}
+
+.monzen_table_txt {
+    text-align: left;
+    font-size: .85em;
+}
+
+
+.monzen_map {
+    position: relative;
+    width: 50%;
+    margin: 10px auto;
+    min-width: 360px;
+}
+
+
+@media screen and (max-width: 1050px) {
+    .monzen_info{
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+
+    .monzen_table_field {
+        flex-direction: column;
+    }
+
+    .monzen_table {
+        border: 0;
+        width: 370px;
+    }
+
+    .monzen_table th {
+        display: block;
+        border-right: none;
+        border-bottom: 3px solid #C69C6D;
+        padding-bottom: .6em;
+        margin-bottom: .6em;
+
+    }
+
+    .monzen_table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    .monzen_table tr {
+        display: block;
+        margin-bottom: 2em;
+    }
+
+    .monzen_table td {
+        border-bottom: 1px solid #bbb;
+        display: block;
+        font-size: .8em;
+        text-align: left;
+        position: relative;
+        padding: .625em .625em .625em 4em;
+        border-right: none;
+    }
+
+    .monzen_table td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        position: absolute;
+        left: 10px;
+    }
+
+    .monzen_table td:last-child {
+        border-bottom: 0;
+    }
+    .monzen_table {
+        margin: 10px auto;
+    }
+    
+
+    .monzen_map {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+    }
+    
+
+}

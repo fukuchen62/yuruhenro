@@ -53,7 +53,7 @@
                             <li><a href="<?php echo get_template_directory_uri(); ?>/single-course">コース紹介</a></li>
                             <li><a href="<?php echo get_template_directory_uri(); ?>/page-bookmark">マイブックマーク</a></li>
                             <li><a href="<?php echo get_template_directory_uri(); ?>/search-form">検索</a></li>
-                            <li><a href="<?php echo get_template_directory_uri(); ?>/single-temple">templetstQ&A</a></li>
+                            <li><a href="<?php echo get_template_directory_uri(); ?>/archive-qanda">Q&A</a></li>
                         </ul>
                     </nav>
                 </div>

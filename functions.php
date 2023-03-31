@@ -40,10 +40,19 @@ function add_my_files() {
         'my-style',
         get_template_directory_uri() . '/assets/css/style.css'
     );
+
         wp_enqueue_style(
         'my-search-form',
         get_template_directory_uri() . '/assets/css/search-form.css'
         );
+                wp_enqueue_style(
+        'my-search-form',
+        get_template_directory_uri() . '/assets/css/top.css'
+        );
+                wp_enqueue_style(
+        'my-style',
+        get_template_directory_uri() . '/assets/css/monzen.css'
+    );
     wp_enqueue_script(
         'jquery-3.6.3',
         get_template_directory_uri() . '/assets/js/jquery-3.6.3.min.js'
@@ -62,6 +71,13 @@ function add_my_files() {
     wp_enqueue_script(
         'course_script',
         get_template_directory_uri() . '/assets/js/course_script.js',
+        array(),
+        false,
+        true
+    );
+        wp_enqueue_script(
+        'course_sc',
+        get_template_directory_uri() . '/assets/js/script.js',
         array(),
         false,
         true
