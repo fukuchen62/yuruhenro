@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>門前一番街の情報</title>
+    <!-- CSS読み込み -->
+    <!-- リセットCSS -->
+    <link rel="stylesheet" href="../assets/css/destyle.css" />
+    <!-- Googleフォント Kosugi Maru,Kiwi Maru -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&family=Kosugi+Maru&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Instagramアイコンフォント(font awesome) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- js用CSS -->
+
+    <!-- オリジナルCSS -->
+    <link rel="stylesheet" href="../assets/css/common.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <link rel="stylesheet" href="../assets/css/monzen.css" />
+
+
+    <!-- temple.htmlのみ読み込みCSS -->
+    <link rel="stylesheet" href="../assets/css/temple.css" />
+    <!-- jQuery読み込み -->
+    <script src="../assets/js/jquery-3.6.3.min.js"></script>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <!-- headerここから -->
+      <header>
+        <div class="header_inner flex">
+          <div class="header_logo">
+            <a href="#">
+              <img
+                src="../assets/img/header_logo_01.png"
+                alt="とくしま１日＃ゆるへんろロゴ"
+              />
+            </a>
+          </div>
+
+          <div class="header_menu">
+            <!-- ハンバーガーボタン -->
+            <div class="header_hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+
+            <!-- ナビゲーションメニュー -->
+            <nav class="header_nav flex">
+              <ul>
+                <li><a href="#">＃ゆるへんろって？</a></li>
+                <li><a href="#">参拝スタイル</a></li>
+                <li><a href="#">コース紹介</a></li>
+                <li><a href="#">マイブックマーク</a></li>
+                <li><a href="#">検索</a></li>
+                <li><a href="#">Q&A</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <!-- headerここまで -->
+
+      <main>
+        <div class="main_inner">
+          <h1 class="h1_bg">お寺紹介</h1>
+          <div>
+            <section class="contents_width">
+              <h2 class="h2_bg">霊山寺　門前一番街</h1>
+              <div class="bookmark">
+                <p>☆</p>
+                <p>ブックマーク</p>
+              </div>
+
+              <div class="temple_img">
+                <img src="" alt="お寺の写真(霊山寺)" />
+              </div>
+
+              <h2 class="h3_bg">門前一番街について</h2>
+
+              <div class="temple_about">
+                <div class="temple_about_slider">
+                  <img src="../assets/img/01ryozenji.jpg" alt="1" />
+                  <img src="../assets/img/01ryozenji.jpg" alt="2" />
+                  <img src="../assets/img/01ryozenji.jpg" alt="3" />
+                  <img src="../assets/img/01ryozenji.jpg" alt="4" />
+                </div>
+
+                <div class="temple_about_text">
+                  <p class="small_cap">
+                    四国霊場八十八ヶ所一番札所「霊山寺」の門前にある門前一番街
+                    初めてのお遍路初心者にとても心強い場所です。<br>
+                    
+                    ここでお遍路に必要なものを全てそろえることができます。<br>
+                    （事前にネットで注文もできます（配送・当日受取））<br>
+                    
+                    遍路用品のこと、お遍路のこと、公認先達さんの深い知識と経験を活かしてのアドバイスがいただけます。
+                    まずはこちらに立ち寄って、服装、用具、気持ちの準備を整えてお遍路にスタートしましょう。<br>
+                    
+                    門前名物　焼き餅「あわくった」もおすすめです。<br>
+                    粟とよもぎの2種類があります。<br>
+                    
+                    
+                    「お遍路衣装でお参り体験」もできます。<br>
+                    レンタル衣装で1時間散策できるので、1番札所や2番札所に参拝できます。<br>
+                                      </p>
+                </div>
+              </div>
+
+              <h2 class="h3_bg">施設情報</h2>
+              <div class="temple_info">
+                <div class="temple_info_map">
+                  <!-- google My map -->
+                  <iframe src="" frameborder="0"></iframe>
+                </div>
+                <!-- google My map -->
+
+                <!-- <table class="temple_info_table">
+                  <tr>
+                    <th>お遍路衣装レンタル料金（1時間）</th>
+                  </tr>
+                  <tr>
+                    <td>テキストテキストテキストテキスト</td>
+                  </tr>
+                  <tr>
+                    <th>名称</th>
+                  </tr>
+                  <tr>
+                    <td>
+                      門前一番街</td>
+                  </tr>
+                  <tr>
+                    <th>所在地</th>
+                  </tr>
+                  <tr>
+                    <td>鳴門市大麻町板東字西山田29-6</td>
+                  </tr>
+                  <tr>
+                    <th>電話</th>
+                  </tr>
+                  <tr>
+                    <td>088-689-4388</td>
+                  </tr>
+                  <tr>
+                    <th>営業時間</th>
+                  </tr>
+                  <tr>
+                    <td>7:00～17:00</td>
+                  </tr>
+                  <tr>
+                    <th>定休日</th>
+                  </tr>
+                  <tr>
+                    <td>無休</td>
+                  </tr>
+                  <tr>
+                    <th>公式HP</th>
+                  </tr>
+                  <tr>
+                    <td><a href="https://monzen-ichibangai.com/">https://monzen-ichibangai.com/</a></td>
+                  </tr>
+                  <tr>
+                    <th>駐車場</th>
+                  </tr>
+                  <tr>
+                    <td>あり</td>
+                  </tr>
+                </table> -->
+<div class="monzen_table_field">
+                <table class="monzen_table">
+                  <tbody class="tbody">
+                      <tr>
+                          <th>施設名</th>
+                          <td class="monzen_table_txt">門前一番街</td>
+                      </tr>
+                      <tr>
+                          <th>所在地</th>
+                          <td class="monzen_table_txt">鳴門市大麻町板東字西山田29-6</td>
+                      </tr>
+                      <tr>
+                          <th>営業時間</th>
+                          <td class="monzen_table_txt">7:00 ～ 17:00</td>
+                      </tr>
+                      <tr>
+                          <th>定休日</th>
+                          <td class="monzen_table_txt">無休</td>
+                      </tr>
+                      <tr>
+                          <th>電話番号</th>
+                          <td class="monzen_table_txt">088-689-4388</td>
+                      </tr>
+                      <tr>
+                          <th>公式HP</th>
+                          <td class="monzen_table_txt"><a href="https://monzen-ichibangai.com/">https://monzen-ichibangai.com/</a></td>
+                      </tr>
+                      <tr>
+                        <th>駐車場</th>
+                        <td class="monzen_table_txt">あり</td>
+                    </tr>
+                    <tr>
+                      <th>お遍路衣装レンタル料金（1時間）</th>
+                      <td class="monzen_table_txt">大人1,650円（18歳以上）<br>
+                      学生1,320円（12〜22歳）<br>
+                      小人1,100円（3〜11歳）<br>
+                      ※学割ご利用の方は当日学生証をご提示下さい</td>
+                  </tr>
+                  </tbody>
+                  </table>
+                </div>
+
+
+
+
+
+              </div>
+            </section>
+
+            <section class="shop_info contents_width">
+              <h2 class="h3_bg">周辺施設</h2>
+              <div class="shop_info_list">
+                <div class="shop_info_card mb_40">
+                  <div class="shop_info_caption">
+                    <img src="" alt="各施設の画像" />
+                  </div>
+                  <div class="shop_info_title">
+                    <p>タイトル(施設名)</p>
+                  </div>
+                  <div class="shop_info_text">
+                    <p>営業時間：10時～17時</p>
+                    <p>休業日：火曜日</p>
+                    <p>駐車場：あり</p>
+                    <p>TEL：000-000-0000</p>
+                    <p>公式HP：example.site</p>
+                  </div>
+                  <p class="shop_info_article">
+                    １２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０
+                  </p>
+                </div>
+
+                <div class="shop_info_card">
+                  <div class="shop_info_caption">
+                    <img src="" alt="各施設の画像" />
+                  </div>
+                  <div class="shop_info_title">
+                    <p>タイトル(施設名)</p>
+                  </div>
+                  <div class="shop_info_text">
+                    <p>営業時間：10時～17時</p>
+                    <p>休業日：火曜日</p>
+                    <p>駐車場：あり</p>
+                    <p>TEL：000-000-0000</p>
+                    <p>公式HP：example.site</p>
+                  </div>
+                  <p class="shop_info_article">
+                    １２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０
+                  </p>
+                </div>
+
+                <div class="shop_info_card mb_40">
+                  <div class="shop_info_caption">
+                    <img src="" alt="各施設の画像" />
+                  </div>
+                  <div class="shop_info_title">
+                    <p>タイトル(施設名)</p>
+                  </div>
+                  <div class="shop_info_text">
+                    <p>営業時間：10時～17時</p>
+                    <p>休業日：火曜日</p>
+                    <p>駐車場：あり</p>
+                    <p>TEL：000-000-0000</p>
+                    <p>公式HP：example.site</p>
+                  </div>
+                  <p class="shop_info_article">
+                    １２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０
+                  </p>
+                </div>
+              </div>
+            </section>
+
+            <section class="course contents_width">
+              <h2 class="h3_bg">コース一覧</h2>
+              <div class="course_flex">
+              <button class="course_btn btn1">
+                ＃ゆるへんろ　入門コース<br />第１番札所～第3番札所＞＞＞
+              </button>
+              <button class="course_btn btn2">
+                ＃ゆるへんろ　入門コース<br />第１番札所～第3番札所＞＞＞
+              </button>
+              <button class="course_btn btn3">
+                ＃ゆるへんろ　入門コース<br />第１番札所～第3番札所＞＞＞
+              </button>
+              <button class="course_btn btn4">
+                ＃ゆるへんろ　入門コース<br />第１番札所～第3番札所＞＞＞
+              </button>
+              <button class="course_btn btn5">
+                ＃ゆるへんろ　入門コース<br />第１番札所～第3番札所＞＞＞
+              </button>
+            </div>
+            </section>
+          </div>
+        </div>
+      </main>
+
+      <!-- wrap -->
+      <!-- footerここから -->
+      <footer>
+        <!-- <div class="footer_wrap"> -->
+        <div class="footer_inner">
+          <!-- TOPへ戻るボタン -->
+          <p class="page-top">
+            <a href="#"><img src="../assets/img/flower01.png" alt="" /></a>
+          </p>
+
+          <!-- instagramマーク -->
+          <div class="footer_insta flex">
+            <a
+              href="https://www.instagram.com/yuru_henro/"
+              target="_blank"
+              class="flex"
+            >
+              <i class="fa-brands fa-instagram"></i>
+              <p>@yuru_henro</p>
+            </a>
+          </div>
+
+          <div class="footer_links">
+            <ul class="flex">
+              <li><a href="#" target="_blank">バナー1</a></li>
+              <li><a href="#" target="_blank">バナー2</a></li>
+              <li><a href="#" target="_blank">バナー3</a></li>
+              <li><a href="#" target="_blank">バナー4</a></li>
+              <li><a href="#" target="_blank">バナー5</a></li>
+            </ul>
+          </div>
+
+          <nav class="footer_nav">
+            <ul>
+              <li>
+                <a href="#">
+                  <img
+                    src="../assets/img/header_logo_02.png"
+                    alt="とくしま１日＃ゆるへんろロゴ"
+                    class="footer_logo"
+                  />
+                </a>
+              </li>
+              <li>
+                <ul class="sp_none">
+                  <li class="footer_nav_b">
+                    <a href="#">＃ゆるへんろとは</a>
+                  </li>
+                  <li><a href="#">＃ゆるへんろとは</a></li>
+                  <li><a href="#">おへんろのお作法</a></li>
+                  <li><a href="#">参拝スタイル</a></li>
+                </ul>
+              </li>
+              <li>
+                <ul class="sp_none">
+                  <li class="footer_nav_b">
+                    <a href="#">コース紹介</a>
+                  </li>
+                  <li><a href="#">コース名1</a></li>
+                  <li><a href="#">コース名2</a></li>
+                  <li><a href="#">コース名3</a></li>
+                  <li><a href="#">コース名4</a></li>
+                  <li><a href="#">コース名5</a></li>
+                </ul>
+              </li>
+              <li>
+                <ul class="footer_nav_b">
+                  <li>
+                    <a href="#" class="sp_none">マイブックマーク</a>
+                  </li>
+                  <li>
+                    <a href="#" class="sp_none">条件検索</a>
+                  </li>
+                  <li><a href="#" class="sp_none">Q&A</a></li>
+                  <li>
+                    <a href="#" class="sp_none">用語集</a>
+                  </li>
+                  <li><a href="#">このサイトについて</a></li>
+                  <li>
+                    <a href="#">プライバシーポリシー</a>
+                  </li>
+                  <li>
+                    <a href="#">サイト制作にあたって</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav>
+
+          <small>Copyright©とくしま１日＃ゆるへんろ</small>
+        </div>
+        <!-- </div> -->
+      </footer>
+      <!-- footerここまで -->
+    </div>
+    <!-- jsプラグイン読み込み -->
+    <script src="../assets/js/jquery.inview.min.js"></script>
+    <!-- オリジナルjs読み込み -->
+    <script src="../assets/js/common_script.js"></script>
+    <!-- 小出さん作成中のslickのファイル -->
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>
