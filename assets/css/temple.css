@@ -127,8 +127,13 @@ img {
 
 .shop_info_caption {
     height: 180px;
-    background: gray;
+    background: #fff;
     margin-bottom: 20px;
+}
+
+.shop_info_caption img {
+    object-fit: cover;
+    aspect-ratio: 4/3;
     border-radius: 10px;
 }
 
