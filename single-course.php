@@ -32,14 +32,27 @@
                 <div id="course_cont1" class="course_tabCont">
                     <!-- コースキャプション -->
                     <p class="middle_cap mb_100">
-                                    コース概要説明文テキストテキストテキストテキストテキストテキストテキスト<br />
-                                    コース概要説明文テキストテキストテキストテキストテキストテキストテキスト<br />
-                                    コース概要説明文テキストテキストテキストテキストテキストテキストテキスト
+                                    <?php
+                                $post_type = 'course'; //カスタム投稿タイプのスラッグ
+                                $data      = get_page_by_path('01', OBJECT, $post_type);
+                                $post_id   = $data->ID;
+                                // var_dump($post_id);
+                                the_field('c_info', $post_id);
+                                ?>
+
                                 </p>
 
                     <section class="sec_mb">
                         <h2 class="h2_bg mb_40">参考マップ</h2>
-                        <div>Googleマイマップはここ</div>
+                        <div>Googleマイマップはここ<br>
+                            <?php
+                                $post_type = 'course'; //カスタム投稿タイプのスラッグ
+                                $data      = get_page_by_path('01', OBJECT, $post_type);
+                                $post_id   = $data->ID;
+                                // var_dump($post_id);
+                                the_field('c_map', $post_id);
+                                ?>
+                        </div>
                     </section>
 
                     <section class="sec_mb mb_40">
@@ -48,18 +61,90 @@
 
                         <div class="course_flag mb_20">START</div>
 
-                        <p class="mb_20">AM 9:00</p>
+                        <p class="mb_20"><?php
+                                $post_type = 'course'; //カスタム投稿タイプのスラッグ
+                                $data      = get_page_by_path('01', OBJECT, $post_type);
+                                $post_id   = $data->ID;
+                                // var_dump($post_id);
+                                the_field('c_time1', $post_id);
+                                ?></p>
 
                         <div class="course_contWrap">
                             <div class="course_contPhoto mb_20">
-                                <img src="<?php echo get_template_directory_uri();?>/assets/img/kv.png" alt="お寺の名前" />
+                                <img src="<?php
+                                $post_type = 'temple'; //カスタム投稿タイプのスラッグ
+                                $data      = get_page_by_path('01-3', OBJECT, $post_type);
+                                $post_id   = $data->ID;
+                                // var_dump($post_id);
+                                the_field('t_eyecatch', $post_id);
+                                ?>" alt="霊山寺の画像" />
                             </div>
                             <div class="course_col">
                                 <p class="small_cap mb_40 js-fadeUp">
-                                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                                <?php
+                                $post_type = 'temple'; //カスタム投稿タイプのスラッグ
+                                $data      = get_page_by_path('01-3', OBJECT, $post_type);
+                                $post_id   = $data->ID;
+                                // var_dump($post_id);
+                                the_field('t_description', $post_id);
+                                ?>
                                             </p>
                                 <div class="button18">
-                                    <a href="#">
+                                    <a href="<?php echo get_template_directory_uri();?>/single-temple/01-3">
+                                        <p>もっと知る
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="course_contInfo mb_40 flex">
+                            <div class="course_contIcon">
+                                アイコン
+                            </div>
+                            <div class="course_contTime">
+                                徒歩で<?php
+                                $post_type = 'course'; //カスタム投稿タイプのスラッグ
+                                $data      = get_page_by_path('01', OBJECT, $post_type);
+                                $post_id   = $data->ID;
+                                // var_dump($post_id);
+                                the_field('c_movetime1', $post_id);
+                                ?>
+                            </div>
+                        </div>
+
+                        <p class="mb_20">
+                            <?php
+                                $post_type = 'course'; //カスタム投稿タイプのスラッグ
+                                $data      = get_page_by_path('01', OBJECT, $post_type);
+                                $post_id   = $data->ID;
+                                // var_dump($post_id);
+                                the_field('c_time2', $post_id);
+                                ?></p>
+
+                        <div class="course_contWrap">
+                            <div class="course_contPhoto mb_20">
+                                <img src="<?php
+                                $post_type = 'temple'; //カスタム投稿タイプのスラッグ
+                                $data      = get_page_by_path('02-3', OBJECT, $post_type);
+                                $post_id   = $data->ID;
+                                // var_dump($post_id);
+                                the_field('t_eyecatch', $post_id);
+                                ?>" alt="極楽寺" />
+                            </div>
+
+                            <div class="course_col">
+                                <p class="small_cap mb_40 js-fadeUp">
+                                                <?php
+                                $post_type = 'temple'; //カスタム投稿タイプのスラッグ
+                                $data      = get_page_by_path('02-3', OBJECT, $post_type);
+                                $post_id   = $data->ID;
+                                // var_dump($post_id);
+                                the_field('t_description', $post_id);
+                                ?>
+                                            </p>
+                                <div class="button18">
+                                    <a href="<?php echo get_template_directory_uri();?>/single-temple/02-3">
                                         <p>もっと知る</p>
                                     </a>
                                 </div>
@@ -71,50 +156,46 @@
                                 アイコン
                             </div>
                             <div class="course_contTime">
-                                徒歩で30分（約1.5km）
+                                徒歩で<?php
+                                $post_type = 'course'; //カスタム投稿タイプのスラッグ
+                                $data      = get_page_by_path('01', OBJECT, $post_type);
+                                $post_id   = $data->ID;
+                                // var_dump($post_id);
+                                the_field('c_movetime2', $post_id);
+                                ?>
                             </div>
                         </div>
 
-                        <p class="mb_20">AM 10:30</p>
+                        <p class="mb_20"><?php
+                                $post_type = 'course'; //カスタム投稿タイプのスラッグ
+                                $data      = get_page_by_path('01', OBJECT, $post_type);
+                                $post_id   = $data->ID;
+                                // var_dump($post_id);
+                                the_field('c_time3', $post_id);
+                                ?></p>
 
                         <div class="course_contWrap">
                             <div class="course_contPhoto mb_20">
-                                <img src="<?php echo get_template_directory_uri();?>/assets/img/kv.png" alt="お寺の名前" />
-                            </div>
-
-                            <div class="course_col">
-                                <p class="small_cap mb_40 js-fadeUp">
-                                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
-                                            </p>
-                                <div class="button18">
-                                    <a href="#">
-                                        <p>もっと知る</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="course_contInfo mb_40 flex">
-                            <div class="course_contIcon">
-                                アイコン
-                            </div>
-                            <div class="course_contTime">
-                                徒歩で30分（約1.5km）
-                            </div>
-                        </div>
-
-                        <p class="mb_20">AM 11:30</p>
-
-                        <div class="course_contWrap">
-                            <div class="course_contPhoto mb_20">
-                                <img src="<?php echo get_template_directory_uri();?>/assets/img/kv.png" alt="お寺の名前" />
+                                <img src="<?php
+                                $post_type = 'temple'; //カスタム投稿タイプのスラッグ
+                                $data      = get_page_by_path('03-3', OBJECT, $post_type);
+                                $post_id   = $data->ID;
+                                // var_dump($post_id);
+                                the_field('t_eyecatch', $post_id);
+                                ?>" alt="金泉寺写真" />
                             </div>
                             <div class="course_col">
                                 <p class="small_cap mb_40 js-fadeUp">
-                                                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                                                <?php
+                                $post_type = 'temple'; //カスタム投稿タイプのスラッグ
+                                $data      = get_page_by_path('03-3', OBJECT, $post_type);
+                                $post_id   = $data->ID;
+                                // var_dump($post_id);
+                                the_field('t_description', $post_id);
+                                ?>
                                             </p>
                                 <div class="button18">
-                                    <a href="#">
+                                    <a href="<?php echo get_template_directory_uri();?>/single-temple/03-3">
                                         <p>もっと知る</p>
                                     </a>
                                 </div>
