@@ -53,7 +53,7 @@
                     <ul class="footer_nav_b">
                         <li><a href="<?php echo get_template_directory_uri(); ?>/page-bookmark" class="sp_none">マイブックマーク</a></li>
                         <li><a href="<?php echo get_template_directory_uri(); ?>/search-form" class="sp_none">条件検索</a></li>
-                        <li><a href="<?php echo get_template_directory_uri(); ?>/page-qanda" class="sp_none">Q&A</a></li>
+                        <li><a href="<?php echo get_template_directory_uri(); ?>/archive-qanda" class="sp_none">Q&A</a></li>
                         <li><a href="<?php echo get_template_directory_uri(); ?>/page-sitemap">このサイトについて</a></li>
                         <li><a href="<?php echo get_template_directory_uri(); ?>/page-privacy">プライバシーポリシー</a></li>
                         <li><a href="<?php echo get_template_directory_uri(); ?>/about-us">サイト制作にあたって</a></li>
