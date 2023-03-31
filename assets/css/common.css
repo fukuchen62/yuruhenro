@@ -92,7 +92,7 @@ iframe {
   height: 80px;
   border-radius: 5px;
   color: #fbfaf5;
-  margin: 0 15px 30px;
+  margin: 0 auto 15px;
   background-color: #79afaf;
   box-shadow: 6px 6px 6px gray;
 }
