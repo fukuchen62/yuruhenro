@@ -163,6 +163,14 @@ img {
 /*  コース一覧  */
 /****************/
 
+.course {
+  /* margin: 0 auto 100px; */
+}
+
+.course_flex {
+  padding: 0 auto;
+}
+
 .btn1 {
   background-color: #79afaf;
   box-shadow: 6px 6px 6px gray;
@@ -182,6 +190,17 @@ img {
 .btn5 {
   background-color: #c5a22b;
   box-shadow: 6px 6px 6px gray;
+}
+
+/* デスクトップ版のメディアクエリ */
+
+@media screen and (min-width: 1000px) {
+  /* .course {
+    padding: 0;
+  } */
+  /* .course_flex {
+    margin: 0 auto;
+  } */
 }
 
 /****************/
