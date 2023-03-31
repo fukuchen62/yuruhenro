@@ -58,3 +58,18 @@ img {
   width: 150px;
   height: auto;
 }
+
+/* 参拝のお作法について */
+
+.bg_img {
+  position: relative;
+  height: 350px;
+  background-image: url(../img/flame.png);
+  background-repeat: no-repeat;
+}
+.sanpai_caption {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+}
