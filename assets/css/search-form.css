@@ -144,14 +144,14 @@ margin: 0 auto;
 .searchresult_content::after {
     content: " ";
         display: block;
-        width: 300px;
+        width: 310px;
     }
 
 
 .searchresultList {
 padding: 20px;
-max-width: 260px;
-margin: 20px 20px;
+max-width: 300px;
+margin: 4px 4px;
 border-radius: 8px;
 background-color: #fff;
 }

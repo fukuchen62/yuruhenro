@@ -1,5 +1,6 @@
 @charset "UTF-8";
-*{border: 1px solid royalblue;}
+*{border: 1px solid royalblue;
+}
 
 /****************/
 /*     共通     */
@@ -44,8 +45,7 @@ img {
     /* object-fit: cover; */
     /* position: absolute; */
     /* left: 0; */
-    /* bottom: auto;   */
-    /* 最初は0になっていたので上にずれていた */
+    /* bottom: 0;   */
     /* padding: 0 32px; */
 }
 
@@ -178,7 +178,7 @@ img {
 .shop_info_list::after {
     content: " ";
         display: block;
-        width: 300px;
+        width: 310px;
     }
 
 
@@ -192,8 +192,8 @@ img {
     border-radius: 10px; */
 
     padding: 20px;
-    max-width: 260px;
-    margin: 20px 20px;
+    max-width: 300px;
+    margin: 4px 4px;
     border-radius: 8px;
     background-color: #fff;
     
@@ -268,18 +268,18 @@ img {
 .course_flex::after {
     content: " ";
     display: block;
-    width: 300px;
+    width: 310px;
 }
 
 /* コースボタン */
 .course_btn {
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
-    width: 260px;
+    width: 300px;
     height: 80px;
     border-radius: 5px;
     color: #fbfaf5;
-    margin: 20px 20px;
+    margin: 4px 4px;
     background-color: #79afaf;
     box-shadow: 6px 6px 6px gray;
   }
