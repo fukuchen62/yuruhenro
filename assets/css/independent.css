@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* *{border: 1px solid royalblue;} */
+/*========= 単独ページのためのcss（written by akagi) ===============*/
+
+/* h1下のキャプション */
+.big_cap_independent {
+    font-size: 18px;
+    line-height: 1.5em;
+    margin-bottom: 40px;
+}
+.small_cap_independent {
+    font-size: 16px;
+    line-height: 1.5em;
+  }
+  
+.ol_independent{
+  list-style-type: decimal;
+      font-size: 14px;
+    line-height: 2em;
+    padding: 0 40px;
+}
+
+.h3_bg_independent {
+    min-width: 15em;
+    width: fit-content;
+    font-size: 18px;
+    text-align: center;
+    border-bottom: 3px solid #c69c6d;
+    padding: 10px 20px;
+    margin: 0 auto 20px;
+  }
+  
+
