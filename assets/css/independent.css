@@ -20,6 +20,14 @@
     padding: 0 40px;
 }
 
+.ul_independent{
+  list-style-type:circle;
+      font-size: 14px;
+    line-height: 2em;
+    padding: 0 40px;
+}
+
+
 .h3_bg_independent {
     min-width: 15em;
     width: fit-content;
