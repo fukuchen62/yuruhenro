@@ -352,7 +352,7 @@ iframe {
 /*TOPへ戻るボタン*/
 .page-top {
   position: fixed;
-  bottom: 150px;
+  bottom: 40px;
   right: 20px;
   font-size: 14px;
   line-height: 1;
@@ -361,7 +361,7 @@ iframe {
 
 .page-top a {
   position: fixed;
-  bottom: 150px;
+  bottom: 40px;
   right: 20px;
   font-size: 14px;
   line-height: 1;
@@ -434,17 +434,17 @@ iframe {
 
   /*TOPへ戻るボタン*/
   .page-top {
-    bottom: 100px;
+    bottom: 60px;
     right: 60px;
   }
 
   .page-top a {
-    bottom: 100px;
+    bottom: 60px;
     right: 60px;
   }
   .page-top img {
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
   }
 
   .page-top.active {
