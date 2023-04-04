@@ -12,7 +12,7 @@
         </section>
         <section class="sec_mb40 search_form">
             <form method="post" action="   ">
-                <h3 class="h3_bg_ex">検索条件選択うぅぅぅぅぅぅぅぅぅぅぅぅぅぅ</h3><br>
+                <h3 class="h3_bg_ex">検索条件選択</h3><br>
                 <div class="search-form_checkarea">
                     <p class="search-form_headline">エリア</p>
                     <div class="searchkinds  mb_40">

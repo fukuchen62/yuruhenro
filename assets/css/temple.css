@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* *{border: 1px solid royalblue;} */
 
 /****************/
 /*     共通     */
@@ -31,29 +32,33 @@ img {
 /* ***********スライダー*********** */
 
 .temple_about_slider {
-    position: relative;
-
-    margin-bottom: 40px;
+    /* position: relative;
+    margin-bottom: 40px; */
+    max-height: 300px;
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 .temple_about_slider img {
     aspect-ratio: 4/3;
-    object-fit: cover;
-    position: absolute;
-    left: 0;
-    bottom: 0;
+    /* object-fit: cover; */
+    /* position: absolute; */
+    /* left: 0; */
+    /* bottom: 0;   */
     /* padding: 0 32px; */
 }
 
 /* ********スライドここまで******* */
 
 .temple_about {
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
+    display: flex;
+    flex-direction: column;
 }
 
-.temple_info_map {
+/* .temple_info_map {
     margin-bottom: 40px;
-}
+} */
 
 .temple_info_map iframe {
     background-color: gray;
@@ -75,55 +80,134 @@ img {
     text-align: left;
     vertical-align: middle;
     background-color: #f0ebcf;
-    padding-left: 36px;
+    padding: .5em 1em .5em 1em;
+    min-width: 70px;
+    line-height:1.5em;
+
 }
 
 .temple_info_table tr td {
     padding-left: 36px;
+    padding: .5em 1em .5em 1em;
+    min-width: 70px;
+    line-height:1.5em;
+
 }
+
+
+
+.temple_info{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.temple_map {
+    margin: 10px auto;
+}
+
+
 
 /* デスクトップ版のメディアクエリ */
 
-@media screen and (min-width: 1100px) {
+@media screen and (min-width: 1000px) {
+    .temple_info{
+        flex-direction: row;
+    }
+    .temple_map {
+        width: 50%;
+        margin: 0 auto;
+        height: fit-content;
+    }
+    
+.temple_info_table{
+    margin-left: 10px;
+}
+
+
+
     .temple_about {
-        display: flex;
-        justify-content: space-between;
+        flex-direction: row;
     }
 
     .temple_about_slider img {
         width: 400px;
     }
-    .temple_about_text {
+    /* .temple_about_text {
         width: 460px;
         height: 310px;
-    }
+    } */
     .temple_info {
         display: flex;
         justify-content: space-around;
-        margin-left: 40px;
-        margin-right: 40px;
+        /* margin-left: 40px;
+        margin-right: 40px; */
     }
     .temple_info_map {
         margin-right: 70px;
     }
-
     .temple_info_table {
-        width: 450px;
-        height: 483px;
+    width: 450px;
     }
+
+.temple_about_slider img {
+    bottom: auto;  /* 最初は0になっていたので上にずれていた */
+    /* padding: 0 32px; */
 }
+}
+
+
 /****************/
 /*   周辺情報   */
 /****************/
+.shop_info_list {
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    /* justify-content: space-around; */
+    /* gap: 20px; */
+}
+
+.shop_info_list::after {
+    content: " ";
+        display: block;
+        width: 310px;
+    }
+
+
 
 .shop_info_card {
-    width: 330px;
+    /* width: 300px;
     height: auto;
     background-color: #ffffff;
     margin: 0 auto 40px;
     padding: 10px 15px 20px;
-    border-radius: 10px;
+    border-radius: 10px; */
+
+    padding: 20px;
+    max-width: 300px;
+    margin: 4px 4px;
+    border-radius: 8px;
+    background-color: #fff;
+    
+
 }
+
+
+
+
+
+
+
+
+
+
 
 .shop_info_caption {
     height: 180px;
@@ -153,21 +237,22 @@ img {
 
 /* デスクトップ版のメディアクエリ */
 
-@media screen and (min-width: 1000px) {
-    .shop_info_list {
-        display: flex;
-        justify-content: space-around;
-        gap: 20px;
+@media screen and (min-width: 750px) {
+    .shop_info_list  {
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
+    
 }
 
 /****************/
 /*  コース一覧  */
 /****************/
 
-.course {
-    /* margin: 0 auto 100px; */
-}
+/* .course {
+    margin: 0 auto 100px;
+} */
 
 .course_flex {
     margin: 0 auto;
@@ -182,8 +267,30 @@ img {
 .course_flex::after {
     content: " ";
     display: block;
-    width: 312px;
+    width: 310px;
 }
+
+/* コースボタン */
+.course_btn {
+    font-size: 20px;
+    text-align: center;
+    width: 300px;
+    height: 80px;
+    border-radius: 5px;
+    color: #fbfaf5;
+    margin: 4px 4px;
+    background-color: #79afaf;
+    box-shadow: 6px 6px 6px gray;
+  }
+  /* コースボタン押し込み */
+  .course_btn:active {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+    border-bottom: none;
+    box-shadow: 0px 0px 0px;
+  }
+  
+
 
 .btn1 {
     background-color: #79afaf;
@@ -208,7 +315,7 @@ img {
 
 /* デスクトップ版のメディアクエリ */
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 750px) {
     /* .course {
     padding: 0;
   } */
