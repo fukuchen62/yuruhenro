@@ -30,11 +30,11 @@
         while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
                     <div class="section_line">
                         <div class="rowLine flex">
-                            <span class="circle_mark1">Q</span>
+                            <span class="circle_mark1">用語</span>
                             <p><?php the_title();?></p>
                         </div>
                         <div class="rowLine flex">
-                            <span class="circle_mark2">A</span>
+                            <span class="circle_mark2">意味</span>
                             <p><?php the_field('mean');?></p>
                         </div>
                     </div>
