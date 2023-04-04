@@ -94,7 +94,7 @@ $taxonomy = get_the_terms($post->ID,$taxonomy_slug);
 // print_r($taxonomy[0]->slug);
 $facility_args = array(
 'post_type' => 'facility',
-'posts_per_page' => -1,
+'posts_per_page' => 3,
 'taxonomy' => $taxonomy[0]->slug,
 );
 $facility_query = new WP_Query( $facility_args );
