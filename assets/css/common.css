@@ -530,6 +530,12 @@ iframe {
     padding: 0 32px;
 }
 
+.sec_mb40 {
+    max-width: 1000px;
+    padding: 0 10px;
+    margin: 0 auto 40px;
+}
+
 .mb_20 {
     margin-bottom: 20px;
 }
@@ -548,12 +554,6 @@ iframe {
 
 .mb_150 {
     margin-bottom: 150px;
-}
-
-.sec_mb40 {
-    max-width: 1000px;
-    padding: 0 10px;
-    margin: 0 auto 40px;
 }
 
 /*要素フェードインのためのclass*/

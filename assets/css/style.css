@@ -1,6 +1,58 @@
 @charset "UTF-8";
 
 /****************/
+/* 参拝スタイル */
+/****************/
+
+.big_cap {
+    text-align: center;
+}
+
+.cp_area1 {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #e4cfc3;
+    border-radius: 20px;
+    margin: 0 30px;
+    padding: 30px;
+}
+
+.cp_area1_in {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.cp_area2 {
+    padding: 30px;
+    margin: 0 30px;
+}
+
+.cp_area3 {
+    background-color: #fff;
+    border-radius: 40px;
+    padding: 30px;
+    margin: 0 30px 40px;
+}
+
+.cp_minittl {
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 580px) {
+    .cp_area1 {
+        min-width: 520px;
+    }
+}
+
+@media screen and (min-width: 880px) {
+    .cp_area1 {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+}
+
+/****************/
 /* コースページ */
 /****************/
 .course_tab {
