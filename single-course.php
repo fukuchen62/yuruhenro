@@ -9,11 +9,10 @@
         <h1 class="h1_bg">コース紹介</h1>
         <section class="sec_mb40">
             <p class="big_cap">
-                            コース紹介全体の簡単なキャプション
-                            <br />
-                            コース紹介全体の簡単なキャプション
-                            <br />
-                            コース紹介全体の簡単なキャプション
+ここでは５つのコースを紹介します <br>
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx <br>
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxx <br>
+
                         </p>
         </section>
 
@@ -261,7 +260,7 @@ $facility_query = new WP_Query( $facility_args );
 
                         <div class="course_contWrap">
                             <div class="course_contPhoto mb_20">
-                                <img src="<?php the_field('a_thumbnail')?>" alt="お寺の名前" />
+                                <img src="<?php the_field('a_thumbnail')?>" alt="エリアサムネイル" />
                             </div>
                             <div class="course_col">
                                 <p class="small_cap mb_40 js-fadeUp">
@@ -363,7 +362,7 @@ $facility_query = new WP_Query( $facility_args );
 
                         <div class="course_contWrap">
                             <div class="course_contPhoto mb_20">
-                                <img src="<?php the_field('a_thumbnail')?>" alt="お寺の名前" />
+                                <img src="<?php the_field('a_thumbnail')?>" alt="エリアサムネイル" />
                             </div>
                             <div class="course_col">
                                 <p class="small_cap mb_40 js-fadeUp">
@@ -463,7 +462,7 @@ $facility_query = new WP_Query( $facility_args );
 
                         <div class="course_contWrap">
                             <div class="course_contPhoto mb_20">
-                                <img src="<?php the_field('a_thumbnail')?>" alt="お寺の名前" />
+                                <img src="<?php the_field('a_thumbnail')?>" alt="エリアサムネイル" />
                             </div>
                             <div class="course_col">
                                 <p class="small_cap mb_40 js-fadeUp">
