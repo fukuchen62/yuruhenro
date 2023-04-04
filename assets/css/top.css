@@ -21,7 +21,12 @@ img {
 /*  メイン部分  */
 /****************/
 
-.kv_inner {
+.container{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+/* .kv_inner {
   position: relative;
 }
 
@@ -29,28 +34,31 @@ img {
   width: 100%;
   height: 100vh;
   object-fit: cover;
-}
+} */
 
-.vertical {
+/* .vertical {
   writing-mode: vertical-rl; /* 縦向きにする */
-  text-orientation: upright;
-}
+  /* text-orientation: upright;
+} */
 
 .catch_phrase {
   position: absolute;
   /* top: 0;
   left: 0; */
-  top: 50%;
+  top: 25%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 36px;
+  font-size: 24px;
   color: #fbfaf5;
   line-height: 1.5em;
-}
+  z-index: 2;
+  writing-mode: vertical-rl; /* 縦向きにする */
+  text-orientation: upright;
 
+}
 /* 周辺情報の写真 */
 
-.nearby_info_list {
+/* .nearby_info_list {
   display: flex;
   justify-content: space-around;
 }
@@ -59,7 +67,13 @@ img {
   margin-top: 20px;
   width: 300px;
   height: auto;
+} */
+
+.thumbnail-img{
+  padding: 5px;
 }
+
+
 
 /* 参拝のお作法について */
 
@@ -133,8 +147,26 @@ img {
     
     }
     
-
-
+    .catch_phrase {
+      position: absolute;
+      /* top: 0;
+      left: 0; */
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 36px;
+      color: #fbfaf5;
+      line-height: 1.5em;
+      z-index: 2;
+      writing-mode: vertical-rl; /* 縦向きにする */
+      text-orientation: upright;
+    
+    }
+    
+    .thumbnail-img{
+      padding: 10px;
+    }
+    
 
     
 

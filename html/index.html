@@ -22,6 +22,7 @@
             referrerpolicy="no-referrer"
         />
         <!-- js用CSS -->
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 
         <!-- オリジナルCSS -->
         <link rel="stylesheet" href="../assets/css/common.css" />
@@ -74,55 +75,59 @@
 
             <main>
                 <div class="main_inner">
-                    <div class="kv_inner">
+                    <!-- <div class="kv_inner">
                         <div class="kv">
                             <img
                                 src="../assets/img/top_kv01.jpg"
                                 alt="KV画像がくる"
-                            />
+                            /> -->
                         </div>
                         <h1 class="catch_phrase vertical">
                             どこ行くん?<br />
                             ゆるっとへんろ<br />
                             ＃ゆるへんろ
                         </h1>
-                    </div>
+                    <!-- </div> -->
 
-                    <div class="nearby_info mb_150">
-                        <!-- 周辺情報の写真 -->
-                        <ul class="nearby_info_list">
-                            <li class="nearby_info_box">
-                                <img
-                                    src="../assets/img/top_kv01.jpg"
-                                    alt="周辺情報の写真"
-                                />
-                            </li>
-                            <li class="nearby_info_box">
-                                <img
-                                    src="../assets/img/top_kv02.jpg"
-                                    alt="周辺情報の写真"
-                                />
-                            </li>
-                            <li class="nearby_info_box">
-                                <img
-                                    src="../assets/img/top_kv03.jpg"
-                                    alt="周辺情報の写真"
-                                />
-                            </li>
-                            <li class="nearby_info_box">
-                                <img
-                                    src="../assets/img/top_kv04.jpg"
-                                    alt="周辺情報の写真"
-                                />
-                            </li>
-                            <li class="nearby_info_box">
-                                <img
-                                    src="../assets/img/top_kv05.jpg"
-                                    alt="周辺情報の写真"
-                                />
-                            </li>
-                        </ul>
-                    </div>
+
+                    <body>
+                        <div class="container">
+                            <div class="slider">
+                                <div class="slick-img">
+                                    <img src="../assets/img/top_kv01.jpg" alt="" />
+                                </div>
+                                <div class="slick-img">
+                                    <img src="../assets/img/top_kv02.jpg" alt="" />
+                                </div>
+                                <div class="slick-img">
+                                    <img src="../assets/img/top_kv03.jpg" alt="" />
+                                </div>
+                                <div class="slick-img">
+                                    <img src="../assets/img/top_kv04.jpg" alt="" />
+                                </div>
+                                <div class="slick-img">
+                                    <img src="../assets/img/top_kv05.jpg" alt="" />
+                                </div>
+                            </div>
+                            <div class="thumbnail mb_80">
+                                <div class="thumbnail-img">
+                                    <img src="../assets/img/top_kv01.jpg" alt="" />
+                                </div>
+                                <div class="thumbnail-img">
+                                    <img src="../assets/img/top_kv02.jpg" alt="" />
+                                </div>
+                                <div class="thumbnail-img">
+                                    <img src="../assets/img/top_kv03.jpg" alt="" />
+                                </div>
+                                <div class="thumbnail-img">
+                                    <img src="../assets/img/top_kv04.jpg" alt="" />
+                                </div>
+                                <div class="thumbnail-img">
+                                    <img src="../assets/img/top_kv05.jpg" alt="" />
+                                </div>
+                            </div>
+                        </div>
+                    
 
                     <section class="contents_width mb_150">
                         <div class="mb_80">
@@ -231,7 +236,7 @@
                             />
                         </div>
 
-                        <div class="btn_and_description_area mb_40">
+                        <div class="btn_and_description_area mb_150">
                         <button class="course_btn btn1 btn_position">
                             ＃ゆるへんろ　入門コース<br />第1番札所～第3番札所＞＞＞
                         </button>
@@ -244,7 +249,7 @@
                         </div>
                     </div>
 
-                        <div>
+                        <div class="mb_40">
                             <img
                                 src="../assets/img/challenge_yuruhenro.png" alt="車のイラスト1000×300"
                             />
@@ -409,11 +414,22 @@
             <!-- footerここまで -->
         </div>
         <!-- wrap -->
-        <!-- jsプラグイン読み込み -->
-        <script src="../assets/js/jquery.inview.min.js"></script>
-        <!-- オリジナルjs読み込み -->
-        <script src="../assets/js/common_script.js"></script>
-        <!-- 小出さん作成中のslickのファイル -->
+
+        <!--jQueryのJS-->
+        <script src="../assets/js/jquery-3.6.3.min.js"></script>
+        <!--スライダー用のJS-->
         <script src="../assets/js/script.js"></script>
+        <script src="../assets/js/slick.js"></script>
+
+
+
+
+
+        <!-- jsプラグイン読み込み -->
+        <!-- <script src="../assets/js/jquery.inview.min.js"></script> -->
+        <!-- オリジナルjs読み込み -->
+        <!-- <script src="../assets/js/common_script.js"></script> -->
+        <!-- 小出さん作成中のslickのファイル -->
+        <!-- <script src="../assets/js/script.js"></script> -->
     </body>
 </html>
