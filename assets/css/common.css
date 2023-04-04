@@ -25,7 +25,8 @@ iframe {
     font-size: 24px;
     text-align: center;
     background-color: #b1a995;
-    margin: 0 auto 40px;
+    /* margin: 0 auto 40px; */
+    margin: 0 auto;
 }
 
 /* h2装飾 */
@@ -345,19 +346,17 @@ iframe {
     height: 80px;
     border-radius: 5px;
     color: #fbfaf5;
-    margin: 4px 4px;
+    margin: 4px;
     background-color: #79afaf;
     box-shadow: 6px 6px 6px gray;
-  }
-  /* コースボタン押し込み */
-  .course_btn:active {
+}
+/* コースボタン押し込み */
+.course_btn:active {
     -webkit-transform: translateY(4px);
     transform: translateY(4px);
     border-bottom: none;
     box-shadow: 0px 0px 0px;
-  }
-  
-
+}
 
 .btn1 {
     background-color: #79afaf;
@@ -379,7 +378,6 @@ iframe {
     background-color: #c5a22b;
     box-shadow: 6px 6px 6px gray;
 }
-
 
 /****************/
 /***  footer  ***/
@@ -525,6 +523,13 @@ iframe {
     display: flex;
 }
 
+.contents_width {
+    /* max-width: 500px; */
+    /* margin: 0 auto 100px; */
+    margin: 0 auto;
+    padding: 0 32px;
+}
+
 .mb_20 {
     margin-bottom: 20px;
 }
@@ -549,13 +554,6 @@ iframe {
     max-width: 1000px;
     padding: 0 10px;
     margin: 0 auto 40px;
-}
-
-.contents_width {
-    /* max-width: 500px; */
-    /* margin: 0 auto 100px; */
-    margin: 0 auto;
-    padding: 0 32px;
 }
 
 /*要素フェードインのためのclass*/
