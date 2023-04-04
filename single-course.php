@@ -30,7 +30,12 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxx <br>
             <div class="course_mainWrap">
                 <div id="course_cont1" class="course_tabCont">
                     <!-- コースキャプション -->
-                    <p class="middle_cap mb_100">入門コースです</p>
+                    <p class="middle_cap mb_100">
+                        歩き遍路の雰囲気を味わってみたい方におすすめ！
+                        ゆるっと観光しながら寺社をめぐり、
+                        １～３番札所までを歩いて回るコースです。
+                        自身を見つめ直したい方、人や自然との触れ合いを求めてい
+                        る方、健康志向の方などぜひ遍路の旅へお出かけください。</p>
 
                     <section class="sec_mb">
                         <h2 class="h2_bg mb_40">参考マップ</h2>
@@ -135,7 +140,9 @@ $facility_query = new WP_Query( $facility_args );
                 </div>
                 <div id="course_cont2" class="course_tabCont">
                     <!-- コースキャプション -->
-                    <p class="mb_100">車で入門</p>
+                    <p class="mb_100">寺社メインでお遍路を体験したい方におすすめ！
+                        スタート地点から区切りのいいところまで半日で回れます。
+                        １～６番札所まで車で回るコースです。</p>
 
                     <section>
                         <h2 class="h2_bg mb_40">参考マップ</h2>
@@ -236,7 +243,7 @@ $facility_query = new WP_Query( $facility_args );
                 <div id="course_cont3" class="course_tabCont">
                     <!-- コースキャプション -->
                     <p class="mb_100">
-                                    course3県西コース
+                                    チャレンジ精神のある方におすすめ！少し歩かなければいけない難所があります。7～12番所まで車で回るコースです。
                                 </p>
 
                     <section>
@@ -338,7 +345,7 @@ $facility_query = new WP_Query( $facility_args );
                 <div id="course_cont4" class="course_tabCont">
                     <!-- コースキャプション -->
                     <p class="mb_100">
-                                    県南コース
+                                    自然に親しみたい方におすすめ！山に海、車窓からの景色も楽しめます。18～23番札所まで車で回るコースです。（少し狭い道があります）
                                 </p>
 
                     <section>
@@ -366,7 +373,7 @@ $facility_query = new WP_Query( $facility_args );
                             </div>
                             <div class="course_col">
                                 <p class="small_cap mb_40 js-fadeUp">
-                                                <?php the_field('a_descripiton')?>
+                                                <?php the_field('a_description')?>
                                             </p>
                                 <div class=" button18">
                                     <?php $more = get_field('more');
@@ -440,7 +447,7 @@ $facility_query = new WP_Query( $facility_args );
                 <div id="course_cont5" class="course_tabCont">
                     <!-- コースキャプション -->
                     <p class="mb_100">
-                        市街地コースです</p>
+                        短い距離で多くの寺社を巡りたい方におすすめ！すべての寺社が徳島市内にあるため、アクセスがよいです。13～17番札所まで歩いて回るコースです。徳島市内五か所まいりとも呼ばれています。</p>
                     <section>
                         <h2 class="h2_bg mb_40">参考マップ</h2>
                         <div><iframe src="https://www.google.com/maps/d/embed?mid=1EFrYJGULMVx8D1dEwsJii9egcGCTs9s&ehbc=2E312F&z=14"></iframe></div>
