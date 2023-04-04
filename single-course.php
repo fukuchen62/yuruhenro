@@ -193,12 +193,28 @@ $facility_query = new WP_Query( $facility_args );
                     <section class="shop_info contents_width">
                         <h2 class="h3_bg">周辺施設</h2>
                         <div class="shop_info_list">
+                            <?php
+                            $facility_args = array(
+    'post_type' => 'facility',
+    'posts_per_page' => 3,
+    'order' => 'DESC',
+    'tax_query' => array(
+        array(
+        'taxonomy' => 'area',
+        'terms' => array('north'),
+        'field' => 'slug'
+    ),
+    ),
+);
+$facility_query = new WP_Query( $facility_args );
+        if ( $facility_query->have_posts() ) :
+        while ( $facility_query->have_posts() ) : $facility_query->the_post(); ?>
                             <div class="shop_info_card mb_40">
                                 <div class="shop_info_caption">
-                                    <img src="" alt="各施設の画像" />
+                                    <img src="<?php the_field('f_pic1'); ?>" alt="各施設の画像" />
                                 </div>
                                 <div class="shop_info_title">
-                                    <p>タイトル(施設名)</p>
+                                    <p><?php the_field('f_name'); ?></p>
                                 </div>
                                 <div class="shop_info_text">
                                     <p>営業時間：10時～17時</p>
@@ -210,45 +226,11 @@ $facility_query = new WP_Query( $facility_args );
                                 <p class="shop_info_article">
                                                 １２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０
                                             </p>
+                                <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
                             </div>
-
-                            <div class="shop_info_card">
-                                <div class="shop_info_caption">
-                                    <img src="" alt="各施設の画像" />
-                                </div>
-                                <div class="shop_info_title">
-                                    <p>タイトル(施設名)</p>
-                                </div>
-                                <div class="shop_info_text">
-                                    <p>営業時間：10時～17時</p>
-                                    <p>休業日：火曜日</p>
-                                    <p>駐車場：あり</p>
-                                    <p>TEL：000-000-0000</p>
-                                    <p>公式HP：example.site</p>
-                                </div>
-                                <p class="shop_info_article">
-                                                １２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０
-                                            </p>
-                            </div>
-
-                            <div class="shop_info_card mb_40">
-                                <div class="shop_info_caption">
-                                    <img src="" alt="各施設の画像" />
-                                </div>
-                                <div class="shop_info_title">
-                                    <p>タイトル(施設名)</p>
-                                </div>
-                                <div class="shop_info_text">
-                                    <p>営業時間：10時～17時</p>
-                                    <p>休業日：火曜日</p>
-                                    <p>駐車場：あり</p>
-                                    <p>TEL：000-000-0000</p>
-                                    <p>公式HP：example.site</p>
-                                </div>
-                                <p class="shop_info_article">
-                                                １２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０
-                                            </p>
-                            </div>
+                            <?php endwhile;?>
+                            <?php endif;?>
+                            <?php wp_reset_postdata(); ?>
                         </div>
                     </section>
                 </div>
@@ -299,7 +281,7 @@ $facility_query = new WP_Query( $facility_args );
 
                         <div class="course_contInfo mb_40 flex">
                             <div class="course_contIcon">
-                                <?php the_field('c_icon')?>
+                                <img src="<?php the_field('c_icon')?>" alt="">
                             </div>
                             <div class="course_contTime">
                                 <?php the_field('a_time')?>
@@ -313,13 +295,28 @@ $facility_query = new WP_Query( $facility_args );
                     <section class="shop_info contents_width">
                         <h2 class="h3_bg">周辺施設</h2>
                         <div class="shop_info_list">
-
+                            <?php
+                            $facility_args = array(
+    'post_type' => 'facility',
+    'posts_per_page' => 3,
+    'order' => 'DESC',
+    'tax_query' => array(
+        array(
+        'taxonomy' => 'area',
+        'terms' => array('west'),
+        'field' => 'slug'
+    ),
+    ),
+);
+$facility_query = new WP_Query( $facility_args );
+        if ( $facility_query->have_posts() ) :
+        while ( $facility_query->have_posts() ) : $facility_query->the_post(); ?>
                             <div class="shop_info_card mb_40">
                                 <div class="shop_info_caption">
-                                    <img src="" alt="各施設の画像" />
+                                    <img src="<?php the_field('f_pic1'); ?>" alt="各施設の画像" />
                                 </div>
                                 <div class="shop_info_title">
-                                    <p>タイトル(施設名)</p>
+                                    <p><?php the_field('f_name'); ?></p>
                                 </div>
                                 <div class="shop_info_text">
                                     <p>営業時間：10時～17時</p>
@@ -331,46 +328,11 @@ $facility_query = new WP_Query( $facility_args );
                                 <p class="shop_info_article">
                                                 １２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０
                                             </p>
+                                <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
                             </div>
-
-                            <div class="shop_info_card">
-                                <div class="shop_info_caption">
-                                    <img src="" alt="各施設の画像" />
-                                </div>
-                                <div class="shop_info_title">
-                                    <p>タイトル(施設名)</p>
-                                </div>
-                                <div class="shop_info_text">
-                                    <p>営業時間：10時～17時</p>
-                                    <p>休業日：火曜日</p>
-                                    <p>駐車場：あり</p>
-                                    <p>TEL：000-000-0000</p>
-                                    <p>公式HP：example.site</p>
-                                </div>
-                                <p class="shop_info_article">
-                                                １２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０
-                                            </p>
-                            </div>
-
-                            <div class="shop_info_card mb_40">
-                                <div class="shop_info_caption">
-                                    <img src="" alt="各施設の画像" />
-                                </div>
-                                <div class="shop_info_title">
-                                    <p>タイトル(施設名)</p>
-                                </div>
-                                <div class="shop_info_text">
-                                    <p>営業時間：10時～17時</p>
-                                    <p>休業日：火曜日</p>
-                                    <p>駐車場：あり</p>
-                                    <p>TEL：000-000-0000</p>
-                                    <p>公式HP：example.site</p>
-                                </div>
-                                <p class="shop_info_article">
-                                                １２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０
-                                            </p>
-                            </div>
-
+                            <?php endwhile;?>
+                            <?php endif;?>
+                            <?php wp_reset_postdata(); ?>
                         </div>
                     </section>
                 </div>
@@ -421,7 +383,7 @@ $facility_query = new WP_Query( $facility_args );
 
                         <div class="course_contInfo mb_40 flex">
                             <div class="course_contIcon">
-                                <?php the_field('c_icon')?>
+                                <img src="<?php the_field('c_icon')?>" alt="">
                             </div>
                             <div class="course_contTime">
                                 <?php the_field('a_time')?>
@@ -435,12 +397,28 @@ $facility_query = new WP_Query( $facility_args );
                     <section class="shop_info contents_width">
                         <h2 class="h3_bg">周辺施設</h2>
                         <div class="shop_info_list">
+                            <?php
+                            $facility_args = array(
+    'post_type' => 'facility',
+    'posts_per_page' => 3,
+    'order' => 'DESC',
+    'tax_query' => array(
+        array(
+        'taxonomy' => 'area',
+        'terms' => array('south'),
+        'field' => 'slug'
+    ),
+    ),
+);
+$facility_query = new WP_Query( $facility_args );
+        if ( $facility_query->have_posts() ) :
+        while ( $facility_query->have_posts() ) : $facility_query->the_post(); ?>
                             <div class="shop_info_card mb_40">
                                 <div class="shop_info_caption">
-                                    <img src="" alt="各施設の画像" />
+                                    <img src="<?php the_field('f_pic1'); ?>" alt="各施設の画像" />
                                 </div>
                                 <div class="shop_info_title">
-                                    <p>タイトル(施設名)</p>
+                                    <p><?php the_field('f_name'); ?></p>
                                 </div>
                                 <div class="shop_info_text">
                                     <p>営業時間：10時～17時</p>
@@ -452,45 +430,11 @@ $facility_query = new WP_Query( $facility_args );
                                 <p class="shop_info_article">
                                                 １２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０
                                             </p>
+                                <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
                             </div>
-
-                            <div class="shop_info_card">
-                                <div class="shop_info_caption">
-                                    <img src="" alt="各施設の画像" />
-                                </div>
-                                <div class="shop_info_title">
-                                    <p>タイトル(施設名)</p>
-                                </div>
-                                <div class="shop_info_text">
-                                    <p>営業時間：10時～17時</p>
-                                    <p>休業日：火曜日</p>
-                                    <p>駐車場：あり</p>
-                                    <p>TEL：000-000-0000</p>
-                                    <p>公式HP：example.site</p>
-                                </div>
-                                <p class="shop_info_article">
-                                                １２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０
-                                            </p>
-                            </div>
-
-                            <div class="shop_info_card mb_40">
-                                <div class="shop_info_caption">
-                                    <img src="" alt="各施設の画像" />
-                                </div>
-                                <div class="shop_info_title">
-                                    <p>タイトル(施設名)</p>
-                                </div>
-                                <div class="shop_info_text">
-                                    <p>営業時間：10時～17時</p>
-                                    <p>休業日：火曜日</p>
-                                    <p>駐車場：あり</p>
-                                    <p>TEL：000-000-0000</p>
-                                    <p>公式HP：example.site</p>
-                                </div>
-                                <p class="shop_info_article">
-                                                １２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０
-                                            </p>
-                            </div>
+                            <?php endwhile;?>
+                            <?php endif;?>
+                            <?php wp_reset_postdata(); ?>
                         </div>
                     </section>
                 </div>
@@ -539,7 +483,7 @@ $facility_query = new WP_Query( $facility_args );
 
                         <div class="course_contInfo mb_40 flex">
                             <div class="course_contIcon">
-                                <?php the_field('c_icon')?>
+                                <img src="<?php the_field('c_icon')?>" alt="">
                             </div>
                             <div class="course_contTime">
                                 <?php the_field('a_time')?>
@@ -553,12 +497,28 @@ $facility_query = new WP_Query( $facility_args );
                     <section class="shop_info contents_width">
                         <h2 class="h3_bg">周辺施設</h2>
                         <div class="shop_info_list">
+                            <?php
+                            $facility_args = array(
+    'post_type' => 'facility',
+    'posts_per_page' => 3,
+    'order' => 'DESC',
+    'tax_query' => array(
+        array(
+        'taxonomy' => 'area',
+        'terms' => array('east'),
+        'field' => 'slug'
+    ),
+    ),
+);
+$facility_query = new WP_Query( $facility_args );
+        if ( $facility_query->have_posts() ) :
+        while ( $facility_query->have_posts() ) : $facility_query->the_post(); ?>
                             <div class="shop_info_card mb_40">
                                 <div class="shop_info_caption">
-                                    <img src="" alt="各施設の画像" />
+                                    <img src="<?php the_field('f_pic1'); ?>" alt="各施設の画像" />
                                 </div>
                                 <div class="shop_info_title">
-                                    <p>タイトル(施設名)</p>
+                                    <p><?php the_field('f_name'); ?></p>
                                 </div>
                                 <div class="shop_info_text">
                                     <p>営業時間：10時～17時</p>
@@ -570,45 +530,11 @@ $facility_query = new WP_Query( $facility_args );
                                 <p class="shop_info_article">
                                                 １２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０
                                             </p>
+                                <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
                             </div>
-
-                            <div class="shop_info_card">
-                                <div class="shop_info_caption">
-                                    <img src="" alt="各施設の画像" />
-                                </div>
-                                <div class="shop_info_title">
-                                    <p>タイトル(施設名)</p>
-                                </div>
-                                <div class="shop_info_text">
-                                    <p>営業時間：10時～17時</p>
-                                    <p>休業日：火曜日</p>
-                                    <p>駐車場：あり</p>
-                                    <p>TEL：000-000-0000</p>
-                                    <p>公式HP：example.site</p>
-                                </div>
-                                <p class="shop_info_article">
-                                                １２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０
-                                            </p>
-                            </div>
-
-                            <div class="shop_info_card mb_40">
-                                <div class="shop_info_caption">
-                                    <img src="" alt="各施設の画像" />
-                                </div>
-                                <div class="shop_info_title">
-                                    <p>タイトル(施設名)</p>
-                                </div>
-                                <div class="shop_info_text">
-                                    <p>営業時間：10時～17時</p>
-                                    <p>休業日：火曜日</p>
-                                    <p>駐車場：あり</p>
-                                    <p>TEL：000-000-0000</p>
-                                    <p>公式HP：example.site</p>
-                                </div>
-                                <p class="shop_info_article">
-                                                １２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０
-                                            </p>
-                            </div>
+                            <?php endwhile;?>
+                            <?php endif;?>
+                            <?php wp_reset_postdata(); ?>
                         </div>
                     </section>
                 </div>
