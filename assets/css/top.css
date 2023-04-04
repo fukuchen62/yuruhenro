@@ -56,7 +56,8 @@ img {
 }
 
 .nearby_info_box img {
-  width: 150px;
+  margin-top: 20px;
+  width: 300px;
   height: auto;
 }
 
