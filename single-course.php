@@ -230,7 +230,7 @@ $facility_query = new WP_Query( $facility_args );
                                     <p>公式HP：example.site</p>
                                 </div>
                                 <p class="shop_info_article">
-                                                １２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０
+                                                <?php the_field('f_message')?>
                                             </p>
                                 <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
                             </div>
@@ -332,7 +332,7 @@ $facility_query = new WP_Query( $facility_args );
                                     <p>公式HP：example.site</p>
                                 </div>
                                 <p class="shop_info_article">
-                                                １２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０
+                                                <?php the_field('f_message')?>
                                             </p>
                                 <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
                             </div>
@@ -434,7 +434,7 @@ $facility_query = new WP_Query( $facility_args );
                                     <p>公式HP：example.site</p>
                                 </div>
                                 <p class="shop_info_article">
-                                                １２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０
+                                                <?php the_field('f_message')?>
                                             </p>
                                 <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
                             </div>
@@ -534,7 +534,7 @@ $facility_query = new WP_Query( $facility_args );
                                     <p>公式HP：example.site</p>
                                 </div>
                                 <p class="shop_info_article">
-                                                １２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０
+                                                <?php the_field('f_message')?>
                                             </p>
                                 <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
                             </div>
