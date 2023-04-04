@@ -88,7 +88,42 @@
             <section class="shop_info contents_width">
                 <h2 class="h3_bg">周辺施設</h2>
                 <div class="shop_info_list">
+                    <?php
+$taxonomy_slug = "area";
+$taxonomy = get_the_terms($post->ID,$taxonomy_slug);
+// print_r($taxonomy[0]->slug);
+$facility_args = array(
+'post_type' => 'facility',
+'posts_per_page' => -1,
+'taxonomy' => $taxonomy[0]->slug,
+);
+$facility_query = new WP_Query( $facility_args );
+        if ( $facility_query->have_posts() ) :
+        while ( $facility_query->have_posts() ) : $facility_query->the_post(); ?>
+
                     <div class="shop_info_card mb_40">
+                        <div class="shop_info_caption">
+                            <img src="<?php the_field('f_pic1'); ?>" alt="各施設の画像" />
+                        </div>
+                        <div class="shop_info_title">
+                            <p><?php the_field('f_name'); ?></p>
+                        </div>
+                        <div class="shop_info_text">
+                            <p>営業時間：<?php the_field('hours'); ?></p>
+                            <p>休業日：<?php the_field('holiday'); ?></p>
+                            <p>駐車場：<?php the_field('f_parking'); ?></p>
+                            <p>TEL：<?php the_field('f_tell'); ?></p>
+                            <p>公式HP：<?php the_field('f_url'); ?></p>
+                        </div>
+
+
+                    </div>
+                    <?php endwhile;?>
+                    <?php endif;?>
+                    <?php wp_reset_postdata(); ?>
+
+
+                    <!-- <div class="shop_info_card">
                         <div class="shop_info_caption">
                             <img src="" alt="各施設の画像" />
                         </div>
@@ -107,25 +142,6 @@
                 </p>
                     </div>
 
-                    <div class="shop_info_card">
-                        <div class="shop_info_caption">
-                            <img src="" alt="各施設の画像" />
-                        </div>
-                        <div class="shop_info_title">
-                            <p>タイトル(施設名)</p>
-                        </div>
-                        <div class="shop_info_text">
-                            <p>営業時間：10時～17時</p>
-                            <p>休業日：火曜日</p>
-                            <p>駐車場：あり</p>
-                            <p>TEL：000-000-0000</p>
-                            <p>公式HP：example.site</p>
-                        </div>
-                        <p class="shop_info_article">
-                    １２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０
-                </p>
-                    </div>
-
                     <div class="shop_info_card mb_40">
                         <div class="shop_info_caption">
                             <img src="" alt="各施設の画像" />
@@ -143,7 +159,7 @@
                         <p class="shop_info_article">
                     １２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０１２３４５６７８９０
                 </p>
-                    </div>
+                    </div> -->
                 </div>
             </section>
 
