@@ -1,4 +1,5 @@
 @charset "UTF-8";
+*{border: 1px solid royalblue;}
 
 /****************/
 /*     共通     */
@@ -73,3 +74,72 @@ img {
   left: 50%;
   width: 300px;
 }
+
+
+/* ボタンについての説明 */
+.btn_description {
+  margin: 4px auto;
+  width: 500px;
+  height: 80px;
+  padding-left: 10px;
+  padding-top: 10px;
+  max-width: fit-content;
+
+}
+
+.btn_and_description_area {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btn_position{
+  margin: 0 auto;
+}
+
+.textandmore{
+
+  display: flex;
+  flex-direction: column;
+  }
+  
+
+
+
+@media screen and (min-width:1000px) {
+
+
+  .btn_description{
+    padding-left: 40px;
+    margin: 4px;
+  
+  }
+  
+  .btn_and_description_area{
+  
+    flex-direction: row;
+    justify-content: left;
+  }
+
+  .btn_position{
+    margin: 4px;
+  }
+  
+  .textandmore{
+
+    flex-direction: row;
+    
+    }
+    
+
+
+
+    
+
+
+}
+
+
+
+
