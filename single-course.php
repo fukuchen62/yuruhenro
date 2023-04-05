@@ -101,7 +101,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxx <br>
                             $facility_args = array(
     'post_type' => 'facility',
     'posts_per_page' => 3,
-    'order' => 'DESC',
+    'orderby' => 'rand',
     'tax_query' => array(
         array(
         'taxonomy' => 'area',
@@ -122,7 +122,7 @@ $facility_query = new WP_Query( $facility_args );
                                 </div>
                                 <div class="shop_info_text">
                                     <p>営業時間：<?php the_field('hours'); ?></p>
-                                    <p>休業日：<?php the_field('holiday'); ?></p>
+                                    <p>定休日：<?php the_field('holiday'); ?></p>
                                     <p>駐車場：<?php the_field('f_parking'); ?></p>
                                     <p>TEL：<?php the_field('f_tell'); ?></p>
                                     <p>公式HP：<?php the_field('f_url'); ?></p>
@@ -203,7 +203,7 @@ $facility_query = new WP_Query( $facility_args );
                             $facility_args = array(
     'post_type' => 'facility',
     'posts_per_page' => 3,
-    'order' => 'DESC',
+    'orderby' => 'rand',
     'tax_query' => array(
         array(
         'taxonomy' => 'area',
@@ -224,7 +224,7 @@ $facility_query = new WP_Query( $facility_args );
                                 </div>
                                 <div class="shop_info_text">
                                     <p>営業時間：10時～17時</p>
-                                    <p>休業日：火曜日</p>
+                                    <p>定休日：火曜日</p>
                                     <p>駐車場：あり</p>
                                     <p>TEL：000-000-0000</p>
                                     <p>公式HP：example.site</p>
@@ -305,7 +305,7 @@ $facility_query = new WP_Query( $facility_args );
                             $facility_args = array(
     'post_type' => 'facility',
     'posts_per_page' => 3,
-    'order' => 'DESC',
+    'orderby' => 'rand',
     'tax_query' => array(
         array(
         'taxonomy' => 'area',
@@ -326,7 +326,7 @@ $facility_query = new WP_Query( $facility_args );
                                 </div>
                                 <div class="shop_info_text">
                                     <p>営業時間：10時～17時</p>
-                                    <p>休業日：火曜日</p>
+                                    <p>定休日：火曜日</p>
                                     <p>駐車場：あり</p>
                                     <p>TEL：000-000-0000</p>
                                     <p>公式HP：example.site</p>
@@ -407,7 +407,7 @@ $facility_query = new WP_Query( $facility_args );
                             $facility_args = array(
     'post_type' => 'facility',
     'posts_per_page' => 3,
-    'order' => 'DESC',
+    'orderby' => 'rand',
     'tax_query' => array(
         array(
         'taxonomy' => 'area',
@@ -428,7 +428,7 @@ $facility_query = new WP_Query( $facility_args );
                                 </div>
                                 <div class="shop_info_text">
                                     <p>営業時間：10時～17時</p>
-                                    <p>休業日：火曜日</p>
+                                    <p>定休日：火曜日</p>
                                     <p>駐車場：あり</p>
                                     <p>TEL：000-000-0000</p>
                                     <p>公式HP：example.site</p>
@@ -507,7 +507,7 @@ $facility_query = new WP_Query( $facility_args );
                             $facility_args = array(
     'post_type' => 'facility',
     'posts_per_page' => 3,
-    'order' => 'DESC',
+    'orderby' => 'rand',
     'tax_query' => array(
         array(
         'taxonomy' => 'area',
@@ -528,7 +528,7 @@ $facility_query = new WP_Query( $facility_args );
                                 </div>
                                 <div class="shop_info_text">
                                     <p>営業時間：10時～17時</p>
-                                    <p>休業日：火曜日</p>
+                                    <p>定休日：火曜日</p>
                                     <p>駐車場：あり</p>
                                     <p>TEL：000-000-0000</p>
                                     <p>公式HP：example.site</p>
