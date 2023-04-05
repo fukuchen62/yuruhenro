@@ -1,24 +1,6 @@
 @charset "UTF-8";
 
 /****************/
-/*    共通？    */
-/****************/
-
-.flex_d_c {
-    flex-direction: column;
-}
-
-.text_c {
-    text-align: center;
-}
-
-@media screen and (min-width: 760px) {
-    .flex_d_c {
-        flex-direction: row;
-    }
-}
-
-/****************/
 /* 参拝スタイル */
 /****************/
 
@@ -140,6 +122,7 @@
 /*タブのデザイン*/
 .course_tabWrap {
     flex-wrap: wrap;
+    align-items: flex-end;
     margin: 0 auto;
 }
 .course_tabWrap li a {
@@ -174,6 +157,8 @@
 /*押されたタブ背景が白くなる*/
 .course_tabWrap li.active a {
     background: #fff;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 /*タブエリアの表示非表示*/
