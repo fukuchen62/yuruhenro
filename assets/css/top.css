@@ -82,15 +82,24 @@
     justify-content: center;
 }
 
+@media screen and (min-width: 900px) {
+    .btn_and_description_area {
+        text-align: left;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .btn_and_description_area .course_btn {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
+
 @media screen and (min-width: 1000px) {
     .btn_description {
         padding-left: 40px;
-        margin: 4px;
-    }
-
-    .btn_and_description_area {
-        flex-direction: row;
-        justify-content: left;
     }
 
     .catch_phrase {
