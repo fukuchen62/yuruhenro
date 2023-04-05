@@ -3,6 +3,7 @@
 /****************/
 /* キービジュアル */
 /****************/
+
 .slick-img img {
     width: 100vw;
     height: 100vh;
@@ -21,7 +22,7 @@
     font-size: 24px;
     color: #fbfaf5;
     line-height: 1.5em;
-    z-index: 2;
+    z-index: 1;
     writing-mode: vertical-rl; /* 縦向きにする */
     text-orientation: upright;
 }
