@@ -26,8 +26,18 @@ iframe {
     color: #fbfaf5;
     text-align: center;
     background-image: url(../img/sb_kv.png);
-    /* margin: 0 auto 40px; */
-    margin: 0 auto;
+    margin: 0 auto 40px;
+}
+
+.h1_poab {
+    position: relative;
+}
+
+.h1_pore {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* h2装飾 */
