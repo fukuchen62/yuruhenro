@@ -1,20 +1,11 @@
 @charset "UTF-8";
-/* *{border: 1px solid royalblue;} */
 
 /****************/
-/*     共通     */
+/* キービジュアル */
 /****************/
-
-.wrap {
-  width: 100%;
-  font-family: "Kiwi Maru";
-  font-size: 16px;
-  color: #754c24;
-  background-color: #fbfaf5;
-}
 
 img {
-  width: 100%;
+    width: 100%;
 }
 
 /****************/
@@ -22,110 +13,109 @@ img {
 /****************/
 
 .container {
-  /* max-width: 1440px; */
-  margin: 0 auto;
+    margin: 0 auto;
+}
+
+.slick-img img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
 }
 
 .catch_phrase {
-  position: absolute;
-  /* top: 0;
-  left: 0; */
-  top: 200px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 24px;
-  color: #fbfaf5;
-  text-shadow: 1px 1px 0 #754c24, -1px 1px 0 #754c24, 1px -1px 0 #754c24,
-    -1px -1px 0 #754c24;
-
-  line-height: 1.5em;
-  z-index: 2;
-  writing-mode: vertical-rl; /* 縦向きにする */
-  text-orientation: upright;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    color: #fbfaf5;
+    /* text-shadow: 1px 1px 0 #754c24, -1px 1px 0 #754c24, 1px -1px 0 #754c24,
+        -1px -1px 0 #754c24; */
+    line-height: 1.5em;
+    z-index: 2;
+    writing-mode: vertical-rl; /* 縦向きにする */
+    text-orientation: upright;
 }
 
 .thumbnail-img {
-  padding: 5px;
+    padding: 5px;
 }
 
 /* 参拝のお作法について */
 
 .bg_img {
-  position: relative;
-  height: 350px;
-  background-image: url(../img/flame.png);
-  background-repeat: no-repeat;
+    position: relative;
+    height: 350px;
+    background-image: url(../img/flame.png);
+    background-repeat: no-repeat;
 }
 .sanpai_caption {
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  width: 300px;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    width: 300px;
 }
 
 /* ボタンについての説明 */
 .btn_description {
-  margin: 4px auto;
-  width: 500px;
-  height: 80px;
-  padding-left: 10px;
-  padding-top: 10px;
-  max-width: fit-content;
+    margin: 4px auto;
+    width: 500px;
+    height: 80px;
+    padding-left: 10px;
+    padding-top: 10px;
+    max-width: fit-content;
 }
 
 .btn_and_description_area {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .btn_position {
-  margin: 0 auto;
-}
-
-.textandmore {
+    margin: 0 auto;
 }
 
 .textandmore2 {
-  /* display: flex;
+    /* display: flex;
   flex-direction: column; */
 }
 
 @media screen and (min-width: 1000px) {
-  .btn_description {
-    padding-left: 40px;
-    margin: 4px;
-  }
+    .btn_description {
+        padding-left: 40px;
+        margin: 4px;
+    }
 
-  .btn_and_description_area {
-    flex-direction: row;
-    justify-content: left;
-  }
+    .btn_and_description_area {
+        flex-direction: row;
+        justify-content: left;
+    }
 
-  .btn_position {
-    margin: 4px;
-  }
+    .btn_position {
+        margin: 4px;
+    }
 
-  .textandmore {
-    flex-direction: row;
-  }
+    .textandmore {
+        flex-direction: row;
+    }
 
-  .catch_phrase {
-    position: absolute;
-    /* top: 0;
+    .catch_phrase {
+        position: absolute;
+        /* top: 0;
       left: 0; */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 36px;
-    color: #fbfaf5;
-    line-height: 1.5em;
-    z-index: 2;
-    writing-mode: vertical-rl; /* 縦向きにする */
-    text-orientation: upright;
-  }
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 36px;
+        color: #fbfaf5;
+        line-height: 1.5em;
+        z-index: 2;
+        writing-mode: vertical-rl; /* 縦向きにする */
+        text-orientation: upright;
+    }
 
-  .thumbnail-img {
-    padding: 10px;
-  }
+    .thumbnail-img {
+        padding: 10px;
+    }
 }
