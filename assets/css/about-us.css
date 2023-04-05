@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+.temple_list ul li {
+    text-align: center;
+}
+
+.temple_list ul li a {
+}
+
+@media screen and (min-width: 1000px) {
+    .temple_list {
+        /* line-height: 1.5em; */
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .temple_list ul li {
+        margin-bottom: 10px;
+    }
+    .shop_mt10 {
+        margin-bottom: 10px;
+    }
+
+    .sho_list {
+        display: flex;
+        flex-direction: column;
+    }
+    .sho_list ul li {
+        margin-bottom: 10px;
+    }
+}
