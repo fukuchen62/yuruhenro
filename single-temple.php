@@ -89,14 +89,26 @@
                 <h2 class="h3_bg">周辺施設</h2>
                 <div class="shop_info_list">
                     <?php
-$taxonomy_slug = "area";
-$taxonomy = get_the_terms($post->ID,$taxonomy_slug);
-// print_r($taxonomy[0]->slug);
+
+$terms = get_the_terms($post->ID,'area');
+  foreach( $terms as $term ) {
+    $term_slug = $term->slug; // 現在表示している投稿が所属しているタームを取得
+  }
+
 $facility_args = array(
-'post_type' => 'facility',
-'posts_per_page' => 3,
-'taxonomy' => $taxonomy[0]->slug,
-);
+    'post_type' => 'facility', // 投稿タイプ名
+    'post__not_in' => array($post->ID), // 現在表示している投稿を除外
+    'posts_per_page' => 3, // 表示件数
+    'orderby' => 'rand', // ランダム表示
+    'tax_query' => array(
+      array(
+      'taxonomy' => 'area', // タクソノミー名
+      'field' => 'slug',
+      'terms' => $term_slug, // 取得したタームを指定
+      )
+    )
+  );
+
 $facility_query = new WP_Query( $facility_args );
         if ( $facility_query->have_posts() ) :
         while ( $facility_query->have_posts() ) : $facility_query->the_post(); ?>
