@@ -111,6 +111,22 @@ height: auto;}
   margin: 0 auto 40px;
 }
 
+.oinori{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+
+}
+
+.oinori_img{
+  width: 200px;
+  height: auto;
+}
+
+.oinori_txt{
+  max-width: 550px;
+}
+  
 
 .ema{
   /* margin: 0 auto; */
@@ -140,6 +156,11 @@ align-items: start;
     flex-direction: row;
   }
   
+  .oinori{
+    flex-direction: row;
+  }
+  
+
 }
 
 
