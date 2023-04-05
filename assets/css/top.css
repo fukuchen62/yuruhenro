@@ -21,7 +21,7 @@ img {
 /*  メイン部分  */
 /****************/
 
-.container{
+.container {
   max-width: 1440px;
   margin: 0 auto;
 }
@@ -38,7 +38,7 @@ img {
 
 /* .vertical {
   writing-mode: vertical-rl; /* 縦向きにする */
-  /* text-orientation: upright;
+/* text-orientation: upright;
 } */
 
 .catch_phrase {
@@ -54,7 +54,6 @@ img {
   z-index: 2;
   writing-mode: vertical-rl; /* 縦向きにする */
   text-orientation: upright;
-
 }
 /* 周辺情報の写真 */
 
@@ -69,11 +68,9 @@ img {
   height: auto;
 } */
 
-.thumbnail-img{
+.thumbnail-img {
   padding: 5px;
 }
-
-
 
 /* 参拝のお作法について */
 
@@ -85,11 +82,10 @@ img {
 }
 .sanpai_caption {
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 10%;
+  left: 10%;
   width: 300px;
 }
-
 
 /* ボタンについての説明 */
 .btn_description {
@@ -99,80 +95,62 @@ img {
   padding-left: 10px;
   padding-top: 10px;
   max-width: fit-content;
-
 }
 
 .btn_and_description_area {
-
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 
-.btn_position{
+.btn_position {
   margin: 0 auto;
 }
 
-.textandmore{
+.textandmore {
+  text-align: center;
+}
 
-  display: flex;
-  flex-direction: column;
-  }
-  
+.textandmore2 {
+  /* display: flex;
+  flex-direction: column; */
+}
 
-
-
-@media screen and (min-width:1000px) {
-
-
-  .btn_description{
+@media screen and (min-width: 1000px) {
+  .btn_description {
     padding-left: 40px;
     margin: 4px;
-  
   }
-  
-  .btn_and_description_area{
-  
+
+  .btn_and_description_area {
     flex-direction: row;
     justify-content: left;
   }
 
-  .btn_position{
+  .btn_position {
     margin: 4px;
   }
-  
-  .textandmore{
 
+  .textandmore {
     flex-direction: row;
-    
-    }
-    
-    .catch_phrase {
-      position: absolute;
-      /* top: 0;
+  }
+
+  .catch_phrase {
+    position: absolute;
+    /* top: 0;
       left: 0; */
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 36px;
-      color: #fbfaf5;
-      line-height: 1.5em;
-      z-index: 2;
-      writing-mode: vertical-rl; /* 縦向きにする */
-      text-orientation: upright;
-    
-    }
-    
-    .thumbnail-img{
-      padding: 10px;
-    }
-    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    color: #fbfaf5;
+    line-height: 1.5em;
+    z-index: 2;
+    writing-mode: vertical-rl; /* 縦向きにする */
+    text-orientation: upright;
+  }
 
-    
-
-
+  .thumbnail-img {
+    padding: 10px;
+  }
 }
-
-
-
-
