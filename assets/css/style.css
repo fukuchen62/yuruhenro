@@ -3,9 +3,6 @@
 /****************/
 /*    共通？    */
 /****************/
-img {
-    width: 100%;
-}
 
 .flex_d_c {
     flex-direction: column;

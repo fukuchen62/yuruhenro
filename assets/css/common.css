@@ -4,18 +4,22 @@
 /*     共通     */
 /****************/
 
-iframe {
-    width: 100%;
-    height: 100%;
-    aspect-ratio: 4/3;
-}
-
 .wrap {
     width: 100%;
     font-family: "Kiwi Maru";
     font-size: 16px;
     color: #754c24;
     background-color: #fbfaf5;
+}
+
+iframe {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 4/3;
+}
+
+img {
+    width: 100%;
 }
 
 /* h1装飾 */
@@ -78,7 +82,6 @@ iframe {
 /* h4装飾 */
 .h4_bg {
     font-weight: bold;
-    /* text-align: center; */
     margin: 0 auto 10px;
 }
 
@@ -86,7 +89,6 @@ iframe {
 .big_cap {
     line-height: 1.5em;
     padding: 0 80px;
-    /* margin-bottom: 40px; */
 }
 
 /* 画像などの説明キャプション */
@@ -121,7 +123,6 @@ iframe {
     justify-content: space-between;
     align-items: center;
     position: relative;
-    /* margin-bottom: 40px; */
     margin: 0 0 40px auto;
     padding: 1em;
     width: 160px;
