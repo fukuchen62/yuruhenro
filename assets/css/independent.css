@@ -42,5 +42,27 @@
   max-width: 1000px;
   padding: 0 10px;
   margin: 0 auto;
+}
 
+
+.procedure{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  max-width: 1180px;
+  border: 1px solid #c69c6d;
+  border-radius: 10px;
+}
+
+.picto{
+  display: flex;
+  align-items: center;
+}
+
+.illust{
+  width:300px;
+  height: auto;
+}
+.notes{
+  width:600px;
 }
