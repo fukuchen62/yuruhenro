@@ -50,9 +50,19 @@
   display: flex;
   flex-direction: column;
   max-width: 1180px;
-  border: 1px solid #c69c6d;
-  border-radius: 10px;
+  border: 1px solid #008080;
+  border-radius: 30px;
+  gap: 40px;
+  padding: 40px;
 }
+.procedure_skin{
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #c69c6d;
+  border-radius: 30px;
+  margin-bottom: 150px;
+}
+
 
 .picto{
   display: flex;
@@ -62,7 +72,28 @@
 .illust{
   width:300px;
   height: auto;
+  margin-right: 40px;
 }
 .notes{
   width:600px;
+}
+
+.hatenagirl{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hatenagirl2{
+width: 100px;
+height: auto;}
+
+.dotline{
+  max-width: 600px;
+  border: 1px dotted #008080;
+  margin: 0 auto 20px;
+}
+
+.fuda{
+  margin: 0 auto 40px;
 }
