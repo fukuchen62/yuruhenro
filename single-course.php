@@ -101,7 +101,7 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxx <br>
                             $facility_args = array(
     'post_type' => 'facility',
     'posts_per_page' => 3,
-    'order' => 'DESC',
+    'orderby' => 'rand',
     'tax_query' => array(
         array(
         'taxonomy' => 'area',
@@ -203,7 +203,7 @@ $facility_query = new WP_Query( $facility_args );
                             $facility_args = array(
     'post_type' => 'facility',
     'posts_per_page' => 3,
-    'order' => 'DESC',
+    'orderby' => 'rand',
     'tax_query' => array(
         array(
         'taxonomy' => 'area',
@@ -305,7 +305,7 @@ $facility_query = new WP_Query( $facility_args );
                             $facility_args = array(
     'post_type' => 'facility',
     'posts_per_page' => 3,
-    'order' => 'DESC',
+    'orderby' => 'rand',
     'tax_query' => array(
         array(
         'taxonomy' => 'area',
@@ -407,7 +407,7 @@ $facility_query = new WP_Query( $facility_args );
                             $facility_args = array(
     'post_type' => 'facility',
     'posts_per_page' => 3,
-    'order' => 'DESC',
+    'orderby' => 'rand',
     'tax_query' => array(
         array(
         'taxonomy' => 'area',
@@ -507,7 +507,7 @@ $facility_query = new WP_Query( $facility_args );
                             $facility_args = array(
     'post_type' => 'facility',
     'posts_per_page' => 3,
-    'order' => 'DESC',
+    'orderby' => 'rand',
     'tax_query' => array(
         array(
         'taxonomy' => 'area',
