@@ -22,6 +22,7 @@
       referrerpolicy="no-referrer"
     />
     <!-- js用CSS -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 
     <!-- オリジナルCSS -->
     <link rel="stylesheet" href="../assets/css/common.css" />
@@ -80,7 +81,7 @@
 
 
             <section class="contents_width">
-              <section>
+              <div>
               <h2 class="h2_bg">霊山寺　門前一番街</h2>
               <div class="bookmark">
                 <p>☆</p>
@@ -90,39 +91,43 @@
               <div class="temple_img">
                 <img src="" alt="お寺の写真(霊山寺)" />
               </div>
-            </section>
+            </div>
             <section class="contents_width">
               <h2 class="h3_bg">門前一番街について</h2>
 
-              <div class="temple_about">
-                <div class="temple_about_slider">
+              <div class="temple_about mb_80">
+                <div class="slider2">
+                  <div class="slick-img2">
                   <img src="../assets/img/01ryozenji.jpg" alt="1" />
+                  </div>
+                  <div class="slick-img2">
                   <img src="../assets/img/01ryozenji.jpg" alt="2" />
+                  </div>
+                  <div class="slick-img2">
                   <img src="../assets/img/01ryozenji.jpg" alt="3" />
+                  </div>
+                  <div class="slick-img2">
                   <img src="../assets/img/01ryozenji.jpg" alt="4" />
+                  </div>
                 </div>
-
                 <div class="temple_about_text">
                   <p class="small_cap">
                     四国霊場八十八ヶ所一番札所「霊山寺」の門前にある門前一番街
                     初めてのお遍路初心者にとても心強い場所です。<br>
-                    
                     ここでお遍路に必要なものを全てそろえることができます。<br>
                     （事前にネットで注文もできます（配送・当日受取））<br>
-                    
                     遍路用品のこと、お遍路のこと、公認先達さんの深い知識と経験を活かしてのアドバイスがいただけます。
                     まずはこちらに立ち寄って、服装、用具、気持ちの準備を整えてお遍路にスタートしましょう。<br>
-                    
                     門前名物　焼き餅「あわくった」もおすすめです。<br>
                     粟とよもぎの2種類があります。<br>
-                    
-                    
                     「お遍路衣装でお参り体験」もできます。<br>
                     レンタル衣装で1時間散策できるので、1番札所や2番札所に参拝できます。<br>
                                       </p>
                 </div>
-              </div>
+              </div><!-- temple_aboutここまで -->
+
             </section>
+
             <section class="contents_width">
               <h2 class="h3_bg">施設情報</h2>
               <div class="temple_info">
@@ -376,11 +381,12 @@
       </footer>
       <!-- footerここまで -->
     </div>
-    <!-- jsプラグイン読み込み -->
-    <script src="../assets/js/jquery.inview.min.js"></script>
-    <!-- オリジナルjs読み込み -->
-    <script src="../assets/js/common_script.js"></script>
-    <!-- 小出さん作成中のslickのファイル -->
-    <script src="../assets/js/script.js"></script>
+
+        <!--jQueryのJS-->
+        <script src="../assets/js/jquery-3.6.3.min.js"></script>
+        <!--スライダー用のJS-->
+        <script src="../assets/js/script.js"></script>
+        <script src="../assets/js/slick.js"></script>
+
   </body>
 </html>
