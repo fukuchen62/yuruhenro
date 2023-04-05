@@ -83,3 +83,12 @@ function add_my_files() {
         true
     );
 }
+
+// 以下は
+add_theme_support( 'title-tag' );
+function wp_document_title_separator( $separator ) {
+  $separator = '|';
+  return $separator;
+}
+add_filter( 'document_title_separator', 'wp_document_title_separator' );
+?>
