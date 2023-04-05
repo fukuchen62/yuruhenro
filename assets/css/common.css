@@ -344,12 +344,6 @@ img {
     margin: 0 auto;
 }
 
-/* 404*/
-.link {
-    padding: 0 10px;
-    border-bottom: 1px solid;
-}
-
 /* コースボタン */
 .course_btn {
     font-size: 20px;
@@ -530,14 +524,19 @@ img {
 /****************/
 /* ユーティリティ */
 /****************/
+.text_c {
+    text-align: center;
+}
 
 .flex {
     display: flex;
 }
 
+.flex_d_c {
+    flex-direction: column;
+}
+
 .contents_width {
-    /* max-width: 500px; */
-    /* margin: 0 auto 100px; */
     margin: 0 auto;
     padding: 0 32px;
 }
@@ -566,6 +565,12 @@ img {
 
 .mb_150 {
     margin-bottom: 150px;
+}
+
+@media screen and (min-width: 760px) {
+    .flex_d_c {
+        flex-direction: row;
+    }
 }
 
 /*要素フェードインのためのclass*/
