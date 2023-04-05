@@ -223,11 +223,11 @@ $facility_query = new WP_Query( $facility_args );
                                     <p><?php the_field('f_name'); ?></p>
                                 </div>
                                 <div class="shop_info_text">
-                                    <p>営業時間：10時～17時</p>
-                                    <p>定休日：火曜日</p>
-                                    <p>駐車場：あり</p>
-                                    <p>TEL：000-000-0000</p>
-                                    <p>公式HP：example.site</p>
+                                    <p>営業時間：<?php the_field('hours'); ?></p>
+                                    <p>定休日：<?php the_field('holiday'); ?></p>
+                                    <p>駐車場：<?php the_field('f_parking'); ?></p>
+                                    <p>TEL：<?php the_field('f_tell'); ?></p>
+                                    <p>公式HP：<?php the_field('f_url'); ?></p>
                                 </div>
                                 <p class="shop_info_article">
                                                 <?php the_field('f_message')?>
@@ -325,11 +325,11 @@ $facility_query = new WP_Query( $facility_args );
                                     <p><?php the_field('f_name'); ?></p>
                                 </div>
                                 <div class="shop_info_text">
-                                    <p>営業時間：10時～17時</p>
-                                    <p>定休日：火曜日</p>
-                                    <p>駐車場：あり</p>
-                                    <p>TEL：000-000-0000</p>
-                                    <p>公式HP：example.site</p>
+                                    <p>営業時間：<?php the_field('hours'); ?></p>
+                                    <p>定休日：<?php the_field('holiday'); ?></p>
+                                    <p>駐車場：<?php the_field('f_parking'); ?></p>
+                                    <p>TEL：<?php the_field('f_tell'); ?></p>
+                                    <p>公式HP：<?php the_field('f_url'); ?></p>
                                 </div>
                                 <p class="shop_info_article">
                                                 <?php the_field('f_message')?>
@@ -427,11 +427,11 @@ $facility_query = new WP_Query( $facility_args );
                                     <p><?php the_field('f_name'); ?></p>
                                 </div>
                                 <div class="shop_info_text">
-                                    <p>営業時間：10時～17時</p>
-                                    <p>定休日：火曜日</p>
-                                    <p>駐車場：あり</p>
-                                    <p>TEL：000-000-0000</p>
-                                    <p>公式HP：example.site</p>
+                                    <p>営業時間：<?php the_field('hours'); ?></p>
+                                    <p>定休日：<?php the_field('holiday'); ?></p>
+                                    <p>駐車場：<?php the_field('f_parking'); ?></p>
+                                    <p>TEL：<?php the_field('f_tell'); ?></p>
+                                    <p>公式HP：<?php the_field('f_url'); ?></p>
                                 </div>
                                 <p class="shop_info_article">
                                                 <?php the_field('f_message')?>
@@ -527,11 +527,11 @@ $facility_query = new WP_Query( $facility_args );
                                     <p><?php the_field('f_name'); ?></p>
                                 </div>
                                 <div class="shop_info_text">
-                                    <p>営業時間：10時～17時</p>
-                                    <p>定休日：火曜日</p>
-                                    <p>駐車場：あり</p>
-                                    <p>TEL：000-000-0000</p>
-                                    <p>公式HP：example.site</p>
+                                    <p>営業時間：<?php the_field('hours'); ?></p>
+                                    <p>定休日：<?php the_field('holiday'); ?></p>
+                                    <p>駐車場：<?php the_field('f_parking'); ?></p>
+                                    <p>TEL：<?php the_field('f_tell'); ?></p>
+                                    <p>公式HP：<?php the_field('f_url'); ?></p>
                                 </div>
                                 <p class="shop_info_article">
                                                 <?php the_field('f_message')?>

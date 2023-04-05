@@ -3,23 +3,14 @@
 /****************/
 /* キービジュアル */
 /****************/
-
-img {
-    width: 100%;
-}
-
-/****************/
-/*  メイン部分  */
-/****************/
-
-.container {
-    margin: 0 auto;
-}
-
 .slick-img img {
     width: 100vw;
     height: 100vh;
     object-fit: cover;
+}
+
+.thumbnail-img {
+    padding: 5px;
 }
 
 .catch_phrase {
@@ -29,56 +20,66 @@ img {
     transform: translate(-50%, -50%);
     font-size: 24px;
     color: #fbfaf5;
-    /* text-shadow: 1px 1px 0 #754c24, -1px 1px 0 #754c24, 1px -1px 0 #754c24,
-        -1px -1px 0 #754c24; */
     line-height: 1.5em;
     z-index: 2;
     writing-mode: vertical-rl; /* 縦向きにする */
     text-orientation: upright;
 }
 
-.thumbnail-img {
-    padding: 5px;
+@media screen and (min-width: 1000px) {
+    .thumbnail-img {
+        padding: 10px;
+    }
 }
 
-/* 参拝のお作法について */
+/****************/
+/*  メイン部分  */
+/****************/
 
-.bg_img {
+.top_flexset {
+    flex-direction: column;
+}
+
+.top_sanpai_bg1 {
     position: relative;
-    height: 350px;
-    background-image: url(../img/flame.png);
-    background-repeat: no-repeat;
+    width: 100%;
+    padding: 37%;
+    background: url(../img/top_sanpai.jpg) no-repeat center center / 55% auto,
+        url(../img/flame.png) no-repeat center center / cover;
 }
-.sanpai_caption {
+
+.top_sanpai_bg2 {
+    position: relative;
+    width: 100%;
+    padding: 37%;
+    background: url(../img/top_style.jpg) no-repeat center center / 55% auto,
+        url(../img/flame.png) no-repeat center center / cover;
+}
+
+.top_sanpai_bg1 > img,
+.top_sanpai_bg2 > img {
     position: absolute;
-    top: 10%;
     left: 10%;
-    width: 300px;
+    bottom: 10%;
+    width: 130px;
+    height: 130px;
 }
 
 /* ボタンについての説明 */
 .btn_description {
-    margin: 4px auto;
+    max-width: fit-content;
     width: 500px;
     height: 80px;
     padding-left: 10px;
     padding-top: 10px;
-    max-width: fit-content;
+    margin: 4px auto;
+    text-align: center;
 }
 
 .btn_and_description_area {
-    display: flex;
+    text-align: center;
     flex-direction: column;
     justify-content: center;
-}
-
-.btn_position {
-    margin: 0 auto;
-}
-
-.textandmore2 {
-    /* display: flex;
-  flex-direction: column; */
 }
 
 @media screen and (min-width: 1000px) {
@@ -92,18 +93,8 @@ img {
         justify-content: left;
     }
 
-    .btn_position {
-        margin: 4px;
-    }
-
-    .textandmore {
-        flex-direction: row;
-    }
-
     .catch_phrase {
         position: absolute;
-        /* top: 0;
-      left: 0; */
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -113,9 +104,5 @@ img {
         z-index: 2;
         writing-mode: vertical-rl; /* 縦向きにする */
         text-orientation: upright;
-    }
-
-    .thumbnail-img {
-        padding: 10px;
     }
 }
