@@ -50,7 +50,7 @@
                         <div class="searchresultList_data">
                             <h4 class="h4_bg">安楽寺1</h4>
                             <p>営業時間：10時～17時</p>
-                            <p>休業日：火曜日</p>
+                            <p>定休日：火曜日</p>
                             <p>駐車場：あり</p>
                             <p>TEL：000-000-0000</p>
                             <p>公式HP：example.site</p>
@@ -69,7 +69,7 @@
                         <div class="searchresultList_data">
                             <h4 class="h4_bg">安楽寺1</h4>
                             <p>営業時間：10時～17時</p>
-                            <p>休業日：火曜日</p>
+                            <p>定休日：火曜日</p>
                             <p>駐車場：あり</p>
                             <p>TEL：000-000-0000</p>
                             <p>公式HP：example.site</p>
@@ -88,7 +88,7 @@
                         <div class="searchresultList_data">
                             <h4 class="h4_bg">安楽寺1</h4>
                             <p>営業時間：10時～17時</p>
-                            <p>休業日：火曜日</p>
+                            <p>定休日：火曜日</p>
                             <p>駐車場：あり</p>
                             <p>TEL：000-000-0000</p>
                             <p>公式HP：example.site</p>
