@@ -45,11 +45,17 @@ img {
   position: absolute;
   /* top: 0;
   left: 0; */
-  top: 25%;
+  top: 200px;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 24px;
   color: #fbfaf5;
+  text-shadow:
+  1px 1px 0 #754c24,
+  -1px 1px 0 #754c24,
+  1px -1px 0 #754c24,
+  -1px -1px 0 #754c24;
+
   line-height: 1.5em;
   z-index: 2;
   writing-mode: vertical-rl; /* 縦向きにする */
@@ -147,15 +153,24 @@ img {
     
     }
     
+}
+
+
+
+@media screen and (min-width:900px) {
+
+
+    
     .catch_phrase {
       position: absolute;
       /* top: 0;
       left: 0; */
-      top: 50%;
+      top: 400px;
       left: 50%;
       transform: translate(-50%, -50%);
       font-size: 36px;
       color: #fbfaf5;
+
       line-height: 1.5em;
       z-index: 2;
       writing-mode: vertical-rl; /* 縦向きにする */
@@ -166,13 +181,6 @@ img {
     .thumbnail-img{
       padding: 10px;
     }
-    
-
-    
-
 
 }
-
-
-
 

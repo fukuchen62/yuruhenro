@@ -36,9 +36,14 @@ img {
     flex-direction: column;
 }
 .slider2{
-    max-width: 400px;
-    max-height: 300px;
+        max-width: fit-content;
+    max-height: auto;
+    margin-bottom: 40px;
+
 }
+
+
+
 
 /* ********スライドここまで******* */
 
@@ -114,6 +119,15 @@ img {
     .temple_info_table {
         width: 450px;
     }
+
+.slider2{
+    max-width: 500px;
+}
+
+
+
+
+
 
 }
 
