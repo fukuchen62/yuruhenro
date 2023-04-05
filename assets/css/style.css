@@ -55,7 +55,11 @@
 
 .cp_deco {
     border: 2px Dashed #79afaf;
-    padding: 20px;
+    padding: 40px;
+}
+
+.cp_deco > img {
+    display: none;
 }
 
 .flex_d_c {
@@ -92,6 +96,29 @@
 
     .flex_d_c {
         flex-direction: row;
+    }
+
+    .cp_deco {
+        position: relative;
+        padding: 60px;
+    }
+
+    .cp_deco > img {
+        display: block;
+        width: 130px;
+        height: 130px;
+    }
+
+    .cp_deco > img:nth-child(1) {
+        position: absolute;
+        left: -30px;
+        top: -65px;
+    }
+
+    .cp_deco > img:nth-child(2) {
+        position: absolute;
+        right: -30px;
+        bottom: -65px;
     }
 }
 
