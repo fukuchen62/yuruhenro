@@ -2,37 +2,28 @@
 
 .temple_list ul li {
     text-align: center;
+    margin-bottom: 10px;
 }
 
-/* .posi {
-    position: relative;
-} */
+.about_us_list ul li {
+    margin-bottom: 10px;
+}
 
-/* .site {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} */
+.mt_10 {
+    margin: 10px 0 10px;
+}
 
 @media screen and (min-width: 1000px) {
     .temple_list {
-        /* line-height: 1.5em; */
         display: flex;
         justify-content: space-evenly;
     }
-    .temple_list ul li {
-        margin-bottom: 10px;
+    .sisetu {
+        display: flex;
+        justify-content: space-evenly;
     }
-    .shop_mt10 {
-        margin-bottom: 10px;
-    }
-
-    .sho_list {
+    .sisetu_list {
         display: flex;
         flex-direction: column;
-    }
-    .sho_list ul li {
-        margin-bottom: 10px;
     }
 }
