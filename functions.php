@@ -16,10 +16,10 @@ function add_my_files() {
         'google-fonts-kosugi',
         'https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&family=Kosugi+Maru&display=swap'
     );
-    wp_enqueue_style(
-        'instagram-icon-photo-font-awesome',
-        'https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&family=Kosugi+Maru&display=swap'
-    );
+    // wp_enqueue_style(
+    //     'instagram-icon-photo-font-awesome',
+    //     'https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&family=Kosugi+Maru&display=swap'
+    // );
     wp_enqueue_style(
         'my-destyle',
         get_template_directory_uri() . '/assets/css/destyle.css'
@@ -45,7 +45,7 @@ function add_my_files() {
         'my-search-form',
         get_template_directory_uri() . '/assets/css/search-form.css'
         );
-                wp_enqueue_style(
+        wp_enqueue_style(
         'my-search-form',
         get_template_directory_uri() . '/assets/css/top.css'
         );
@@ -83,12 +83,3 @@ function add_my_files() {
         true
     );
 }
-
-// 以下はブラウザのタブのタイトル表示
-add_theme_support( 'title-tag' );
-function wp_document_title_separator( $separator ) {
-  $separator = '|';
-  return $separator;
-}
-add_filter( 'document_title_separator', 'wp_document_title_separator' );
-?>

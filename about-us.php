@@ -1,7 +1,3 @@
-<?php
-/*Template Name:about-us
-*/
-?>
 <?php get_header(); ?>
 <!-- mainここから -->
 <main>
@@ -137,8 +133,7 @@
                         <h3 class="mt_10 h4_bg">ま行</h3>
                         <ul>
                             <li>
-                                <a
-                                    href="https://www.google.com/url?q=http://r.goope.jp/mameboncafe/contact&sa=D&source=editors&ust=1680350847874345&usg=AOvVaw01-q7Lcc9nUzayaTRi5wQr">まめぼんカフェ</a>
+                                <a href="https://www.google.com/url?q=http://r.goope.jp/mameboncafe/contact&sa=D&source=editors&ust=1680350847874345&usg=AOvVaw01-q7Lcc9nUzayaTRi5wQr">まめぼんカフェ</a>
                             </li>
                             <li>
                                 <a href="https://www.ja-higashitks.com/aisai/">みはらしの丘
@@ -149,8 +144,7 @@
                         <h3 class="mt_10 h4_bg">や行</h3>
                         <ul>
                             <li>
-                                <a
-                                    href="https://tokuchu-ja.or.jp/store/detail.php?nm=higashitokushima_yottene">よってネ市(JA東とくしま産直市)</a>
+                                <a href="https://tokuchu-ja.or.jp/store/detail.php?nm=higashitokushima_yottene">よってネ市(JA東とくしま産直市)</a>
                             </li>
                             <li><a href=""></a></li>
                         </ul>
