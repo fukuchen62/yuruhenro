@@ -22,6 +22,10 @@
 
     <!-- jQuery読み込み -->
 
+
+    <!-- ファビコン設定 -->
+    <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/favicon.ico">
+
     <?php wp_head(); ?>
 </head>
 
