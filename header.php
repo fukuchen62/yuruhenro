@@ -47,12 +47,12 @@
                     <!-- ナビゲーションメニュー -->
                     <nav class="header_nav flex">
                         <ul>
-                            <li><a href="<?php echo home_url('page-about'); ?>">＃ゆるへんろって？</a></li>
-                            <li><a href="<?php echo home_url('page-checkpoint'); ?>">参拝スタイル</a></li>
-                            <li><a href="<?php echo home_url('single-course'); ?>">コース紹介</a></li>
-                            <li><a href="<?php echo home_url('page-bookmark'); ?>">マイブックマーク</a></li>
-                            <li><a href="<?php echo home_url('/') . '?s='; ?>">検索</a></li>
-                            <li><a href="<?php echo home_url('archive-qanda'); ?>">Q&A</a></li>
+                            <li><a href="<?php echo home_url('about'); ?>">＃ゆるへんろって？</a></li>
+                            <li><a href="<?php echo home_url('checkpoint'); ?>">参拝スタイル</a></li>
+                            <li><a href="<?php echo home_url('course/easy'); ?>">コース紹介</a></li>
+                            <li><a href="<?php echo home_url('bookmark'); ?>">マイブックマーク</a></li>
+                            <li><a href="<?php echo home_url('?s='); ?>">検索</a></li>
+                            <li><a href="<?php echo home_url('qanda'); ?>">Q&A</a></li>
                         </ul>
                     </nav>
                 </div>
