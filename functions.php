@@ -84,7 +84,7 @@ function add_my_files() {
     );
 }
 
-// 以下は
+// 以下はブラウザのタブのタイトル表示
 add_theme_support( 'title-tag' );
 function wp_document_title_separator( $separator ) {
   $separator = '|';
