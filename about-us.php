@@ -34,82 +34,29 @@
 
             <section class="sec_mb40">
                 <h2 class="h3_bg">ご協力いただいた寺</h2>
+
+
+
+
                 <div class="small_cap mb_20 js-fadeUp">
                     <div class="temple_list">
                         <ul>
+                            <?php $args = array(
+                    'post_type' => 'temple',
+                    'posts_per_page' => -1 //表示件数（-1で全ての記事を表示
+                );
+
+                $the_query = new WP_Query($args);
+                if ($the_query->have_posts()) :
+                        while ($the_query->have_posts()) : $the_query->the_post(); ?>
                             <li>
-                                <a href="#">第１番札所　霊山寺</a>
+                                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                             </li>
-                            <li>
-                                <a href="http://www.ca.pikara.ne.jp/gokurakuji/">第２番札所　極楽寺</a>
-                            </li>
-                            <li>
-                                <a href="#">第３番札所　金泉寺</a>
-                            </li>
-                            <li>
-                                <a href="https://dainichiji-temple.com/">第４番札所　大日寺</a>
-                            </li>
-                            <li>
-                                <a href="#">第５番札所　地蔵寺</a>
-                            </li>
-                            <li>
-                                <a href="http://www.shikoku6.or.jp/">第６番札所　安楽寺</a>
-                            </li>
-                            <li>
-                                <a href="https://jyuurakuji.com/">第７番札所　十楽寺</a>
-                            </li>
-                            <li>
-                                <a href="https://88shikokuhenro.jp/08kumataniji/">第８番札所　熊谷寺</a>
-                            </li>
-                            <li>
-                                <a href="#">第９番札所　法輪寺</a>
-                            </li>
-                            <li>
-                                <a href="#">第１０番札所　切幡寺</a>
-                            </li>
-                            <li>
-                                <a href="#">第１１番札所　藤井寺</a>
-                            </li>
-                            <li>
-                                <a href="#">第１２番札所　焼山寺</a>
-                            </li>
-                            <li>
-                                <a href="http://dai13.jp/">第１３番札所　大日寺</a>
-                            </li>
+                            <?php endwhile; ?>
+                            <?php endif; ?>
                         </ul>
 
-                        <ul>
-                            <li>
-                                <a href="#">第１４番札所　常楽寺</a>
-                            </li>
-                            <li>
-                                <a href="#">第１５番札所　国分寺</a>
-                            </li>
-                            <li>
-                                <a href="#">第１６番札所　観音寺</a>
-                            </li>
-                            <li>
-                                <a href="#">第１７番札所　井戸寺</a>
-                            </li>
-                            <li>
-                                <a href="#">第１８番札所　恩山寺</a>
-                            </li>
-                            <li>
-                                <a href="http://www.tatsueji.com/">第１９番札所　立江寺</a>
-                            </li>
-                            <li>
-                                <a href="#">第２０番札所　鶴林寺</a>
-                            </li>
-                            <li>
-                                <a href="#">第２１番札所　大龍寺</a>
-                            </li>
-                            <li>
-                                <a href="https://byodoji.jp/">第２２番札所　平等寺</a>
-                            </li>
-                            <li>
-                                <a href="https://yakuouji.net/">第２３番札所　薬王寺</a>
-                            </li>
-                        </ul>
+
                     </div>
                 </div>
             </section>
