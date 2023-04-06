@@ -28,7 +28,6 @@
                         <p>ラフなスタイルでリラックス参拝！</p>
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/henrofuku1.png"
                             alt="カジュアルな服装" />
-
                         <div>
                             金剛杖は必ず、菅笠、白衣、輪袈裟、のどれかを身に着けるといいでしょう。<br />
                             周囲にお遍路さんだとわかってもらえ受け入れられやすいです。
@@ -40,7 +39,8 @@
                     <h3 class="h3_bg">袖なし白衣</h3>
                     <div class="small_cap">
                         <p>おへんろアイテムをほどよくミックス！</p>
-                        <img src="" alt="" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/henrofuku2.png" alt="袖なし白衣の服装">
+
                         <div>白衣・輪袈裟・金剛杖が基本の三点</div>
                     </div>
                 </div>
@@ -49,7 +49,9 @@
                     <h3 class="h3_bg">正統派</h3>
                     <div class="small_cap">
                         <p>おへんろさんを服でも満喫！</p>
-                        <img src="" alt="" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/henrofuku3.png"
+                            alt="しっかりお遍路の服装">
+
                         <div>
                             伝統的なスタイル<br />
                             白衣を着ると気持ちが引き締まります
@@ -130,10 +132,19 @@
                     <div class="mb_40">すねの部分に巻く布。</div>
                 </div>
             </section>
+
+            <div>
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hanaline.png" alt="">
+            </div>
+
             <!-- 豆知識 -->
             <h3 class="h3_bg">その他巡礼用品の豆知識</h3>
             <section class="cp_area2">
                 <div class="cp_area2_in">
+                    <div>
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/tokusimatizu.png"
+                            alt="徳島地図のイラスト">
+                    </div>
                     <p class="cp_minittl mb_20">
                         納札（おさめふだ）
                     </p>
