@@ -112,7 +112,7 @@ q    <li>不殺生（ふせっしょう）むやみに生き物を傷つけず�
 <section>
 <h3 class="h3_bg_independent">納札の書き方について</h3>
 <div class="fuda">
-    <ol class="ol_independent dotline">
+    <ol class="ol_independent dashline">
 <li>巡礼をした年月日</li>
 <li>市区町村までの記入でよい</li>
 <li>自分の名前</li>
