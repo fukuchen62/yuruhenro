@@ -15,7 +15,7 @@ img {
 /*     main     */
 /****************/
 
-.temple_img {
+.temple_img img {
     /* width: 50%; */
     aspect-ratio: 16/9;
     background-color: gray;

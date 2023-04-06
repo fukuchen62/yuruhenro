@@ -23,16 +23,24 @@
             crossorigin="anonymous"
             referrerpolicy="no-referrer"
         />
-        <!-- js用CSS -->
-
-        <!-- オリジナルCSS -->
+        <!-- 全ページ読み込みCSS -->
         <link rel="stylesheet" href="../assets/css/common.css" />
         <link rel="stylesheet" href="../assets/css/style.css" />
 
-        <!-- temple.htmlのみ読み込みCSS -->
+        <!-- front-page.phpのみ読み込みCSS -->
+        <link rel="stylesheet" href="../assets/css/top.css" />
+
+        <!-- page-about.phpのみ読み込みCSS -->
+        <link rel="stylesheet" href="../assets/css/independent.css" />
+
+        <!-- single-temple.phpのみ読み込みCSS -->
         <link rel="stylesheet" href="../assets/css/temple.css" />
-        <!-- jQuery読み込み -->
-        <script src="../assets/js/jquery-3.6.3.min.js"></script>
+
+        <!-- about-us.phpのみ読み込みCSS -->
+        <link rel="stylesheet" href="../assets/css/about-us.css" />
+
+        <!-- search-form.phpのみ読み込みCSS -->
+        <link rel="stylesheet" href="../assets/css/search-form.css" />
     </head>
 
     <body>
@@ -80,29 +88,30 @@
                 </div>
             </header>
             <!-- headerここまで -->
+
             <!-- mainここから -->
             <main>
-                <div class="main_inner">
-                    <!-- h1 -->
+                <!-- <div class="main_inner">
+
                     <div class="h1_bg">
                         <h1>h1タイトル</h1>
                     </div>
-                    <!-- section -->
-                    <!-- <section class="sec_mb40">
-                        h1下のキャプション
-                        <p class="big_cap">h1下のキャプション</p>
-                    </section> -->
 
                     <section class="sec_mb40">
-                        <!-- h2 -->
+                        h1下のキャプション
+                        <p class="big_cap">h1下のキャプション</p>
+                    </section>
+
+                    <section class="sec_mb40">
+
                         <h2 class="h2_bg">h2タイトル</h2>
-                        <!-- 画像に対するキャプション -->
+
                         <p class="small_cap">画像の説明用キャプション</p>
                     </section>
-                    <!-- h3 -->
+
                     <h3 class="h3_bg">h3タイトル</h3>
-                    <!-- 画像に対するキャプション -->
-                    <p class="small_cap mb_20 js-fadeUp">
+
+                    <div class="small_cap mb_20">
                         画像の説明用キャプション
                         <br />
                         画像の説明用キャプション
@@ -110,23 +119,21 @@
                         画像の説明用キャプション
                         <br />
                         画像の説明用キャプション
-                    </p>
+                    </div>
 
-                    <!-- h4 -->
-                    <h4 class="h4_bg js-fadeUp">h4タイトル</h4>
+                    <h4 class="h4_bg">h4タイトル</h4>
 
-                    <!-- ボタン -->
-                    <button class="course_btn js-fadeUp">ボタン</button>
+                    <button class="course_btn">ボタン</button>
 
-                    <!-- 矢印つきボタン -->
                     <div class="button18">
                         <a href="#">
                             <p>もっと知る</p>
                         </a>
                     </div>
-                </div>
+                </div> -->
             </main>
             <!-- mainここまで -->
+
             <!-- footerここから -->
             <footer>
                 <!-- <div class="footer_wrap"> -->
@@ -225,11 +232,18 @@
             </footer>
             <!-- footerここまで -->
         </div>
-        <!-- jsプラグイン読み込み -->
+
+        <!-- jQuery読み込み -->
+        <script src="../assets/js/jquery-3.6.3.min.js"></script>
+
+        <!-- slick.js読み込み -->
+        <script src="../assets/js/slick.js"></script>
+        <script src="../assets/js/script.js"></script>
+
+        <!-- inview.js読み込み(フェードイン) -->
         <script src="../assets/js/jquery.inview.min.js"></script>
+
         <!-- オリジナルjs読み込み -->
         <script src="../assets/js/common_script.js"></script>
-        <!-- 小出さん作成中のslickのファイル -->
-        <script src="../assets/js/script.js"></script>
     </body>
 </html>
