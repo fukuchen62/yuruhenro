@@ -18,7 +18,7 @@ Template Name:page-monzen
               </div>
 
               <div class="temple_img mb_80">
-                <img src="../assets/img/monzen_03.jpg" alt="門前一番街" />
+              <img src="<?php echo get_template_directory_uri();?>../assets/img/monzen_03.jpg" alt="門前一番街" />
               </div>
             </div>
             <section class="contents_width">
@@ -33,7 +33,7 @@ Template Name:page-monzen
                     <img src="<?php echo get_template_directory_uri();?>../assets/img/monzen_02.jpg" alt="門前一番街" />
                   </div>
                   <div class="slick-img2">
-                    <img src="<?php echo get_template_directory_uri();?>../assets/img/monzen_02.jpg" alt="門前一番街" />
+                    <img src="<?php echo get_template_directory_uri();?>../assets/img/monzen_03.jpg" alt="門前一番街" />
                   </div>
                 </div>
                 <div class="temple_about_text">
