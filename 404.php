@@ -3,7 +3,9 @@
 */
 ?>
 <?php get_header(); ?>
+<!-- headerここから -->
 <!-- mainここから -->
+
 <main>
     <div class="main_inner">
         <h1 class="h1_bg">404 NOT FOUND</h1>
@@ -18,4 +20,6 @@
     </div>
 </main>
 <!-- mainここまで -->
+
+<!-- footerここから -->
 <?php get_footer(); ?>
