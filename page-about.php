@@ -3,6 +3,7 @@
 */ ?>
 <?php get_header(); ?>
 <main>
+
 <div class="main_inner">
     <div class="h1_bg">
         <h1>＃ゆるへんろって</h1>
