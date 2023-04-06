@@ -11,33 +11,31 @@
 .small_cap_independent {
     font-size: 16px;
     line-height: 1.5em;
-  }
-  
-.ol_independent{
-  list-style-type: decimal;
-      font-size: 14px;
+}
+
+.ol_independent {
+    list-style-type: decimal;
+    font-size: 14px;
     line-height: 2em;
     padding: 0 40px;
     margin-bottom: 10px;
 }
 
-.ol_kanji{
-  list-style-type: cjk-ideographic;
-      font-size: 14px;
+.ol_kanji {
+    list-style-type: cjk-ideographic;
+    font-size: 14px;
     line-height: 2em;
     padding: 0 40px;
     margin-bottom: 10px;
 }
 
-.ul_independent{
-  list-style-type:circle;
-      font-size: 14px;
+.ul_independent {
+    list-style-type: circle;
+    font-size: 14px;
     line-height: 2em;
     padding: 0 40px;
     margin-bottom: 10px;
-
 }
-
 
 .h3_bg_independent {
     min-width: 15em;
@@ -47,120 +45,124 @@
     border-bottom: 3px solid #c69c6d;
     padding: 10px 20px;
     margin: 0 auto 20px;
-  }
-  
-.sec{
-  max-width: 1000px;
-  padding: 0 10px;
-  margin: 0 auto;
 }
 
-
-.procedure{
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  max-width: 1180px;
-  border: 1px solid #008080;
-  border-radius: 30px;
-  gap: 40px;
-  padding: 40px;
-}
-.procedure_skin{
-  margin: 0 auto;
-  padding: 10px;
-  border: 1px solid #c69c6d;
-  border-radius: 30px;
-  margin-bottom: 150px;
+.sec {
+    max-width: 1000px;
+    padding: 0 10px;
+    margin: 0 auto;
 }
 
-
-.picto{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.procedure {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 1180px;
+    border: 1px solid #008080;
+    border-radius: 30px;
+    gap: 40px;
+    padding: 40px;
+}
+.procedure_skin {
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px solid #c69c6d;
+    border-radius: 30px;
+    margin-bottom: 150px;
 }
 
-.illust{
-  width:300px;
-  height: auto;
-  margin-right: 40px;
-}
-.notes{
-  max-width:450px;
+.picto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.hatenagirl{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.illust {
+    width: 300px;
+    height: auto;
+    margin-right: 40px;
+}
+.notes {
+    max-width: 450px;
 }
 
-.hatenagirl2{
-width: 100px;
-height: auto;}
-
-.dashline{
-  max-width: 600px;
-  border: 4px dashed #008080;
-  margin: 0 auto 20px;
-  padding: 20px 40px;
+.hatenagirl {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
-.fuda{
-  margin: 0 auto 40px;
+.hatenagirl2 {
+    width: 100px;
+    height: auto;
 }
 
-.oinori{
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-
+.dashline {
+    max-width: 600px;
+    border: 4px dashed #008080;
+    margin: 0 auto 20px;
+    padding: 20px 40px;
 }
 
-.oinori_img{
-  width: 200px;
-  height: auto;
+.fuda {
+    margin: 0 auto 40px;
 }
 
-.oinori_txt{
-  max-width: 550px;
-}
-  
-
-.ema{
-  /* margin: 0 auto; */
-  width: fit-content;
-  padding: 1px 30px;
-  background-image: url(../img/emahaikei.png);
+.oinori {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
 }
 
-.emphasis{
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 2em;
+.oinori_img {
+    width: 200px;
+    height: auto;
 }
 
-.pictono{
-display: flex;
-align-items: start;
-
+.oinori_txt {
+    max-width: 550px;
 }
 
+.ema {
+    /* margin: 0 auto; */
+    width: fit-content;
+    padding: 1px 30px;
+    background-image: url(../img/emahaikei.png);
+}
+
+.emphasis {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 2em;
+}
+
+.pictono {
+    display: flex;
+    align-items: start;
+}
 
 @media screen and (min-width: 1000px) {
-  .ema{
-  padding: 1px 100px;
-  }
-  .picto{
-    flex-direction: row;
-  }
-  
-  .oinori{
-    flex-direction: row;
-  }
-  
+    .ema {
+        padding: 1px 100px;
+    }
+    .picto {
+        flex-direction: row;
+    }
 
+    .oinori {
+        flex-direction: row;
+    }
+    /* 阿波踊りの背景を指定 */
+    .haikei {
+        display: flex;
+        align-items: center;
+    }
+    .haikei_1 {
+        /* background-image: url("../img/awaodori.png");
+        background-repeat: no-repeat;
+        background-position: left 20px center, right 20px center; */
+        width: 150px;
+        height: auto;
+        /* background-size: cover; */
+    }
 }
-
-
