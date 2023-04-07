@@ -106,6 +106,16 @@
 
 .fuda {
     margin: 0 auto 40px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+
+}
+
+
+.fuda img{
+    width: 100px;
+    height: auto;
 }
 
 .oinori {
@@ -165,4 +175,36 @@
         height: auto;
         /* background-size: cover; */
     }
+
+    .fuda {
+        flex-direction: row;
+    
+    }
+    
+}
+
+
+
+.yuru_introduction{
+    max-width: 700px;
+    height: auto;
+    min-height: 600px;
+    margin: 0 auto;
+	background-image:url(../img/awaodori.png),
+					 url(../img/tokusimatizu.png),
+					 url(../img/renkon.png);
+	background-repeat:no-repeat,
+					  no-repeat,
+					  no-repeat;
+	background-position:top right,
+						left bottom,
+						left bottom;
+    background-size:25%,70%,20%;
+}
+
+
+.yuru_txt{
+    max-width: 700px;
+    margin: 0 auto;
+
 }
