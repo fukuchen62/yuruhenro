@@ -5,12 +5,14 @@
 /* h1下のキャプション */
 .big_cap_independent {
     font-size: 18px;
-    line-height: 1.5em;
+    line-height: 2em;
     margin-bottom: 40px;
 }
 .small_cap_independent {
+    margin: 0 auto;
     font-size: 16px;
-    line-height: 1.5em;
+    line-height: 2em;
+    max-width: 800px
 }
 
 .ol_independent {
@@ -214,5 +216,23 @@
 .yuru_txt{
     max-width: 700px;
     margin: 0 auto;
+
+}
+
+
+.awaodori_bgimg{
+        max-width: 950px;
+        height: auto;
+        min-height: 210px;
+        margin: 0 auto;
+        padding: 0 10%;
+        background-image:url(../img/awaodori2.png),
+                         url(../img/awaodori2.png);
+
+        background-repeat:no-repeat,
+                          no-repeat;
+        background-position:top right,
+                            top left;
+        background-size:15%,15%;
 
 }

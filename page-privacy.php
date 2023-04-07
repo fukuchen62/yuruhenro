@@ -1,44 +1,9 @@
-<!-- 以下、最後に削除 -->
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>タイトル</title>
-    <!-- CSS読み込み -->
-    <!-- リセットCSS -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/destyle.css" />
-    <!-- Googleフォント Kosugi Maru,Kiwi Maru -->
-    <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&family=Kosugi+Maru&display=swap" rel="stylesheet" />
-    <!-- Instagramアイコンフォント(font awesome) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- 全ページ読み込みCSS -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/common.css" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css" />
-
-    <!-- front-page.phpのみ読み込みCSS -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/top.css" />
-
-    <!-- page-about.phpのみ読み込みCSS -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/independent.css" />
-
-    <!-- single-temple.phpのみ読み込みCSS -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/temple.css" />
-
-    <!-- about-us.phpのみ読み込みCSS -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/about-us.css" />
-
-    <!-- search-form.phpのみ読み込みCSS -->
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/search-form.css" />
-</head>
-<!-- 以上、最後に削除 -->
 
 <?php
 /*Template Name:page-privacy
 */
 ?>
-<?php //get_header(); ?>
+<?php get_header(); ?>
 <!-- mainここから -->
 <main>
                 <div class="main_inner">
@@ -50,9 +15,10 @@
                     <div class="contents_width">
                         <section class="sec_mb40">
                             <h2 class="h2_bg">プライバシーポリシー</h2>
+                            <div class="awaodori_bgimg">
                             <p class="big_cap_independent">
                                 　「とくしま1日＃ゆるへんろ」（以下「当サイト」といいます。）は、当サイト上で提供するサービス（以下「当サービス」といいます。）におけるユーザーの個人情報の取扱いについて、以下のとおりプライバシーポリシーを定めます。
-                            </p>
+                            </p></div>
                         </section>
 
                         <section class="sec_mb40">
@@ -63,14 +29,16 @@
 
                         <section class="sec_mb40">
                             <h3 class="h3_bg_independent">【2】収集する情報の範囲</h3>
-                            <p class="small_cap_independent mb_20">
+                            
+                            <div class="small_cap_independent mb_20"><p>
                                 　当サイトでは、インターネットドメイン名、IPアドレス、サイト内検索のクエリ情報、その他当サイトの閲覧等に係る情報を自動的に収集します。なお、クッキー（サーバ側で利用者を識別するために、サーバから利用者のブラウザに送信され、利用者のコンピュータに蓄積させる情報）は、使い勝手の向上を目的とする内容に限定するものであり、個人情報は一切含みません。
-                            </p>
+                            </p></div>
                         </section>
 
                         <section class="sec_mb40">
                             <h3 class="h3_bg_independent">【3】利用目的</h3>
-                            <p class="small_cap_independent mb_20">
+                            <div class="small_cap_independent mb_20">
+                            <p class="mb_20">
                                 　当サイトでは、お客様からのお問い合わせやサービスへのお申し込み等を通じて、お客様の氏名、生年月日、住所、電話番号、メールアドレス等の個人情報をご提供いただく場合があります。その場合は、以下に示す利用目的のために、適正に利用するものと致します。
                             </p>
                                 <ol class="ol_independent">
@@ -79,7 +47,7 @@
                                 <li>メンテナンス、重要なお知らせなど必要に応じたご連絡のため</li>
                                 <li>利用規約に違反したユーザーや、不正・不当な目的でサービスを利用しようとするユーザーの特定をし，ご利用をお断りするため</li>
                                 <li>当サイトサービスの提供・運営のため</li>
-                            </ol>
+                            </ol></div>
                         </section>
 
                         <section class="sec_mb40">
@@ -102,13 +70,14 @@
                             </p>
                         </section>
 
-                        <section class="sec_mb40">
+                        <section class="sec_mb40 mb_80">
                             <h3 class="h3_bg_independent">
                                 【7】サービスの中止・中断・変更・終了
                             </h3>
-                            <p class="small_cap_independent mb_20">
+                            <div class="small_cap_independent">
+                            <p>
                             　当サービスは、当サイトの都合により、中止又は廃止されることがあります。当サイトは、当サービスの利用、運用の中止、延期、終了等により発生する一切の責任を負いません。
-                            </p>
+                            </p></div>
                         </section>
 
                         <section class="sec_mb40">
@@ -137,9 +106,9 @@
                             </p>
                         </section>
 
-                        <section class="sec">
+                        <section class="sec_mb40 mb_100">
                             <h3 class="h3_bg_independent">無断転載の禁止</h3>
-                            <p class="small_cap_independent mb_150">
+                            <p class="small_cap_independent">
                                 　当サイトに存在する、文章や画像、動画等の著作物の情報を無断転載することは固くお断り致します。引用の範囲を超えるものについては、法的処置を行うこともあります。転載をご希望の場合は、当サイトの「お問い合わせ」よりご連絡いただけますよう宜しくお願い致します。
                             </p>
                         </section>
@@ -147,109 +116,5 @@
                     </article></div>
             </main>
 <!-- mainここまで -->
-<?php //get_footer(); ?>
+<?php get_footer(); ?>
 
-<!-- 以下、削除 -->
-        <!-- footerここから -->
-        <footer>
-            <!-- <div class="footer_wrap"> -->
-            <div class="footer_inner">
-                <!-- TOPへ戻るボタン -->
-                <p class="page-top">
-                        <a href="#"
-                            ><img src="<?php echo get_template_directory_uri(); ?>/assets/img/flower01.png" alt=""
-                        /></a>
-                    </p>
-
-                <!-- instagramマーク -->
-                <div class="footer_insta flex">
-                    <a href="https://www.instagram.com/yuru_henro/" target="_blank" class="flex">
-                        <i class="fa-brands fa-instagram"></i>
-                        <p>@yuru_henro</p>
-                    </a>
-                </div>
-
-                <div class="footer_links">
-                    <ul class="flex">
-                        <li><a href="#" target="_blank">バナー1</a></li>
-                        <li><a href="#" target="_blank">バナー2</a></li>
-                        <li><a href="#" target="_blank">バナー3</a></li>
-                        <li><a href="#" target="_blank">バナー4</a></li>
-                        <li><a href="#" target="_blank">バナー5</a></li>
-                    </ul>
-                </div>
-
-                <nav class="footer_nav">
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/header_logo_02.png" alt="とくしま１日＃ゆるへんろロゴ" class="footer_logo" />
-                            </a>
-                        </li>
-                        <li>
-                            <ul class="sp_none">
-                                <li class="footer_nav_b">
-                                    <a href="#">＃ゆるへんろとは</a>
-                                </li>
-                                <li><a href="#">＃ゆるへんろとは</a></li>
-                                <li><a href="#">おへんろのお作法</a></li>
-                                <li><a href="#">参拝スタイル</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <ul class="sp_none">
-                                <li class="footer_nav_b">
-                                    <a href="#">コース紹介</a>
-                                </li>
-                                <li><a href="#">コース名1</a></li>
-                                <li><a href="#">コース名2</a></li>
-                                <li><a href="#">コース名3</a></li>
-                                <li><a href="#">コース名4</a></li>
-                                <li><a href="#">コース名5</a></li>
-                            </ul>
-                        </li>
-                        <li>
-                            <ul class="footer_nav_b">
-                                <li>
-                                    <a href="#" class="sp_none">マイブックマーク</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="sp_none">条件検索</a>
-                                </li>
-                                <li><a href="#" class="sp_none">Q&A</a></li>
-                                <li>
-                                    <a href="#" class="sp_none">用語集</a>
-                                </li>
-                                <li><a href="#">このサイトについて</a></li>
-                                <li>
-                                    <a href="#">プライバシーポリシー</a>
-                                </li>
-                                <li>
-                                    <a href="#">サイト制作にあたって</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-
-                <small>Copyright©とくしま１日＃ゆるへんろ</small>
-            </div>
-            <!-- </div> -->
-        </footer>
-        <!-- footerここまで -->
-    </div>
-
-    <!-- jQuery読み込み -->
-    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery-3.6.3.min.js"></script>
-
-    <!-- slick.js読み込み -->
-    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/slick.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/script.js"></script>
-
-    <!-- inview.js読み込み(フェードイン) -->
-    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery.inview.min.js"></script>
-
-    <!-- オリジナルjs読み込み -->
-    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/common_script.js"></script>
-</body>
-</html>
