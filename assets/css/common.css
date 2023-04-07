@@ -28,22 +28,12 @@ img {
     height: 100px;
     font-size: 24px;
     color: #fbfaf5;
+    text-shadow: 0 0 5px #333;
     text-align: center;
     background-image: url(../img/sb_kv.png);
-    margin: 0 auto 40px;
+    margin: 80px auto 40px;
     line-height: 100px;
 }
-
-/* .h1_poab {
-    position: relative;
-}
-
-.h1_pore {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} */
 
 /* h2装飾 */
 .h2_bg {
@@ -168,8 +158,9 @@ img {
     /* h1装飾 */
     .h1_bg {
         height: 150px;
-        font-size: 32px;
+        font-size: 36px;
         line-height: 150px;
+        height: 150px;
     }
 
     .button18 p {
@@ -422,7 +413,7 @@ img {
     min-width: 320px;
     color: #fbfaf5;
     text-align: center;
-    background-color: #b1a995;
+    background-color: #71674C;
     padding: 40px 0 15px;
 }
 
