@@ -15,31 +15,30 @@
             <!-- section区切り -->
             <section>
                 <h2 class="h2_bg mb_40">＃ゆるへんろってなぁに？</h2>
-                <div>
-                    <img src="" alt="阿波踊り">
-                    <img src="<?php echo get_template_directory_uri(); ?>./assets/img/tokusimatizu.png" alt="徳島地図">
-                    <img src="<?php echo get_template_directory_uri(); ?>./assets/img/renkon.png" alt="レンコン">
-                </div>
-                <p class="small_cap_independent mb_40">「＃ゆるへんろ」とは、「発心の地」徳島をゆったりと1日で巡れるコースを紹介しています。<br>
+
+                <div class="yuru_introduction">
+                <p class="small_cap_independent mb_40">「＃ゆるへんろ」とは、「発心の地」徳島をゆったりと1日で巡れるコースを紹介しています。<br><br>
 
                     厳しい修行のイメージがある遍路ですが、
-                    今では、健康増進や、縁結びなどの祈願、パワースポット巡り、自分を見つめるため、先祖の供養など、さまざまな目的で行われる祈りの旅になりました。
-                    信仰や宗派も問われません。<br>
+                    今では、健康増進や、縁結びなどの祈願、パワースポット巡り、自分を見つめるため、先祖の供養など、さまざまな目的で行われる祈りの旅になりました。<br><br>
+                    信仰や宗派も問われません。<br><br>
 
                     どこからスタートしてもよいし、順番もバラバラでも大丈夫。
-                    期限もないので無理せず、自分のペースで大丈夫です。<br>
+                    期限もないので無理せず、自分のペースで大丈夫です。<br><br>
 
                     神聖な気持ちでお参りをして、お寺をゆっくりめぐると、
                     ひとつひとつ違う表情のたくさんの像、季節のお花や木々、小坊主さんの看板、カラフルな装飾、太陽が差し込むキラキラした光、澄んだ空気、線香の香り、お遍路さんのお経を読む声、雄大な自然、
-                    五感に心地よい刺激をうけ、心も体もすっきりとリフレッシュできます。<br>
+                    五感に心地よい刺激をうけ、心も体もすっきりとリフレッシュできます。<br><br>
 
-                    自分に合ったスタイルを見つけて、いいお天気のお休みの日、思い立ったら、ゆるっと遍路いってみませんか？
-                </p>
+                    自分に合ったスタイルを見つけて、いいお天気のお休みの日、思い立ったら、ゆるっと遍路いってみませんか？<br><br>
+                </p></div>
             </section>
             <div><img src="<?php echo get_template_directory_uri(); ?>./assets/img/hanaline.png" alt="花ライン"></div>
             <!-- section区切り -->
             <section>
                 <h2 class="h2_bg mb_40">おへんろについて知っとこ！</h2>
+
+                <div class="yuru_txt">
                 <h4 class="emphasis">お遍路とは</h4>
 
                 <p class="small_cap_independent mb_40">約1200年前、弘法大師（空海）が自らの修行、そして人々を災いから救うために開いた四国八十八ケ所のお寺を巡る旅のことです。
@@ -59,7 +58,7 @@
                 <p class="small_cap_independent mb_40">
                     ＜十善戒（じゅうぜんかい）＞<br>
                 <ol class="ol_kanji">
-                    q <li>不殺生（ふせっしょう）むやみに生き物を傷つけず、すべての命を大切にする。</li>
+                    <li>不殺生（ふせっしょう）むやみに生き物を傷つけず、すべての命を大切にする。</li>
                     <li>不偸盗（ふちゅうとう）ものを盗まず、他人のものを大切に扱う。</li>
                     <li>不邪淫（ふじゃいん）ふしだらなことをしない。</li>
                     <li>不妄語（ふもうご）うそをつかない。真実を話す。</li>
@@ -74,7 +73,7 @@
                     <div>日常生活においても大切なことばかりですね。</div>
                     <div class="hatenagirl2"><img src="<?php echo get_template_directory_uri(); ?>./assets/img/hatenagirl.png" alt="hatenagirl"></div>
                 </div>
-                </p>
+                </p></div>
             </section>
             <!-- section区切り -->
 
@@ -119,8 +118,8 @@
 
             <section>
                 <h3 class="h3_bg_independent">納札の書き方について</h3>
-                <div class="fuda">
-                    <ol class="ol_independent dotline">
+                <div class="fuda dashline">
+                    <ol class="ol_independent">
                         <li>①巡礼をした年月日</li>
                         <li>②市区町村までの記入でよい</li>
                         <li>③自分の名前</li>
@@ -212,4 +211,10 @@
         </div>
     </div>
 </main>
+
+
+
+
+
 <?php get_footer(); ?>
+
