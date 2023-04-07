@@ -1,7 +1,7 @@
 <?php
 /*Template Name: page-about
 */ ?>
-<?php //get_header(); ?>
+<?php get_header(); ?>
 <main>
 
     <div class="main_inner">
@@ -216,5 +216,5 @@
 
 
 
-<?php //get_footer(); ?>
+<?php get_footer(); ?>
 
