@@ -91,3 +91,55 @@ $(function () {
     });
 });
 //--------------------------------------------------//
+
+
+// ****************
+// slick用
+// ****************
+
+$(function () {
+    $(".slider").slick({
+    autoplay: true,
+    arrows: false,
+    prevArrow:false,
+    nextArrow:false,
+    autoplaySpeed: 4000,//次のスライドに切り替わる待ち時間
+    speed:2000,//スライドの動きのスピード。初期値は300。
+    infinite: true,//スライドをループさせるかどうか。初期値はtrue。
+    pauseOnFocus: false,//フォーカスで一時停止を無効
+    pauseOnHover: false,//マウスホバーで一時停止を無効
+    pauseOnDotsHover: false,//ドットナビゲーションをマウスホバーで一時停止を無効
+    fade: true,
+    asNavFor: ".thumbnail",
+    });
+
+    $(".thumbnail").slick({
+    slidesToShow: 4,
+    asNavFor: ".slider",
+    focusOnSelect: true,
+    prevArrow:false,
+    nextArrow:false,
+
+    });
+
+
+});
+
+
+$(function () {
+    $(".slider2").slick({
+    autoplay: true,
+    arrows: false,
+    prevArrow:false,
+    nextArrow:false,
+    autoplaySpeed: 4000,//次のスライドに切り替わる待ち時間
+    speed:2000,//スライドの動きのスピード。初期値は300。
+    infinite: true,//スライドをループさせるかどうか。初期値はtrue。
+    pauseOnFocus: false,//フォーカスで一時停止を無効
+    pauseOnHover: false,//マウスホバーで一時停止を無効
+    pauseOnDotsHover: false,//ドットナビゲーションをマウスホバーで一時停止を無効
+    fade: true,
+    });
+
+});
+
