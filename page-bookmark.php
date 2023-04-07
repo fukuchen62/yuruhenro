@@ -7,6 +7,7 @@
 <main>
     <h1 class="h1_bg">マイブックマーク</h1>
     <article class="main_inner">
+
         <section class="big_cap mb_100">
             <p>
                     ・本マイページは周辺スポット検索またはスポット詳細ページでブックマークした情報が表示されます。<br>
@@ -16,7 +17,7 @@
         </section>
 
         <!-- 寺社お気に入り -->
-        <section class="display_area mb_100">
+        <section class="mb_100">
             <h2 class="h3_bg mb_40">寺社お気に入り</h2>
 
             <!-- 寺社お気に入りカードが並ぶエリア -->
@@ -35,7 +36,7 @@
                     if ($temple_favorites_query->have_posts()) : while ($temple_favorites_query->have_posts()) : $temple_favorites_query->the_post();
                 ?>
 
-                <!-- カードのデザイン -->
+                <!-- 寺社カードのデザイン -->
                 <a href="<?php the_permalink(); ?>">
                     <div class="shop_info_card">
                         <div class="shop_info_caption">
@@ -51,7 +52,7 @@
                         </div>
                     </div>
                 </a>
-                <!-- カードのデザイン -->
+                <!-- 寺社カードのデザイン -->
 
                 <?php endwhile ?>
                 <?php endif;wp_reset_postdata(); ?>
@@ -63,7 +64,7 @@
         </section>
 
         <!-- 周辺施設お気に入り -->
-        <section class="display_area mb_100">
+        <section class="mb_100">
             <h2 class="h3_bg mb_40">周辺施設お気に入り</h2>
 
             <!-- 周辺施設お気に入りカードが並ぶエリア -->
@@ -83,7 +84,7 @@
                 ?>
 
                 <!-- 周辺施設カードのデザイン -->
-                <div class="shop_info_card mb_40">
+                <div class="shop_info_card">
                     <div class="shop_info_caption">
                         <img src="<?php the_field('f_pic1'); ?>" alt="各施設の画像" />
                     </div>
@@ -97,9 +98,11 @@
                         <p>TEL：<?php the_field('f_tell'); ?></p>
                         <p>公式HP：<?php the_field('f_url'); ?></p>
                     </div>
-                    <p class="shop_info_article">
-                        <?php the_field('f_message'); ?>
-                    </p>
+                    <div class="shop_info_article">
+                        <p>
+                            <?php the_field('f_message'); ?>
+                        </p>
+                    </div>
                 </div>
                 <!-- 周辺施設カードのデザイン -->
 
@@ -111,7 +114,6 @@
             </div>
             <!-- 周辺施設お気に入りカードが並ぶエリア -->
         </section>
-
 
     </article>
 </main>
