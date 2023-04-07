@@ -29,7 +29,7 @@
 
                     <div class="temple_about_text">
                         <p class="small_cap">
-                            <?php the_field('t_discription')?>
+                            <?php the_field('t_description')?>
                 </p>
                     </div>
                 </div>
