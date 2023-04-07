@@ -13,7 +13,7 @@
                     <div class="checkbox"><input type="checkbox" name="area[]" value="north"> 県北</div>
                     <div class="checkbox"><input type="checkbox" name="area[]" value="west"> 県西</div>
                     <div class="checkbox"><input type="checkbox" name="area[]" value="south"> 県南</div>
-                    <div class="checkbox"><input type="checkbox" name="area[]" value="city"> 市街地</div>
+                    <div class="checkbox"><input type="checkbox" name="area[]" value="east"> 市街地</div>
                 </div>
 
                 <p class="search-form_headline">寺院内設備</p>
