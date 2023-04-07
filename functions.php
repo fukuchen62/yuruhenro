@@ -40,14 +40,13 @@ function add_my_files() {
     //以下はheaderに出力
     // Googleフォント読み込み
     wp_enqueue_style(
-        'google-fonts-kosugi',
-        'https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&family=Kosugi+Maru&display=swap'
+        ('google-fonts-kosugi','https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&family=Kosugi+Maru&display=swap');
     );
 
     //fontawesome読み込み
     wp_enqueue_style(
         'instagram-icon-photo-font-awesome',
-        'https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&family=Kosugi+Maru&display=swap'
+        'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css'
     );
 
     //共通のCSS読み込み
@@ -150,4 +149,4 @@ wp_enqueue_style(
     //     false,
     //     true
     // );
-}
+};
