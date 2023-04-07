@@ -7,10 +7,10 @@
         <h1 class="h1_bg">お寺紹介</h1>
         <div>
             <section class="contents_width">
-                <h1 class="h2_bg"><?php the_title();?></h1>
+                <h1 class="h2_bg"><?php the_field('t_numbername');?></h1>
                 <div class="bookmark">
-                    <p>☆</p>
-                    <p>ブックマーク</p>
+
+                    <p><?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?></p>
                 </div>
 
                 <div class="temple_img">

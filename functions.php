@@ -20,13 +20,6 @@ function add_my_files() {
     );
 
     //共通のJavascript読み込み
-        wp_enqueue_script(
-        'slick',
-        get_template_directory_uri() . '/assets/js/slick.js',
-        array('jquery'),
-        '1.8.0',
-        true
-    );
     wp_enqueue_script(
         'common_script',
         get_template_directory_uri() . '/assets/js/common_script.js',
@@ -34,6 +27,26 @@ function add_my_files() {
         'false',
         true
     );
+
+    //個別slick.js読み込み
+    if(is_page('monzen')){wp_enqueue_script(
+        'slick',
+        get_template_directory_uri() . '/assets/js/slick.js',
+        array('jquery'),
+        '1.8.0',
+        true
+    );
+}
+
+//個別slick.js読み込み
+    if(is_home()){wp_enqueue_script(
+        'slick',
+        get_template_directory_uri() . '/assets/js/slick.js',
+        array('jquery'),
+        '1.8.0',
+        true
+    );
+}
 
 
 
