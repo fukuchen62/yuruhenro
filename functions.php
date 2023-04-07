@@ -40,7 +40,9 @@ function add_my_files() {
     //以下はheaderに出力
     // Googleフォント読み込み
     wp_enqueue_style
-        ('google-fonts-kosugi','https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&family=Kosugi+Maru&display=swap');
+        ('google-fonts-kosugi+maru','https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
+        wp_enqueue_style
+        ('google-fonts-kiwi+maru','https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&display=swap');
 
     //fontawesome読み込み
     wp_enqueue_style(
