@@ -1,12 +1,14 @@
-<section class="main_inner">
-    <h2 class="h2_bg">検索条件</h2>
-    <section class="sec_mb40">
-        <p class="big_cap">該当する条件で検索することができます。条件を選択後、「検索」ボタンを押してください。</p>
+    <section class="contents_width">
+        <h2 class="h2_bg">検索条件</h2>
+        <div class="big_cap mb_40">
+            <p>該当する条件で検索することができます。<br>
+                条件を選択後、「検索」ボタンを押してください。</p>
+        </div>
     </section>
 
-    <section class="sec_mb40 search_form">
+    <section class="contents_width search_form mb_80">
+        <h3 class="h3_bg mb_40">検索条件選択</h3>
         <form method="get" action="<?php echo esc_url(home_url('/')); ?>">
-            <!-- <h3 class="h3_bg_ex">検索条件選択</h3><br> -->
             <div class="search-form_checkarea">
                 <p class="search-form_headline">エリア</p>
                 <div class="searchkinds  mb_40">
@@ -26,9 +28,8 @@
                 <p class="searchBtnsArea">
                     <input type="hidden" name="s" value="<?php the_search_query(); ?>">
 
-                    <input class="searchBtns"  type="submit" value="検索" >
+                    <input class="searchBtns" type="submit" value="検索">
                     <input class="searchBtns" type="reset" name="reset" value="リセット">
                 </p>
         </form>
     </section>
-</section>

@@ -88,7 +88,7 @@ input[type="checkbox"] {
     input[type="checkbox"]::before,
     input[type="checkbox"]::after {
     content: "";
-    display: block; 
+    display: block;
     position: absolute;
     }
     input[type="checkbox"]::before {
