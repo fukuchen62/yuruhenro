@@ -39,9 +39,8 @@ function add_my_files() {
 
     //以下はheaderに出力
     // Googleフォント読み込み
-    wp_enqueue_style(
+    wp_enqueue_style
         ('google-fonts-kosugi','https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&family=Kosugi+Maru&display=swap');
-    );
 
     //fontawesome読み込み
     wp_enqueue_style(
