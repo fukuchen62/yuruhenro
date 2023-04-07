@@ -48,7 +48,14 @@
                         <div class="shop_info_text">
                             <p>駐車場：<?php the_field('t_parking'); ?></p>
                             <p>TEL：<?php the_field('t_tell'); ?></p>
-                            <p>公式HP：<?php the_field('t_url'); ?></p>
+                            <!-- <p>公式HP：<?php the_field('t_url'); ?></p> -->
+                            <p>公式HP：
+                        <?php if (get_field('t_url')!='-') {
+                                echo 'あり';
+                            } else {
+                                echo 'なし';
+                        }?>
+                        </p>
                         </div>
                     </div>
                 </a>
@@ -93,10 +100,16 @@
                     </div>
                     <div class="shop_info_text">
                         <p>営業時間：<?php the_field('hours'); ?></p>
-                        <p>休業日：<?php the_field('holiday'); ?></p>
+                        <p>定休日：<?php the_field('holiday'); ?></p>
                         <p>駐車場：<?php the_field('f_parking'); ?></p>
                         <p>TEL：<?php the_field('f_tell'); ?></p>
-                        <p>公式HP：<?php the_field('f_url'); ?></p>
+                        <p>公式HP：
+                        <?php if (get_field('f_url')!='-') {?>
+                        <a href="<?php the_field('f_url'); ?>" target=_blank class="link"><?php the_field('f_name'); ?></a>
+                        <?php } else {
+                            echo 'なし';
+                        }?>
+                        </p>
                     </div>
                     <div class="shop_info_article">
                         <p>
