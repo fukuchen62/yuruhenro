@@ -17,7 +17,7 @@
                 <h2 class="h2_bg mb_40">＃ゆるへんろってなぁに？</h2>
 
                 <div class="yuru_introduction">
-                <p class="small_cap_independent mb_40">「＃ゆるへんろ」とは、「発心の地」徳島をゆったりと1日で巡れるコースを紹介しています。<br><br>
+                    <p class="small_cap_independent mb_40">「＃ゆるへんろ」とは、「発心の地」徳島をゆったりと1日で巡れるコースを紹介しています。<br><br>
 
                     厳しい修行のイメージがある遍路ですが、
                     今では、健康増進や、縁結びなどの祈願、パワースポット巡り、自分を見つめるため、先祖の供養など、さまざまな目的で行われる祈りの旅になりました。<br><br>
@@ -31,31 +31,32 @@
                     五感に心地よい刺激をうけ、心も体もすっきりとリフレッシュできます。<br><br>
 
                     自分に合ったスタイルを見つけて、いいお天気のお休みの日、思い立ったら、ゆるっと遍路いってみませんか？<br><br>
-                </p></div>
+                </p>
+                </div>
             </section>
-            <div><img src="<?php echo get_template_directory_uri(); ?>./assets/img/hanaline.png" alt="花ライン"></div>
+            <div><img src="<?php echo get_template_directory_uri(); ?>/assets/img/hanaline.png" alt="花ライン"></div>
             <!-- section区切り -->
             <section>
                 <h2 class="h2_bg mb_40">おへんろについて知っとこ！</h2>
 
                 <div class="yuru_txt">
-                <h4 class="emphasis">お遍路とは</h4>
+                    <h4 class="emphasis">お遍路とは</h4>
 
-                <p class="small_cap_independent mb_40">約1200年前、弘法大師（空海）が自らの修行、そして人々を災いから救うために開いた四国八十八ケ所のお寺を巡る旅のことです。
+                    <p class="small_cap_independent mb_40">約1200年前、弘法大師（空海）が自らの修行、そして人々を災いから救うために開いた四国八十八ケ所のお寺を巡る旅のことです。
                     徳島・高知・愛媛・香川の4県にまたがる全行程はなんと約1400キロ。
                     歩いて回ると50日以上、車を利用しても10日以上必要と言われる長い道のりです。
                     八十八ヶ所をすべて参拝し終えると、煩悩が除かれ、八十八のご利益・功徳が得られると言われています。
                 </p>
-                <h4 class="emphasis">徳島遍路について</h4>
-                <p class="small_cap_independent mb_40">
+                    <h4 class="emphasis">徳島遍路について</h4>
+                    <p class="small_cap_independent mb_40">
                     徳島県は【発心の道場】（ほっしん:悟りを得ようとする心）、高知県は【修行の道場】（しゅぎょう:仏道と精神力を高める）、愛媛県は【菩提の道場】（ぼだい:煩悩を断ち切る）、香川県は【涅槃の道場】（ねはん:解脱の境地に達す）と、修行の道場に例えられています。
                     「お遍路に興味を持った時点からお遍路は始まる」と言われています。
                     思い立ったら「発心」の時です。
                     【発心の道場】徳島をまずはゆるっと巡ってみて、お遍路を体験してみませんか？
                 </p>
 
-                <h4 class="emphasis">お遍路の心構え</h4>
-                <p class="small_cap_independent mb_40">
+                    <h4 class="emphasis">お遍路の心構え</h4>
+                    <p class="small_cap_independent mb_40">
                     ＜十善戒（じゅうぜんかい）＞<br>
                 <ol class="ol_kanji">
                     <li>不殺生（ふせっしょう）むやみに生き物を傷つけず、すべての命を大切にする。</li>
@@ -71,16 +72,17 @@
                 </ol>
                 <div class="hatenagirl">
                     <div>日常生活においても大切なことばかりですね。</div>
-                    <div class="hatenagirl2"><img src="<?php echo get_template_directory_uri(); ?>./assets/img/hatenagirl.png" alt="hatenagirl"></div>
+                    <div class="hatenagirl2"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/hatenagirl.png" alt="hatenagirl"></div>
                 </div>
-                </p></div>
+                </p>
+                </div>
             </section>
             <!-- section区切り -->
 
             <!-- 絵馬に乗せる -->
             <section>
 
-                <img src="<?php echo get_template_directory_uri(); ?>./assets/img/ematop.png" alt="絵馬">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/ematop.png" alt="絵馬">
                 <div class="ema">
                     <h2 class="h2_bg mb_40">おへんろの作法について</h2>
                     <p class="small_cap_independent mb_40">お参りに大切なものは心です。
@@ -107,12 +109,12 @@
                                 心をこめ、ただ手を合わせるだけでもよいのです。
                             </p>
                         </div>
-                        <div class="oinori_img"><img src="<?php echo get_template_directory_uri(); ?>./assets/img/oinori.png" alt="お祈り"></div>
+                        <div class="oinori_img"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/oinori.png" alt="お祈り"></div>
                     </div>
 
 
                 </div>
-                <img src="<?php echo get_template_directory_uri(); ?>./assets/img/emabottom.png" alt="絵馬">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/emabottom.png" alt="絵馬">
             </section>
             <!-- section区切り -->
 
@@ -125,7 +127,7 @@
                         <li>③自分の名前</li>
                         <li>④お願い事は裏面に記入<br>※お接待の返礼として渡す場合は、お願い事は書かない</li>
                     </ol>
-                    <div><img src="<?php echo get_template_directory_uri(); ?>./assets/img/osamefuda.jpg" alt="納札"></div>
+                    <div><img src="<?php echo get_template_directory_uri(); ?>/assets/img/osamefuda.jpg" alt="納札"></div>
                 </div>
             </section>
             <!-- section区切り -->
@@ -137,7 +139,7 @@
                         <div class="picto">
                             <div class="pictono">
                                 <div class="emphasis">一．</div>
-                                <div class="illust"><img src="<?php echo get_template_directory_uri(); ?>./assets/img/itirei.png" alt="一礼"></div>
+                                <div class="illust"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/itirei.png" alt="一礼"></div>
                             </div>
                             <div class="notes">
                                 <p class="emphasis">山門で一礼</p>
@@ -147,7 +149,7 @@
                         <div class="picto">
                             <div class="pictono">
                                 <div class="emphasis">二．</div>
-                                <div class="illust"><img src="<?php echo get_template_directory_uri(); ?>./assets/img/temizu.png" alt="手水"></div>
+                                <div class="illust"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/temizu.png" alt="手水"></div>
                             </div>
                             <div class="notes">
                                 <p class="emphasis">手水場で清める</p>
@@ -157,7 +159,7 @@
                         <div class="picto">
                             <div class="pictono">
                                 <div class="emphasis">三．</div>
-                                <div class="illust"><img src="<?php echo get_template_directory_uri(); ?>./assets/img/kanetuki.png" alt="鐘撞"></div>
+                                <div class="illust"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/kanetuki.png" alt="鐘撞"></div>
                             </div>
                             <div class="notes">
                                 <p class="emphasis">鐘楼で鐘をつく</p>
@@ -167,7 +169,7 @@
                         <div class="picto">
                             <div class="pictono">
                                 <div class="emphasis">四．</div>
-                                <div class="illust"><img src="<?php echo get_template_directory_uri(); ?>./assets/img/tera.png" alt="礼拝"></div>
+                                <div class="illust"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/tera.png" alt="礼拝"></div>
                             </div>
                             <div class="notes">
                                 <p class="emphasis">本堂・大師堂でお参り</p>
@@ -185,7 +187,7 @@
                         <div class="picto">
                             <div class="pictono">
                                 <div class="emphasis">五．</div>
-                                <div class="illust"><img src="<?php echo get_template_directory_uri(); ?>./assets/img/gosyuintyou.png" alt="御朱印帳"></div>
+                                <div class="illust"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/gosyuintyou.png" alt="御朱印帳"></div>
                             </div>
                             <div class="notes">
                                 <p class="emphasis">納経所で御朱印をいただく</p>
@@ -196,7 +198,7 @@
                         <div class="picto">
                             <div class="pictono">
                                 <div class="emphasis">六．</div>
-                                <div class="illust"><img src="<?php echo get_template_directory_uri(); ?>./assets/img/itirei.png" alt="一礼" style="transform: scale(-1, 1)"></div>
+                                <div class="illust"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/itirei.png" alt="一礼" style="transform: scale(-1, 1)"></div>
                             </div>
                             <div class="notes">
                                 <p class="emphasis">山門で一礼</p>
@@ -217,4 +219,3 @@
 
 
 <?php get_footer(); ?>
-
