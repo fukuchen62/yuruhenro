@@ -151,6 +151,14 @@
     align-items: start;
 }
 
+.haikei {
+    display: none;
+}
+
+.contac {
+    text-align: center;
+}
+
 @media screen and (min-width: 1000px) {
     .ema {
         padding: 1px 100px;
@@ -168,12 +176,12 @@
         align-items: center;
     }
     .haikei_1 {
-        /* background-image: url("../img/awaodori.png");
-        background-repeat: no-repeat;
-        background-position: left 20px center, right 20px center; */
         width: 150px;
         height: auto;
-        /* background-size: cover; */
+    }
+    .con {
+        text-align: right;
+        margin-right: 20px;
     }
 
     .fuda {

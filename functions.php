@@ -9,17 +9,48 @@ function my_theme_setup() {
 // functions.phpでスタイルシートとJavaScriptファイルを読み込む
 add_action('wp_enqueue_scripts', 'add_my_files');
 function add_my_files() {
+    //WordPress本体のJQueryを登録解除
+    wp_deregister_script('jquery');
+
     //jquery読み込み
-    wp_enqueue_script('jquery');
-    //以下はheaderに出力
-    wp_enqueue_style(
-        'google-fonts-kosugi',
-        'https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&family=Kosugi+Maru&display=swap'
+    wp_enqueue_script('jquery',get_template_directory_uri().'/assets/js/jquery-3.6.3.min.js',array(),'3.6.3',true);
+        wp_enqueue_script(
+        'jqueryinviewmin',
+        get_template_directory_uri() . '/assets/js/jquery.inview.min.js'
     );
-    // wp_enqueue_style(
-    //     'instagram-icon-photo-font-awesome',
-    //     'https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&family=Kosugi+Maru&display=swap'
-    // );
+
+    //共通のJavascript読み込み
+        wp_enqueue_script(
+        'slick',
+        get_template_directory_uri() . '/assets/js/slick.js',
+        array('jquery'),
+        '1.8.0',
+        true
+    );
+    wp_enqueue_script(
+        'common_script',
+        get_template_directory_uri() . '/assets/js/common_script.js',
+        array('jquery'),
+        'false',
+        true
+    );
+
+
+
+    //以下はheaderに出力
+    // Googleフォント読み込み
+    wp_enqueue_style
+        ('google-fonts-kosugi+maru','https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
+        wp_enqueue_style
+        ('google-fonts-kiwi+maru','https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&display=swap');
+
+    //fontawesome読み込み
+    wp_enqueue_style(
+        'instagram-icon-photo-font-awesome',
+        'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css'
+    );
+
+    //共通のCSS読み込み
     wp_enqueue_style(
         'my-destyle',
         get_template_directory_uri() . '/assets/css/destyle.css'
@@ -29,57 +60,94 @@ function add_my_files() {
         get_template_directory_uri() . '/assets/css/common.css'
     );
     wp_enqueue_style(
-        'my-course',
-        get_template_directory_uri() . '/assets/css/course.css'
-    );
-    wp_enqueue_style(
-        'my-temple',
-        get_template_directory_uri() . '/assets/css/temple.css'
-    );
-        wp_enqueue_style(
         'my-style',
         get_template_directory_uri() . '/assets/css/style.css'
     );
 
-        wp_enqueue_style(
-        'my-search-form',
-        get_template_directory_uri() . '/assets/css/search-form.css'
-        );
-        wp_enqueue_style(
-        'my-search-form',
+    //個別CSS読み込み
+
+    //top CSS
+if (is_front_page()) {
+    wp_enqueue_style(
+        'top',
         get_template_directory_uri() . '/assets/css/top.css'
-        );
-                wp_enqueue_style(
-        'my-style',
-        get_template_directory_uri() . '/assets/css/monzen.css'
     );
-    wp_enqueue_script(
-        'jquery-3.6.3',
-        get_template_directory_uri() . '/assets/js/jquery-3.6.3.min.js'
+};
+
+//temple css
+if (is_singular(array('temple','course'))) {
+    wp_enqueue_style(
+        'my-temples',
+        get_template_directory_uri() . '/assets/css/temple.css'
     );
-        wp_enqueue_script(
-        'jqueryinviewmin',
-        get_template_directory_uri() . '/assets/js/jquery.inview.min.js'
+};
+
+if (is_page(array('about','checkpoint','bookmark','monzen'))) {
+    wp_enqueue_style(
+        'my-templep',
+        get_template_directory_uri() . '/assets/css/temple.css'
     );
-    wp_enqueue_script(
-        'common_script',
-        get_template_directory_uri() . '/assets/js/common_script.js',
-        array(),
-        false,
-        true
+};
+
+//about-us css
+if (is_page('about-us')) {
+    wp_enqueue_style(
+        'my-aboutus',
+        get_template_directory_uri() . '/assets/css/about-us.css'
     );
-    wp_enqueue_script(
-        'course_script',
-        get_template_directory_uri() . '/assets/js/course_script.js',
-        array(),
-        false,
-        true
+};
+
+//independent css
+if (is_page(array('about','sitemap','privacy'))) {
+    wp_enqueue_style(
+        'my-inde',
+        get_template_directory_uri() . '/assets/css/independent.css'
     );
-        wp_enqueue_script(
-        'course_sc',
-        get_template_directory_uri() . '/assets/js/script.js',
-        array(),
-        false,
-        true
+};
+
+
+// 検索ページ
+if (is_search()) {
+wp_enqueue_style(
+        'my-search',
+        get_template_directory_uri() . '/assets/css/search-form.css',
     );
-}
+};
+
+
+        // wp_enqueue_style(
+        // 'my-search-form',
+        // get_template_directory_uri() . '/assets/css/search-form.css'
+        // );
+
+    //             wp_enqueue_style(
+    //     'my-style',
+    //     get_template_directory_uri() . '/assets/css/monzen.css'
+    // );
+        // wp_enqueue_style(
+    //     'my-course',
+    //     get_template_directory_uri() . '/assets/css/course.css'
+    // );
+
+
+    // wp_enqueue_script(
+    //     'jquery-3.6.3',
+    //     get_template_directory_uri() . '/assets/js/jquery-3.6.3.min.js'
+    // );
+
+
+    // wp_enqueue_script(
+    //     'course_script',
+    //     get_template_directory_uri() . '/assets/js/course_script.js',
+    //     array(),
+    //     false,
+    //     true
+    // );
+    //     wp_enqueue_script(
+    //     'course_sc',
+    //     get_template_directory_uri() . '/assets/js/script.js',
+    //     array(),
+    //     false,
+    //     true
+    // );
+};

@@ -3,21 +3,24 @@
 */
 ?>
 <?php get_header(); ?>
-<!-- headerここから -->
+
+<!-- headerここまで -->
 <!-- mainここから -->
 
 <main>
-    <div class="main_inner">
-        <h1 class="h1_bg">404 NOT FOUND</h1>
-        <div class="contents_width">
-            <p class="h1_cap">
+    <h1 class="h1_bg">404 NOT FOUND</h1>
+    <article class="main_inner">
+        <section class="contents_width">
+            <div>
+                <p class="h1_cap mb_100">
                             お探しのページが見つかりませんでした。<br />
                             申し訳ございませんが<a href="<?php echo home_url(); ?>" class="link"
                                 >こちらのリンク</a
                             >からトップページへお戻りください。
                         </p>
-        </div>
-    </div>
+            </div>
+        </section>
+    </article>
 </main>
 <!-- mainここまで -->
 
