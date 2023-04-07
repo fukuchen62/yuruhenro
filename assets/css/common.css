@@ -566,8 +566,9 @@ img {
 }
 
 .contents_width {
+    max-width: 1000px;
     margin: 0 auto;
-    padding: 0 32px;
+    padding: 0 30px;
 }
 
 .sec_mb40 {
