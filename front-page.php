@@ -123,7 +123,7 @@
                         </div>
                         <!-- 矢印つきボタン -->
                         <div class="button18">
-                            <a href="#">
+                            <a href="<?php echo home_url('checkpoint'); ?>">
                                 <p>もっと知る</p>
                             </a>
                         </div>
