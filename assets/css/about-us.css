@@ -1,12 +1,15 @@
 @charset "UTF-8";
 
-.temple_list ul li {
+/* .temple_list ul li {
     text-align: center;
     margin-bottom: 10px;
-}
+} */
 
-.about_us_list ul li {
-    margin-bottom: 10px;
+.shisetu {
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .mt_10 {
@@ -14,13 +17,14 @@
 }
 
 @media screen and (min-width: 1000px) {
-    .temple_list {
+    /* .temple_list {
         display: flex;
         justify-content: space-evenly;
-    }
-    .sisetu {
-        display: flex;
-        justify-content: space-evenly;
+    } */
+
+    .shisetu {
+        flex-direction: row;
+
     }
     .sisetu_list {
         display: flex;
