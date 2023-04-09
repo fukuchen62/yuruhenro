@@ -25,31 +25,31 @@ Template Name:page-monzen
 
                 <div class="temple_about mb_80">
                     <!-- おすすめ画像 -->
-                    <div class="slider2">
-                        <div>
+                    <ul class="slider2">
+                        <li>
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/monzen_01.jpg" alt="門前一番街" />
-                        </div>
-                        <div>
+                        </li>
+                        <li>
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/monzen_02.jpg" alt="門前一番街" />
-                        </div>
-                        <div>
+                        </li>
+                        <li>
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/monzen_03.jpg" alt="門前一番街" />
-                        </div>
-                    </div>
+                        </li>
+                    </ul>
                     <!-- 説明文 -->
                     <div class="temple_about_text">
                         <p class="small_cap">
-              四国霊場八十八ヶ所一番札所「霊山寺」の門前にある門前一番街
-              初めてのお遍路初心者にとても心強い場所です。<br>
-              ここでお遍路に必要なものを全てそろえることができます。<br>
-              （事前にネットで注文もできます（配送・当日受取））<br>
-              遍路用品のこと、お遍路のこと、公認先達さんの深い知識と経験を活かしてのアドバイスがいただけます。
-              まずはこちらに立ち寄って、服装、用具、気持ちの準備を整えてお遍路にスタートしましょう。<br>
-              門前名物　焼き餅「あわくった」もおすすめです。<br>
-              粟とよもぎの2種類があります。<br>
-              「お遍路衣装でお参り体験」もできます。<br>
-              レンタル衣装で1時間散策できるので、1番札所や2番札所に参拝できます。
-            </p>
+                            四国霊場八十八ヶ所一番札所「霊山寺」の門前にある門前一番街
+                            初めてのお遍路初心者にとても心強い場所です。<br>
+                            ここでお遍路に必要なものを全てそろえることができます。<br>
+                            （事前にネットで注文もできます（配送・当日受取））<br>
+                            遍路用品のこと、お遍路のこと、公認先達さんの深い知識と経験を活かしてのアドバイスがいただけます。
+                            まずはこちらに立ち寄って、服装、用具、気持ちの準備を整えてお遍路にスタートしましょう。<br>
+                            門前名物　焼き餅「あわくった」もおすすめです。<br>
+                            粟とよもぎの2種類があります。<br>
+                            「お遍路衣装でお参り体験」もできます。<br>
+                            レンタル衣装で1時間散策できるので、1番札所や2番札所に参拝できます。
+                        </p>
                     </div>
                 </div>
                 <!-- temple_aboutここまで -->
@@ -130,57 +130,57 @@ Template Name:page-monzen
             </section>
 
             <!-- 周辺施設 -->
-            <section class="mb_100">
+            <section class="contents_width mb_100">
                 <h2 class="h3_bg mb_40">周辺施設</h2>
                 <!-- 周辺施設カードが並ぶエリア -->
                 <div class="shop_info_list flex">
                     <?php
-          $facility_args = array(
-            'post_type' => 'facility',
-            'posts_per_page' => 3,
-            'orderby' => 'rand',
-            'tax_query' => array(
-              array(
-                'taxonomy' => 'area',
-                'terms' => array('north'),
-                'field' => 'slug'
-              ),
-            ),
-          );
-          $facility_query = new WP_Query($facility_args);
-          if ($facility_query->have_posts()) :
-            while ($facility_query->have_posts()) : $facility_query->the_post(); ?>
+                    $facility_args = array(
+                        'post_type' => 'facility',
+                        'posts_per_page' => 3,
+                        'orderby' => 'rand',
+                        'tax_query' => array(
+                            array(
+                                'taxonomy' => 'area',
+                                'terms' => array('north'),
+                                'field' => 'slug'
+                            ),
+                        ),
+                    );
+                    $facility_query = new WP_Query($facility_args);
+                    if ($facility_query->have_posts()) :
+                        while ($facility_query->have_posts()) : $facility_query->the_post(); ?>
 
-                    <!-- 周辺施設カードのデザイン -->
-                    <div class="shop_info_card">
-                        <div class="shop_info_caption">
-                            <img src="<?php the_field('f_pic1'); ?>" alt="施設の画像" />
-                        </div>
-                        <div class="shop_info_title">
-                            <p><?php the_field('f_name'); ?></p>
-                        </div>
-                        <div class="shop_info_text">
-                            <p>営業時間：<?php the_field('hours'); ?></p>
-                            <p>定休日：<?php the_field('holiday'); ?></p>
-                            <p>駐車場：<?php the_field('f_parking'); ?></p>
-                            <p>TEL：<?php the_field('f_tell'); ?></p>
-                            <p>公式HP：
-                    <?php if (get_field('f_url') != '-') { ?>
-                      <a href="<?php the_field('f_url'); ?>" target=_blank class="link"><?php the_field('f_name'); ?></a>
-                    <?php } else {
-                      echo 'なし';
-                    } ?>
-                  </p>
-                        </div>
-                        <div class="shop_info_article">
-                            <p>
-                    <?php the_field('f_message'); ?>
-                  </p>
-                        </div>
-                        <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
-                    </div>
+                            <!-- 周辺施設カードのデザイン -->
+                            <div class="shop_info_card">
+                                <div class="shop_info_caption">
+                                    <img src="<?php the_field('f_pic1'); ?>" alt="施設の画像" />
+                                </div>
+                                <div class="shop_info_title">
+                                    <p><?php the_field('f_name'); ?></p>
+                                </div>
+                                <div class="shop_info_text">
+                                    <p>営業時間：<?php the_field('hours'); ?></p>
+                                    <p>定休日：<?php the_field('holiday'); ?></p>
+                                    <p>駐車場：<?php the_field('f_parking'); ?></p>
+                                    <p>TEL：<?php the_field('f_tell'); ?></p>
+                                    <p>公式HP：
+                                        <?php if (get_field('f_url') != '-') { ?>
+                                            <a href="<?php the_field('f_url'); ?>" target=_blank class="link"><?php the_field('f_name'); ?></a>
+                                        <?php } else {
+                                            echo 'なし';
+                                        } ?>
+                                    </p>
+                                </div>
+                                <div class="shop_info_article">
+                                    <p>
+                                        <?php the_field('f_message'); ?>
+                                    </p>
+                                </div>
+                                <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
+                            </div>
 
-                    <?php endwhile; ?>
+                        <?php endwhile; ?>
                     <?php endif; ?>
                     <?php wp_reset_postdata(); ?>
                 </div>

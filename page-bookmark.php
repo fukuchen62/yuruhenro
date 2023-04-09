@@ -18,7 +18,7 @@
         </section>
 
         <!-- 寺社お気に入り -->
-        <section class="mb_100">
+        <section class="contents_width mb_100">
             <h2 class="h3_bg mb_40">寺社お気に入り</h2>
 
             <!-- 寺社お気に入りカードが並ぶエリア -->
@@ -73,7 +73,7 @@
         </section>
 
         <!-- 周辺施設お気に入り -->
-        <section class="mb_100">
+        <section class="contents_width mb_100">
             <h2 class="h3_bg mb_40">周辺施設お気に入り</h2>
 
             <!-- 周辺施設お気に入りカードが並ぶエリア -->

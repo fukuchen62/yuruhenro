@@ -339,7 +339,6 @@ img {
 /****************/
 
 .main_inner {
-    /* padding-top: 40px; */
     margin: 0 auto;
 }
 
@@ -403,12 +402,6 @@ img {
     /* 30px上に移動する */
     /* transition-delay: 0.5s; */
     /* フェード開始を0.5秒遅らせる */
-}
-
-@media screen and (min-width: 1000px) {
-    .contents_width {
-        max-width: 1000px;
-    }
 }
 
 /****************/
@@ -568,6 +561,18 @@ img {
     padding: 0 30px;
 }
 
+@media screen and (min-width: 760px) {
+    .flex_d_c {
+        flex-direction: row;
+    }
+
+    .contents_width {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 0;
+    }
+}
+
 .sec_mb40 {
     /* max-width: 1000px; */
     padding: 0 10px;
@@ -592,10 +597,4 @@ img {
 
 .mb_150 {
     margin-bottom: 150px;
-}
-
-@media screen and (min-width: 760px) {
-    .flex_d_c {
-        flex-direction: row;
-    }
 }
