@@ -80,7 +80,7 @@
             <!-- section区切り -->
 
             <!-- 絵馬に乗せる -->
-            <section>
+            <section id="jump_to_about">
 
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/ematop.png" alt="絵馬">
                 <div class="ema">

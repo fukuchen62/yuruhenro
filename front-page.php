@@ -123,7 +123,7 @@
                         </div>
                         <!-- 矢印つきボタン -->
                         <div class="button18">
-                            <a href="#">
+                            <a href="<?php echo home_url('checkpoint'); ?>">
                                 <p>もっと知る</p>
                             </a>
                         </div>
@@ -220,7 +220,7 @@
 
         <!-- instagram -->
         <section class="mb_150">
-            <h2 class="h3_bg">Instagram</h2>\
+            <h2 class="h3_bg">Instagram</h2>
             <?php echo do_shortcode('[instagram-feed feed=1]'); ?>
         </section>
     </article>
