@@ -27,7 +27,7 @@
                             <div class="section_line">
                                 <div class="rowLine flex">
                                     <span class="circle_mark1">用語</span>
-                                    <p><?php the_title(); ?></p>
+                                    <p><ruby><?php the_title(); ?><rt><?php the_field('g_kana'); ?></rt></ruby></p>
                                 </div>
                                 <div class="rowLine flex">
                                     <span class="circle_mark2">意味</span>
