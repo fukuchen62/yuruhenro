@@ -115,7 +115,7 @@
 /* コースページ */
 /****************/
 .course_tab {
-    max-width: 1000px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 
@@ -140,16 +140,16 @@
 }
 
 .course_tabWrap li:nth-child(1) a {
-    background: #c5a22b;
+    background: #79afaf;
 }
 .course_tabWrap li:nth-child(2) a {
-    background: #cd5e3c;
-}
-.course_tabWrap li:nth-child(3) a {
     background: #8ab53e;
 }
+.course_tabWrap li:nth-child(3) a {
+    background: #cd5e3c;
+}
 .course_tabWrap li:nth-child(4) a {
-    background: #79afaf;
+    background: #c5a22b;
 }
 .course_tabWrap li:nth-child(5) a {
     background: #bc786a;
@@ -195,7 +195,7 @@
     margin: 0 auto;
 }
 
-.course_tabCont > p {
+.course_tabCont div p {
     text-align: center;
 }
 
@@ -242,13 +242,13 @@
 @media screen and (min-width: 800px) {
     .course_contWrap {
         display: flex;
-        margin-bottom: 40px;
+        /* margin-bottom: 40px; */
     }
     .course_tabWrap li a {
         font-size: 16px;
     }
     .course_mainWrap {
-        padding: 0 40px;
+        padding: 0 20px;
     }
     .course_contPhoto img {
         width: 50vh;
