@@ -4,9 +4,6 @@
 ?>
 <?php get_header(); ?>
 
-<!-- headerここまで -->
-<!-- mainここから -->
-
 <main>
     <h1 class="h1_bg">404 NOT FOUND</h1>
     <article class="main_inner">
@@ -20,7 +17,5 @@
         </section>
     </article>
 </main>
-<!-- mainここまで -->
 
-<!-- footerここから -->
 <?php get_footer(); ?>
