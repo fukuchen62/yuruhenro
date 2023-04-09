@@ -1,5 +1,5 @@
     <section class="contents_width">
-        <h2 class="h2_bg">検索条件</h2>
+        <!-- <h2 class="h2_bg">検索条件</h2> -->
         <div class="big_cap mb_40">
             <p>該当する条件で検索することができます。<br>
                 条件を選択後、「検索」ボタンを押してください。</p>
@@ -7,7 +7,7 @@
     </section>
 
     <section class="contents_width search_form mb_80">
-        <h3 class="h3_bg mb_40">検索条件選択</h3>
+        <h2 class="h3_bg mb_40">検索条件選択</h2>
         <form method="get" action="<?php echo esc_url(home_url('/')); ?>">
             <div class="search-form_checkarea">
                 <p class="search-form_headline">エリア</p>
