@@ -20,10 +20,10 @@ Template Name:page-monzen
             </div>
 
             <!-- 門前一番街詳細1 -->
-            <section class="contents_width">
+            <section class="contents_width mb_80">
                 <h2 class="h3_bg mb_40">門前一番街について</h2>
 
-                <div class="temple_about mb_80">
+                <div class="temple_about">
                     <!-- おすすめ画像 -->
                     <ul class="slider2">
                         <li>
@@ -52,11 +52,10 @@ Template Name:page-monzen
                         </p>
                     </div>
                 </div>
-                <!-- temple_aboutここまで -->
             </section>
 
             <!-- 門前一番街詳細2 -->
-            <section class="contents_width">
+            <section class="contents_width mb_80">
                 <h2 class="h3_bg mb_40">施設情報</h2>
                 <div class="temple_info flex">
 
@@ -130,7 +129,7 @@ Template Name:page-monzen
             </section>
 
             <!-- 周辺施設 -->
-            <section class="contents_width mb_100">
+            <section class="contents_width mb_80">
                 <h2 class="h3_bg mb_40">周辺施設</h2>
                 <!-- 周辺施設カードが並ぶエリア -->
                 <div class="shop_info_list flex">
@@ -151,43 +150,43 @@ Template Name:page-monzen
                     if ($facility_query->have_posts()) :
                         while ($facility_query->have_posts()) : $facility_query->the_post(); ?>
 
-                            <!-- 周辺施設カードのデザイン -->
-                            <div class="shop_info_card">
-                                <div class="shop_info_caption">
-                                    <img src="<?php the_field('f_pic1'); ?>" alt="施設の画像" />
-                                </div>
-                                <div class="shop_info_title">
-                                    <p><?php the_field('f_name'); ?></p>
-                                </div>
-                                <div class="shop_info_text">
-                                    <p>営業時間：<?php the_field('hours'); ?></p>
-                                    <p>定休日：<?php the_field('holiday'); ?></p>
-                                    <p>駐車場：<?php the_field('f_parking'); ?></p>
-                                    <p>TEL：<?php the_field('f_tell'); ?></p>
-                                    <p>公式HP：
+                    <!-- 周辺施設カードのデザイン -->
+                    <div class="shop_info_card">
+                        <div class="shop_info_caption">
+                            <img src="<?php the_field('f_pic1'); ?>" alt="施設の画像" />
+                        </div>
+                        <div class="shop_info_title">
+                            <p><?php the_field('f_name'); ?></p>
+                        </div>
+                        <div class="shop_info_text">
+                            <p>営業時間：<?php the_field('hours'); ?></p>
+                            <p>定休日：<?php the_field('holiday'); ?></p>
+                            <p>駐車場：<?php the_field('f_parking'); ?></p>
+                            <p>TEL：<?php the_field('f_tell'); ?></p>
+                            <p>公式HP：
                                         <?php if (get_field('f_url') != '-') { ?>
                                             <a href="<?php the_field('f_url'); ?>" target=_blank class="link"><?php the_field('f_name'); ?></a>
                                         <?php } else {
                                             echo 'なし';
                                         } ?>
                                     </p>
-                                </div>
-                                <div class="shop_info_article">
-                                    <p>
+                        </div>
+                        <div class="shop_info_article">
+                            <p>
                                         <?php the_field('f_message'); ?>
                                     </p>
-                                </div>
-                                <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
-                            </div>
+                        </div>
+                        <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
+                    </div>
 
-                        <?php endwhile; ?>
+                    <?php endwhile; ?>
                     <?php endif; ?>
                     <?php wp_reset_postdata(); ?>
                 </div>
             </section>
 
             <!-- コース一覧 -->
-            <section class="contents_width mb_150">
+            <section class="contents_width mb_100">
                 <h2 class="h3_bg mb_40">コース一覧</h2>
                 <div class="course_flex">
                     <button class="course_btn btn1">
