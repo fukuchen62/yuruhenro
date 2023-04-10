@@ -6,53 +6,63 @@
     <article class="main_inner">
 
         <!-- 後ほど調整！ -->
-        <!-- <h1 class="catch_phrase">
-                        どこ行くん?<br />
-                        　ゆるっとへんろ<br />
-                        　　＃ゆるへんろ
-                    </h1> -->
+        <h1 class="catch_phrase">
+            どこ行くん?<br />
+            　ゆるっとへんろ<br />
+            　　＃ゆるへんろ
+        </h1>
 
         <!-- kv画像 -->
-        <!-- <section> -->
-        <!-- 大きなサイズの画像 -->
-        <!-- <div class="slider">
-                        <div class="slick-img1">
-                            <img src="<?php //echo get_template_directory_uri();?>/assets/img/top_kv01.jpg" alt="" />
-                        </div>
-                        <div class="slick-img1">
-                            <img src="<?php //echo get_template_directory_uri();?>/assets/img/top_kv02.jpg" alt="" />
-                        </div>
-                        <div class="slick-img1">
-                            <img src="<?php //echo get_template_directory_uri();?>/assets/img/top_kv03.jpg" alt="" />
-                        </div>
-                        <div class="slick-img1">
-                            <img src="<?php //echo get_template_directory_uri();?>/assets/img/top_kv04.jpg" alt="" />
-                        </div>
-                        <div class="slick-img1">
-                            <img src="<?php //echo get_template_directory_uri();?>/assets/img/top_kv05.jpg" alt="" />
-                        </div>
-                    </div> -->
+        <section>
+            <!-- 大きなサイズの画像 -->
+            <div class="slider">
+                <div class="slick-img1">
+                    <img src="<?php echo get_template_directory_uri();
+                                ?>/assets/img/top_kv01.jpg" alt="" />
+                </div>
+                <div class="slick-img1">
+                    <img src="<?php echo get_template_directory_uri();
+                                ?>/assets/img/top_kv02.jpg" alt="" />
+                </div>
+                <div class="slick-img1">
+                    <img src="<?php echo get_template_directory_uri();
+                                ?>/assets/img/top_kv03.jpg" alt="" />
+                </div>
+                <div class="slick-img1">
+                    <img src="<?php echo get_template_directory_uri();
+                                ?>/assets/img/top_kv04.jpg" alt="" />
+                </div>
+                <div class="slick-img1">
+                    <img src="<?php echo get_template_directory_uri();
+                                ?>/assets/img/top_kv05.jpg" alt="" />
+                </div>
+            </div>
 
 
-        <!-- kv下画像 -->
-        <!-- <div class="thumbnail mb_80">
-                    <div class="thumbnail-img">
-                        <img src="<?php //echo get_template_directory_uri();?>/assets/img/top_kv01.jpg" alt="" />
-                    </div>
-                    <div class="thumbnail-img">
-                        <img src="<?php //echo get_template_directory_uri();?>/assets/img/top_kv02.jpg" alt="" />
-                    </div>
-                    <div class="thumbnail-img">
-                        <img src="<?php //echo get_template_directory_uri();?>/assets/img/top_kv03.jpg" alt="" />
-                    </div>
-                    <div class="thumbnail-img">
-                        <img src="<?php //echo get_template_directory_uri();?>/assets/img/top_kv04.jpg" alt="" />
-                    </div>
-                    <div class="thumbnail-img">
-                        <img src="<?php //echo get_template_directory_uri();?>/assets/img/top_kv05.jpg" alt="" />
-                    </div>
-                </div> -->
-        <!-- </section> -->
+            <!-- kv下画像 -->
+            <div class="thumbnail mb_80">
+                <div class="thumbnail-img">
+                    <img src="<?php echo get_template_directory_uri();
+                                ?>/assets/img/top_kv01.jpg" alt="" />
+                </div>
+                <div class="thumbnail-img">
+                    <img src="<?php echo get_template_directory_uri();
+                                ?>/assets/img/top_kv02.jpg" alt="" />
+                </div>
+                <div class="thumbnail-img">
+                    <img src="<?php echo get_template_directory_uri();
+                                ?>/assets/img/top_kv03.jpg" alt="" />
+                </div>
+                <div class="thumbnail-img">
+                    <img src="<?php echo get_template_directory_uri();
+                                ?>/assets/img/top_kv04.jpg" alt="" />
+                </div>
+                <div class="thumbnail-img">
+                    <img src="<?php echo get_template_directory_uri();
+                                ?>/assets/img/top_kv05.jpg" alt="" />
+                </div>
+            </div>
+        </section>
         <!-- 後ほど調整！ -->
 
 
@@ -77,7 +87,7 @@
                 </div>
 
                 <!-- イメージ画像 -->
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/about_yuruhenro.png" alt="参拝のイメージ" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/about_yuruhenro.png" alt="参拝のイメージ" />
             </div>
 
             <!-- おへんろの作法について -->
@@ -86,7 +96,7 @@
                 <div class="top_flexset flex">
                     <!-- 参拝の画像 -->
                     <div class="top_sanpai_bg1">
-                        <img src="<?php echo get_template_directory_uri();?>/assets/img/hana.png" alt="花の飾り" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hana.png" alt="花の飾り" />
                     </div>
                     <div class="sec_mb40">
                         <!-- キャプション文 -->
@@ -96,7 +106,7 @@
                         </div>
                         <!-- 矢印つきボタン -->
                         <div class="button18">
-                            <a href="<?php echo esc_url( home_url( '/' ) ); ?>about#jump_to_about">
+                            <a href="<?php echo esc_url(home_url('/')); ?>about#jump_to_about">
                                 <p>もっと知る</p>
                             </a>
                         </div>
@@ -113,7 +123,7 @@
                 <div class="top_flexset flex">
                     <!-- 参拝の画像 -->
                     <div class="top_sanpai_bg2">
-                        <img src="<?php echo get_template_directory_uri();?>/assets/img/hana.png" alt="花の飾り" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hana.png" alt="花の飾り" />
                     </div>
                     <div class="sec_mb40">
                         <!-- キャプション文 -->
@@ -145,7 +155,7 @@
             <!-- 入門コース -->
             <div class="mb_80">
                 <!-- イメージ画像 -->
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/beginner_yuruhenro.png" alt="入門コースイメージ画像" class="mb_40" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/beginner_yuruhenro.png" alt="入門コースイメージ画像" class="mb_40" />
 
                 <!-- ボタンと紹介文 -->
                 <div class="btn_and_description_area mb_80 flex">
@@ -163,7 +173,7 @@
             <!-- チャレンジコース -->
             <div>
                 <!-- イメージ画像 -->
-                <img src="<?php echo get_template_directory_uri();?>/assets/img/challenge_yuruhenro.png" alt="チャレンジコースイメージ画像" class="mb_40" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/challenge_yuruhenro.png" alt="チャレンジコースイメージ画像" class="mb_40" />
 
                 <!-- チャレンジコース紹介文 -->
                 <div class="btn_description">

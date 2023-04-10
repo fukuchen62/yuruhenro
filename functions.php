@@ -1,20 +1,22 @@
 <?php
 //after_setup_themeアクションフックを使用する関数をまとめる
-add_action( 'after_setup_theme', 'my_theme_setup' );
-function my_theme_setup() {
-    add_theme_support( 'title-tag' );//<title>タグを出力する
-    add_theme_support( 'post-thumbnails' );//アイキャッチ画像を使用可能にする
-    add_theme_support('menus');//カスタムメニュー機能を使用可能にする
+add_action('after_setup_theme', 'my_theme_setup');
+function my_theme_setup()
+{
+    add_theme_support('title-tag'); //<title>タグを出力する
+    add_theme_support('post-thumbnails'); //アイキャッチ画像を使用可能にする
+    add_theme_support('menus'); //カスタムメニュー機能を使用可能にする
 }
 // functions.phpでスタイルシートとJavaScriptファイルを読み込む
 add_action('wp_enqueue_scripts', 'add_my_files');
-function add_my_files() {
+function add_my_files()
+{
     //WordPress本体のJQueryを登録解除
     wp_deregister_script('jquery');
 
     //jquery読み込み
-    wp_enqueue_script('jquery',get_template_directory_uri().'/assets/js/jquery-3.6.3.min.js',array(),'3.6.3',true);
-        wp_enqueue_script(
+    wp_enqueue_script('jquery', get_template_directory_uri() . '/assets/js/jquery-3.6.3.min.js', array(), '3.6.3', true);
+    wp_enqueue_script(
         'jqueryinviewmin',
         get_template_directory_uri() . '/assets/js/jquery.inview.min.js'
     );
@@ -29,33 +31,33 @@ function add_my_files() {
     );
 
     //個別slick.js読み込み
-    if(is_page('monzen')){wp_enqueue_script(
-        'slick',
-        get_template_directory_uri() . '/assets/js/slick.js',
-        array('jquery'),
-        '1.8.0',
-        true
-    );
-}
+    if (is_page('monzen')) {
+        wp_enqueue_script(
+            'slick',
+            get_template_directory_uri() . '/assets/js/slick.js',
+            array('jquery'),
+            '1.8.0',
+            true
+        );
+    }
 
-//個別slick.js読み込み
-    if(is_home()){wp_enqueue_script(
-        'slick',
-        get_template_directory_uri() . '/assets/js/slick.js',
-        array('jquery'),
-        '1.8.0',
-        true
-    );
-}
+    //個別slick.js読み込み
+    if (is_home()) {
+        wp_enqueue_script(
+            'slick',
+            get_template_directory_uri() . '/assets/js/slick.js',
+            array('jquery'),
+            '1.8.0',
+            true
+        );
+    }
 
 
 
     //以下はheaderに出力
     // Googleフォント読み込み
-    wp_enqueue_style
-        ('google-fonts-kosugi+maru','https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
-        wp_enqueue_style
-        ('google-fonts-kiwi+maru','https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&display=swap');
+    wp_enqueue_style('google-fonts-kosugi+maru', 'https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
+    wp_enqueue_style('google-fonts-kiwi+maru', 'https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&display=swap');
 
     //fontawesome読み込み
     wp_enqueue_style(
@@ -69,6 +71,10 @@ function add_my_files() {
         get_template_directory_uri() . '/assets/css/destyle.css'
     );
     wp_enqueue_style(
+        'my-slick',
+        get_template_directory_uri() . '/assets/css/slick.css'
+    );
+    wp_enqueue_style(
         'my-common',
         get_template_directory_uri() . '/assets/css/common.css'
     );
@@ -80,64 +86,64 @@ function add_my_files() {
     //個別CSS読み込み
 
     //top CSS
-if (is_front_page()) {
-    wp_enqueue_style(
-        'top',
-        get_template_directory_uri() . '/assets/css/top.css'
-    );
-};
+    if (is_front_page()) {
+        wp_enqueue_style(
+            'top',
+            get_template_directory_uri() . '/assets/css/top.css'
+        );
+    };
 
-//temple css
-if (is_singular(array('temple','course'))) {
-    wp_enqueue_style(
-        'my-temples',
-        get_template_directory_uri() . '/assets/css/temple.css'
-    );
-};
+    //temple css
+    if (is_singular(array('temple', 'course'))) {
+        wp_enqueue_style(
+            'my-temples',
+            get_template_directory_uri() . '/assets/css/temple.css'
+        );
+    };
 
-if (is_page(array('about','checkpoint','bookmark','monzen'))) {
-    wp_enqueue_style(
-        'my-templep',
-        get_template_directory_uri() . '/assets/css/temple.css'
-    );
-};
+    if (is_page(array('about', 'checkpoint', 'bookmark', 'monzen'))) {
+        wp_enqueue_style(
+            'my-templep',
+            get_template_directory_uri() . '/assets/css/temple.css'
+        );
+    };
 
-//about-us css
-if (is_page('about-us')) {
-    wp_enqueue_style(
-        'my-aboutus',
-        get_template_directory_uri() . '/assets/css/about-us.css'
-    );
-};
+    //about-us css
+    if (is_page('about-us')) {
+        wp_enqueue_style(
+            'my-aboutus',
+            get_template_directory_uri() . '/assets/css/about-us.css'
+        );
+    };
 
-//independent css
-if (is_page(array('about','sitemap','privacy'))) {
-    wp_enqueue_style(
-        'my-inde',
-        get_template_directory_uri() . '/assets/css/independent.css'
-    );
-};
-
-
-// 検索ページ
-if (is_search()) {
-wp_enqueue_style(
-        'my-search',
-        get_template_directory_uri() . '/assets/css/search-form.css',
-    );
-};
+    //independent css
+    if (is_page(array('about', 'sitemap', 'privacy'))) {
+        wp_enqueue_style(
+            'my-inde',
+            get_template_directory_uri() . '/assets/css/independent.css'
+        );
+    };
 
 
-        // wp_enqueue_style(
-        // 'my-search-form',
-        // get_template_directory_uri() . '/assets/css/search-form.css'
-        // );
+    // 検索ページ
+    if (is_search()) {
+        wp_enqueue_style(
+            'my-search',
+            get_template_directory_uri() . '/assets/css/search-form.css',
+        );
+    };
+
+
+    // wp_enqueue_style(
+    // 'my-search-form',
+    // get_template_directory_uri() . '/assets/css/search-form.css'
+    // );
 
     //             wp_enqueue_style(
     //     'my-style',
     //     get_template_directory_uri() . '/assets/css/monzen.css'
     // );
-        // wp_enqueue_style(
+    // wp_enqueue_style(
     //     'my-course',
     //     get_template_directory_uri() . '/assets/css/course.css'
     // );
