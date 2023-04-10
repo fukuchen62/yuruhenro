@@ -86,11 +86,11 @@ $slug = $page->post_name;
                         'meta_value' => $slug, //カスタムフィールドの値
                         'meta_compare' => 'LIKE' //'meta_value'のテスト演算子
         );
-                    $death_query = new WP_Query($args); //サブループを変数に格納
+                    $course_query = new WP_Query($args); //サブループを変数に格納
 
-                    if ($death_query->have_posts()) :
-                        while ($death_query->have_posts()) :
-                            $death_query->the_post();
+                    if ($course_query->have_posts()) :
+                        while ($course_query->have_posts()) :
+                            $course_query->the_post();
                     ?>
 
                         <!-- 時間 -->
@@ -157,10 +157,19 @@ $slug = $page->post_name;
                         <!-- 周辺施設お気に入りカードが並ぶエリア -->
                         <div class="shop_info_list flex">
                             <?php
+//①get_pageを利用して情報を得る
+$f_page = get_page(get_the_ID());
+//②プロパティからスラッグ名を取得する
+$f_term = $f_page->post_name;
+//echo $f_term ;
+//var_dump($f_term);
+//print_r($f_term);
+//var_export($f_term);
+
                             $facility_args = array(
                                 'post_type' => 'facility',
                                 'posts_per_page' => 3,
-                                'orderby' => 'rand',
+                                //'orderby' => 'rand',
                                 'tax_query' => array(
                                     array(
                                         'taxonomy' => 'area',
