@@ -553,6 +553,8 @@ img {
 
 .flex_d_c {
     flex-direction: column;
+    flex-wrap: wrap;
+    padding: 0 30px;
 }
 
 .contents_width {
@@ -564,6 +566,9 @@ img {
 @media screen and (min-width: 760px) {
     .flex_d_c {
         flex-direction: row;
+        justify-content: space-between;
+        max-width: 500px;
+        text-align: center;
     }
 
     .contents_width {
