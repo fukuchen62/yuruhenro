@@ -38,36 +38,52 @@ $(function () {
 //任意のタブにURLからリンクするための設定
 function GethashID(hashIDName) {
     if (hashIDName) {
+
         //タブ設定
         $(".course_tabWrap li")
             .find("a")
             .each(function () {
                 //タブ内のaタグ全てを取得
-                var idName = $(this).attr("href"); //タブ内のaタグのリンク名
+                // var idName = $(this).attr("href"); //タブ内のaタグのリンク名
+                var idName = $(this).attr("id"); //タブ内のaタグのリンク名
+
                 if (idName == hashIDName) {
+
                     //リンク元の指定されたURLのハッシュタグと同じかをチェック
                     var parentElm = $(this).parent(); //タブ内のaタグの親要素（li）を取得
+                    // console.log('parentElm:'+parentElm);
+
                     $(".course_tabWrap li").removeClass("active"); //タブ内のliについているactiveクラスを取り除き
                     $(parentElm).addClass("active"); //リンク元の指定されたURLのハッシュタグとタブ内のリンク名が同じであれば、liにactiveクラスを追加
                     //表示させるエリア設定
-                    $(".course_tabCont").removeClass("is-active"); //もともとついているis-activeクラスを取り除き
+                    // $(".course_tabCont").removeClass("is-active"); //もともとついているis-activeクラスを取り除き
                     $(hashIDName).addClass("is-active"); //表示させたいエリアのタブリンク名をクリックしたら、表示エリアにis-activeクラスを追加
                 }
             });
     }
 }
 //タブをクリックしたら
-$(".course_tabWrap a").on("click", function () {
-    var idName = $(this).attr("href"); //タブ内のリンク名を取得
-    GethashID(idName); //設定したタブの読み込みと
-    return false; //aタグを無効にする
-});
+// $(".course_tabWrap a").on("click", function () {
+//     // var idName = $(this).attr("href"); //タブ内のリンク名を取得
+//     var slugName=$('#slug_name').val();
+//     // console.log('hashName:'+slugName);
+//     GethashID(idName); //設定したタブの読み込みと
+//     return false; //aタグを無効にする
+// });
+
 // 上記の動きをページが読み込まれたらすぐに動かす
-$(window).on("load", function () {
+
+$(document).ready(function(){
+
     $(".course_tabWrap li:first-of-type").addClass("active"); //最初のliにactiveクラスを追加
     $(".course_tabCont:first-of-type").addClass("is-active"); //最初の.areaにis-activeクラスを追加
-    var hashName = location.hash; //リンク元の指定されたURLのハッシュタグを取得
-    GethashID(hashName); //設定したタブの読み込み
+    // var hashName = location.hash; //リンク元の指定されたURLのハッシュタグを取得
+    // var hashName = "west";
+    var slugName=$('#slug_name').val();
+    // var slugName = "easy";
+    console.log('hashName:'+slugName);
+    GethashID(slugName); //設定したタブの読み込み
+
 });
 
 //--------------------------------------------------//
