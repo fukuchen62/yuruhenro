@@ -5,15 +5,17 @@
 <?php get_header(); ?>
 <!-- mainここから -->
 <main>
-    <h1 class="h1_bg">このサイトについて</h1>
+    <h1 class="h1_bg mb_150">このサイトについて</h1>
     <article class="main_inner">
 
         <section class="contents_width">
             <!-- <h2 class="h2_bg">このサイトについて</h2> -->
+            <div class="awaodori_bgimg">
             <p class="big_cap_independent">
                 当サイトのご利用にあたっては、以下の内容をご確認いただき、ご承諾いただいたものといたします。
                 また、内容は予告なく変更する場合がありますので、あらかじめご了承ください。
             </p>
+</div>
         </section>
 
         <section class="contents_width mb_80">
