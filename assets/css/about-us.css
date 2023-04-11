@@ -1,5 +1,5 @@
 @charset "UTF-8";
-*{border: 1px solid royalblue;}
+/* *{border: 1px solid royalblue;} */
 
 /* .temple_list ul li {
     text-align: center;
@@ -13,15 +13,65 @@
     flex-wrap: wrap;
 }
 
+.shisetu li{
+    line-height: 2.0em;
+}
 .mt_10 {
     margin: 10px 0 10px;
 }
 
+
+.temple_list{
+    line-height: 2.0em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.temple_list::after {
+    content: " ";
+    display: block;
+    width: 300px;
+}
+.each_temple{
+    width: 300px;
+}
+
+
+
+.ref_site{
+    line-height: 3.0em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    margin: 0 10%;
+}
+
+.each_ref_site{
+    width: 350px;
+}
+
+
+
+.reference{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.reference li {
+    padding: 10px 10px;
+}
+
+
+.reference li:nth-child(2n+1) {
+        background: #F0EBCF;
+      }
+
+
+
+
 @media screen and (min-width: 1000px) {
-    /* .temple_list {
-        display: flex;
-        justify-content: space-evenly;
-    } */
 
     .shisetu {
         flex-direction: row;

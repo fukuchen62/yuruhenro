@@ -133,6 +133,14 @@ function add_my_files()
         );
     };
 
+    //contact css
+    if (is_page('contact')) {
+        wp_enqueue_style(
+            'contact',
+            get_template_directory_uri() . '/assets/css/contact.css'
+        );
+    };
+
 
     // 検索ページ
     if (is_search()) {
