@@ -31,5 +31,6 @@
                     <input class="searchBtns" type="submit" value="検索">
                     <input class="searchBtns" type="reset" name="reset" value="リセット">
                 </p>
+            </div>
         </form>
     </section>

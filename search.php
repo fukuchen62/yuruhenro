@@ -66,7 +66,7 @@
                             <img src="<?php the_field('t_eyecatch'); ?>" alt="寺社のアイキャッチ画像" />
                         </div>
                         <div class="searchresultList_data">
-                            <h4 class="h4_bg text_c"><?php the_field('t_numbername'); ?></h4>
+                            <h3 class="h4_bg text_c"><?php the_field('t_numbername'); ?></h3>
                             <!-- <p>拝観時間：10時～17時</p> -->
                             <!-- <p>定休日：火曜日</p> -->
                             <p>駐車場：<?php the_field('t_parking'); ?></p>
