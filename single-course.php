@@ -118,7 +118,7 @@
                                     <div class=" button18">
                                         <?php $more = get_field('more');
                                                 if ($more) : ?>
-                                        <a href="<?php the_field('link') ?>" target="_blank">
+                                        <a href="../../<?php the_field('link') ?>" target="_blank">
                                             <p>もっと知る
                                                         </p>
                                         </a>
