@@ -57,6 +57,7 @@
                                                 echo 'なし';
                                             } ?>
                                         </p>
+                            <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
                         </div>
                     </div>
                 </a>
@@ -112,11 +113,13 @@
                                             echo 'なし';
                                         } ?>
                                     </p>
+
                     </div>
                     <div class="shop_info_article">
                         <p>
                                         <?php the_field('f_message'); ?>
                                     </p>
+                        <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
                     </div>
 
                 </div>
