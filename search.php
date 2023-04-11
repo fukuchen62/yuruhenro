@@ -29,10 +29,10 @@
         }
 
         // 選択していない場合も考慮して条件で絞り込む。
-        if (!empty($area_search)) {
+        if (!empty($search_slug)) {
             $taxquerysp[] = [
                 'taxonomy' => 'searchh',           //タクソノミー：『』
-                'terms' => $area_search,          //スラッグ名
+                'terms' => $search_slug,          //スラッグ名
                 'field' => 'slug',              //スラッグ指定
             ];
         }
