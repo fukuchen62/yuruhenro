@@ -10,7 +10,8 @@
             </div>
             <div>
                 <p class="big_cap">
-                    よくあるご質問をまとめています。おへんろ活動のご参考にどうぞ。
+                    よくあるご質問をまとめています。おへんろ活動のご参考にどうぞ。<br>
+                    用語集はこちら！→<a href="../glossary">【用語集】</a>
                 </p>
 
 
@@ -25,19 +26,19 @@
                     $the_query = new WP_Query($args);
                     if ($the_query->have_posts()) :
                         while ($the_query->have_posts()) : $the_query->the_post(); ?>
-                            <div class="section_line">
-                                <div class="rowLine flex">
-                                    <span class="circle_mark1">Q<?php print "$post_counter"; ?>
-                                    </span>
-                                    <p><?php the_title(); ?></p>
-                                </div>
-                                <div class="rowLine flex">
-                                    <span class=" circle_mark2">A</span>
-                                    <p><?php the_field('answer'); ?></p>
-                                </div>
-                            </div>
-                            <?php $post_counter++; ?>
-                        <?php endwhile; ?>
+                    <div class="section_line">
+                        <div class="rowLine flex">
+                            <span class="circle_mark1">Q<?php print "$post_counter"; ?>
+                            </span>
+                            <p><?php the_title(); ?></p>
+                        </div>
+                        <div class="rowLine flex">
+                            <span class=" circle_mark2">A</span>
+                            <p><?php the_field('answer'); ?></p>
+                        </div>
+                    </div>
+                    <?php $post_counter++; ?>
+                    <?php endwhile; ?>
                     <?php endif; ?>
                 </div>
         </section>
