@@ -129,7 +129,7 @@ Template Name:page-monzen
             </section>
 
             <!-- 周辺施設 -->
-            <section class="contents_width mb_80">
+            <section class="mb_80">
                 <h2 class="h3_bg mb_40">周辺施設</h2>
                 <!-- 周辺施設カードが並ぶエリア -->
                 <div class="shop_info_list flex">
@@ -186,7 +186,7 @@ Template Name:page-monzen
             </section>
 
             <!-- コース一覧 -->
-            <section class="contents_width mb_100">
+            <section class="mb_100">
                 <h2 class="h3_bg mb_40">コース一覧</h2>
                 <div class="course_flex">
                     <button class="course_btn btn1">

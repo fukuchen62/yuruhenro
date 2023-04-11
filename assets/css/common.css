@@ -39,7 +39,7 @@ img {
 /* h2装飾 */
 .h2_bg {
     position: relative;
-    width: 320px;
+    width: 100%;
     font-family: "Kosugi Maru";
     font-size: 20px;
     color: #fbfaf5;

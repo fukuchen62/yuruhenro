@@ -14,7 +14,9 @@
 
             <!-- section区切り -->
             <section>
-                <h2 class="h2_bg mb_40">＃ゆるへんろってなぁに？</h2>
+                <div>
+                    <h2 class="h2_bg mb_40">＃ゆるへんろってなぁに？</h2>
+                </div>
 
                 <div class="yuru_introduction">
                     <p class="yuru_introduction_txt mb_40">「＃ゆるへんろ」とは、「発心の地」徳島をゆったりと1日で巡れるコースを紹介しています。<br><br>
