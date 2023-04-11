@@ -7,10 +7,34 @@
 } */
 
 .shisetu {
+    align-items: center;
     flex-direction: column;
-    /* justify-content: space-evenly; */
-    justify-content: space-between;
+    justify-content:  center;
     flex-wrap: wrap;
+    max-height: 1800px;
+}
+
+
+@media screen and (min-width: 900px) {
+    .shisetu {
+        max-height: 900px;
+    }
+
+    .shisetu_unit{
+        width: 300px;
+    }
+
+
+}
+.emphasis {
+    font-weight: bold;
+}
+
+
+
+
+.shisetu_unit{
+    width: 400px;
 }
 
 .shisetu li{
@@ -22,10 +46,11 @@
 
 
 .temple_list{
-    line-height: 2.0em;
+    line-height: 3.0em;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-left: 40px;
 
 }
 
@@ -41,15 +66,18 @@
 
 
 .ref_site{
+    align-items: center;
     line-height: 3.0em;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content:center;
-    margin: 0 10%;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 0;
 }
 
 .each_ref_site{
-    width: 350px;
+    width: 180px;
 }
 
 
@@ -71,14 +99,27 @@
 
 
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 750px) {
 
-    .shisetu {
-        flex-direction: row;
+    /* .shisetu {
+        flex-direction: row; */
+
+
+        .ref_site{
+            flex-direction: row;
+        }
+        
+
+
+
+
+
+
+
+
+
+
 
     }
-    .sisetu_list {
-        display: flex;
-        flex-direction: column;
-    }
-}
+
+    
