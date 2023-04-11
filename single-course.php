@@ -104,7 +104,7 @@
 
                             <!-- お寺・施設画像 -->
                             <div class="course_contPhoto mb_20">
-                                <img src="<?php the_field('a_thumbnail') ?>" alt="" />
+                                <img src="<?php the_field('a_thumbnail') ?>" alt="お寺または施設の画像" />
                             </div>
 
                             <!-- お寺・施設説明文 -->
