@@ -44,9 +44,10 @@
 
         <section class="contents_width mb_80">
             <h2 class="h3_bg mb_40">ご協力いただいた周辺施設</h2>
-            <div class="flex shisetu">
-                <div>
-                    <h3 class="mt_10 h4_bg">a～z</h3>
+            <div class="flex shisetu js-fadeUp">
+
+                <div class="shisetu_unit">
+                    <h3 class="mt_10 h4_bg js">a～z</h3>
                     <div class="mb_40">
                         <ul>
                             <li>
@@ -69,7 +70,7 @@
                     </div>
                 </div>
 
-                <div>
+                <div class="shisetu_unit">
                     <h3 class="mt_10 h4_bg">あ行</h3>
                     <div class="mb_40">
                         <ul>
@@ -90,8 +91,9 @@
                             </li>
                         </ul>
                     </div>
+                    </div>
 
-
+                    <div class="shisetu_unit">
                     <h3 class="mt_10 h4_bg">か行</h3>
                     <div class="mb_40">
                         <ul>
@@ -104,16 +106,20 @@
                             </li>
                         </ul>
                     </div>
+                    </div>
 
+                    <div class="shisetu_unit">
                     <h3 class="mt_10 h4_bg">た行</h3>
                     <div class="mb_40">
                         <ul>
                             <li>
-                                <a href="http://www.ja-higashitks.com/assets/images/toretore.pdf">とれとれ市公方(JA東とくしま)</a>
+                                <a href="http://www.ja-higashitks.com/assets/images/toretore.pdf">とれとれ市公方　(JA東とくしま)</a>
                             </li>
                         </ul>
                     </div>
+                    </div>
 
+                    <div class="shisetu_unit">
                     <h3 class="mt_10 h4_bg">は行</h3>
                     <div class="mb_40">
                         <ul>
@@ -127,7 +133,7 @@
                     </div>
                 </div>
 
-                <div>
+                <div class="shisetu_unit">
                     <h3 class="mt_10 h4_bg">ま行</h3>
                     <div class="mb_40">
                         <ul>
@@ -136,21 +142,25 @@
                             </li>
                             <li>
                                 <a href="https://www.ja-higashitks.com/aisai/">みはらしの丘
-                                    あいさい広場(JA東とくしま産直市)</a>
+                                    あいさい広場　(JA東とくしま産直市)</a>
                             </li>
                         </ul>
                     </div>
+                    </div>
 
+                    <div class="shisetu_unit">
                     <h3 class="mt_10 h4_bg">や行</h3>
                     <div class="mb_40">
                         <ul>
                             <li>
-                                <a href="https://tokuchu-ja.or.jp/store/detail.php?nm=higashitokushima_yottene">よってネ市(JA東とくしま産直市)</a>
+                                <a href="https://tokuchu-ja.or.jp/store/detail.php?nm=higashitokushima_yottene">よってネ市　(JA東とくしま産直市)</a>
                             </li>
                             <li><a href=""></a></li>
                         </ul>
                     </div>
+                    </div>
 
+                    <div class="shisetu_unit">
                     <h3 class="mt_10 h4_bg">ら行</h3>
                     <div class="mb_40">
                         <ul>
@@ -164,17 +174,22 @@
                         </ul>
                     </div>
                 </div>
+
             </div>
         </section>
 
         <section class="contents_width mb_80">
             <h2 class="h3_bg mb_40">参考サイト</h2>
-            <div class="ref_site mb_20 js-fadeUp ref_site">
+                <div class="ref_site mb_20 js-fadeUp">
+                    <div>
                         <div class="each_ref_site"><a href="https://www.photo-ac.com/">photoAC</a></div>
                         <div class="each_ref_site"><a href="https://www.awanavi.jp/">阿波ナビ</a></div>
+                    </div>
+                    <div>
                         <div class="each_ref_site"><a href="https://88shikokuhenro.jp/">四国遍路八十八ヶ所</a></div>
                         <div class="each_ref_site"><a href="https://www.seichijunrei-shikokuhenro.jp/">聖地巡礼　四国遍路</a></div>
-            </div>
+                    </div>
+                </div>
         </section>
 
         <section class="contents_width mb_100">
@@ -182,36 +197,36 @@
             <div class="small_cap mb_20 js-fadeUp reference">
                 <ul>
                     <li>
-                        四国八十八か所めぐり　同行二人、お大師様とお遍路の旅へ<br />
-                        昭文社出版メディア編集部
+                        <div class="emphasis">四国八十八か所めぐり　同行二人、お大師様とお遍路の旅へ</div>
+                        <div>昭文社出版メディア編集部</div>
                     </li>
                     <li>
-                        気軽に行きたい四国遍路旅　鉄道で！バスで！観光も楽しむ「通い遍路」のススメ<br />
-                        後藤さおり著
+                    <div class="emphasis">気軽に行きたい四国遍路旅　鉄道で！バスで！観光も楽しむ「通い遍路」のススメ</div>
+                    <div>後藤さおり著</div>
                     </li>
                     <li>
-                        はじめてのお遍路さん<br />
-                        株式会社ダン／土金哲夫
+                    <div class="emphasis">はじめてのお遍路さん</div>
+                    <div>株式会社ダン／土金哲夫</div>
                     </li>
                     <li>
-                        四国８８カ所　開運！おへんろ旅<br />
-                        株式会社あわわ
+                    <div class="emphasis">四国８８カ所　開運！おへんろ旅</div>
+                    <div>株式会社あわわ</div>
                     </li>
                     <li>
-                        るるぶ　四国八十八カ所<br />
-                        ＪＴＢパブリッシング
+                    <div class="emphasis">るるぶ　四国八十八カ所</div>
+                    <div>ＪＴＢパブリッシング</div>
                     </li>
                     <li>
-                        四国八十八カ寺＆周辺ガイド<br />
-                        株式会社エス・ピー・シー
+                    <div class="emphasis">四国八十八カ寺＆周辺ガイド</div>
+                    <div>株式会社エス・ピー・シー</div>
                     </li>
                     <li>
-                        クルマでお遍路　四国八十八ヶ所　札所めぐり　ドライブ巡礼ガイド<br />
-                        四国おへんろ倶楽部
+                    <div class="emphasis">クルマでお遍路　四国八十八ヶ所　札所めぐり　ドライブ巡礼ガイド</div>
+                    <div>四国おへんろ倶楽部</div>
                     </li>
                     <li>
-                        てくてく歩き　四国八十八ヶ所ゆとりの旅<br />
-                        ブルーガイド編集部
+                    <div class="emphasis">てくてく歩き　四国八十八ヶ所ゆとりの旅</div>
+                    <div>ブルーガイド編集部</div>
                     </li>
                 </ul>
             </div>

@@ -39,6 +39,8 @@
 
         $args['tax_query'] = $taxquerysp;       // 絞り込んだ情報を $args に代入する。
         $the_query = new WP_Query($args);       // wpループ（$the_query）作成する。
+        $count = $the_query->post_count; //検索結果件数表示
+
         ?>
 
 
@@ -46,7 +48,7 @@
 
 
         <section class="contents_width mb_100">
-            <h2 class="h3_bg mb_40">条件検索結果</h2>
+            <h2 class="h3_bg mb_40">条件検索結果(<?php echo $count?>件)</h2>
 
             <!-- 寺社結果一覧 -->
             <!-- <div class="searchresult_inner"> -->
