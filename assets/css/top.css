@@ -36,9 +36,48 @@
 /*  メイン部分  */
 /****************/
 
-/* .top_flexset {
+.top_flex_dc {
     flex-direction: column;
-} */
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.top_bc {
+    text-align: center;
+    margin: 0 auto 40px;
+}
+
+.top_flexset {
+    flex-direction: column;
+}
+
+.top_patern {
+    position: relative;
+}
+
+.top_patern1 {
+    position: relative;
+    background-image: url(../img/flame.png);
+    background-size: cover;
+    aspect-ratio: 4/3;
+}
+
+.top_patern1 img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: auto;
+}
+
+.top_patern2 {
+    position: relative;
+    left: 10%;
+    bottom: -10%;
+    width: 25%;
+    height: auto;
+}
 
 /* .top_sanpai_bg1 {
     position: relative;
@@ -83,6 +122,13 @@
 }
 
 @media screen and (min-width: 800px) {
+    .top_flex_dc {
+        max-width: 500px;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
     .btn_and_description_area {
         text-align: left;
         flex-direction: row;
