@@ -16,7 +16,7 @@ Template Name:page-monzen
 
             <!-- 門前一番街アイキャッチ画像 -->
             <div class="temple_img mb_80">
-                <img src="<?php echo get_template_directory_uri(); ?>../assets/img/monzen_03.jpg" alt="門前一番街" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/monzen_03.jpg" alt="門前一番街" />
             </div>
 
             <!-- 門前一番街詳細1 -->
