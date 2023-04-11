@@ -19,7 +19,7 @@
         </section>
 
         <section class="contents_width mb_80">
-            <h2 class="h3_bg_independent">掲載情報について</h3>
+            <h2 class="h3_bg_independent">掲載情報について</h2>
                 <div>
                     <p class="mb_20">
                         当サイトの管理・運営は、QLIPプログラミングスクール　WEBプログラマー養成課第14期　藤班が行っています。
