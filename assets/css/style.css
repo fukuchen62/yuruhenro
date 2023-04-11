@@ -281,7 +281,7 @@
     align-self: flex-start;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
     .course_contWrap {
         display: flex;
         /* margin-bottom: 40px; */
@@ -289,9 +289,9 @@
     .course_tabWrap li a {
         font-size: 16px;
     }
-    .course_mainWrap {
+    /* .course_mainWrap {
         padding: 0 20px;
-    }
+    } */
     .course_contPhoto img {
         width: 50vh;
     }
@@ -348,7 +348,7 @@
     background-color: #baddb4;
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1000px) {
     .rowLine > span {
         width: 60px;
         height: 60px;
