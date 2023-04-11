@@ -78,7 +78,8 @@
                             $args = array(
                                 'post_type' => 'course-schedule', //カスタム投稿タイプを指定
                                 'posts_per_page' => -1, //表示する記事数
-                                'orderby' => 'date',
+                                'orderby' => 'meta_value', //カスタムフィールドで並べ替える指定
+'meta_key' => 'order-number', //カスタムフィールドのキーを指定
                                 'order' => 'ASC',
 
 
@@ -158,31 +159,28 @@
                             <!-- 周辺施設お気に入りカードが並ぶエリア -->
                             <div class="shop_info_list flex">
                                 <?php
-                                //①get_pageを利用して情報を得る
-                                $f_page = get_page(get_the_ID());
-                                //②プロパティからスラッグ名を取得する
-                                $f_term = $f_page->post_name;
-                                //echo $f_term ;
-                                //var_dump($f_term);
-                                //print_r($f_term);
-                                //var_export($f_term);
+                $terms = get_the_terms($post->ID, 'area');
+                foreach ($terms as $term) {
+                    $term_slug = $term->slug; // 現在表示している投稿が所属しているタームを取得
+                }
 
-                                $facility_args = array(
-                                    'post_type' => 'facility',
-                                    'posts_per_page' => 3,
-                                    //'orderby' => 'rand',
-                                    'tax_query' => array(
-                                        array(
-                                            'taxonomy' => 'area',
-                                            'terms' => array('north'),
-                                            'field' => 'slug'
-                                        ),
-                                    ),
-                                );
-                                $facility_query = new WP_Query($facility_args);
-                                if ($facility_query->have_posts()) :
-                                    while ($facility_query->have_posts()) : $facility_query->the_post(); ?>
+                $facility_args = array(
+                    'post_type' => 'facility', // 投稿タイプ名
+                    'post__not_in' => array($post->ID), // 現在表示している投稿を除外
+                    'posts_per_page' => 3, // 表示件数
+                    'orderby' => 'rand', // ランダム表示
+                    'tax_query' => array(
+                        array(
+                            'taxonomy' => 'area', // タクソノミー名
+                            'field' => 'slug',
+                            'terms' => $term_slug, // 取得したタームを指定
+                        )
+                    )
+                );
 
+                $facility_query = new WP_Query($facility_args);
+                if ($facility_query->have_posts()) :
+                    while ($facility_query->have_posts()) : $facility_query->the_post(); ?>
                                 <!-- 周辺施設カードのデザイン -->
                                 <div class="shop_info_card">
                                     <div class="shop_info_caption">

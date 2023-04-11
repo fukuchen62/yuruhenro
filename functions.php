@@ -118,7 +118,7 @@ function add_my_files()
     };
 
     //about-us css
-    if (is_page('about-us')) {
+    if (is_page('aboutus')) {
         wp_enqueue_style(
             'my-aboutus',
             get_template_directory_uri() . '/assets/css/about-us.css'

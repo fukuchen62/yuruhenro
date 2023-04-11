@@ -15,7 +15,7 @@
         $args = [
             'post_type' => 'temple',             //農業体験を検索
             'posts_per_page' => -1,             //全件表示
-            'orderby' => 'rand',                //ランダムで表示する    2022.10.15 大北
+            'order' => 'ASC',                //ランダムで表示する
         ];
         $taxquerysp = ['relation' => 'AND'];    // area，event_type，season，vege_type，target をAND検索
 
@@ -55,38 +55,38 @@
 
                 <!-- 記事を表示するループ -->
                 <?php if ($the_query->have_posts()) : ?>
-                    <?php while ($the_query->have_posts()) : ?>
-                        <?php $the_query->the_post(); ?>
+                <?php while ($the_query->have_posts()) : ?>
+                <?php $the_query->the_post(); ?>
 
-                        <a href="<?php the_permalink(); ?>">
-                            <div class="searchresultList">
-                                <div class="searchresultList_thumb">
-                                    <img src="<?php the_field('t_eyecatch'); ?>" alt="寺社のアイキャッチ画像" />
-                                </div>
-                                <div class="searchresultList_data">
-                                    <h4 class="h4_bg text_c"><?php the_field('t_numbername'); ?></h4>
-                                    <!-- <p>拝観時間：10時～17時</p> -->
-                                    <!-- <p>定休日：火曜日</p> -->
-                                    <p>駐車場：<?php the_field('t_parking'); ?></p>
-                                    <p>TEL：<?php the_field('t_tell'); ?></p>
-                                    <p>公式HP：
+                <a href="<?php the_permalink(); ?>">
+                    <div class="searchresultList">
+                        <div class="searchresultList_thumb">
+                            <img src="<?php the_field('t_eyecatch'); ?>" alt="寺社のアイキャッチ画像" />
+                        </div>
+                        <div class="searchresultList_data">
+                            <h4 class="h4_bg text_c"><?php the_field('t_numbername'); ?></h4>
+                            <!-- <p>拝観時間：10時～17時</p> -->
+                            <!-- <p>定休日：火曜日</p> -->
+                            <p>駐車場：<?php the_field('t_parking'); ?></p>
+                            <p>TEL：<?php the_field('t_tell'); ?></p>
+                            <p>公式HP：
                                         <?php if (get_field('t_url') != '-') {
                                             echo 'あり';
                                         } else {
                                             echo 'なし';
                                         } ?>
                                     </p>
-                                </div>
-                            </div>
-                        </a>
-
-                        <?php wp_reset_postdata(); ?>
-
-                    <?php endwhile; ?>
-                <?php else : ?>
-                    <div>
-                        <p>条件に合う検索結果はありませんでした。</p>
+                        </div>
                     </div>
+                </a>
+
+                <?php wp_reset_postdata(); ?>
+
+                <?php endwhile; ?>
+                <?php else : ?>
+                <div>
+                    <p>条件に合う検索結果はありませんでした。</p>
+                </div>
                 <?php endif; ?>
                 <!--カードここまで-->
 
