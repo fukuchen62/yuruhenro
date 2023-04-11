@@ -301,7 +301,7 @@ img {
     display: block;
 }
 
-@media screen and (min-width: 1400px) {
+@media screen and (min-width: 1000px) {
     .header_inner {
         justify-content: space-between;
         height: 100px;
@@ -331,8 +331,9 @@ img {
     }
 
     .header_nav li {
-        width: 10em;
+        /* width: 10rem; */
         text-align: center;
+        padding: 0 10px;
         margin-bottom: 0;
         line-height: 1em;
     }
