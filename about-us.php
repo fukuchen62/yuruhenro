@@ -24,7 +24,7 @@
         <section class="contents_width mb_80">
             <h2 class="h3_bg mb_40">ご協力いただいたお寺</h2>
             <div class="small_cap temple_list mb_20 js-fadeUp">
-                <ul>
+                <!-- <ul> -->
                     <?php $args = array(
                         'post_type' => 'temple',
                         'posts_per_page' => -1 //表示件数（-1で全ての記事を表示
@@ -33,12 +33,12 @@
                     $the_query = new WP_Query($args);
                     if ($the_query->have_posts()) :
                         while ($the_query->have_posts()) : $the_query->the_post(); ?>
-                    <li>
+                    <!-- <li> --><div class="each_temple">
                         <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                    </li>
+                    <!-- </li> --></div>
                     <?php endwhile; ?>
                     <?php endif; ?>
-                </ul>
+                <!-- </ul> -->
             </div>
         </section>
 
@@ -169,29 +169,17 @@
 
         <section class="contents_width mb_80">
             <h2 class="h3_bg mb_40">参考サイト</h2>
-            <div class="temple_list small_cap mb_20 js-fadeUp">
-                <ul>
-                    <li>
-                        <a href="https://www.photo-ac.com/">photoAC</a>
-                    </li>
-                    <li>
-                        <a href="https://www.awanavi.jp/">阿波ナビ</a>
-                    </li>
-                </ul>
-                <ul>
-                    <li>
-                        <a href="https://88shikokuhenro.jp/">四国遍路八十八ヶ所</a>
-                    </li>
-                    <li>
-                        <a href="https://www.seichijunrei-shikokuhenro.jp/">聖地巡礼　四国遍路</a>
-                    </li>
-                </ul>
+            <div class="ref_site mb_20 js-fadeUp ref_site">
+                        <div class="each_ref_site"><a href="https://www.photo-ac.com/">photoAC</a></div>
+                        <div class="each_ref_site"><a href="https://www.awanavi.jp/">阿波ナビ</a></div>
+                        <div class="each_ref_site"><a href="https://88shikokuhenro.jp/">四国遍路八十八ヶ所</a></div>
+                        <div class="each_ref_site"><a href="https://www.seichijunrei-shikokuhenro.jp/">聖地巡礼　四国遍路</a></div>
             </div>
         </section>
 
         <section class="contents_width mb_100">
             <h2 class="h3_bg mb_40">参考書籍</h2>
-            <div class="small_cap mb_20 js-fadeUp">
+            <div class="small_cap mb_20 js-fadeUp reference">
                 <ul>
                     <li>
                         四国八十八か所めぐり　同行二人、お大師様とお遍路の旅へ<br />
