@@ -16,9 +16,6 @@
             <ul class="flex">
                 <li><a href="#" target=_blank>バナー1</a></li>
                 <li><a href="#" target=_blank>バナー2</a></li>
-                <li><a href="#" target=_blank>バナー3</a></li>
-                <li><a href="#" target=_blank>バナー4</a></li>
-                <li><a href="#" target=_blank>バナー5</a></li>
             </ul>
         </div>
 
@@ -26,7 +23,7 @@
             <ul>
                 <li>
                     <a href="<?php echo home_url(); ?>">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/header_logo_02.png" alt="とくしま１日＃ゆるへんろロゴ" class="footer_logo">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/footer_logo.png" alt="とくしま１日＃ゆるへんろロゴ" class="footer_logo">
                     </a>
                 </li>
                 <li>

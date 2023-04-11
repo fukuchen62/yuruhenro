@@ -37,7 +37,7 @@
             <div class="header_inner flex">
                 <div class="header_logo">
                     <a href="<?php echo home_url(); ?>">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/header_logo_01.png" alt="とくしま１日＃ゆるへんろロゴ">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/header_logo.png" alt="とくしま１日＃ゆるへんろロゴ">
                     </a>
                 </div>
 
