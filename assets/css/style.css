@@ -238,6 +238,13 @@
     padding: 10px 15px;
 }
 
+.course_st {
+    width: 8em;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 15px;
+}
+
 .small_cap {
     padding-left: 20px;
 }
@@ -252,11 +259,16 @@
 .course_contInfo {
     align-items: center;
 }
+
+.course_contInfo:last-child {
+    display: none;
+}
+
 .course_contIcon {
     width: 80px;
     height: 80px;
-    background-color: #eee;
 }
+
 .course_contTime {
     padding-left: 10px;
 }
@@ -337,7 +349,6 @@
 }
 
 @media screen and (min-width: 1400px) {
-
     .rowLine > span {
         width: 60px;
         height: 60px;

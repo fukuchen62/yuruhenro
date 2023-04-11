@@ -96,7 +96,7 @@
                             ?>
 
                             <!-- 時間 -->
-                            <div class="mb_20">
+                            <div class="course_st mb_20">
                                 <p><?php the_field('c_time') ?></p>
                             </div>
 
@@ -119,7 +119,7 @@
                                     <div class=" button18">
                                         <?php $more = get_field('more');
                                                 if ($more) : ?>
-                                        <a href="../../<?php the_field('link') ?>" target="_blank">
+                                        <a href="../../<?php the_field('link') ?>">
                                             <p>もっと知る
                                                         </p>
                                         </a>
