@@ -29,7 +29,8 @@
     <?php wp_head(); ?>
 </head>
 
-<body>
+<body <?php body_class();?>>
+    <?php wp_body_open(); ?>
     <div class="wrap">
         <!-- headerここから -->
         <header>
@@ -49,8 +50,8 @@
                     </div>
 
                     <!-- ナビゲーションメニュー -->
-                    <nav class="header_nav flex">
-                        <ul>
+                    <nav class="header_nav">
+                        <ul class="flex">
                             <li>
                                 <a href="<?php echo home_url('about'); ?>">
                                     <label>
