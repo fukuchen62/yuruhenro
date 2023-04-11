@@ -196,9 +196,9 @@
 
 
 .yuru_introduction{
-    max-width: 700px;
+    max-width: 1000px;
     height: auto;
-    min-height: 600px;
+    min-height: 500px;
     margin: 0 auto;
 	background-image:url(../img/awaodori.png),
 					 url(../img/tokusimatizu.png),
@@ -209,8 +209,18 @@
 	background-position:top right,
 						left bottom,
 						left bottom;
-    background-size:25%,70%,20%;
+    background-size:15%,45%,10%;
 }
+
+.yuru_introduction_txt{
+    max-width: 700px;
+    height: auto;
+    min-height: 450px;
+    margin: 0 auto;
+
+
+}
+
 
 
 .yuru_txt{
