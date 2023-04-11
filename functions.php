@@ -40,6 +40,15 @@ function add_my_files()
             true
         );
     }
+    if (is_singular('temple')) {
+        wp_enqueue_script(
+            'slick',
+            get_template_directory_uri() . '/assets/js/slick.js',
+            array('jquery'),
+            '1.8.0',
+            true
+        );
+    }
 
     //個別slick.js読み込み
     if (is_home()) {

@@ -78,7 +78,8 @@
                             $args = array(
                                 'post_type' => 'course-schedule', //カスタム投稿タイプを指定
                                 'posts_per_page' => -1, //表示する記事数
-                                'orderby' => 'date',
+                                'orderby' => 'meta_value', //カスタムフィールドで並べ替える指定
+'meta_key' => 'order-number', //カスタムフィールドのキーを指定
                                 'order' => 'ASC',
 
 
@@ -95,7 +96,7 @@
                             ?>
 
                             <!-- 時間 -->
-                            <div class="mb_20">
+                            <div class="course_st mb_20">
                                 <p><?php the_field('c_time') ?></p>
                             </div>
 
@@ -118,7 +119,7 @@
                                     <div class=" button18">
                                         <?php $more = get_field('more');
                                                 if ($more) : ?>
-                                        <a href="<?php the_field('link') ?>" target="_blank">
+                                        <a href="../../<?php the_field('link') ?>">
                                             <p>もっと知る
                                                         </p>
                                         </a>
@@ -129,11 +130,15 @@
                             </div>
 
                             <!-- 移動情報 -->
+                            <?php $icon = get_field('c_icon');
+                            if ($icon) : ?>
                             <div class="course_contInfo mb_20 flex">
                                 <!-- 移動情報アイコン -->
                                 <div class="course_contIcon">
                                     <img src="<?php the_field('c_icon') ?>" alt="">
                                 </div>
+                                <?php endif; ?>
+
 
                                 <!-- 移動情報詳細 -->
                                 <div class="course_contTime">

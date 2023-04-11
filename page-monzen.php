@@ -3,7 +3,7 @@ Template Name:page-monzen
 */ ?>
 <?php get_header(); ?>
 <main>
-    <h1 class="h1_bg">お寺紹介</h1>
+    <h1 class="h1_bg">施設紹介</h1>
     <article class="main_inner">
         <section class="contents_width">
             <h2 class="h2_bg">霊山寺　門前一番街</h2>
