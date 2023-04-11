@@ -5,19 +5,21 @@
 <?php get_header(); ?>
 <!-- mainここから -->
 <main>
-    <h1 class="h1_bg">このサイトについて</h1>
+    <h1 class="h1_bg mb_150">このサイトについて</h1>
     <article class="main_inner">
 
         <section class="contents_width">
             <!-- <h2 class="h2_bg">このサイトについて</h2> -->
+            <div class="awaodori_bgimg">
             <p class="big_cap_independent">
                 当サイトのご利用にあたっては、以下の内容をご確認いただき、ご承諾いただいたものといたします。
                 また、内容は予告なく変更する場合がありますので、あらかじめご了承ください。
             </p>
+</div>
         </section>
 
         <section class="contents_width mb_80">
-            <h2 class="h3_bg_independent">掲載情報について</h3>
+            <h2 class="h3_bg_independent">掲載情報について</h2>
                 <div>
                     <p class="mb_20">
                         当サイトの管理・運営は、QLIPプログラミングスクール　WEBプログラマー養成課第14期　藤班が行っています。
@@ -63,7 +65,7 @@
                     当サイトを通じてご提供いただく個人情報の取り扱いについては、当サイト個人情報保護基本方針および同規程に則り、
                     適正に管理を行い、当該の目的以外での使用はいたしません。</p>
 
-                <a href="./page-privacy.html">
+                    <a href="<?php echo home_url('privacy'); ?>">
                     <p>→個人情報の取り扱い</p>
                 </a>
             </div>

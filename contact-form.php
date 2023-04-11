@@ -13,5 +13,6 @@
         <section class="sec_mb40">
             <h2 class="h2_bg">お問い合わせフォーム</h2>
             <?php echo do_shortcode('[mwform_formkey key="548"]')?>
+    </div>
 </main>
 <?php get_footer(); ?>

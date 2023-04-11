@@ -200,7 +200,7 @@
     height: auto;
     min-height: 500px;
     margin: 0 auto;
-	background-image:url(../img/awaodori.png),
+	background-image:url(../img/henro_silhouette02.png),
 					 url(../img/tokusimatizu.png),
 					 url(../img/renkon.png);
 	background-repeat:no-repeat,
@@ -209,7 +209,7 @@
 	background-position:top right,
 						left bottom,
 						left bottom;
-    background-size:15%,45%,10%;
+    background-size:8%,45%,10%;
 }
 
 .yuru_introduction_txt{
@@ -236,13 +236,13 @@
         min-height: 210px;
         margin: 0 auto;
         padding: 0 10%;
-        background-image:url(../img/awaodori2.png),
-                         url(../img/awaodori2.png);
+        background-image:url(../img/henro_silhouette02.png),
+                         url(../img/henro_silhouette03.png);
 
         background-repeat:no-repeat,
                           no-repeat;
         background-position:top right,
                             top left;
-        background-size:15%,15%;
+        background-size:8%,9%;
 
 }
