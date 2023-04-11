@@ -1,48 +1,59 @@
+<!-- コピペしただけ！！！！！！！使うなら要編集！！！！！！！ -->
+
+
 <?php get_header(); ?>
 <!-- mainここから -->
 <main>
-    <div class="main_inner">
-        <!-- h1 -->
-        <div class="h1_bg">
-            <h1>寺社一覧</h1>
-        </div>
-        <!-- section -->
-
-        <h2 class="h2_bg mb_40">よくあるご質問</h2>
-        <div class="contents_width">
-            <p class="big_cap">
-                よくあるご質問をまとめています。おへんろ活動のご参考にどうぞ。
-            </p>
-
-
-            <!-- 以下、Q&A開始 -->
-            <section class=" mb_40 js-fadeUp">
-                <?php $args = array(
-                    'post_type' => 'qanda',
-                    'posts_per_page' => -1 //表示件数（-1で全ての記事を表示
+    <h1 class="h1_bg">寺社一覧</h1>
+    <article class="main_inner">
+        <section class="contents_width mb_100">
+            <h2 class="h3_bg mb_40">寺社一覧</h2>
+            <!-- 寺社結果一覧 -->
+            <!-- <div class="searchresult_inner"> -->
+            <div class="searchresult_content">
+                <!--カードここから-->
+                <!-- 記事を表示するループ -->
+                <?php
+                $facility_args = array(
+                    'post_type' => 'temple',
+                    'posts_per_page' => -1,
+                    'order' => 'asc'
                 );
-                $post_counter = 1;
-
-                $the_query = new WP_Query($args);
-                if ($the_query->have_posts()) :
-                    while ($the_query->have_posts()) : $the_query->the_post(); ?>
-                        <div class="section_line">
-                            <div class="rowLine flex">
-                                <span class="circle_mark1">Q<?php print "$post_counter"; ?>
-                                </span>
-                                <p><?php the_title(); ?></p>
+                $facility_query = new WP_Query($facility_args);
+                if ($facility_query->have_posts()) :
+                    while ($facility_query->have_posts()) : $facility_query->the_post(); ?>
+                        <a href="<?php the_permalink(); ?>">
+                            <div class="searchresultList">
+                                <div class="searchresultList_thumb">
+                                    <img src="<?php the_field('t_eyecatch'); ?>" alt="寺社のアイキャッチ画像" />
+                                </div>
+                                <div class="searchresultList_data">
+                                    <h4 class="h4_bg text_c"><?php the_field('t_numbername'); ?></h4>
+                                    <!-- <p>拝観時間：10時～17時</p> -->
+                                    <!-- <p>定休日：火曜日</p> -->
+                                    <p>駐車場：<?php the_field('t_parking'); ?></p>
+                                    <p>TEL：<?php the_field('t_tell'); ?></p>
+                                    <p>公式HP：
+                                        <?php if (get_field('t_url') != '-') {
+                                            echo 'あり';
+                                        } else {
+                                            echo 'なし';
+                                        } ?>
+                                    </p>
+                                </div>
                             </div>
-                            <div class="rowLine flex">
-                                <span class=" circle_mark2">A</span>
-                                <p><?php the_field('answer'); ?></p>
-                            </div>
-                        </div>
-                        <?php $post_counter++; ?>
+                        </a>
+                        <?php wp_reset_postdata(); ?>
                     <?php endwhile; ?>
+                <?php else : ?>
+                    <div>
+                        <p>条件に合う検索結果はありませんでした。</p>
+                    </div>
                 <?php endif; ?>
-        </div>
+                <!--カードここまで-->
+            </div>
         </section>
-    </div>
+    </article>
 </main>
 <!-- mainここまで -->
 <?php get_footer(); ?>
