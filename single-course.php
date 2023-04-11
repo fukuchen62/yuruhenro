@@ -130,11 +130,15 @@
                             </div>
 
                             <!-- 移動情報 -->
+                            <?php $icon = get_field('c_icon');
+                            if ($icon) : ?>
                             <div class="course_contInfo mb_20 flex">
                                 <!-- 移動情報アイコン -->
                                 <div class="course_contIcon">
                                     <img src="<?php the_field('c_icon') ?>" alt="">
                                 </div>
+                                <?php endif; ?>
+
 
                                 <!-- 移動情報詳細 -->
                                 <div class="course_contTime">
