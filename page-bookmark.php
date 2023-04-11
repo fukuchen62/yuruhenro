@@ -118,6 +118,7 @@
                                         <?php the_field('f_message'); ?>
                                     </p>
                     </div>
+
                 </div>
                 <!-- 周辺施設カードのデザイン -->
 
