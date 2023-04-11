@@ -78,7 +78,8 @@
                             $args = array(
                                 'post_type' => 'course-schedule', //カスタム投稿タイプを指定
                                 'posts_per_page' => -1, //表示する記事数
-                                'orderby' => 'date',
+                                'orderby' => 'meta_value', //カスタムフィールドで並べ替える指定
+'meta_key' => 'order-number', //カスタムフィールドのキーを指定
                                 'order' => 'ASC',
 
 
