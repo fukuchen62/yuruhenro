@@ -3,6 +3,15 @@
 <main>
     <h1 class="h1_bg">寺社一覧</h1>
     <article class="main_inner">
+        <section class="sec_mb40">
+            <div>
+                <p class="big_cap">
+                        本サイト「＃ゆるへんろ」で巡る徳島二十三ヶ所のお寺の一覧ページです。
+                        クリックすると各お寺の詳細ページに飛びます。<br>
+                        気になるお寺をブックマークすると<a href="../bookmark" class="link">マイブックマーク</a>ページに登録出来ます。
+                    </p>
+            </div>
+        </section>
         <section class="contents_width mb_100">
             <h2 class="h3_bg mb_40">寺社一覧</h2>
             <!-- 寺社カード一覧が並ぶ -->
