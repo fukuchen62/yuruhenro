@@ -97,7 +97,12 @@
                             <th>公式HP</th>
                         </tr>
                         <tr>
-                            <td><a href="<?php echo get_field('t_url') ?>" target=_blank><?php the_field('t_url') ?></a></td>
+                            <td><?php if (get_field('t_url') != '-') { ?>
+                                    <a href="<?php the_field('t_url'); ?>" target=_blank class="link"><?php the_field('t_name'); ?></a>
+                                <?php } else {
+                                    echo 'なし';
+                                } ?>
+                            </td>
                         </tr>
                     </table>
                 </div>
