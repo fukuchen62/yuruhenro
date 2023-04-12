@@ -9,7 +9,7 @@
     object-fit: cover;
 }
 
-.thumbnail-img {
+.thumbnail_img {
     padding: 5px;
 }
 
@@ -27,7 +27,7 @@
 }
 
 @media screen and (min-width: 1000px) {
-    .thumbnail-img {
+    .thumbnail_img {
         padding: 10px;
     }
 }
@@ -35,6 +35,8 @@
 /****************/
 /*  メイン部分  */
 /****************/
+
+/* パララックス用 */
 
 .top_flex_dc {
     flex-direction: column;

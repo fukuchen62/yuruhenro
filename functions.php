@@ -30,6 +30,15 @@ function add_my_files()
         true
     );
 
+    //パララックス読み込み
+    wp_enqueue_script(
+        'common_script',
+        get_template_directory_uri() . '/assets/js/simpleParallax.min.js',
+        array('jquery'),
+        'false',
+        true
+    );
+
     //個別slick.js読み込み
     if (is_page('monzen')) {
         wp_enqueue_script(

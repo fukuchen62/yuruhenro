@@ -40,23 +40,23 @@
 
             <!-- kv下画像 -->
             <div class="thumbnail mb_80">
-                <div class="thumbnail-img">
+                <div class="thumbnail_img">
                     <img src="<?php echo get_template_directory_uri();
                                     ?>/assets/img/top_kv01.jpg" alt="" />
                 </div>
-                <div class="thumbnail-img">
+                <div class="thumbnail_img">
                     <img src="<?php echo get_template_directory_uri();
                                     ?>/assets/img/top_kv02.jpg" alt="" />
                 </div>
-                <div class="thumbnail-img">
+                <div class="thumbnail_img">
                     <img src="<?php echo get_template_directory_uri();
                                     ?>/assets/img/top_kv03.jpg" alt="" />
                 </div>
-                <div class="thumbnail-img">
+                <div class="thumbnail_img">
                     <img src="<?php echo get_template_directory_uri();
                                     ?>/assets/img/top_kv04.jpg" alt="" />
                 </div>
-                <div class="thumbnail-img">
+                <div class="thumbnail_img">
                     <img src="<?php echo get_template_directory_uri();
                                     ?>/assets/img/top_kv05.jpg" alt="" />
                 </div>
@@ -67,9 +67,11 @@
         <section class="contents_width mb_100">
             <!-- ＃ゆるへんろって？ -->
             <div class="mb_100">
+
                 <div class="h2_box">
                     <h2 class="h2_bg mb_40">＃ゆるへんろって？</h2>
                 </div>
+
                 <div class="top_flex_dc flex">
                     <div class="top_bc mb_20">
                         「発心の地」徳島をゆったり1日で巡るコースをご提案！<br />
