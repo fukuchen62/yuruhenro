@@ -8,7 +8,7 @@
                 <p class="big_cap">
                     本サイト「＃ゆるへんろ」で巡る徳島二十三ヶ所のお寺の一覧ページです。
                     クリックすると各お寺の詳細ページに飛びます。<br>
-                    気になるお寺をブックマーク<i class="fa-regular fa-bookmark"></i>すると<a href="../bookmark" class="link">マイブックマーク</a>ページに登録出来ます。
+                    気になるお寺をブックマークすると<a href="../bookmark" class="link">マイブックマーク</a>ページに登録出来ます。
                 </p>
             </div>
         </section>
