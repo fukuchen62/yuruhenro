@@ -9,10 +9,6 @@ Template Name:page-monzen
             <h2 class="h2_bg">霊山寺　門前一番街</h2>
 
             <!-- ブックマークボタン -->
-            <div class="bookmark">
-                <p>☆</p>
-                <p>ブックマーク</p>
-            </div>
 
             <!-- 門前一番街アイキャッチ画像 -->
             <div class="temple_img mb_80">
