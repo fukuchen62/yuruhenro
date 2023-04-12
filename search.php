@@ -25,15 +25,17 @@
                 'taxonomy' => 'area',           //タクソノミー：『エリア』
                 'terms' => $area_slug,          //スラッグ名
                 'field' => 'slug',              //スラッグ指定
+                'operator' => 'IN'
             ];
         }
 
         // 選択していない場合も考慮して条件で絞り込む。
         if (!empty($search_slug)) {
             $taxquerysp[] = [
-                'taxonomy' => 'searchh',           //タクソノミー：『』
+                'taxonomy' => 'searchh',           //タクソノミー：『寺院内設備』
                 'terms' => $search_slug,          //スラッグ名
                 'field' => 'slug',              //スラッグ指定
+                'operator' => 'AND'
             ];
         }
 
