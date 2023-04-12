@@ -54,7 +54,7 @@
                             <h2 class="h3_bg mb_40">モデルルート</h2>
 
                             <div class="course_rootCap mb_40">
-                                <img src="" alt="ルート画像">
+                                <img src="<?php the_field('eyecatch')?>" alt="ルート画像">
                             </div>
 
                             <div class="course_flag mb_20">

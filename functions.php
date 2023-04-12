@@ -158,6 +158,13 @@ function add_my_files()
             get_template_directory_uri() . '/assets/css/search-form.css',
         );
     };
+    //寺社一覧ページ
+    if (is_post_type_archive('temple')) {
+        wp_enqueue_style(
+            'tempstyle',
+            get_template_directory_uri() . '/assets/css/temple.css'
+        );
+    }
 
 
     // wp_enqueue_style(
