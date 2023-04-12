@@ -12,7 +12,9 @@
 
         <!-- 参拝スタイル -->
         <section class="contents_width">
-            <h2 class="h2_bg">参拝スタイル</h2>
+            <div class="h2_box">
+                <h2 class="h2_bg">参拝スタイル</h2>
+            </div>
             <div class="big_cap mb_40">
                 服装は基本的に自由<br />
                 普段着でお遍路する人も増えています。<br />
@@ -283,7 +285,10 @@
 
         <!-- 持ち物リスト -->
         <section class="contents_width mb_100">
-            <h2 class="h2_bg">持ち物リスト</h2>
+            <div class="h2_box">
+                <h2 class="h2_bg">持ち物リスト</h2>
+            </div>
+
             <div class="big_cap mb_40">
                 参拝の時に必要なものなどをまとめました！
             </div>

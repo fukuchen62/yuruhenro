@@ -37,16 +37,20 @@ img {
 }
 
 /* h2装飾 */
+/*classにh2_bgを入れた部分はh2_boxで囲う！*/
+.h2_box {
+    text-align: center;
+}
+
 .h2_bg {
     position: relative;
-    width: 100%;
+    display: inline-block;
     font-family: "Kosugi Maru";
     font-size: 20px;
     color: #fbfaf5;
-    text-align: center;
     background-color: #cd5e3c;
     padding: 20px 60px;
-    margin: 40px auto;
+    margin-bottom: 40px;
 }
 
 .h2_bg::before {

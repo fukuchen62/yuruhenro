@@ -67,7 +67,9 @@
         <section class="contents_width mb_100">
             <!-- ＃ゆるへんろって？ -->
             <div class="mb_100">
-                <h2 class="h2_bg mb_40">＃ゆるへんろって？</h2>
+                <div class="h2_box">
+                    <h2 class="h2_bg mb_40">＃ゆるへんろって？</h2>
+                </div>
                 <div class="top_flex_dc flex">
                     <div class="top_bc mb_20">
                         「発心の地」徳島をゆったり1日で巡るコースをご提案！<br />
@@ -123,7 +125,9 @@
         <section class="contents_width mb_100">
             <!-- 参拝スタイル -->
             <div>
-                <h2 class="h2_bg mb_40">参拝スタイル</h2>
+                <div class="h2_box">
+                    <h2 class="h2_bg mb_40">参拝スタイル</h2>
+                </div>
                 <div class="top_flexset flex">
                     <!-- 参拝の画像 -->
                     <!-- <div class="top_sanpai_bg2">
@@ -148,7 +152,9 @@
 
         <!-- コース紹介 -->
         <section class="contents_width mb_100">
-            <h2 class="h2_bg">コース紹介</h2>
+            <div class="h2_box">
+                <h2 class="h2_bg">コース紹介</h2>
+            </div>
 
             <!-- コース紹介の紹介文 -->
             <div class="text_c mb_40">
