@@ -38,7 +38,6 @@ $(function () {
 //任意のタブにURLからリンクするための設定
 function GethashID(hashIDName) {
     if (hashIDName) {
-
         //タブ設定
         $(".course_tabWrap li")
             .find("a")
@@ -48,7 +47,6 @@ function GethashID(hashIDName) {
                 var idName = $(this).attr("id"); //タブ内のaタグのリンク名
 
                 if (idName == hashIDName) {
-
                     //リンク元の指定されたURLのハッシュタグと同じかをチェック
                     var parentElm = $(this).parent(); //タブ内のaタグの親要素（li）を取得
                     // console.log('parentElm:'+parentElm);
@@ -73,17 +71,15 @@ function GethashID(hashIDName) {
 
 // 上記の動きをページが読み込まれたらすぐに動かす
 
-$(document).ready(function(){
-
+$(document).ready(function () {
     $(".course_tabWrap li:first-of-type").addClass("active"); //最初のliにactiveクラスを追加
     $(".course_tabCont:first-of-type").addClass("is-active"); //最初の.areaにis-activeクラスを追加
     // var hashName = location.hash; //リンク元の指定されたURLのハッシュタグを取得
     // var hashName = "west";
-    var slugName=$('#slug_name').val();
+    var slugName = $("#slug_name").val();
     // var slugName = "easy";
     // console.log('hashName:'+slugName);
     GethashID(slugName); //設定したタブの読み込み
-
 });
 
 //--------------------------------------------------//

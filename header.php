@@ -81,16 +81,17 @@
 <body <?php body_class();?>>
     <?php wp_body_open(); ?>
     <div class="wrap">
+        <!-- <div class="wrap"> -->
         <!-- headerここから -->
         <header>
-            <div class="header_inner flex">
+            <div class="header_inner">
                 <div class="header_logo">
                     <a href="<?php echo home_url(); ?>">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/header_logo.png" alt="とくしま１日＃ゆるへんろロゴ">
                     </a>
                 </div>
 
-                <div class="header_menu">
+                <div>
                     <!-- ハンバーガーボタン -->
                     <div class="header_hamburger">
                         <span></span>
@@ -100,7 +101,7 @@
 
                     <!-- ナビゲーションメニュー -->
                     <nav class="header_nav">
-                        <ul class="flex">
+                        <ul>
                             <li>
                                 <a href="<?php echo home_url('about'); ?>">
                                     <label>
@@ -108,11 +109,31 @@
                                     </label>
                                 </a>
                             </li>
-                            <li><a href="<?php echo home_url('checkpoint'); ?>"><label>参拝スタイル</label></a></li>
-                            <li><a href="<?php echo home_url('course/easy'); ?>"><label>コース紹介</label></a></li>
-                            <li><a href="<?php echo home_url('bookmark'); ?>"><label>マイブックマーク</label></a></li>
-                            <li><a href="<?php echo home_url('?s='); ?>"><label>検索</label></a></li>
-                            <li><a href="<?php echo home_url('qanda'); ?>"><label>Q&A</label></a></li>
+                            <li>
+                                <a href="<?php echo home_url('checkpoint'); ?>">
+                                    <label>参拝スタイル</label>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="<?php echo home_url('course/easy'); ?>">
+                                    <label>コース紹介</label>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="<?php echo home_url('bookmark'); ?>">
+                                    <label>マイブックマーク</label>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="<?php echo home_url('?s='); ?>">
+                                    <label>検索</label>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="<?php echo home_url('qanda'); ?>">
+                                    <label>Q&A</label>
+                                </a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
