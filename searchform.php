@@ -32,18 +32,18 @@
             <div class="search-form_checkarea">
                 <p class="search-form_headline">エリア</p>
                 <div class="searchkinds  mb_40">
-                    <div class="checkbox"><input type="checkbox" name="area[]" value="north" <?= $checked["area"]["north"] ?>> 県北</div>
-                    <div class="checkbox"><input type="checkbox" name="area[]" value="west" <?= $checked["area"]["west"] ?>> 県西</div>
-                    <div class="checkbox"><input type="checkbox" name="area[]" value="south" <?= $checked["area"]["south"] ?>> 県南</div>
-                    <div class="checkbox"><input type="checkbox" name="area[]" value="east" <?= $checked["area"]["east"] ?>> 市街地</div>
+                    <div class="checkbox"><label><input type="checkbox" name="area[]" value="north" id="north" <?= $checked["area"]["north"] ?>> 県北</label></div>
+                    <div class="checkbox"><label><input type="checkbox" name="area[]" value="west" id="west" <?= $checked["area"]["west"] ?>> 県西</label></div>
+                    <div class="checkbox"><label><input type="checkbox" name="area[]" value="south" id="south" <?= $checked["area"]["south"] ?>> 県南</label></div>
+                    <div class="checkbox"><label><input type="checkbox" name="area[]" value="east" id="east" <?= $checked["area"]["east"] ?>> 市街地</label></div>
                 </div>
 
                 <p class="search-form_headline">寺院内設備</p>
                 <div class="searchkinds">
-                    <div class="checkbox"><input type="checkbox" name="searchh[]" value="parking" <?= $checked["searchh"]["parking"] ?>> 無料駐車場</div>
-                    <div class="checkbox"><input type="checkbox" name="searchh[]" value="eatin" <?= $checked["searchh"]["eatin"] ?>> 食事</div>
-                    <div class="checkbox"><input type="checkbox" name="searchh[]" value="bell" <?= $checked["searchh"]["bell"] ?>> 鐘撞き可</div>
-                    <div class="checkbox"><input type="checkbox" name="searchh[]" value="shop" <?= $checked["searchh"]["shop"] ?>> 売店</div>
+                    <div class="checkbox"><label><input type="checkbox" name="searchh[]" value="parking" <?= $checked["searchh"]["parking"] ?>> 無料駐車場</label></div>
+                    <div class="checkbox"><label><input type="checkbox" name="searchh[]" value="eatin" <?= $checked["searchh"]["eatin"] ?>> 食事</label></div>
+                    <div class="checkbox"><label><input type="checkbox" name="searchh[]" value="bell" <?= $checked["searchh"]["bell"] ?>> 鐘撞き可</label></div>
+                    <div class="checkbox"><label><input type="checkbox" name="searchh[]" value="shop" <?= $checked["searchh"]["shop"] ?>> 売店</label></div>
                 </div>
                 <p class="searchBtnsArea">
                     <input type="hidden" name="s" value="<?php the_search_query(); ?>">
