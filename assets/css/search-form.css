@@ -18,10 +18,11 @@
 }
 
 .checkbox{
-margin: 15px 5px 15px 20px;
-width:180px;
-height: 60px;
-padding: 20px;
+/* margin: 15px 5px 15px 20px; */
+/* width:180px; */
+width: 50%;
+height: 5vh;
+/* padding: 20px; */
 /* border-radius: 8px; */
 background-color: #fff;
 }
@@ -57,17 +58,19 @@ border-radius: 8px;
 
 .searchkinds{
 display: flex;
-flex-direction: column;
+flex-direction: row;
 align-items: center;
 text-align: left;
+flex-wrap: wrap;
+justify-content: center;
 }
 
 
 .search-form_headline {
-    width: 15em;
+    width: 15rem;
     font-size: 18px;
-    text-align: left;
-    padding: 40px 0 0 40px;
+    text-align: center;
+    padding: 40px 0 0 0;
 }
 
 
@@ -180,20 +183,21 @@ margin: 0 auto;
 }
 
 /* デスクトップ画面になるとき */
-/* @media screen and (min-width:750px) {
+@media screen and (min-width:750px) {
 
 .searchkinds {
 flex-direction: row;
 align-items: left;
-    text-align: left;
-    flex-wrap: wrap;
+text-align: left;
+flex-wrap: wrap;
 }
 .checkbox {
 margin-left: 45px;
+width: fit-content;
 }
 .searchresult_content {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
 }
-} */
+}

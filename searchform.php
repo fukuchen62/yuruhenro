@@ -31,7 +31,7 @@
 
             <div class="search-form_checkarea">
                 <p class="search-form_headline">エリア</p>
-                <div class="searchkinds  mb_40">
+                <div class="searchkinds">
                     <div class="checkbox"><label><input type="checkbox" name="area[]" value="north" id="north" <?= $checked["area"]["north"] ?>> 県北</label></div>
                     <div class="checkbox"><label><input type="checkbox" name="area[]" value="west" id="west" <?= $checked["area"]["west"] ?>> 県西</label></div>
                     <div class="checkbox"><label><input type="checkbox" name="area[]" value="south" id="south" <?= $checked["area"]["south"] ?>> 県南</label></div>
