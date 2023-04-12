@@ -94,9 +94,11 @@
                                 <!-- 時間 -->
                                 <div class="course_st mb_20">
                                     <p>【<?php the_field('c_time') ?>】　<?php $hoge = get_field('link');
-                                                                        if ($hoge) : ?>
+                                                                        if ($hoge) { ?>
                                         <a href="<?php echo home_url('/') . $hoge ?>">
-                                            <?php endif; ?><?php the_field('name') ?></a>
+                                            <?php the_field('name') ?></a><?php } else {
+                                                                            the_field('name');
+                                                                        } ?>
                                     </p>
                                 </div>
 
@@ -107,9 +109,9 @@
                                     <div class="course_contPhoto mb_20">
                                         <?php
                                         $hoge = get_field('link');
-                                        if ($hoge) : ?>
+                                        if ($hoge) { ?>
                                             <a href="<?php echo home_url('/') . $hoge ?>">
-                                            <?php endif; ?><img src="<?php the_field('a_thumbnail') ?>" alt=""></a>
+                                                <img src="<?php the_field('a_thumbnail') ?>" alt=""></a> <?php } else { ?><img src="<?php the_field('a_thumbnail') ?>" alt=""> <?php } ?>
                                     </div>
 
                                     <!-- お寺・施設説明文 -->
