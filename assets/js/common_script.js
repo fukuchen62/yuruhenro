@@ -81,7 +81,7 @@ $(document).ready(function(){
     // var hashName = "west";
     var slugName=$('#slug_name').val();
     // var slugName = "easy";
-    console.log('hashName:'+slugName);
+    // console.log('hashName:'+slugName);
     GethashID(slugName); //設定したタブの読み込み
 
 });
