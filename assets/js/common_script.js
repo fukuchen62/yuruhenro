@@ -10,16 +10,16 @@ $(function () {
     var pagetop = $(".home header");
     pagetop.hide();
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 900) {
+        if ($(this).scrollTop() > 1000) {
             pagetop.fadeIn();
         } else {
             pagetop.fadeOut();
         }
     });
-    pagetop.click(function () {
-        $("body, html").animate({ scrollTop: 0 }, 500);
-        return false;
-    });
+    // pagetop.click(function () {
+    //     $("body, html").animate({ scrollTop: 0 }, 500);
+    //     return false;
+    // });
 });
 
 //--------------------------------------------------//
