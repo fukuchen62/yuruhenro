@@ -215,8 +215,6 @@ Template Name:page-monzen
                     </a>
                 </div>
             </section>
-
-        </section>
     </article>
 </main>
 <!-- wrap -->
