@@ -80,8 +80,11 @@
                                             echo 'なし';
                                         } ?>
                                     </p>
+                            <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
+
                         </div>
                     </div>
+
                 </a>
 
                 <?php wp_reset_postdata(); ?>
