@@ -67,29 +67,45 @@
         <section class="contents_width mb_100">
             <!-- ＃ゆるへんろって？ -->
             <div class="mb_100">
+                <div id="luxy">
+                    <div class="luxy_posi">
+                        <img src="<?php echo get_template_directory_uri();
+                                    ?>/assets/img/asiraikumo_waku.png" alt="背景画像1" class=" luxy-el luxy_pic1" data-speed-x="-5" data-offset="-10" data-horizontal="1">
+                        <img src="<?php echo get_template_directory_uri();
+                                    ?>/assets/img/asiraikumo.png" alt="背景画像2" class="luxy-el luxy_pic2" data-speed-x="-10" data-offset="-20" data-horizontal="1">
 
-                <div class="h2_box">
-                    <h2 class="h2_bg mb_40">＃ゆるへんろって？</h2>
-                </div>
+                        <img src="<?php echo get_template_directory_uri();
+                                    ?>/assets/img/asiraikumo_waku.png" alt="背景画像1" class=" luxy-el luxy_pic3" data-speed-x="5" data-offset="-10" data-horizontal="1">
 
-                <div class="top_flex_dc flex">
-                    <div class="top_bc mb_20">
-                        「発心の地」徳島をゆったり1日で巡るコースをご提案！<br />
-                        「おへんろ」ってどうやって始めたらいいの？<br />
-                        やってみたいけど難しいんじゃない？<br />
-                        あと一歩が踏み出せないあなたへのおへんろのススメ！
-                    </div>
-                    <!-- 矢印つきボタン -->
-                    <div class="button18">
-                        <a href="<?php echo home_url('about'); ?>">
-                            <p>もっと知る</p>
-                        </a>
+                        <img src="<?php echo get_template_directory_uri();
+                                    ?>/assets/img/asiraikumo.png" alt="背景画像2" class="luxy-el luxy_pic4" data-speed-x="5" data-offset="-10" data-horizontal="1">
                     </div>
                 </div>
+            </div>
+            <div class="h2_box">
+                <h2 class="h2_bg mb_40">＃ゆるへんろって？</h2>
+            </div>
 
-                <!-- イメージ画像 -->
+            <div class="top_flex_dc flex">
+                <div class="top_bc mb_20">
+                    「発心の地」徳島をゆったり1日で巡るコースをご提案！<br />
+                    「おへんろ」ってどうやって始めたらいいの？<br />
+                    やってみたいけど難しいんじゃない？<br />
+                    あと一歩が踏み出せないあなたへのおへんろのススメ！
+                </div>
+                <!-- 矢印つきボタン -->
+                <div class="button18">
+                    <a href="<?php echo home_url('about'); ?>">
+                        <p>もっと知る</p>
+                    </a>
+                </div>
+            </div>
+
+            <!-- イメージ画像 -->
+            <div class="mb_80">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/about_yuruhenro.png" alt="参拝のイメージ" />
             </div>
+
 
             <!-- おへんろの作法について -->
             <div>

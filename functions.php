@@ -30,12 +30,12 @@ function add_my_files()
         true
     );
 
-    //パララックス読み込み
+
+    //luxy.js読み込み
     wp_enqueue_script(
-        'common_script',
-        get_template_directory_uri() . '/assets/js/simpleParallax.min.js',
+        'luxy',
+        get_template_directory_uri() . '/assets/js/luxy.min.js',
         array('jquery'),
-        'false',
         true
     );
 

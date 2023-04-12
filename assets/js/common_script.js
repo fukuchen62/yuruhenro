@@ -41,6 +41,15 @@ $(".nav_menu a").click(function () {
 /////      main       /////
 ///////////////////////////
 //--------------------------------------------------//
+// luxy.js用の記述 //
+if(matchMedia('(min-width: 1000px)').matches){
+    luxy.init({
+    wrapper: '#luxy',
+    targets : '.luxy-el',
+    wrapperSpeed: 1
+    });
+}
+//--------------------------------------------------//
 // スクロールして表示領域に入ったらclass付与
 $(function () {
     $(".js-fadeUp").on("inview", function () {
@@ -96,6 +105,7 @@ $(document).ready(function () {
     // console.log('hashName:'+slugName);
     GethashID(slugName); //設定したタブの読み込み
 });
+
 
 ///////////////////////////
 /////     footer      /////

@@ -1,6 +1,5 @@
 <!-- footerここから -->
 <footer>
-    <!-- <div class="footer_wrap"> -->
     <div class="footer_inner">
         <p class="page-top">
             <a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/flower01.png" alt="" /></a>
@@ -61,15 +60,12 @@
 
         <small>Copyright©とくしま１日＃ゆるへんろ</small>
     </div>
-    <!-- </div> -->
 </footer>
 <!-- footerここまで -->
 </div>
-<!-- jsプラグイン読み込み -->
-
-<!-- オリジナルjs読み込み -->
 
 <?php wp_footer(); ?>
+
 </body>
 
 </html>
