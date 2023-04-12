@@ -41,6 +41,7 @@
                     <?php endwhile; ?>
                     <?php endif; ?>
                 </div>
+            </div>
         </section>
     </article>
 </main>

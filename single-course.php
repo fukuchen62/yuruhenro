@@ -79,7 +79,7 @@
                                 'post_type' => 'course-schedule', //カスタム投稿タイプを指定
                                 'posts_per_page' => -1, //表示する記事数
                                 'orderby' => 'meta_value', //カスタムフィールドで並べ替える指定
-'meta_key' => 'order-number', //カスタムフィールドのキーを指定
+                                'meta_key' => 'order-number', //カスタムフィールドのキーを指定
                                 'order' => 'ASC',
                                 'meta_key' => 'c-slug', //カスタムフィールドのキー
                                 'meta_value' => $slug, //カスタムフィールドの値
@@ -109,16 +109,15 @@
                                 <div class="course_col">
                                     <div>
                                         <p class="small_cap mb_40 js-fadeUp">
-                                                    <?php the_field('a_description') ?>
-                                                </p>
+                                            <?php the_field('a_description') ?>
+                                        </p>
                                     </div>
                                     <!-- もっと読むボタン -->
                                     <div class=" button18">
                                         <?php $more = get_field('more');
                                                 if ($more) : ?>
                                         <a href="../../<?php the_field('link') ?>">
-                                            <p>もっと知る
-                                                        </p>
+                                            <p>もっと知る</p>
                                         </a>
                                         <?php endif; ?>
                                     </div>
@@ -158,28 +157,28 @@
                             <!-- 周辺施設お気に入りカードが並ぶエリア -->
                             <div class="shop_info_list flex">
                                 <?php
-                $terms = get_the_terms($post->ID, 'area');
-                foreach ($terms as $term) {
-                    $term_slug = $term->slug; // 現在表示している投稿が所属しているタームを取得
-                }
+                                    $terms = get_the_terms($post->ID, 'area');
+                                    foreach ($terms as $term) {
+                                    $term_slug = $term->slug; // 現在表示している投稿が所属しているタームを取得
+                                }
 
-                $facility_args = array(
-                    'post_type' => 'facility', // 投稿タイプ名
-                    'post__not_in' => array($post->ID), // 現在表示している投稿を除外
-                    'posts_per_page' => 3, // 表示件数
-                    'orderby' => 'rand', // ランダム表示
-                    'tax_query' => array(
-                        array(
-                            'taxonomy' => 'area', // タクソノミー名
-                            'field' => 'slug',
-                            'terms' => $term_slug, // 取得したタームを指定
-                        )
-                    )
-                );
+                                $facility_args = array(
+                                'post_type' => 'facility', // 投稿タイプ名
+                                'post__not_in' => array($post->ID), // 現在表示している投稿を除外
+                                'posts_per_page' => 3, // 表示件数
+                                'orderby' => 'rand', // ランダム表示
+                                'tax_query' => array(
+                                    array(
+                                        'taxonomy' => 'area', // タクソノミー名
+                                        'field' => 'slug',
+                                        'terms' => $term_slug, // 取得したタームを指定
+                                    )
+                                )
+                                );
 
-                $facility_query = new WP_Query($facility_args);
-                if ($facility_query->have_posts()) :
-                    while ($facility_query->have_posts()) : $facility_query->the_post(); ?>
+                                $facility_query = new WP_Query($facility_args);
+                                if ($facility_query->have_posts()) :
+                                while ($facility_query->have_posts()) : $facility_query->the_post(); ?>
                                 <!-- 周辺施設カードのデザイン -->
                                 <div class="shop_info_card">
                                     <div class="shop_info_caption">
@@ -219,11 +218,8 @@
                             </div>
                         </div>
                     </div>
-
-
-
                 </div>
-                <!-- </div> -->
+
             </section>
         </article>
     </div>

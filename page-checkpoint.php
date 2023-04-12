@@ -177,7 +177,7 @@
 
         <!-- 飾り -->
         <div class="cp_deco1">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hanaline.png" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hanaline.png" alt="区切り飾り">
         </div>
 
         <!-- 豆知識 -->

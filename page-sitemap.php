@@ -11,33 +11,31 @@
         <section class="contents_width">
             <!-- <h2 class="h2_bg">このサイトについて</h2> -->
             <div class="awaodori_bgimg">
-            <p class="big_cap_independent">
+                <p class="big_cap_independent">
                 当サイトのご利用にあたっては、以下の内容をご確認いただき、ご承諾いただいたものといたします。
                 また、内容は予告なく変更する場合がありますので、あらかじめご了承ください。
-            </p>
-</div>
+                </p>
+            </div>
         </section>
 
         <section class="contents_width mb_80">
             <h2 class="h3_bg_independent">掲載情報について</h2>
-                <div>
-                    <p class="mb_20">
+            <div>
+                <p class="mb_20">
                         当サイトの管理・運営は、QLIPプログラミングスクール　WEBプログラマー養成課第14期　藤班が行っています。
                         当サイトからリンクされたページが外部サイトである場合、当サイトはその内容について責任を負いません。
                         当サイトに関するお問い合わせ・ご意見は「お問い合わせフォーム」へお寄せください。
-                    </p>
+                </p>
 
-                    <a href="<?php echo home_url('contact'); ?>">
-                        <p class="mb_20">
-                            →お問い合わせフォームへ
-                        </p>
-                    </a>
+                <a href=" <?php echo home_url('contact'); ?> ">
+                    <p class="mb_20">→お問い合わせフォームへ</p>
+                </a>
 
 
-                    <p class="mb_20">情報の掲載にあたっては、相当の注意をはらっていますが、機械等の誤操作やその他の事情によって、
+                <p class="mb_20">情報の掲載にあたっては、相当の注意をはらっていますが、機械等の誤操作やその他の事情によって、
                         情報に誤りが生ずる場合があります。また、掲載されている情報は、発表時点のものです。
                         閲覧時点で情報が異なる場合があります。あらかじめご了承ください。</p>
-                </div>
+            </div>
         </section>
 
         <section class="contents_width mb_80">
@@ -63,9 +61,10 @@
             <div>
                 <p class="mb_20">
                     当サイトを通じてご提供いただく個人情報の取り扱いについては、当サイト個人情報保護基本方針および同規程に則り、
-                    適正に管理を行い、当該の目的以外での使用はいたしません。</p>
+                    適正に管理を行い、当該の目的以外での使用はいたしません。
+                </p>
 
-                    <a href="<?php echo home_url('privacy'); ?>">
+                <a href=" <?php echo home_url('privacy'); ?> ">
                     <p>→個人情報の取り扱い</p>
                 </a>
             </div>
