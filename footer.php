@@ -38,7 +38,7 @@
                 </li>
                 <li>
                     <ul class="sp_none">
-                        <li class="footer_nav_b"><a href="<?php echo home_url('single-course'); ?>">コース紹介</a></li>
+                        <li class="footer_nav_b"><a href="<?php echo home_url('course/easy'); ?>">コース紹介</a></li>
                         <li><a href="<?php echo home_url('course/easy'); ?>">入門コース</a></li>
                         <li><a href="<?php echo home_url('course/north'); ?>">車入門コース</a></li>
                         <li><a href="<?php echo home_url('course/west'); ?>">県西コース</a></li>
