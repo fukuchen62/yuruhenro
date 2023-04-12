@@ -222,30 +222,29 @@
                 </div>
 
                 <!-- 県南　車コース -->
-                <a href="<?php echo home_url('course/south'); ?>">
-                    <div class="btn_and_description_area flex">
+                <div class="btn_and_description_area flex">
+                    <a href="<?php echo home_url('course/south'); ?>">
                         <button class="course_btn btn4">
                             県南　車コース<br />第18番札所～第23番札所
                             &gt;&gt;&gt;
                         </button>
-                </a>
-                <div class="js-fadeUp small_cap">
-                    自然に親しみたい方におすすめ！<br />山に海、車窓からの景色も楽しめます。
+                    </a>
+                    <div class="js-fadeUp small_cap">
+                        自然に親しみたい方におすすめ！<br />山に海、車窓からの景色も楽しめます。
+                    </div>
                 </div>
-            </div>
-
-            <!-- 市内　徒歩コース -->
-            <a href="<?php echo home_url('course/city'); ?>">
+                <!-- 市内　徒歩コース -->
                 <div class="btn_and_description_area flex">
-                    <button class="course_btn btn5">
-                        市内　徒歩コース<br />第13番札所～第17番札所
-                        &gt;&gt;&gt;
-                    </button>
-            </a>
-            <div class="js-fadeUp small_cap">
-                短い距離で多くの寺社を巡りたい方におすすめ！<br />すべての寺社が徳島市内にあるため、アクセスがよいです。<br />徳島市内五ヶ所まいりとも呼ばれています。
-            </div>
-            </div>
+                    <a href="<?php echo home_url('course/city'); ?>">
+                        <button class="course_btn btn5">
+                            市内　徒歩コース<br />第13番札所～第17番札所
+                            &gt;&gt;&gt;
+                        </button>
+                    </a>
+                    <div class="js-fadeUp small_cap">
+                        短い距離で多くの寺社を巡りたい方におすすめ！<br />すべての寺社が徳島市内にあるため、アクセスがよいです。<br />徳島市内五ヶ所まいりとも呼ばれています。
+                    </div>
+                </div>
             </div>
         </section>
 
