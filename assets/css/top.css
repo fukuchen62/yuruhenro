@@ -44,7 +44,9 @@
 /*  メイン部分  */
 /****************/
 
-
+.luxy_posi {
+    display: none;
+}
 
 
 .top_flex_dc {
@@ -147,41 +149,6 @@
         margin-right: 0;
         margin-left: 0;
     }
-
-        /* luxy用 */
-        .luxy_posi {
-            position: relative;
-        }
-
-        .home .luxy_pic1 {
-            width: 400px;
-            position: absolute;
-            top: -50px;
-            left: -10%;
-        }
-
-        .home .luxy_pic2 {
-            width: 150px;
-            position: absolute;
-            top: 50px;
-            left: 15%;
-        }
-
-        .home .luxy_pic3 {
-            width: 400px;
-            position: absolute;
-            top: -50px;
-            right: 20%;
-        }
-
-        .home .luxy_pic4 {
-            width: 150px;
-            position: absolute;
-            top: 50px;
-            right: 40%;
-        }
-
-        /* luxy用 */
 }
 
 @media screen and (min-width: 1000px) {
@@ -201,4 +168,40 @@
         writing-mode: vertical-rl; /* 縦向きにする */
         text-orientation: upright;
     }
+
+    /* luxy用 */
+    .luxy_posi {
+        display: block;
+        position: relative;
+    }
+
+    .home .luxy_pic1 {
+        width: 400px;
+        position: absolute;
+        top: -50px;
+        left: -10%;
+    }
+
+    .home .luxy_pic2 {
+        width: 150px;
+        position: absolute;
+        top: 50px;
+        left: 15%;
+    }
+
+    .home .luxy_pic3 {
+        width: 400px;
+        position: absolute;
+        top: -50px;
+        right: 20%;
+    }
+
+    .home .luxy_pic4 {
+        width: 150px;
+        position: absolute;
+        top: 50px;
+        right: 40%;
+    }
+
+    /* luxy用 */
 }
