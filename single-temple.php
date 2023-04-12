@@ -7,7 +7,9 @@
     <article class="wrap">
         <section class="contents_width mb_80">
             <!-- お寺名 -->
-            <h2 class="h2_bg"><?php the_field('t_numbername'); ?></h2>
+            <div class="h2_box">
+                <h2 class="h2_bg"><?php the_field('t_numbername'); ?></h2>
+            </div>
 
             <!-- ブックマークボタン -->
             <div class="bookmark">
@@ -133,36 +135,36 @@
                 if ($facility_query->have_posts()) :
                     while ($facility_query->have_posts()) : $facility_query->the_post(); ?>
 
-                        <!-- 周辺施設カードのデザイン -->
-                        <div class="shop_info_card">
-                            <div class="shop_info_caption">
-                                <img src="<?php the_field('f_pic1'); ?>" alt="施設の画像" />
-                            </div>
-                            <div class="shop_info_title">
-                                <p><?php the_field('f_name'); ?></p>
-                            </div>
-                            <div class="shop_info_text">
-                                <p>営業時間：<?php the_field('hours'); ?></p>
-                                <p>定休日：<?php the_field('holiday'); ?></p>
-                                <p>駐車場：<?php the_field('f_parking'); ?></p>
-                                <p>TEL：<?php the_field('f_tell'); ?></p>
-                                <p>公式HP：
+                <!-- 周辺施設カードのデザイン -->
+                <div class="shop_info_card">
+                    <div class="shop_info_caption">
+                        <img src="<?php the_field('f_pic1'); ?>" alt="施設の画像" />
+                    </div>
+                    <div class="shop_info_title">
+                        <p><?php the_field('f_name'); ?></p>
+                    </div>
+                    <div class="shop_info_text">
+                        <p>営業時間：<?php the_field('hours'); ?></p>
+                        <p>定休日：<?php the_field('holiday'); ?></p>
+                        <p>駐車場：<?php the_field('f_parking'); ?></p>
+                        <p>TEL：<?php the_field('f_tell'); ?></p>
+                        <p>公式HP：
                                     <?php if (get_field('f_url') != '-') { ?>
                                         <a href="<?php the_field('f_url'); ?>" target=_blank class="link"><?php the_field('f_name'); ?></a>
                                     <?php } else {
                                         echo 'なし';
                                     } ?>
                                 </p>
-                            </div>
-                            <div class="shop_info_article">
-                                <p>
+                    </div>
+                    <div class="shop_info_article">
+                        <p>
                                     <?php the_field('f_message'); ?>
                                 </p>
-                            </div>
-                            <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
-                        </div>
+                    </div>
+                    <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
+                </div>
 
-                    <?php endwhile; ?>
+                <?php endwhile; ?>
                 <?php endif; ?>
                 <?php wp_reset_postdata(); ?>
             </div>

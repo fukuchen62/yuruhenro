@@ -5,7 +5,7 @@
 
     <article class="main_inner">
         <section class="contents_width">
-            <div>
+            <div class="h2_box">
                 <h2 class="h2_bg mb_40">よくあるご質問</h2>
             </div>
             <div>

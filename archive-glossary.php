@@ -7,7 +7,9 @@
         <!-- section -->
 
         <article class="sec_mb40">
-            <h2 class="h2_bg mb_40">用語質問箱</h2>
+            <div class="h2_box">
+                <h2 class="h2_bg mb_40">用語質問箱</h2>
+            </div>
             <section class="contents_width">
                 <p class="big_cap">
                     見かけるけど良く知らないおへんろの言葉を集めました。

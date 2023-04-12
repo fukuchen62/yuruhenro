@@ -13,7 +13,9 @@
 
             <!-- section区切り -->
             <section>
-                <h2 class="h2_bg mb_40">＃ゆるへんろってなぁに？</h2>
+                <div class="h2_box">
+                    <h2 class="h2_bg mb_40">＃ゆるへんろってなぁに？</h2>
+                </div>
 
                 <div class="yuru_introduction">
                     <p class="yuru_introduction_txt mb_40">
@@ -38,7 +40,9 @@
 
             <!-- section区切り -->
             <section>
-                <h2 class="h2_bg mb_40">おへんろについて知っとこ！</h2>
+                <div class="h2_box">
+                    <h2 class="h2_bg mb_40">おへんろについて知っとこ！</h2>
+                </div>
 
                 <div class="yuru_txt">
                     <h3 class="emphasis">お遍路とは</h3>
@@ -92,7 +96,9 @@
             <section id="jump_to_about">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/ematop.png" alt="絵馬">
                 <div class="ema">
-                    <h2 class="h2_bg mb_40">おへんろの作法について</h2>
+                    <div class="h2_box">
+                        <h2 class="h2_bg mb_40">おへんろの作法について</h2>
+                    </div>
                     <p class="small_cap_independent mb_40">お参りに大切なものは心です。
                         そのため作法にこだわる必要はありませんが、
                         お寺は仏様がいる神聖な場所なので、敬意を払って参拝しましょう。

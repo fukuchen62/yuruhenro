@@ -6,7 +6,9 @@ Template Name:page-monzen
     <h1 class="h1_bg">施設紹介</h1>
     <article class="main_inner">
         <section class="contents_width">
-            <h2 class="h2_bg">霊山寺　門前一番街</h2>
+            <div class="h2_box">
+                <h2 class="h2_bg">霊山寺　門前一番街</h2>
+            </div>
 
             <!-- ブックマークボタン -->
 
@@ -17,7 +19,9 @@ Template Name:page-monzen
 
             <!-- 門前一番街詳細1 -->
             <section class="contents_width mb_80">
-                <h2 class="h3_bg mb_40">門前一番街について</h2>
+                <div class="h2_box">
+                    <h2 class="h3_bg mb_40">門前一番街について</h2>
+                </div>
 
                 <div class="temple_about">
                     <!-- おすすめ画像 -->
