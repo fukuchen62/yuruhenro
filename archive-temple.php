@@ -1,6 +1,3 @@
-<!-- コピペしただけ！！！！！！！使うなら要編集！！！！！！！ -->
-
-
 <?php get_header(); ?>
 <!-- mainここから -->
 <main>
@@ -8,51 +5,52 @@
     <article class="main_inner">
         <section class="contents_width mb_100">
             <h2 class="h3_bg mb_40">寺社一覧</h2>
-            <!-- 寺社結果一覧 -->
-            <!-- <div class="searchresult_inner"> -->
-            <div class="searchresult_content">
-                <!--カードここから-->
-                <!-- 記事を表示するループ -->
+            <!-- 寺社カード一覧が並ぶ -->
+            <div class="shop_info_list flex">
                 <?php
-                $facility_args = array(
-                    'post_type' => 'temple',
-                    'posts_per_page' => -1,
-                    'order' => 'asc'
+                $temple_args = array(
+                'post_type' => 'temple', // 投稿タイプ名
+                'posts_per_page' => -1, // 表示件数
+                'order' => 'ASC', // ランダム表示
                 );
-                $facility_query = new WP_Query($facility_args);
-                if ($facility_query->have_posts()) :
-                    while ($facility_query->have_posts()) : $facility_query->the_post(); ?>
-                        <a href="<?php the_permalink(); ?>">
-                            <div class="searchresultList">
-                                <div class="searchresultList_thumb">
-                                    <img src="<?php the_field('t_eyecatch'); ?>" alt="寺社のアイキャッチ画像" />
-                                </div>
-                                <div class="searchresultList_data">
-                                    <h4 class="h4_bg text_c"><?php the_field('t_numbername'); ?></h4>
-                                    <!-- <p>拝観時間：10時～17時</p> -->
-                                    <!-- <p>定休日：火曜日</p> -->
-                                    <p>駐車場：<?php the_field('t_parking'); ?></p>
-                                    <p>TEL：<?php the_field('t_tell'); ?></p>
-                                    <p>公式HP：
-                                        <?php if (get_field('t_url') != '-') {
-                                            echo 'あり';
-                                        } else {
-                                            echo 'なし';
-                                        } ?>
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                        <?php wp_reset_postdata(); ?>
-                    <?php endwhile; ?>
-                <?php else : ?>
-                    <div>
-                        <p>条件に合う検索結果はありませんでした。</p>
+
+                $temple_query = new WP_Query($temple_args);
+                if ($temple_query->have_posts()) :
+                while ($temple_query->have_posts()) : $temple_query->the_post(); ?>
+                <!-- 寺社カードのデザイン -->
+                <div class="shop_info_card">
+                    <div class="shop_info_caption">
+                        <img src="<?php the_field('t_eyecatch'); ?>" alt="施設の画像" />
                     </div>
-                <?php endif; ?>
-                <!--カードここまで-->
-            </div>
-        </section>
+                    <!-- 寺社名 -->
+                    <div class="shop_info_title">
+                        <p><?php the_field('t_numbername'); ?></p>
+                    </div>
+                    <!-- 周辺施設詳細 -->
+                    <div class="shop_info_text">
+                        <p>駐車場：<?php the_field('t_parking'); ?></p>
+                        <p>TEL：<?php the_field('t_tell'); ?></p>
+                        <p>公式HP：<?php the_field('t_url'); ?></p>
+                        <p>公式HP：
+                                            <?php if (get_field('t_url') != '-') {
+                                                echo 'あり';
+                                            } else {
+                                                echo 'なし';
+                                            } ?>
+                                        </p>
+                    </div>
+                    <!-- お気に入りボタン -->
+                    <div>
+                        <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
+                    </div>
+                    <?php endwhile ?>
+                    <?php endif;
+                    wp_reset_postdata(); ?>
+
+
+
+
+
     </article>
 </main>
 <!-- mainここまで -->
