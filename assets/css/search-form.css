@@ -12,7 +12,7 @@
 
 .search-form_checkarea{
     margin: 0 auto;
-    max-width: 30vw;
+    max-width: fit-content;
     background-color: #fff;
     border-radius: 8px;
 }
@@ -39,7 +39,7 @@ text-align: center;
 .searchBtns{
 text-align: center;
 width: 150px;
-margin: 20px 0;
+margin: 20px 10px;
 padding: 10px;
 font-size: 20px;
 color: #fff;
@@ -201,4 +201,7 @@ width: fit-content;
     flex-direction: row;
     flex-wrap: wrap;
 }
+
+
+
 }
