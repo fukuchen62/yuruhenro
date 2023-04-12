@@ -2,7 +2,8 @@
         <!-- <h2 class="h2_bg">検索条件</h2> -->
         <div class="big_cap mb_40">
             <p>該当する条件で検索することができます。<br>
-                条件を選択後、「検索」ボタンを押してください。</p>
+                条件を選択後、「検索」ボタンを押してください。<br>
+                気になるお寺をブックマークすると<a href="<?php echo home_url('bookmark'); ?>" class="link">マイブックマーク</a>ページに登録出来ます。</p>
         </div>
     </section>
 
@@ -13,18 +14,18 @@
             <?php
 
 
-        // 「エリアタイプ」のチェックを保持
-        $select_area = filter_input(INPUT_GET, "area", FILTER_DEFAULT, FILTER_REQUIRE_ARRAY) ?: [];
-        $checked["area"] = ["east" => "", "west" => "", "south" => "","north" => ""];
-        foreach ($select_area as $val) {
-            $checked["area"][$val] = " checked";
-        }
-        // 「体験タイプ」のチェックを保持
-        $select_searchh = filter_input(INPUT_GET, "searchh", FILTER_DEFAULT, FILTER_REQUIRE_ARRAY) ?: [];
-        $checked["searchh"] = ["parking" => "", "eatin" => "", "bell" => "", "shop" => ""];
-        foreach ($select_searchh as $val) {
-            $checked["searchh"][$val] = " checked";
-        } ?>
+            // 「エリアタイプ」のチェックを保持
+            $select_area = filter_input(INPUT_GET, "area", FILTER_DEFAULT, FILTER_REQUIRE_ARRAY) ?: [];
+            $checked["area"] = ["east" => "", "west" => "", "south" => "", "north" => ""];
+            foreach ($select_area as $val) {
+                $checked["area"][$val] = " checked";
+            }
+            // 「体験タイプ」のチェックを保持
+            $select_searchh = filter_input(INPUT_GET, "searchh", FILTER_DEFAULT, FILTER_REQUIRE_ARRAY) ?: [];
+            $checked["searchh"] = ["parking" => "", "eatin" => "", "bell" => "", "shop" => ""];
+            foreach ($select_searchh as $val) {
+                $checked["searchh"][$val] = " checked";
+            } ?>
 
 
 
@@ -47,9 +48,9 @@
                 <p class="searchBtnsArea">
                     <input type="hidden" name="s" value="<?php the_search_query(); ?>">
 
-            <input class="searchBtns" type="submit" value="検索">
-            <input class="searchBtns" type="reset" name="reset" value="リセット">
-            </p>
+                    <input class="searchBtns" type="submit" value="検索">
+                    <input class="searchBtns" type="reset" name="reset" value="リセット">
+                </p>
             </div>
         </form>
     </section>

@@ -6,18 +6,21 @@ Template Name:page-monzen
     <h1 class="h1_bg">施設紹介</h1>
     <article class="main_inner">
         <section class="contents_width">
+            <!-- 施設名 -->
             <div class="h2_box">
-                <h2 class="h2_bg">霊山寺　門前一番街</h2>
+                <h2 class="h2_bg">霊山寺門前　門前一番街</h2>
             </div>
 
             <!-- ブックマークボタン -->
-
-            <!-- 門前一番街アイキャッチ画像 -->
-            <div class="temple_img mb_80">
+            <div class="bookmark">
+                <p><?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?></p>
+            </div>
+            <!-- 施設メイン画像 -->
+            <div class="temple_img">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/monzen_03.jpg" alt="門前一番街" />
             </div>
         </section>
-        <!-- 門前一番街詳細1 -->
+        <!-- 施設について -->
         <section class="contents_width mb_80">
             <div class="h2_box">
                 <h2 class="h3_bg mb_40">門前一番街について</h2>
@@ -54,7 +57,7 @@ Template Name:page-monzen
             </div>
         </section>
 
-        <!-- 門前一番街詳細2 -->
+        <!-- 施設情報 -->
         <section class="contents_width mb_80">
             <h2 class="h3_bg mb_40">施設情報</h2>
             <div class="temple_info flex">
@@ -129,7 +132,7 @@ Template Name:page-monzen
         </section>
 
         <!-- 周辺施設 -->
-        <section class="mb_80">
+        <section class="contents_width mb_100">
             <h2 class="h3_bg mb_40">周辺施設</h2>
             <!-- 周辺施設カードが並ぶエリア -->
             <div class="shop_info_list flex">
