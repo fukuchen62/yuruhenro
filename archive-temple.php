@@ -13,12 +13,11 @@
                 'posts_per_page' => -1, // 表示件数
                 'order' => 'ASC', // ランダム表示
                 );
-
                 $temple_query = new WP_Query($temple_args);
                 if ($temple_query->have_posts()) :
                 while ($temple_query->have_posts()) : $temple_query->the_post(); ?>
-                <!-- 寺社カードのデザイン -->
                 <div class="shop_info_card">
+                    <!-- 寺社カードのデザイン -->
                     <div class="shop_info_caption">
                         <img src="<?php the_field('t_eyecatch'); ?>" alt="施設の画像" />
                     </div>
@@ -43,14 +42,11 @@
                     <div>
                         <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
                     </div>
-                    <?php endwhile ?>
-                    <?php endif;
-                    wp_reset_postdata(); ?>
-
-
-
-
-
+                </div>
+                <?php endwhile ?>
+                <?php endif;?>
+            </div>
+        </section>
     </article>
 </main>
 <!-- mainここまで -->
