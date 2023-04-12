@@ -13,7 +13,6 @@ Template Name:page-monzen
 
             <!-- ブックマークボタン -->
             <div class="bookmark">
-                <p><?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?></p>
             </div>
             <!-- 施設メイン画像 -->
             <div class="temple_img">
