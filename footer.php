@@ -3,7 +3,7 @@
     <!-- <div class="footer_wrap"> -->
     <div class="footer_inner">
         <p class="page-top">
-            <a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/flower01.png" alt="" /></a>
+            <a href="<?php echo home_url(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/flower01.png" alt="ページトップに戻るボタンアイコン" /></a>
         </p>
         <div class="footer_insta flex">
             <a href="https://www.instagram.com/yuru_henro/" target="_blank" class="flex">
