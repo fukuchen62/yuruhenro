@@ -12,7 +12,7 @@
     margin: 0 auto;
     font-size: 16px;
     line-height: 2em;
-    max-width: 800px
+    max-width: 800px;
 }
 
 .ol_independent {
@@ -111,11 +111,9 @@
     flex-direction: column;
     display: flex;
     align-items: center;
-
 }
 
-
-.fuda img{
+.fuda img {
     width: 100px;
     height: auto;
 }
@@ -188,61 +186,43 @@
 
     .fuda {
         flex-direction: row;
-    
     }
-    
 }
 
-
-
-.yuru_introduction{
+.yuru_introduction {
     max-width: 1000px;
     height: auto;
     min-height: 500px;
     margin: 0 auto;
-	background-image:url(../img/henro_silhouette02.png),
-					 url(../img/tokusimatizu.png),
-					 url(../img/renkon.png);
-	background-repeat:no-repeat,
-					  no-repeat,
-					  no-repeat;
-	background-position:top right,
-						left bottom,
-						left bottom;
-    background-size:8%,45%,10%;
+    background-image: url(../img/henro_silhouette02.png),
+        url(../img/tokusimatizu.png), url(../img/renkon.png);
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    background-position: top right, left bottom, left bottom;
+    background-size: 8%, 45%, 10%;
 }
 
-.yuru_introduction_txt{
+.yuru_introduction_txt {
     max-width: 700px;
     height: auto;
     min-height: 450px;
     margin: 0 auto;
-
-
 }
 
-
-
-.yuru_txt{
+.yuru_txt {
     max-width: 700px;
     margin: 0 auto;
-
 }
 
+.awaodori_bgimg {
+    max-width: 950px;
+    height: auto;
+    min-height: 210px;
+    margin: 0 auto;
+    padding: 0 10%;
+    background-image: url(../img/henro_silhouette02.png),
+        url(../img/henro_silhouette03.png);
 
-.awaodori_bgimg{
-        max-width: 950px;
-        height: auto;
-        min-height: 210px;
-        margin: 0 auto;
-        padding: 0 10%;
-        background-image:url(../img/henro_silhouette02.png),
-                         url(../img/henro_silhouette03.png);
-
-        background-repeat:no-repeat,
-                          no-repeat;
-        background-position:top right,
-                            top left;
-        background-size:8%,9%;
-
+    background-repeat: no-repeat, no-repeat;
+    background-position: top right, top left;
+    background-size: 8%, 9%;
 }

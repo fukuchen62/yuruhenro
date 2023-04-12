@@ -22,7 +22,7 @@
             </div>
         </section>
         <!-- 服装一覧 -->
-        <section class="cp_area1 mb_40 flex">
+        <section class="cp_area1 mb_40 flex js-fadeUp">
             <div class="cp_area1_in">
                 <h3 class="h3_bg mb_20">カジュアル</h3>
                 <div class="small_cap">
@@ -66,7 +66,7 @@
         </section>
 
         <!-- 服装解説 -->
-        <section class="cp_area2 flex">
+        <section class="cp_area2 flex js-fadeUp">
             <div class="cp_area2_in">
                 <div>
                     <p class="cp_minittl mb_20">
@@ -183,7 +183,7 @@
         </div>
 
         <!-- 豆知識 -->
-        <section class="cp_area2 mb_40">
+        <section class="cp_area2 mb_40 js-fadeUp">
             <div>
                 <h3 class="h3_bg mb_40">その他巡礼用品の豆知識</h3>
                 <!-- <div>
@@ -264,20 +264,22 @@
             <div class="cp_deco2">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hana.png" alt="花の飾り" />
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hana.png" alt="花の飾り" />
-                <div class="mb_20">
-                    <p>
+                <div class="js-fadeUp">
+                    <div class="mb_20">
+                        <p>
                         ・菅笠はお参りのとき、お堂の中、僧の前でもかぶったままで構いません。靴を脱ぐ場所では笠も脱ぎましょう。
                     </p>
-                </div>
-                <div class="mb_20">
-                    <p>
+                    </div>
+                    <div class="mb_20">
+                        <p>
                         ・和袈裟は食事やトイレのときは首から外しましょう。
                     </p>
-                </div>
-                <div>
-                    <p>
+                    </div>
+                    <div>
+                        <p>
                         ・金銅杖は大師が修行中に橋の下で一夜を明かしたことから、橋の上で杖を突くのは禁忌とされています。
                     </p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -297,7 +299,7 @@
                 <!-- 必要なもの -->
                 <div class="cp_area3">
                     <h3 class="h3_bg mb_20">参拝の時に必要なもの</h3>
-                    <div class="mb_20">
+                    <div class="mb_20 js-fadeUp">
                         <p>
                             ・念珠<br />
                             ・経本<br />
@@ -318,7 +320,7 @@
                     <h3 class="h3_bg mb_20">
                         歩くときに持っていると<br>便利なもの
                     </h3>
-                    <div class="mb_20">
+                    <div class="mb_20 js-fadeUp">
                         <p>
                             ・コンパス<br />
                             ・笛<br />
