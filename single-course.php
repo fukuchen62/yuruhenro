@@ -18,8 +18,6 @@
 
         <!-- コースタブ -->
         <section class="course_tab">
-
-            <input type="hi">
             <!-- タブ -->
             <div>
                 <ul class="course_tabWrap flex">
