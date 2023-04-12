@@ -135,36 +135,36 @@
                 if ($facility_query->have_posts()) :
                     while ($facility_query->have_posts()) : $facility_query->the_post(); ?>
 
-                <!-- 周辺施設カードのデザイン -->
-                <div class="shop_info_card">
-                    <div class="shop_info_caption">
-                        <img src="<?php the_field('f_pic1'); ?>" alt="施設の画像" />
-                    </div>
-                    <div class="shop_info_title">
-                        <p><?php the_field('f_name'); ?></p>
-                    </div>
-                    <div class="shop_info_text">
-                        <p>営業時間：<?php the_field('hours'); ?></p>
-                        <p>定休日：<?php the_field('holiday'); ?></p>
-                        <p>駐車場：<?php the_field('f_parking'); ?></p>
-                        <p>TEL：<?php the_field('f_tell'); ?></p>
-                        <p>公式HP：
+                        <!-- 周辺施設カードのデザイン -->
+                        <div class="shop_info_card">
+                            <div class="shop_info_caption">
+                                <img src="<?php the_field('f_pic1'); ?>" alt="施設の画像" />
+                            </div>
+                            <div class="shop_info_title">
+                                <p><?php the_field('f_name'); ?></p>
+                            </div>
+                            <div class="shop_info_text">
+                                <p>営業時間：<?php the_field('hours'); ?></p>
+                                <p>定休日：<?php the_field('holiday'); ?></p>
+                                <p>駐車場：<?php the_field('f_parking'); ?></p>
+                                <p>TEL：<?php the_field('f_tell'); ?></p>
+                                <p>公式HP：
                                     <?php if (get_field('f_url') != '-') { ?>
                                         <a href="<?php the_field('f_url'); ?>" target=_blank class="link"><?php the_field('f_name'); ?></a>
                                     <?php } else {
                                         echo 'なし';
                                     } ?>
                                 </p>
-                    </div>
-                    <div class="shop_info_article">
-                        <p>
+                            </div>
+                            <div class="shop_info_article">
+                                <p>
                                     <?php the_field('f_message'); ?>
                                 </p>
-                    </div>
-                    <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
-                </div>
+                            </div>
+                            <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
+                        </div>
 
-                <?php endwhile; ?>
+                    <?php endwhile; ?>
                 <?php endif; ?>
                 <?php wp_reset_postdata(); ?>
             </div>
@@ -176,26 +176,26 @@
             <div class="course_flex">
                 <a href="<?php echo home_url('course/easy'); ?>">
                     <button class="course_btn btn1">
-                        ＃ゆるへんろ　入門コース<br />第1番札所～第3番札所 >>>
+                        ＃ゆるへんろ　入門コース<br />第1番札所～第3番札所 &gt;&gt;&gt;
                     </button>
                 </a>
                 <a href="<?php echo home_url('course/north'); ?>">
                     <button class="course_btn btn2">
-                        県北　車コース<br />第1番札所～第6番札所>>>
+                        県北　車コース<br />第1番札所～第6番札所&gt;&gt;&gt;
                     </button>
                 </a>
                 <a href="<?php echo home_url('course/west'); ?>">
                     <button class="course_btn btn3">
-                        県西　車コース<br />第7番札所～第12番札所>>>
+                        県西　車コース<br />第7番札所～第12番札所&gt;&gt;&gt;
                     </button>
                 </a>
                 <a href="<?php echo home_url('course/south'); ?>">
                     <button class="course_btn btn4">
-                        県南　車コース<br />第18番札所～第23番札所>>> </button>
+                        県南　車コース<br />第18番札所～第23番札所&gt;&gt;&gt; </button>
                 </a>
                 <a href="<?php echo home_url('course/city'); ?>">
                     <button class="course_btn btn5">
-                        市内　徒歩コース<br />第13番札所～第17番札所>>>
+                        市内　徒歩コース<br />第13番札所～第17番札所&gt;&gt;&gt;
                     </button>
                 </a>
             </div>

@@ -6,10 +6,10 @@
     <article class="main_inner">
 
         <h1 class="catch_phrase">
-                どこ行くん?<br />
-                　ゆるっとへんろ<br />
-                　　＃ゆるへんろ
-            </h1>
+            どこ行くん?<br />
+            　ゆるっとへんろ<br />
+            　　＃ゆるへんろ
+        </h1>
 
         <!-- kv画像 -->
         <section>
@@ -17,23 +17,23 @@
             <div class="slider">
                 <div class="slick-img1">
                     <img src="<?php echo get_template_directory_uri();
-                                    ?>/assets/img/top_kv01.jpg" alt="" />
+                                ?>/assets/img/top_kv01.jpg" alt="" />
                 </div>
                 <div class="slick-img1">
                     <img src="<?php echo get_template_directory_uri();
-                                    ?>/assets/img/top_kv02.jpg" alt="" />
+                                ?>/assets/img/top_kv02.jpg" alt="" />
                 </div>
                 <div class="slick-img1">
                     <img src="<?php echo get_template_directory_uri();
-                                    ?>/assets/img/top_kv03.jpg" alt="" />
+                                ?>/assets/img/top_kv03.jpg" alt="" />
                 </div>
                 <div class="slick-img1">
                     <img src="<?php echo get_template_directory_uri();
-                                    ?>/assets/img/top_kv04.jpg" alt="" />
+                                ?>/assets/img/top_kv04.jpg" alt="" />
                 </div>
                 <div class="slick-img1">
                     <img src="<?php echo get_template_directory_uri();
-                                    ?>/assets/img/top_kv05.jpg" alt="" />
+                                ?>/assets/img/top_kv05.jpg" alt="" />
                 </div>
             </div>
 
@@ -42,23 +42,23 @@
             <div class="thumbnail mb_80">
                 <div class="thumbnail_img">
                     <img src="<?php echo get_template_directory_uri();
-                                    ?>/assets/img/top_kv01.jpg" alt="" />
+                                ?>/assets/img/top_kv01.jpg" alt="" />
                 </div>
                 <div class="thumbnail_img">
                     <img src="<?php echo get_template_directory_uri();
-                                    ?>/assets/img/top_kv02.jpg" alt="" />
+                                ?>/assets/img/top_kv02.jpg" alt="" />
                 </div>
                 <div class="thumbnail_img">
                     <img src="<?php echo get_template_directory_uri();
-                                    ?>/assets/img/top_kv03.jpg" alt="" />
+                                ?>/assets/img/top_kv03.jpg" alt="" />
                 </div>
                 <div class="thumbnail_img">
                     <img src="<?php echo get_template_directory_uri();
-                                    ?>/assets/img/top_kv04.jpg" alt="" />
+                                ?>/assets/img/top_kv04.jpg" alt="" />
                 </div>
                 <div class="thumbnail_img">
                     <img src="<?php echo get_template_directory_uri();
-                                    ?>/assets/img/top_kv05.jpg" alt="" />
+                                ?>/assets/img/top_kv05.jpg" alt="" />
                 </div>
             </div>
         </section>
@@ -202,7 +202,7 @@
                 <!-- 県北　車コース -->
                 <div class="btn_and_description_area flex">
                     <a href="<?php echo home_url('course/north'); ?>"><button class="course_btn btn2">
-                            県北　車コース<br />第1番札所～第6番札所 >>>
+                            県北　車コース<br />第1番札所～第6番札所 &gt;&gt;&gt;
                         </button></a>
                     <div class="js-fadeUp small_cap">
                         寺社メインでお遍路を体験したい方におすすめ！<br />
@@ -214,7 +214,7 @@
                 <div class="btn_and_description_area flex">
                     <a href="<?php echo home_url('course/west'); ?>"><button class="course_btn btn3">
                             県西　車コース<br />第7番札所～第12番札所
-                            >>>
+                            &gt;&gt;&gt;
                         </button></a>
                     <div class="js-fadeUp small_cap">
                         チャレンジ精神のある方におすすめ！<br />少し歩かなければいけない難所があります。
@@ -226,7 +226,7 @@
                     <div class="btn_and_description_area flex">
                         <button class="course_btn btn4">
                             県南　車コース<br />第18番札所～第23番札所
-                            >>>
+                            &gt;&gt;&gt;
                         </button>
                 </a>
                 <div class="js-fadeUp small_cap">
@@ -239,7 +239,7 @@
                 <div class="btn_and_description_area flex">
                     <button class="course_btn btn5">
                         市内　徒歩コース<br />第13番札所～第17番札所
-                        >>>
+                        &gt;&gt;&gt;
                     </button>
             </a>
             <div class="js-fadeUp small_cap">
