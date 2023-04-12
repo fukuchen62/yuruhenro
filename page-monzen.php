@@ -186,28 +186,35 @@ Template Name:page-monzen
             </section>
 
             <!-- コース一覧 -->
-            <section class="mb_100">
+            <section class="contents_width mb_150">
                 <h2 class="h3_bg mb_40">コース一覧</h2>
                 <div class="course_flex">
-                    <button class="course_btn btn1">
-                        ＃ゆるへんろ　入門コース<br />第１番札所～第3番札所＞＞＞
-                    </button>
-                    <button class="course_btn btn2">
-                        ＃ゆるへんろ　入門コース<br />第１番札所～第3番札所＞＞＞
-                    </button>
-                    <button class="course_btn btn3">
-                        ＃ゆるへんろ　入門コース<br />第１番札所～第3番札所＞＞＞
-                    </button>
-                    <button class="course_btn btn4">
-                        ＃ゆるへんろ　入門コース<br />第１番札所～第3番札所＞＞＞
-                    </button>
-                    <button class="course_btn btn5">
-                        ＃ゆるへんろ　入門コース<br />第１番札所～第3番札所＞＞＞
-                    </button>
+                    <a href="<?php echo home_url('course/easy'); ?>">
+                        <button class="course_btn btn1">
+                            ＃ゆるへんろ　入門コース<br />第1番札所～第3番札所 >>>
+                        </button>
+                    </a>
+                    <a href="<?php echo home_url('course/north'); ?>">
+                        <button class="course_btn btn2">
+                            県北　車コース<br />第1番札所～第6番札所>>>
+                        </button>
+                    </a>
+                    <a href="<?php echo home_url('course/west'); ?>">
+                        <button class="course_btn btn3">
+                            県西　車コース<br />第7番札所～第12番札所>>>
+                        </button>
+                    </a>
+                    <a href="<?php echo home_url('course/south'); ?>">
+                        <button class="course_btn btn4">
+                            県南　車コース<br />第18番札所～第23番札所>>> </button>
+                    </a>
+                    <a href="<?php echo home_url('course/city'); ?>">
+                        <button class="course_btn btn5">
+                            市内　徒歩コース<br />第13番札所～第17番札所>>>
+                        </button>
+                    </a>
                 </div>
             </section>
-
-        </section>
     </article>
 </main>
 <!-- wrap -->
