@@ -11,7 +11,7 @@
             <div>
                 <p class="big_cap">
                     よくあるご質問をまとめています。おへんろ活動のご参考にどうぞ。<br>
-                    用語集はこちら！→<a href="../glossary" class="link">用語集</a>
+                    用語集は<a href="../glossary" class="link">こちら！</a>
                 </p>
 
 

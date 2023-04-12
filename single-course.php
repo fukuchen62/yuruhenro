@@ -94,7 +94,7 @@
 
                             <!-- 時間 -->
                             <div class="course_st mb_20">
-                                <p><?php the_field('c_time') ?></p>
+                                <p>【<?php the_field('c_time') ?>】　<?php the_field('name')?></p>
                             </div>
 
                             <!-- お寺・施設表示 -->
