@@ -50,7 +50,7 @@
                     <ul class="footer_nav_b">
                         <li><a href="<?php echo home_url('bookmark'); ?>" class="sp_none">マイブックマーク</a></li>
                         <li><a href="<?php echo home_url('?s='); ?>" class="sp_none">条件検索</a></li>
-                        <li><a href="<?php echo home_url('qanda'); ?>" class="sp_none">Q&A・用語集</a></li>
+                        <li><a href="<?php echo home_url('qanda'); ?>" class="sp_none">Q&amp;A・用語集</a></li>
                         <li><a href="<?php echo home_url('sitemap'); ?>">このサイトについて</a></li>
                         <li><a href="<?php echo home_url('privacy'); ?>">プライバシーポリシー</a></li>
                         <li><a href="<?php echo home_url('aboutus'); ?>">サイト制作にあたって</a></li>

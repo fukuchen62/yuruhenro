@@ -25,19 +25,21 @@
             <h2 class="h3_bg mb_40">ご協力いただいたお寺</h2>
             <div class="small_cap temple_list mb_20 js-fadeUp">
                 <!-- <ul> -->
-                    <?php $args = array(
-                        'post_type' => 'temple',
-                        'posts_per_page' => -1 //表示件数（-1で全ての記事を表示
-                    );
+                <?php $args = array(
+                    'post_type' => 'temple',
+                    'posts_per_page' => -1 //表示件数（-1で全ての記事を表示
+                );
 
-                    $the_query = new WP_Query($args);
-                    if ($the_query->have_posts()) :
-                        while ($the_query->have_posts()) : $the_query->the_post(); ?>
-                    <!-- <li> --><div class="each_temple">
-                        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                    <!-- </li> --></div>
+                $the_query = new WP_Query($args);
+                if ($the_query->have_posts()) :
+                    while ($the_query->have_posts()) : $the_query->the_post(); ?>
+                        <!-- <li> -->
+                        <div class="each_temple">
+                            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                            <!-- </li> -->
+                        </div>
                     <?php endwhile; ?>
-                    <?php endif; ?>
+                <?php endif; ?>
                 <!-- </ul> -->
             </div>
         </section>
@@ -54,7 +56,7 @@
                                 <a href="https://www.aoawo-naruto.com/">AoAwo Naruto Resort</a>
                             </li>
                             <li>
-                                <a href="https://cocowapot.com/">herb&aroma Cocowapot</a>
+                                <a href="https://cocowapot.com/">herb&amp;aroma Cocowapot</a>
                             </li>
                             <li>
                                 <a href="https://www.instagram.com/aguriiitano_official/">JA板野郡 JAグリーン
@@ -91,9 +93,9 @@
                             </li>
                         </ul>
                     </div>
-                    </div>
+                </div>
 
-                    <div class="shisetu_unit">
+                <div class="shisetu_unit">
                     <h3 class="mt_10 h4_bg">か行</h3>
                     <div class="mb_40">
                         <ul>
@@ -106,9 +108,9 @@
                             </li>
                         </ul>
                     </div>
-                    </div>
+                </div>
 
-                    <div class="shisetu_unit">
+                <div class="shisetu_unit">
                     <h3 class="mt_10 h4_bg">た行</h3>
                     <div class="mb_40">
                         <ul>
@@ -117,9 +119,9 @@
                             </li>
                         </ul>
                     </div>
-                    </div>
+                </div>
 
-                    <div class="shisetu_unit">
+                <div class="shisetu_unit">
                     <h3 class="mt_10 h4_bg">は行</h3>
                     <div class="mb_40">
                         <ul>
@@ -146,9 +148,9 @@
                             </li>
                         </ul>
                     </div>
-                    </div>
+                </div>
 
-                    <div class="shisetu_unit">
+                <div class="shisetu_unit">
                     <h3 class="mt_10 h4_bg">や行</h3>
                     <div class="mb_40">
                         <ul>
@@ -158,9 +160,9 @@
                             <li><a href=""></a></li>
                         </ul>
                     </div>
-                    </div>
+                </div>
 
-                    <div class="shisetu_unit">
+                <div class="shisetu_unit">
                     <h3 class="mt_10 h4_bg">ら行</h3>
                     <div class="mb_40">
                         <ul>
@@ -180,16 +182,16 @@
 
         <section class="contents_width mb_80">
             <h2 class="h3_bg mb_40">参考サイト</h2>
-                <div class="ref_site mb_20 js-fadeUp">
-                    <div>
-                        <div class="each_ref_site"><a href="https://www.photo-ac.com/">photoAC</a></div>
-                        <div class="each_ref_site"><a href="https://www.awanavi.jp/">阿波ナビ</a></div>
-                    </div>
-                    <div>
-                        <div class="each_ref_site"><a href="https://88shikokuhenro.jp/">四国遍路八十八ヶ所</a></div>
-                        <div class="each_ref_site"><a href="https://www.seichijunrei-shikokuhenro.jp/">聖地巡礼　四国遍路</a></div>
-                    </div>
+            <div class="ref_site mb_20 js-fadeUp">
+                <div>
+                    <div class="each_ref_site"><a href="https://www.photo-ac.com/">photoAC</a></div>
+                    <div class="each_ref_site"><a href="https://www.awanavi.jp/">阿波ナビ</a></div>
                 </div>
+                <div>
+                    <div class="each_ref_site"><a href="https://88shikokuhenro.jp/">四国遍路八十八ヶ所</a></div>
+                    <div class="each_ref_site"><a href="https://www.seichijunrei-shikokuhenro.jp/">聖地巡礼　四国遍路</a></div>
+                </div>
+            </div>
         </section>
 
         <section class="contents_width mb_100">
@@ -201,32 +203,32 @@
                         <div>昭文社出版メディア編集部</div>
                     </li>
                     <li>
-                    <div class="emphasis">気軽に行きたい四国遍路旅　鉄道で！バスで！観光も楽しむ「通い遍路」のススメ</div>
-                    <div>後藤さおり著</div>
+                        <div class="emphasis">気軽に行きたい四国遍路旅　鉄道で！バスで！観光も楽しむ「通い遍路」のススメ</div>
+                        <div>後藤さおり著</div>
                     </li>
                     <li>
-                    <div class="emphasis">はじめてのお遍路さん</div>
-                    <div>株式会社ダン／土金哲夫</div>
+                        <div class="emphasis">はじめてのお遍路さん</div>
+                        <div>株式会社ダン／土金哲夫</div>
                     </li>
                     <li>
-                    <div class="emphasis">四国８８カ所　開運！おへんろ旅</div>
-                    <div>株式会社あわわ</div>
+                        <div class="emphasis">四国８８カ所　開運！おへんろ旅</div>
+                        <div>株式会社あわわ</div>
                     </li>
                     <li>
-                    <div class="emphasis">るるぶ　四国八十八カ所</div>
-                    <div>ＪＴＢパブリッシング</div>
+                        <div class="emphasis">るるぶ　四国八十八カ所</div>
+                        <div>ＪＴＢパブリッシング</div>
                     </li>
                     <li>
-                    <div class="emphasis">四国八十八カ寺＆周辺ガイド</div>
-                    <div>株式会社エス・ピー・シー</div>
+                        <div class="emphasis">四国八十八カ寺＆周辺ガイド</div>
+                        <div>株式会社エス・ピー・シー</div>
                     </li>
                     <li>
-                    <div class="emphasis">クルマでお遍路　四国八十八ヶ所　札所めぐり　ドライブ巡礼ガイド</div>
-                    <div>四国おへんろ倶楽部</div>
+                        <div class="emphasis">クルマでお遍路　四国八十八ヶ所　札所めぐり　ドライブ巡礼ガイド</div>
+                        <div>四国おへんろ倶楽部</div>
                     </li>
                     <li>
-                    <div class="emphasis">てくてく歩き　四国八十八ヶ所ゆとりの旅</div>
-                    <div>ブルーガイド編集部</div>
+                        <div class="emphasis">てくてく歩き　四国八十八ヶ所ゆとりの旅</div>
+                        <div>ブルーガイド編集部</div>
                     </li>
                 </ul>
             </div>
