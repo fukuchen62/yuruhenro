@@ -30,7 +30,7 @@
                     <ul class="sp_none">
                         <li class="footer_nav_b"><a href="<?php echo home_url('about'); ?>">＃ゆるへんろとは</a></li>
                         <li><a href="<?php echo home_url('about'); ?>">＃ゆるへんろとは</a></li>
-                        <li><a href="<?php echo home_url('about'); ?>">おへんろのお作法</a></li>
+                        <li><a href="<?php echo esc_url(home_url('/')); ?>about#jump_to_about">おへんろのお作法</a></li>
                         <li><a href="<?php echo home_url('checkpoint'); ?>">参拝スタイル</a></li>
                         <li><a href="<?php echo home_url('temple'); ?>">寺社一覧</a></li>
 
