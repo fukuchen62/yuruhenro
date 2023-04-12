@@ -7,7 +7,7 @@
 <main>
 
     <div class="main_inner">
-        <h1 class="h1_bg">＃ゆるへんろって</h1>
+        <h1 class="h1_bg">＃ゆるへんろって？</h1>
 
         <article class="contents_width">
 
