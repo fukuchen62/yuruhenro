@@ -4,8 +4,8 @@
 <?php get_header(); ?>
 <main>
     <h1 class="h1_bg">お寺紹介</h1>
-    <article class="wrap">
-        <section class="contents_width mb_80">
+    <article class="main_inner">
+        <section class="contents_width">
             <!-- お寺名 -->
             <div class="h2_box">
                 <h2 class="h2_bg"><?php the_field('t_numbername'); ?></h2>
