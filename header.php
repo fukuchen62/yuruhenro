@@ -104,7 +104,6 @@
                         <?php
                         $args = array(
                             'menu' => 'global-navigation',
-                            'menu_class' => '',
                             'container' => false,
                         );
                         wp_nav_menu($args);
