@@ -92,19 +92,18 @@
             <!-- おへんろの作法について -->
             <div>
                 <h3 class="h3_bg mb_40">おへんろの作法について</h3>
-                <div class="top_flexset flex">
+                <div class="top_flexset1 flex">
                     <!-- 参拝の画像 -->
                     <div class="top_patern">
                         <div class="top_patern1">
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top_sanpai.jpg" alt="参拝する女性">
-                        </div>
-
-                        <div class="top_patern2">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hana.png" alt="花の飾り">
+                            <div class="top_patern2">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hana.png" alt="花の飾り">
+                            </div>
                         </div>
                     </div>
 
-                    <div class="sec_mb40">
+                    <div class="js-fadeUp sec_mb40">
                         <!-- キャプション文 -->
                         <div class="mb_20">
                             おへんろの作法ってどんなことをするんだろう？<br />
@@ -128,12 +127,18 @@
                 <div class="h2_box">
                     <h2 class="h2_bg mb_40">参拝スタイル</h2>
                 </div>
-                <div class="top_flexset flex">
-                    <!-- 参拝の画像 -->
-                    <!-- <div class="top_sanpai_bg2">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hana.png" alt="花の飾り" />
-                        </div> -->
-                    <div class="sec_mb40">
+                <div class="top_flexset2 flex">
+                    <!-- 参拝スタイルの画像 -->
+                    <div class="top_patern">
+                        <div class="top_patern1">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top_style.jpg" alt="参拝する女性">
+                            <div class="top_patern2">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hana.png" alt="花の飾り">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="js-fadeUp sec_mb40">
                         <!-- キャプション文 -->
                         <div class="mb_20">
                             服装は基本的に自由。<br />
@@ -172,7 +177,7 @@
                     <a href="<?php echo home_url('course/easy'); ?>"><button class="course_btn btn1">
                             ＃ゆるへんろ　入門コース<br />第1番札所～第3番札所＞＞＞
                         </button></a>
-                    <div class="small_cap">
+                    <div class="js-fadeUp small_cap">
                         ３つのお寺を巡る入門コース<br />
                         おへんろを始めるならまずはここから！<br />
                         歩き遍路の雰囲気を味わってみたい方におすすめ！
@@ -197,7 +202,7 @@
                     <a href="<?php echo home_url('course/north'); ?>"><button class="course_btn btn2">
                             県北　車コース<br />第1番札所～第6番札所 >>>
                         </button></a>
-                    <div class="small_cap">
+                    <div class="js-fadeUp small_cap">
                         寺社メインでお遍路を体験したい方におすすめ！<br />
                         スタート地点から区切りのいいところまで半日で回れます。
                     </div>
@@ -209,7 +214,7 @@
                             県西　車コース<br />第7番札所～第12番札所
                             >>>
                         </button></a>
-                    <div class="small_cap">
+                    <div class="js-fadeUp small_cap">
                         チャレンジ精神のある方におすすめ！<br />少し歩かなければいけない難所があります。
                     </div>
                 </div>
@@ -222,7 +227,7 @@
                             >>>
                         </button>
                 </a>
-                <div class="small_cap">
+                <div class="js-fadeUp small_cap">
                     自然に親しみたい方におすすめ！<br />山に海、車窓からの景色も楽しめます。
                 </div>
             </div>
@@ -235,7 +240,7 @@
                         >>>
                     </button>
             </a>
-            <div class="small_cap">
+            <div class="js-fadeUp small_cap">
                 短い距離で多くの寺社を巡りたい方におすすめ！<br />すべての寺社が徳島市内にあるため、アクセスがよいです。<br />徳島市内五ヶ所まいりとも呼ばれています。
             </div>
             </div>
