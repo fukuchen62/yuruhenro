@@ -368,12 +368,14 @@
 /* .rowLine > span  */
 .circle_mark1,
 .circle_mark2 {
+    white-space: nowrap;
     width: 40px;
     height: 40px;
     border-radius: 100%;
     text-align: center;
     line-height: 40px;
     margin-right: 20px;
+
 }
 
 .circle_mark1 {
