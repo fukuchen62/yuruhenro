@@ -196,7 +196,7 @@
                 </a>
                 <a href="<?php echo home_url('course/south'); ?>">
                     <p class="course_btn btn4">
-                        県南　車コース<br />第18番札所～第23番札所&gt;&gt;&gt; </div>
+                        県南　車コース<br />第18番札所～第23番札所&gt;&gt;&gt; </p>
                 </a>
                 <a href="<?php echo home_url('course/city'); ?>">
                     <p class="course_btn btn5">
