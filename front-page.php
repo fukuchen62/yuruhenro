@@ -68,7 +68,7 @@
             <!-- ＃ゆるへんろって？ -->
             <div class="mb_100">
                 <div id="luxy">
-                    <!-- <div class="luxy_posi">
+                    <div class="luxy_posi">
                         <img src="<?php echo get_template_directory_uri();
                                     ?>/assets/img/asiraikumo_waku.png" alt="背景画像1" class=" luxy-el luxy_pic1" data-speed-x="-5" data-offset="-10" data-horizontal="1">
                         <img src="<?php echo get_template_directory_uri();
@@ -79,7 +79,7 @@
 
                         <img src="<?php echo get_template_directory_uri();
                                     ?>/assets/img/asiraikumo.png" alt="背景画像2" class="luxy-el luxy_pic4" data-speed-x="5" data-offset="-10" data-horizontal="1">
-                    </div> -->
+                    </div>
                 </div>
             </div>
             <div class="h2_box">
