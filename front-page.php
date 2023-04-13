@@ -192,9 +192,11 @@
 
                 <!-- ボタンと紹介文 -->
                 <div class="btn_and_description_area mb_80 flex">
-                    <a href="<?php echo home_url('course/easy'); ?>"><button class="course_btn btn1">
+                    <a href="<?php echo home_url('course/easy'); ?>">
+                        <div class="course_btn btn1">
                             ＃ゆるへんろ　入門コース<br />第1番札所～第3番札所＞＞＞
-                        </button></a>
+                        </div>
+                    </a>
                     <div class="js-fadeUp small_cap">
                         ３つのお寺を巡る入門コース<br />
                         おへんろを始めるならまずはここから！<br />
@@ -217,9 +219,11 @@
                 <!-- ボタンと紹介文 -->
                 <!-- 県北　車コース -->
                 <div class="btn_and_description_area flex">
-                    <a href="<?php echo home_url('course/north'); ?>"><button class="course_btn btn2">
+                    <a href="<?php echo home_url('course/north'); ?>">
+                        <div class="course_btn btn2">
                             県北　車コース<br />第1番札所～第6番札所 &gt;&gt;&gt;
-                        </button></a>
+                        </div>
+                    </a>
                     <div class="js-fadeUp small_cap">
                         寺社メインでお遍路を体験したい方におすすめ！<br />
                         スタート地点から区切りのいいところまで半日で回れます。
@@ -228,10 +232,12 @@
 
                 <!-- 県西　車コース -->
                 <div class="btn_and_description_area flex">
-                    <a href="<?php echo home_url('course/west'); ?>"><button class="course_btn btn3">
+                    <a href="<?php echo home_url('course/west'); ?>">
+                        <div class="course_btn btn3">
                             県西　車コース<br />第7番札所～第12番札所
                             &gt;&gt;&gt;
-                        </button></a>
+                        </div>
+                    </a>
                     <div class="js-fadeUp small_cap">
                         チャレンジ精神のある方におすすめ！<br />少し歩かなければいけない難所があります。
                     </div>
@@ -240,10 +246,10 @@
                 <!-- 県南　車コース -->
                 <div class="btn_and_description_area flex">
                     <a href="<?php echo home_url('course/south'); ?>">
-                        <button class="course_btn btn4">
+                        <div class="course_btn btn4">
                             県南　車コース<br />第18番札所～第23番札所
                             &gt;&gt;&gt;
-                        </button>
+                        </div>
                     </a>
                     <div class="js-fadeUp small_cap">
                         自然に親しみたい方におすすめ！<br />山に海、車窓からの景色も楽しめます。
@@ -252,10 +258,10 @@
                 <!-- 市内　徒歩コース -->
                 <div class="btn_and_description_area flex">
                     <a href="<?php echo home_url('course/city'); ?>">
-                        <button class="course_btn btn5">
+                        <div class="course_btn btn5">
                             市内　徒歩コース<br />第13番札所～第17番札所
                             &gt;&gt;&gt;
-                        </button>
+                        </div>
                     </a>
                     <div class="js-fadeUp small_cap">
                         短い距離で多くの寺社を巡りたい方におすすめ！<br />すべての寺社が徳島市内にあるため、アクセスがよいです。<br />徳島市内五ヶ所まいりとも呼ばれています。
