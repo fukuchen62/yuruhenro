@@ -35,7 +35,7 @@
                     while ($the_query->have_posts()) : $the_query->the_post(); ?>
                         <!-- <li> -->
                         <div class="each_temple">
-                            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                            <a href="<?php the_permalink(); ?>" target="_blank"><?php the_title(); ?></a>
                             <!-- </li> -->
                         </div>
                     <?php endwhile; ?>
@@ -53,20 +53,20 @@
                     <div class="mb_40">
                         <ul>
                             <li>
-                                <a href="https://www.aoawo-naruto.com/">AoAwo Naruto Resort</a>
+                                <a href="https://www.aoawo-naruto.com/" target="_blank">AoAwo Naruto Resort</a>
                             </li>
                             <li>
-                                <a href="https://cocowapot.com/">herb&amp;aroma Cocowapot</a>
+                                <a href="https://cocowapot.com/" target="_blank">herb&amp;aroma Cocowapot</a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com/aguriiitano_official/">JA板野郡 JAグリーン
+                                <a href="https://www.instagram.com/aguriiitano_official/" target="_blank">JA板野郡 JAグリーン
                                     アグリ板野店</a>
                             </li>
                             <li>
-                                <a href="https://lazycoffeebase.wixsite.com/lazycoffeebase">LAZY COFFEE BASE</a>
+                                <a href="https://lazycoffeebase.wixsite.com/lazycoffeebase" target="_blank">LAZY COFFEE BASE</a>
                             </li>
                             <li>
-                                <a href="https://odori.kitchen/access">odori</a>
+                                <a href="https://odori.kitchen/" target="_blank">odori</a>
                             </li>
                         </ul>
                     </div>
@@ -77,19 +77,22 @@
                     <div class="mb_40">
                         <ul>
                             <li>
-                                <a href="http://www.acaricafe.com/">あかりカフェ</a>
+                                <a href="http://www.acaricafe.com/" target="_blank">あかりカフェ</a>
                             </li>
                             <li>
-                                <a href="http://www.town.itano.tokushima.jp/asebi_onsen.html">あせび温泉 やすらぎの郷</a>
+                                <a href="https://awagibier-aoki.com/" target="_blank">阿波地美獲 あおき</a>
                             </li>
                             <li>
-                                <a href="https://www.facebook.com/awashanthi/about">アワシャンティ</a>
+                                <a href="http://www.town.itano.tokushima.jp/asebi_onsen.html" target="_blank">あせび温泉 やすらぎの郷</a>
                             </li>
                             <li>
-                                <a href="https://www.narutokanko.co.jp/eskahill/">エスカヒル・鳴門</a>
+                                <a href="https://www.facebook.com/awashanthi/about" target="_blank">アワシャンティ</a>
                             </li>
                             <li>
-                                <a href="https://www.instagram.com/okashinaomisemino/">お菓子なお店　MINO</a>
+                                <a href="https://www.narutokanko.co.jp/eskahill/" target="_blank">エスカヒル・鳴門</a>
+                            </li>
+                            <li>
+                                <a href="https://www.instagram.com/okashinaomisemino/" target="_blank">お菓子なお店　MINO</a>
                             </li>
                         </ul>
                     </div>
@@ -99,12 +102,28 @@
                     <h3 class="mt_10 h4_bg">か行</h3>
                     <div class="mb_40">
                         <ul>
-                            <li><a href="">カフェクラブ</a></li>
-                            <li>
-                                <a href="http://kagyu.omiki.com/60shimai/shimai.html">ギャラリーカフェ ブリッサ</a>
+                        <li>
+                                <a href="https://marine.kaiyo-kankou.jp/index.php/en/" target="_blank">海洋自然博物館マリンジャム</a>
                             </li>
                             <li>
-                                <a href="https://higashinecoffee.site/">こはくの天使</a>
+                                <p>カフェクラブ</p>
+                            </li>
+                            <li>
+                                <a href="http://kagyu.omiki.com/60shimai/shimai.html" target="_blank">ギャラリーカフェ ブリッサ</a>
+                            </li>
+                            <li>
+                                <a href="https://kohakunotenshi.com/" target="_blank">こはくの天使</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="shisetu_unit">
+                    <h3 class="mt_10 h4_bg">さ行</h3>
+                    <div class="mb_40">
+                        <ul>
+                            <li>
+                                <a href="http://www.matsubaan.com/" target="_blank">茶房 松葉庵 麟角</a>
                             </li>
                         </ul>
                     </div>
@@ -114,23 +133,52 @@
                     <h3 class="mt_10 h4_bg">た行</h3>
                     <div class="mb_40">
                         <ul>
+                        <li>
+                            <a href="http://www.shikoku-cable.co.jp/index.html" target="_blank">太龍寺ロープウェイ</a>
+                        </li>
+                        <li>
+                            <a href="http://www.ja-higashitks.com/assets/images/toretore.pdf" target="_blank">とれとれ市公方　(JA東とくしま)</a>
+                        </li>
+                        <li>
+                            <a href="https://jikishin-an.com/" target="_blank">手打ち二八蕎麦の店　直心庵</a>
+                        </li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="shisetu_unit">
+                    <h3 class="mt_10 h4_bg">な行</h3>
+                    <div class="mb_40">
+                        <ul>
                             <li>
-                                <a href="http://www.ja-higashitks.com/assets/images/toretore.pdf">とれとれ市公方　(JA東とくしま)</a>
+                                <a href="http://aratae.jp/naruto/" target="_blank">鳴門天然温泉　あらたえの湯</a>
+                            </li>
+                            <li>
+                                <a href="https://www.uzusio.com/" target="_blank">鳴門の渦潮　うずしお観潮船</a>
                             </li>
                         </ul>
                     </div>
                 </div>
+
 
                 <div class="shisetu_unit">
                     <h3 class="mt_10 h4_bg">は行</h3>
                     <div class="mb_40">
                         <ul>
                             <li>
-                                <a href="https://www.hinanosato.com/">ひなの里・かつうら</a>
+                                <a href="https://www.hinanosato.com/" target="_blank">ひなの里・かつうら</a>
                             </li>
                             <li>
-                                <a href="https://tokushima-kamojima.cafe-pinokio.com/">ピノキオ　徳島鴨島店</a>
+                                <a href="https://tokushima-kamojima.cafe-pinokio.com/" target="_blank">ピノキオ　徳島鴨島店</a>
                             </li>
+                            <li>
+                                <a href="https://caretta.town.minami.lg.jp/" target="_blank">日和佐うみがめ博物館「カレッタ」</a>
+                            </li>
+                            <li>
+                            <p>本格手打ちうどん　あおやま</p>
+
+
                         </ul>
                     </div>
                 </div>
@@ -140,12 +188,19 @@
                     <div class="mb_40">
                         <ul>
                             <li>
-                                <a href="https://www.google.com/url?q=http://r.goope.jp/mameboncafe/contact&sa=D&source=editors&ust=1680350847874345&usg=AOvVaw01-q7Lcc9nUzayaTRi5wQr">まめぼんカフェ</a>
+                                <a href="http://r.goope.jp/mameboncafe/" target="_blank">まめぼんカフェ</a>
                             </li>
                             <li>
-                                <a href="https://www.ja-higashitks.com/aisai/">みはらしの丘
+                                <a href="https://www.michinoeki-itano.jp/" target="_blank">道の駅　いたの</a>
+                            </li>
+                            <li>
+                                <a href="https://www.ja-higashitks.com/aisai/" target="_blank">みはらしの丘
                                     あいさい広場　(JA東とくしま産直市)</a>
                             </li>
+                            <li>
+                                <a href="https://monzen-ichibangai.com/" target="_blank">門前一番街</a>
+                            </li>
+
                         </ul>
                     </div>
                 </div>
@@ -154,11 +209,16 @@
                     <h3 class="mt_10 h4_bg">や行</h3>
                     <div class="mb_40">
                         <ul>
-                            <li>
-                                <a href="https://tokuchu-ja.or.jp/store/detail.php?nm=higashitokushima_yottene">よってネ市　(JA東とくしま産直市)</a>
+                        <li>
+                                <a href="http://aratae.jp/komatsushima/" target="_blank">湯処あらたえ　小松島店</a>
                             </li>
-                            <li><a href=""></a></li>
-                        </ul>
+                            <li>
+                            <p>吉野川温泉</P>
+                            </li>
+                            <li>
+                                <a href="https://tokuchu-ja.or.jp/store/detail.php?nm=higashitokushima_yottene" target="_blank">よってネ市　(JA東とくしま産直市)</a>
+                            </li>
+                            </ul>
                     </div>
                 </div>
 
@@ -166,12 +226,14 @@
                     <h3 class="mt_10 h4_bg">ら行</h3>
                     <div class="mb_40">
                         <ul>
-                            <li><a href="">リーベンデール</a></li>
                             <li>
-                                <a href="http://www.durum.jp/">リストランテデュラム</a>
+                                <p>リーベンデール</p>
                             </li>
                             <li>
-                                <a href="https://azure-ishii.amebaownd.com/">レストラン　アジュール</a>
+                                <a href="http://www.durum.jp/" target="_blank">リストランテデュラム</a>
+                            </li>
+                            <li>
+                                <a href="https://azure-ishii.amebaownd.com/" target="_blank">レストラン　アジュール</a>
                             </li>
                         </ul>
                     </div>
@@ -184,12 +246,12 @@
             <h2 class="h3_bg mb_40">参考サイト</h2>
             <div class="ref_site mb_20 js-fadeUp">
                 <div>
-                    <div class="each_ref_site"><a href="https://www.photo-ac.com/">photoAC</a></div>
-                    <div class="each_ref_site"><a href="https://www.awanavi.jp/">阿波ナビ</a></div>
+                    <div class="each_ref_site"><a href="https://www.photo-ac.com/" target="_blank">photoAC</a></div>
+                    <div class="each_ref_site"><a href="https://www.awanavi.jp/" target="_blank">阿波ナビ</a></div>
                 </div>
                 <div>
-                    <div class="each_ref_site"><a href="https://88shikokuhenro.jp/">四国遍路八十八ヶ所</a></div>
-                    <div class="each_ref_site"><a href="https://www.seichijunrei-shikokuhenro.jp/">聖地巡礼　四国遍路</a></div>
+                    <div class="each_ref_site"><a href="https://88shikokuhenro.jp/" target="_blank">（一社）四国八十八ヶ所霊場会</a></div>
+                    <div class="each_ref_site"><a href="https://www.seichijunrei-shikokuhenro.jp/" target="_blank">聖地巡礼　四国遍路</a></div>
                 </div>
             </div>
         </section>
