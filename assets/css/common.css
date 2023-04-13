@@ -424,7 +424,8 @@ img {
     min-width: 320px;
     color: #fbfaf5;
     text-align: center;
-    background-color: #71674c;
+    background-image: url(../img/footer_bg.jpg);
+    /* background-color: #71674c; */
     padding: 40px 0 15px;
 }
 
