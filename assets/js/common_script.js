@@ -157,6 +157,10 @@ $(function () {
 
     $(".thumbnail").slick({
         slidesToShow: 4,
+        slideToScroll: 4,
+        // swipe: true,
+        // swipeToSlide: true,
+        // touchMove: true,
         asNavFor: ".slider",
         focusOnSelect: true,
         prevArrow: false,
