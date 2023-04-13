@@ -37,6 +37,7 @@ if (is_home()) {
         'luxy',
         get_template_directory_uri() . '/assets/js/luxy.min.js',
         array('jquery'),
+        '1.8.0',
         true
     );
 }
