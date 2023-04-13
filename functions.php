@@ -32,15 +32,12 @@ function add_my_files()
 
 
     //luxy.js読み込み
-if (is_home()) {
     wp_enqueue_script(
         'luxy',
         get_template_directory_uri() . '/assets/js/luxy.min.js',
         array('jquery'),
-        '1.8.0',
         true
     );
-}
 
     //個別slick.js読み込み
     if (is_page('monzen')) {
