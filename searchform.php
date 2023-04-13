@@ -1,6 +1,6 @@
     <section class="contents_width">
         <!-- <h2 class="h2_bg">検索条件</h2> -->
-        <div class="big_cap mb_40">
+        <div class="mb_40">
             <p>該当する条件で検索することができます。<br>
                 条件を選択後、「検索」ボタンを押してください。<br>
                 気になるお寺をブックマークすると<a href="<?php echo home_url('bookmark'); ?>" class="link">マイブックマーク</a>ページに登録出来ます。</p>
