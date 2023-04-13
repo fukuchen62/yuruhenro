@@ -103,7 +103,7 @@
 
             <!-- イメージ画像 -->
             <div class="mb_80">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/about_yuruhenro.png" alt="参拝のイメージ" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top_illust01.png" alt="参拝のイメージ" />
             </div>
 
 
@@ -188,7 +188,7 @@
             <!-- 入門コース -->
             <div class="mb_80">
                 <!-- イメージ画像 -->
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/beginner_yuruhenro.png" alt="入門コースイメージ画像" class="mb_40" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top_illust02.png" alt="入門コースイメージ画像" class="mb_40" />
 
                 <!-- ボタンと紹介文 -->
                 <div class="btn_and_description_area mb_80 flex">
@@ -208,7 +208,7 @@
             <!-- チャレンジコース -->
             <div>
                 <!-- イメージ画像 -->
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/challenge_yuruhenro.png" alt="チャレンジコースイメージ画像" class="mb_40" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top_illust03.png" alt="チャレンジコースイメージ画像" class="mb_40" />
 
                 <!-- チャレンジコース紹介文 -->
                 <div class="btn_description">
