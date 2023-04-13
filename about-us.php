@@ -16,7 +16,7 @@
             <div class="mb_20 js-fadeUp">
                 <p>
                     　最近はお遍路の目的も多様化されているといいますが、バスツアーで参加したり、何日もかけて歩いて回るという敷居の高いイメージがあります。
-                    お遍路に興味があっても、本格的に始めるのはハードルが高い方や認知度の低い年齢層に、お遍路について知ってもらい、お遍路体験の最初の一歩を後押しをしたいという思いから、徳島県内の第１番霊山寺から第２３番薬王寺までと周辺施設を紹介する『とくしま１日#ゆるへんろ』を企画しました。
+                    お遍路に興味があっても、本格的に始めるのはハードルが高い方や認知度の低い年齢層に、お遍路について知ってもらい、お遍路体験の最初の一歩を後押しをしたいという思いから、徳島県内の一番札所霊山寺から二十三番札所薬王寺までと周辺施設を紹介する『とくしま１日#ゆるへんろ』を企画しました。
                 </p>
             </div>
         </section>
@@ -33,12 +33,12 @@
                 $the_query = new WP_Query($args);
                 if ($the_query->have_posts()) :
                     while ($the_query->have_posts()) : $the_query->the_post(); ?>
-                        <!-- <li> -->
-                        <div class="each_temple">
-                            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                            <!-- </li> -->
-                        </div>
-                    <?php endwhile; ?>
+                <!-- <li> -->
+                <div class="each_temple">
+                    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                    <!-- </li> -->
+                </div>
+                <?php endwhile; ?>
                 <?php endif; ?>
                 <!-- </ul> -->
             </div>
