@@ -4,6 +4,10 @@
 /* 参拝スタイル */
 /****************/
 
+.page-id-28 .h1_bg {
+    background-image: url(../img/h1_bg01.jpg);
+}
+
 .big_cap {
     text-align: center;
 }
