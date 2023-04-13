@@ -7,7 +7,7 @@
         </div>
     </section>
 
-    <section class="contents_width search_form mb_80">
+    <section class="contents_width search_form mb_40">
         <h2 class="h3_bg mb_40">検索条件選択</h2>
         <form method="get" action="<?php echo esc_url(home_url('/')); ?>">
             <input type="hidden" name="s" value="<?php the_search_query(); ?>">
