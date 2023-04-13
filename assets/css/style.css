@@ -328,6 +328,11 @@
 /*   条件検索   */
 /****************/
 
+/* ブックマーク h1背景画像 */
+.page-id-32 .h1_bg {
+    background-image: url(../img/h1_bg06.jpg);
+}
+
 /* 条件検索h1背景画像 */
 .search-results .h1_bg {
     background-image: url(../img/h1_bg02.jpg);
