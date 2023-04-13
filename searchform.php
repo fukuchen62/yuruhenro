@@ -1,4 +1,4 @@
-    <section class="contents_width">
+    <section class="m0auto">
         <!-- <h2 class="h2_bg">検索条件</h2> -->
         <div class="mb_40">
             <p>該当する条件で検索することができます。<br>
@@ -30,7 +30,7 @@
 
 
             <div class="search-form_checkarea">
-                <p class="search-form_headline">エリア</p>
+                <p class="search-form_headline h4_bg">エリア</p>
                 <div class="searchkinds">
                     <div class="checkbox"><label><input type="checkbox" name="area[]" value="north" id="north" <?= $checked["area"]["north"] ?>> 県北</label></div>
                     <div class="checkbox"><label><input type="checkbox" name="area[]" value="west" id="west" <?= $checked["area"]["west"] ?>> 県西</label></div>
@@ -38,7 +38,7 @@
                     <div class="checkbox"><label><input type="checkbox" name="area[]" value="east" id="east" <?= $checked["area"]["east"] ?>> 市街地</label></div>
                 </div>
 
-                <p class="search-form_headline">寺院内設備</p>
+                <p class="search-form_headline h4_bg">寺院内設備</p>
                 <div class="searchkinds">
                     <div class="checkbox"><label><input type="checkbox" name="searchh[]" value="parking" <?= $checked["searchh"]["parking"] ?>> 無料駐車場</label></div>
                     <div class="checkbox"><label><input type="checkbox" name="searchh[]" value="eatin" <?= $checked["searchh"]["eatin"] ?>> 食事</label></div>

@@ -74,6 +74,14 @@ justify-content: center;
     margin: 0 auto;
 }
 
+.m0auto{
+        max-width: max-content;
+        margin: 0 auto;
+        padding: 0 auto;
+        /* justify-content: center; */
+        }
+
+
 
 
 
@@ -205,4 +213,5 @@ width: fit-content;
 .searchBtns {
     margin: 20px 10px;
 }
+
 }
