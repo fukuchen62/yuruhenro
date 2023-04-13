@@ -9,6 +9,8 @@
         <!-- h1 -->
         <div class="h1_bg">
             <h1>プライバシーポリシー</h1>
+            <?php get_template_part('template-parts/breadcrumb');?>
+
         </div>
         <article>
             <div class="contents_width">

@@ -2,6 +2,8 @@
 <!-- mainここから -->
 <main>
     <h1 class="h1_bg">Q&amp;A</h1>
+    <?php get_template_part('template-parts/breadcrumb');?>
+
 
     <article class="main_inner">
         <section class="contents_width">
@@ -26,19 +28,19 @@
                     $the_query = new WP_Query($args);
                     if ($the_query->have_posts()) :
                         while ($the_query->have_posts()) : $the_query->the_post(); ?>
-                            <div class="section_line">
-                                <div class="rowLine flex">
-                                    <span class="circle_mark1">Q<?php print "$post_counter"; ?>
-                                    </span>
-                                    <p><?php the_title(); ?></p>
-                                </div>
-                                <div class="rowLine flex">
-                                    <span class=" circle_mark2">A</span>
-                                    <p><?php the_field('answer'); ?></p>
-                                </div>
-                            </div>
-                            <?php $post_counter++; ?>
-                        <?php endwhile; ?>
+                    <div class="section_line">
+                        <div class="rowLine flex">
+                            <span class="circle_mark1">Q<?php print "$post_counter"; ?>
+                            </span>
+                            <p><?php the_title(); ?></p>
+                        </div>
+                        <div class="rowLine flex">
+                            <span class=" circle_mark2">A</span>
+                            <p><?php the_field('answer'); ?></p>
+                        </div>
+                    </div>
+                    <?php $post_counter++; ?>
+                    <?php endwhile; ?>
                     <?php endif; ?>
                 </div>
             </div>

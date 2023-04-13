@@ -6,6 +6,8 @@
 
 <main>
     <h1 class="h1_bg">マイブックマーク</h1>
+    <?php get_template_part('template-parts/breadcrumb');?>
+
     <article class="main_inner">
         <section class="big_cap mb_100">
             <div>

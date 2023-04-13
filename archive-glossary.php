@@ -4,6 +4,7 @@
     <div class="main_inner">
 
         <h1 class="h1_bg">用語集</h1>
+        <?php get_template_part('template-parts/breadcrumb');?>
         <!-- section -->
 
         <article class="sec_mb40">

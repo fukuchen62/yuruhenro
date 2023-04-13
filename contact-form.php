@@ -7,6 +7,8 @@
     <!-- h1 -->
     <div class="h1_bg">
         <h1>お問い合わせ</h1>
+        <?php get_template_part('template-parts/breadcrumb');?>
+
     </div>
 
     <div class="contents_width">

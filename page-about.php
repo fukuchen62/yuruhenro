@@ -7,7 +7,9 @@
 <main>
 
     <div class="main_inner">
+
         <h1 class="h1_bg">＃ゆるへんろって？</h1>
+        <?php get_template_part('template-parts/breadcrumb');?>
 
         <article class="contents_width">
 

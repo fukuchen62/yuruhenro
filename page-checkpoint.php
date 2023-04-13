@@ -7,6 +7,8 @@
 <main class="wrap">
 
     <h1 class="h1_bg">参拝スタイル</h1>
+    <?php get_template_part('template-parts/breadcrumb');?>
+
 
     <article class="main_inner">
 

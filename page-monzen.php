@@ -4,6 +4,8 @@ Template Name:page-monzen
 <?php get_header(); ?>
 <main>
     <h1 class="h1_bg">施設紹介</h1>
+    <?php get_template_part('template-parts/breadcrumb');?>
+
     <article class="main_inner">
         <section class="contents_width">
             <!-- 施設名 -->

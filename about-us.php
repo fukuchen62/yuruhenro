@@ -2,6 +2,8 @@
 <!-- mainここから -->
 <main>
     <h1 class="h1_bg">サイト制作にあたって</h1>
+    <?php get_template_part('template-parts/breadcrumb');?>
+
     <article class="main_inner">
         <section class="contents_width mb_80">
             <div class="small_cap">
@@ -33,12 +35,12 @@
                 $the_query = new WP_Query($args);
                 if ($the_query->have_posts()) :
                     while ($the_query->have_posts()) : $the_query->the_post(); ?>
-                        <!-- <li> -->
-                        <div class="each_temple">
-                            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                            <!-- </li> -->
-                        </div>
-                    <?php endwhile; ?>
+                <!-- <li> -->
+                <div class="each_temple">
+                    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                    <!-- </li> -->
+                </div>
+                <?php endwhile; ?>
                 <?php endif; ?>
                 <!-- </ul> -->
             </div>
@@ -102,7 +104,7 @@
                     <h3 class="mt_10 h4_bg">か行</h3>
                     <div class="mb_40">
                         <ul>
-                        <li>
+                            <li>
                                 <a href="https://marine.kaiyo-kankou.jp/index.php/en/" target="_blank">海洋自然博物館マリンジャム</a>
                             </li>
                             <li>
@@ -133,15 +135,15 @@
                     <h3 class="mt_10 h4_bg">た行</h3>
                     <div class="mb_40">
                         <ul>
-                        <li>
-                            <a href="http://www.shikoku-cable.co.jp/index.html" target="_blank">太龍寺ロープウェイ</a>
-                        </li>
-                        <li>
-                            <a href="http://www.ja-higashitks.com/assets/images/toretore.pdf" target="_blank">とれとれ市公方　(JA東とくしま)</a>
-                        </li>
-                        <li>
-                            <a href="https://jikishin-an.com/" target="_blank">手打ち二八蕎麦の店　直心庵</a>
-                        </li>
+                            <li>
+                                <a href="http://www.shikoku-cable.co.jp/index.html" target="_blank">太龍寺ロープウェイ</a>
+                            </li>
+                            <li>
+                                <a href="http://www.ja-higashitks.com/assets/images/toretore.pdf" target="_blank">とれとれ市公方　(JA東とくしま)</a>
+                            </li>
+                            <li>
+                                <a href="https://jikishin-an.com/" target="_blank">手打ち二八蕎麦の店　直心庵</a>
+                            </li>
 
                         </ul>
                     </div>
@@ -176,8 +178,8 @@
                                 <a href="https://caretta.town.minami.lg.jp/" target="_blank">日和佐うみがめ博物館「カレッタ」</a>
                             </li>
                             <li>
-                            <p>本格手打ちうどん　あおやま</p>
-                </li>
+                                <p>本格手打ちうどん　あおやま</p>
+                            </li>
 
 
                         </ul>
@@ -210,16 +212,16 @@
                     <h3 class="mt_10 h4_bg">や行</h3>
                     <div class="mb_40">
                         <ul>
-                        <li>
+                            <li>
                                 <a href="http://aratae.jp/komatsushima/" target="_blank">湯処あらたえ　小松島店</a>
                             </li>
                             <li>
-                            <p>吉野川温泉</P>
+                                <p>吉野川温泉</P>
                             </li>
                             <li>
                                 <a href="https://tokuchu-ja.or.jp/store/detail.php?nm=higashitokushima_yottene" target="_blank">よってネ市　(JA東とくしま産直市)</a>
                             </li>
-                            </ul>
+                        </ul>
                     </div>
                 </div>
 

@@ -2,6 +2,8 @@
 <!-- mainここから -->
 <main>
     <h1 class="h1_bg">条件検索</h1>
+    <?php get_template_part('template-parts/breadcrumb');?>
+
     <article class="main_inner">
 
         <!-- 検索フォームを読み込む -->

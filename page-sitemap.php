@@ -6,6 +6,8 @@
 <!-- mainここから -->
 <main>
     <h1 class="h1_bg mb_150">このサイトについて</h1>
+    <?php get_template_part('template-parts/breadcrumb');?>
+
     <article class="main_inner">
 
         <section class="contents_width">
