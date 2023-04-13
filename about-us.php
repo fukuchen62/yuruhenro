@@ -35,7 +35,7 @@
                     while ($the_query->have_posts()) : $the_query->the_post(); ?>
                         <!-- <li> -->
                         <div class="each_temple">
-                            <a href="<?php the_permalink(); ?>" target="_blank"><?php the_title(); ?></a>
+                            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                             <!-- </li> -->
                         </div>
                     <?php endwhile; ?>
