@@ -511,6 +511,12 @@ img {
         justify-content: space-around;
     }
 
+    /* バナー比率はaspect3:1で作成のこと */
+    .footer_links li img {
+        width: 50%;
+        height: auto;
+    }
+
     /*TOPへ戻るボタン*/
     .page-top {
         bottom: 60px;

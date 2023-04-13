@@ -13,7 +13,7 @@
 
         <div class="footer_links">
             <ul class="flex">
-                <li><a href="#" target=_blank>バナー1</a></li>
+                <li><a href="https://www.awanavi.jp/" target=_blank><img src="<?php echo get_template_directory_uri(); ?>/assets/img/awanavi.jpg" alt="徳島県観光情報サイト 阿波ナビ バナー"></a></li>
                 <li><a href="#" target=_blank>バナー2</a></li>
             </ul>
         </div>
