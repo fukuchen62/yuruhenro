@@ -1,5 +1,5 @@
 @charset "utf-8";
-/* *{border: 1px solid royalblue;} */
+/* *{border: 1px solid rgb(0, 81, 255);} */
 /*========= レイアウトのためのCSS ===============*/
 
 .search-form{
@@ -41,7 +41,7 @@ text-align: center;
 width: 150px;
 margin: 10px 10px;
 padding: 10px;
-font-size: 20px;
+font-size: 18px;
 color: #fff;
 background-color: #4A86A4;
 box-shadow: 4px 4px 4px gray;
@@ -59,7 +59,7 @@ border-radius: 8px;
 .searchkinds{
 display: flex;
 flex-direction: row;
-align-items: center;
+align-items: stretch;
 text-align: left;
 flex-wrap: wrap;
 justify-content: center;
@@ -68,9 +68,9 @@ justify-content: center;
 
 .search-form_headline {
     width: 15rem;
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
-    padding: 20px 0;
+    padding: 1vh 0;
     margin: 0 auto;
 }
 
@@ -193,7 +193,7 @@ text-align: left;
 flex-wrap: wrap;
 }
 .checkbox {
-margin-left: 1vw;
+margin-left: 2vw;
 width: fit-content;
 }
 .searchresult_content {
