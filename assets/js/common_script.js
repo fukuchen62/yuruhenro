@@ -42,13 +42,13 @@ $(".nav_menu a").click(function () {
 ///////////////////////////
 //--------------------------------------------------//
 // luxy.js用の記述 //
-if(matchMedia('(min-width: 1000px)').matches){
-    luxy.init({
-    wrapper: '#luxy',
-    targets : '.luxy-el',
-    wrapperSpeed: 1
-    });
-}
+// if(matchMedia('(min-width: 1000px)').matches){
+//     luxy.init({
+//     wrapper: '#luxy',
+//     targets : '.luxy-el',
+//     wrapperSpeed: 1
+//     });
+// }
 //--------------------------------------------------//
 // スクロールして表示領域に入ったらclass付与
 $(function () {

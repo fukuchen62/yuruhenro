@@ -31,7 +31,7 @@ function add_my_files()
     );
 
 
-    //luxy.js読み込み
+    // luxy.js読み込み
     wp_enqueue_script(
         'luxy',
         get_template_directory_uri() . '/assets/js/luxy.min.js',
