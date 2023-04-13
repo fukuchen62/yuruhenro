@@ -7,6 +7,20 @@ function my_theme_setup()
     add_theme_support('post-thumbnails'); //アイキャッチ画像を使用可能にする
     add_theme_support('menus'); //カスタムメニュー機能を使用可能にする
 }
+
+//検索ページのタイトル変更
+function change_document_title_parts($title_parts)
+{
+    //デフォルトとしてタグラインとサイト名は表示しないようにセット
+
+    if (is_search()) : //検索結果ページの場合
+        $title_parts['title'] = '条件検索';
+    endif;
+
+    return $title_parts;
+}
+add_filter('document_title_parts', 'change_document_title_parts');
+
 // functions.phpでスタイルシートとJavaScriptファイルを読み込む
 add_action('wp_enqueue_scripts', 'add_my_files');
 function add_my_files()
