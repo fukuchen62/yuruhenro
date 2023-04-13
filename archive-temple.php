@@ -2,7 +2,7 @@
 <!-- mainここから -->
 <main>
     <h1 class="h1_bg">寺社一覧</h1>
-    <?php get_template_part('template-parts/breadcrumb');?>
+    <?php get_template_part('template-parts/breadcrumb'); ?>
 
     <article class="main_inner">
         <section class="sec_mb40">
@@ -22,41 +22,41 @@
                 $temple_args = array(
                     'post_type' => 'temple', // 投稿タイプ名
                     'posts_per_page' => -1, // 表示件数
-                    'order' => 'ASC', // ランダム表示
+                    'order' => 'ASC', // 昇順
                 );
                 $temple_query = new WP_Query($temple_args);
                 if ($temple_query->have_posts()) :
                     while ($temple_query->have_posts()) : $temple_query->the_post(); ?>
-                <a href="<?php the_permalink(); ?>">
-                    <div class="shop_info_card">
-                        <!-- 寺社カードのデザイン -->
-                        <div class="shop_info_caption">
-                            <img src="<?php the_field('t_eyecatch'); ?>" alt="施設の画像" />
-                        </div>
-                        <!-- 寺社名 -->
-                        <div class="shop_info_title">
-                            <p><?php the_field('t_numbername'); ?></p>
-                        </div>
-                        <!-- 周辺施設詳細 -->
-                        <div class="shop_info_text">
-                            <p>駐車場：<?php the_field('t_parking'); ?></p>
-                            <p>TEL：<?php the_field('t_tell'); ?></p>
-                            <p>公式HP：<?php the_field('t_url'); ?></p>
-                            <p>公式HP：
+                        <a href="<?php the_permalink(); ?>">
+                            <div class="shop_info_card">
+                                <!-- 寺社カードのデザイン -->
+                                <div class="shop_info_caption">
+                                    <img src="<?php the_field('t_eyecatch'); ?>" alt="施設の画像" />
+                                </div>
+                                <!-- 寺社名 -->
+                                <div class="shop_info_title">
+                                    <p><?php the_field('t_numbername'); ?></p>
+                                </div>
+                                <!-- 寺社詳細 -->
+                                <div class="shop_info_text">
+                                    <p>駐車場：<?php the_field('t_parking'); ?></p>
+                                    <p>TEL：<?php the_field('t_tell'); ?></p>
+                                    <p>公式HP：<?php the_field('t_url'); ?></p>
+                                    <p>公式HP：
                                         <?php if (get_field('t_url') != '-') {
                                             echo 'あり';
                                         } else {
                                             echo 'なし';
                                         } ?>
                                     </p>
-                        </div>
-                        <!-- お気に入りボタン -->
-                        <div>
-                            <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
-                        </div>
-                    </div>
-                </a>
-                <?php endwhile ?>
+                                </div>
+                                <!-- ブックマークボタン -->
+                                <div>
+                                    <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
+                                </div>
+                            </div>
+                        </a>
+                    <?php endwhile ?>
                 <?php endif; ?>
             </div>
         </section>
