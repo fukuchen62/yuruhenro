@@ -180,28 +180,28 @@
             <h2 class="h3_bg mb_40">コース一覧</h2>
             <div class="course_flex">
                 <a href="<?php echo home_url('course/easy'); ?>">
-                    <div class="course_btn btn1">
+                    <p class="course_btn btn1">
                         ＃ゆるへんろ　入門コース<br />第1番札所～第3番札所 &gt;&gt;&gt;
-                    </div>
+                    </p>
                 </a>
                 <a href="<?php echo home_url('course/north'); ?>">
-                    <div class="course_btn btn2">
+                    <p class="course_btn btn2">
                         県北　車コース<br />第1番札所～第6番札所&gt;&gt;&gt;
-                    </div>
+                    </p>
                 </a>
                 <a href="<?php echo home_url('course/west'); ?>">
-                    <div class="course_btn btn3">
+                    <p class="course_btn btn3">
                         県西　車コース<br />第7番札所～第12番札所&gt;&gt;&gt;
-                    </div>
+                    </p>
                 </a>
                 <a href="<?php echo home_url('course/south'); ?>">
-                    <div class="course_btn btn4">
+                    <p class="course_btn btn4">
                         県南　車コース<br />第18番札所～第23番札所&gt;&gt;&gt; </div>
                 </a>
                 <a href="<?php echo home_url('course/city'); ?>">
-                    <div class="course_btn btn5">
+                    <p class="course_btn btn5">
                         市内　徒歩コース<br />第13番札所～第17番札所&gt;&gt;&gt;
-                    </div>
+                    </p>
                 </a>
             </div>
         </section>
