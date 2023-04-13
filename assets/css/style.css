@@ -1,5 +1,14 @@
 @charset "UTF-8";
 
+/*********************/
+/* ＃ゆるへんろって？ */
+/*********************/
+
+/* h1背景画像 */
+.page-id-24 .h1_bg {
+    background-image: url(../img/h1_bg04.png);
+}
+
 /****************/
 /* 参拝スタイル */
 /****************/
@@ -333,6 +342,12 @@
 /****************/
 /*  Q&Aと用語集  */
 /****************/
+
+/* Q&A h1背景画像 */
+.post-type-archive-qanda .h1_bg {
+    background-image: url(../img/h1_bg05.jpg);
+}
+
 .section_line {
     border-bottom: 2px dotted #c69c6d;
     padding: 0 20px;
