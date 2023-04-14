@@ -333,6 +333,11 @@
     background-image: url(../img/h1_bg07.jpg);
 }
 
+/* お寺一覧h1背景画像 */
+.single-temple .h1_bg {
+    background-image: url(../img/h1_bg10.jpg);
+}
+
 /****************/
 /* ブックマーク */
 /*   条件検索   */
