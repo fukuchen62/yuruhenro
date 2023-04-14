@@ -31,8 +31,8 @@ $(".header_hamburger").on("click", function () {
     // $(this).toggleClass("active");
     // // メニューに「.active」class付け外し
     // $(".global-nav").toggleClass("active");
-    // // bodyに「.active」class付け外し
-    // $("body").toggleClass("active");
+    // bodyに「.active」class付け外し
+    $("body").toggleClass("active");
 });
 //リンク先が押されたら//
 $(".nav_menu a").click(function () {
