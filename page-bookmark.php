@@ -21,7 +21,7 @@
 
         <!-- 寺社ブックマーク -->
         <section class="contents_width mb_100">
-            <h2 class="h3_bg mb_40">寺社お気に入り</h2>
+            <h2 class="h3_bg mb_40">お寺ブックマーク</h2>
 
             <!-- 寺社ブックマークカードが並ぶ -->
             <div class="shop_info_list flex">
@@ -39,21 +39,21 @@
                     if ($temple_favorites_query->have_posts()) : while ($temple_favorites_query->have_posts()) : $temple_favorites_query->the_post();
                 ?>
 
-                <!-- 寺社カードのデザイン -->
-                <a href="<?php the_permalink(); ?>">
-                    <div class="shop_info_card">
-                        <div class="shop_info_caption">
-                            <img src="<?php the_field('t_eyecatch'); ?>" alt="寺社の画像" />
-                        </div>
-                        <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
-                        <div class="shop_info_title">
-                            <p><?php the_field('t_name'); ?></p>
-                        </div>
-                        <div class="shop_info_text">
-                            <p>駐車場：<?php the_field('t_parking'); ?></p>
-                            <p>TEL：<?php the_field('t_tell'); ?></p>
-                            <!-- <p>公式HP：<?php the_field('t_url'); ?></p> -->
-                            <p>公式HP：
+                            <!-- 寺社カードのデザイン -->
+                            <a href="<?php the_permalink(); ?>">
+                                <div class="shop_info_card">
+                                    <div class="shop_info_caption">
+                                        <img src="<?php the_field('t_eyecatch'); ?>" alt="寺社の画像" />
+                                    </div>
+                                    <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
+                                    <div class="shop_info_title">
+                                        <p><?php the_field('t_name'); ?></p>
+                                    </div>
+                                    <div class="shop_info_text">
+                                        <p>駐車場：<?php the_field('t_parking'); ?></p>
+                                        <p>TEL：<?php the_field('t_tell'); ?></p>
+                                        <!-- <p>公式HP：<?php the_field('t_url'); ?></p> -->
+                                        <p>公式HP：
                                             <?php if (get_field('t_url') != '-') {
                                                 echo 'あり';
                                             } else {
@@ -61,16 +61,16 @@
                                             } ?>
                                         </p>
 
-                        </div>
-                    </div>
-                </a>
-                <!-- 寺社カードのデザイン -->
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- 寺社カードのデザイン -->
 
-                <?php endwhile ?>
-                <?php endif;
+                        <?php endwhile ?>
+                    <?php endif;
                     wp_reset_postdata(); ?>
                 <?php else : ?>
-                <p class="text-center">ブックマーク登録がありません。</p>
+                    <p class="text-center">ブックマーク登録がありません。</p>
                 <?php endif ?>
             </div>
             <!-- 寺社ブックマークカードが並ぶエリア -->
@@ -78,7 +78,7 @@
 
         <!-- 周辺施設ブックマーク -->
         <section class="mb_100">
-            <h2 class="h3_bg mb_40">周辺施設お気に入り</h2>
+            <h2 class="h3_bg mb_40">周辺施設ブックマーク</h2>
 
             <!-- 周辺施設ブックマークカードが並ぶエリア -->
             <div class="shop_info_list flex">
@@ -96,22 +96,22 @@
                     if ($favorites_query->have_posts()) : while ($favorites_query->have_posts()) : $favorites_query->the_post();
                 ?>
 
-                <!-- 周辺施設カードのデザイン -->
-                <div class="shop_info_card">
-                    <div class="shop_info_caption">
-                        <img src="<?php the_field('f_pic1'); ?>" alt="施設の画像" />
-                    </div>
-                    <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
+                            <!-- 周辺施設カードのデザイン -->
+                            <div class="shop_info_card">
+                                <div class="shop_info_caption">
+                                    <img src="<?php the_field('f_pic1'); ?>" alt="施設の画像" />
+                                </div>
+                                <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
 
-                    <div class="shop_info_title">
-                        <p><?php the_field('f_name'); ?></p>
-                    </div>
-                    <div class="shop_info_text">
-                        <p>営業時間：<?php the_field('hours'); ?></p>
-                        <p>定休日：<?php the_field('holiday'); ?></p>
-                        <p>駐車場：<?php the_field('f_parking'); ?></p>
-                        <p>TEL：<?php the_field('f_tell'); ?></p>
-                        <p>公式HP：
+                                <div class="shop_info_title">
+                                    <p><?php the_field('f_name'); ?></p>
+                                </div>
+                                <div class="shop_info_text">
+                                    <p>営業時間：<?php the_field('hours'); ?></p>
+                                    <p>定休日：<?php the_field('holiday'); ?></p>
+                                    <p>駐車場：<?php the_field('f_parking'); ?></p>
+                                    <p>TEL：<?php the_field('f_tell'); ?></p>
+                                    <p>公式HP：
                                         <?php if (get_field('f_url') != '-') { ?>
                                             <a href="<?php the_field('f_url'); ?>" target=_blank class="link"><?php the_field('f_name'); ?></a>
                                         <?php } else {
@@ -119,21 +119,21 @@
                                         } ?>
                                     </p>
 
-                    </div>
-                    <div class="shop_info_article">
-                        <p>
+                                </div>
+                                <div class="shop_info_article">
+                                    <p>
                                         <?php the_field('f_message'); ?>
                                     </p>
-                    </div>
+                                </div>
 
-                </div>
-                <!-- 周辺施設カードのデザイン -->
+                            </div>
+                            <!-- 周辺施設カードのデザイン -->
 
-                <?php endwhile ?>
-                <?php endif;
+                        <?php endwhile ?>
+                    <?php endif;
                     wp_reset_postdata(); ?>
                 <?php else : ?>
-                <p>ブックマーク登録がありません。</p>
+                    <p>ブックマーク登録がありません。</p>
                 <?php endif; ?>
             </div>
             <!-- 周辺施設ブックマークカードが並ぶエリア -->

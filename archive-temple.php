@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 <!-- mainここから -->
 <main>
-    <h1 class="h1_bg">寺社一覧</h1>
+    <h1 class="h1_bg">お寺一覧</h1>
     <?php get_template_part('template-parts/breadcrumb'); ?>
 
     <article class="main_inner">
@@ -15,7 +15,7 @@
             </div>
         </section>
         <section class="contents_width mb_100">
-            <h2 class="h3_bg mb_40">寺社一覧</h2>
+            <h2 class="h3_bg mb_40">お寺一覧</h2>
             <!-- 寺社カード一覧が並ぶ -->
             <div class="shop_info_list flex">
                 <?php
@@ -27,31 +27,31 @@
                 $temple_query = new WP_Query($temple_args);
                 if ($temple_query->have_posts()) :
                     while ($temple_query->have_posts()) : $temple_query->the_post(); ?>
-                <a href="<?php the_permalink(); ?>">
-                    <div class="shop_info_card">
-                        <!-- 寺社カードのデザイン -->
-                        <div class="shop_info_caption">
-                            <img src="<?php the_field('t_eyecatch'); ?>" alt="施設の画像" />
-                        </div>
-                        <!-- ブックマークボタン -->
-                        <div>
-                            <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
-                        </div>
-                        <!-- 寺社名 -->
-                        <div class="shop_info_title">
-                            <p><?php the_field('t_numbername'); ?></p>
-                        </div>
-                        <!-- 寺社詳細 -->
-                        <div class="shop_info_text">
-                            <p>本尊：<?php the_field('honzon'); ?></p>
-                            <p>所在地：<?php the_field('t_area'); ?></p>
+                        <a href="<?php the_permalink(); ?>">
+                            <div class="shop_info_card">
+                                <!-- 寺社カードのデザイン -->
+                                <div class="shop_info_caption">
+                                    <img src="<?php the_field('t_eyecatch'); ?>" alt="施設の画像" />
+                                </div>
+                                <!-- ブックマークボタン -->
+                                <div>
+                                    <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
+                                </div>
+                                <!-- 寺社名 -->
+                                <div class="shop_info_title">
+                                    <p><?php the_field('t_numbername'); ?></p>
+                                </div>
+                                <!-- 寺社詳細 -->
+                                <div class="shop_info_text">
+                                    <p>本尊：<?php the_field('honzon'); ?></p>
+                                    <p>所在地：<?php the_field('t_area'); ?></p>
 
-                            <p>TEL：<?php the_field('t_tell'); ?></p>
-                        </div>
+                                    <p>TEL：<?php the_field('t_tell'); ?></p>
+                                </div>
 
-                    </div>
-                </a>
-                <?php endwhile ?>
+                            </div>
+                        </a>
+                    <?php endwhile ?>
                 <?php endif; ?>
             </div>
         </section>

@@ -68,15 +68,15 @@
             <!-- ＃ゆるへんろって？ -->
             <div id="luxy" class="content_width luxy_posi">
                 <img src="<?php echo get_template_directory_uri();
-                                    ?>/assets/img/asiraikumo_waku.png" alt="背景画像1" class=" luxy-el luxy_pic1" data-speed-x="-5" data-offset="-10" data-horizontal="1">
+                            ?>/assets/img/asiraikumo_waku.png" alt="背景画像1" class=" luxy-el luxy_pic1" data-speed-x="-5" data-offset="-10" data-horizontal="1">
                 <img src="<?php echo get_template_directory_uri();
-                                    ?>/assets/img/asiraikumo.png" alt="背景画像2" class="luxy-el luxy_pic2" data-speed-x="-10" data-offset="-20" data-horizontal="1">
+                            ?>/assets/img/asiraikumo.png" alt="背景画像2" class="luxy-el luxy_pic2" data-speed-x="-10" data-offset="-20" data-horizontal="1">
 
                 <img src="<?php echo get_template_directory_uri();
-                                    ?>/assets/img/asiraikuno_waku2.png" alt="背景画像3" class=" luxy-el luxy_pic3" data-speed-x="-5" data-offset="-10" data-horizontal="1">
+                            ?>/assets/img/asiraikuno_waku2.png" alt="背景画像3" class=" luxy-el luxy_pic3" data-speed-x="-5" data-offset="-10" data-horizontal="1">
 
                 <img src="<?php echo get_template_directory_uri();
-                                    ?>/assets/img/asiraikuno2.png" alt="背景画像4" class="luxy-el luxy_pic4" data-speed-x="-10" data-offset="-20" data-horizontal="1">
+                            ?>/assets/img/asiraikuno2.png" alt="背景画像4" class="luxy-el luxy_pic4" data-speed-x="-10" data-offset="-20" data-horizontal="1">
             </div>
             <div class="h2_box">
                 <h2 class="h2_bg mb_40">＃ゆるへんろって？</h2>
@@ -221,7 +221,7 @@
                         </p>
                     </a>
                     <p class="js-fadeUp small_cap">
-                        寺社メインでお遍路を体験したい方におすすめ！<br />
+                        お寺メインでお遍路を体験したい方におすすめ！<br />
                         スタート地点から区切りのいいところまで半日で回れます。
                     </p>
                 </div>
@@ -260,7 +260,7 @@
                         </p>
                     </a>
                     <div class="js-fadeUp small_cap">
-                        短い距離で多くの寺社を巡りたい方におすすめ！<br />すべての寺社が徳島市内にあるため、アクセスがよいです。<br />徳島市内五ヶ所まいりとも呼ばれています。
+                        短い距離で多くのお寺を巡りたい方におすすめ！<br />すべてのお寺が徳島市内にあるため、アクセスがよいです。<br />徳島市内五ヶ所まいりとも呼ばれています。
                     </div>
                 </div>
             </div>

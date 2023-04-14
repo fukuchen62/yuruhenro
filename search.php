@@ -52,7 +52,7 @@
 
 
         <section class="contents_width mb_100">
-            <h2 class="h3_bg mb_40">寺社の条件検索結果(<?php echo $count ?>件)</h2>
+            <h2 class="h3_bg mb_40">お寺の条件検索結果(<?php echo $count ?>件)</h2>
 
             <!-- 寺社結果一覧 -->
             <!-- <div class="searchresult_inner"> -->
@@ -61,32 +61,32 @@
 
                 <!-- 記事を表示するループ -->
                 <?php if ($the_query->have_posts()) : ?>
-                <?php while ($the_query->have_posts()) : ?>
-                <?php $the_query->the_post(); ?>
+                    <?php while ($the_query->have_posts()) : ?>
+                        <?php $the_query->the_post(); ?>
 
-                <a href="<?php the_permalink(); ?>">
-                    <div class="searchresultList">
-                        <div class="searchresultList_thumb">
-                            <img src="<?php the_field('t_eyecatch'); ?>" alt="寺社のアイキャッチ画像" />
-                        </div>
-                        <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
-                        <div class="searchresultList_data">
-                            <h3 class="h4_bg text_c"><?php the_field('t_numbername'); ?></h3>
-                            <!-- <p>拝観時間：10時～17時</p> -->
-                            <!-- <p>定休日：火曜日</p> -->
-                            <p>本尊：<?php the_field('honzon'); ?></p>
-                            <p>所在地：<?php the_field('t_area'); ?></p>
-                            <p>TEL：<?php the_field('t_tell'); ?></p>
+                        <a href="<?php the_permalink(); ?>">
+                            <div class="searchresultList">
+                                <div class="searchresultList_thumb">
+                                    <img src="<?php the_field('t_eyecatch'); ?>" alt="寺社のアイキャッチ画像" />
+                                </div>
+                                <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
+                                <div class="searchresultList_data">
+                                    <h3 class="h4_bg text_c"><?php the_field('t_numbername'); ?></h3>
+                                    <!-- <p>拝観時間：10時～17時</p> -->
+                                    <!-- <p>定休日：火曜日</p> -->
+                                    <p>本尊：<?php the_field('honzon'); ?></p>
+                                    <p>所在地：<?php the_field('t_area'); ?></p>
+                                    <p>TEL：<?php the_field('t_tell'); ?></p>
 
-                        </div>
-                    </div>
-                </a>
-                <?php wp_reset_postdata(); ?>
-                <?php endwhile; ?>
+                                </div>
+                            </div>
+                        </a>
+                        <?php wp_reset_postdata(); ?>
+                    <?php endwhile; ?>
                 <?php else : ?>
-                <div>
-                    <p>条件に合う検索結果はありませんでした。</p>
-                </div>
+                    <div>
+                        <p>条件に合う検索結果はありませんでした。</p>
+                    </div>
                 <?php endif; ?>
                 <!--カードここまで-->
 
@@ -135,36 +135,36 @@
                 <!--カードここから-->
                 <!-- 記事を表示するループ -->
                 <?php if ($the_query->have_posts()) : ?>
-                <?php while ($the_query->have_posts()) : ?>
-                <?php $the_query->the_post(); ?>
-                <div class="searchresultList">
-                    <div class="searchresultList_thumb">
-                        <img src="<?php the_field('f_pic1'); ?>" alt="施設の画像" />
-                    </div>
-                    <div class="searchresultList_data">
-                        <h3 class="h4_bg text_c"><?php the_field('f_name'); ?></h3>
-                        <!-- <p>拝観時間：10時～17時</p> -->
-                        <!-- <p>定休日：火曜日</p> -->
-                        <p>営業時間：<?php the_field('hours'); ?></p>
-                        <p>定休日：<?php the_field('holiday'); ?></p>
-                        <p>駐車場：<?php the_field('f_parking'); ?></p>
-                        <p>TEL：<?php the_field('f_tell'); ?></p>
-                        <p>公式HP：
-                                        <?php if (get_field('f_url') != '-') { ?>
-                                            <a href="<?php the_field('f_url'); ?>" target=_blank class="link"><?php the_field('f_name'); ?></a>
-                                        <?php } else {
-                                            echo 'なし';
-                                        } ?>
-                                    </p>
-                        <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
-                    </div>
-                </div>
-                <?php wp_reset_postdata(); ?>
-                <?php endwhile; ?>
+                    <?php while ($the_query->have_posts()) : ?>
+                        <?php $the_query->the_post(); ?>
+                        <div class="searchresultList">
+                            <div class="searchresultList_thumb">
+                                <img src="<?php the_field('f_pic1'); ?>" alt="施設の画像" />
+                            </div>
+                            <div class="searchresultList_data">
+                                <h3 class="h4_bg text_c"><?php the_field('f_name'); ?></h3>
+                                <!-- <p>拝観時間：10時～17時</p> -->
+                                <!-- <p>定休日：火曜日</p> -->
+                                <p>営業時間：<?php the_field('hours'); ?></p>
+                                <p>定休日：<?php the_field('holiday'); ?></p>
+                                <p>駐車場：<?php the_field('f_parking'); ?></p>
+                                <p>TEL：<?php the_field('f_tell'); ?></p>
+                                <p>公式HP：
+                                    <?php if (get_field('f_url') != '-') { ?>
+                                        <a href="<?php the_field('f_url'); ?>" target=_blank class="link"><?php the_field('f_name'); ?></a>
+                                    <?php } else {
+                                        echo 'なし';
+                                    } ?>
+                                </p>
+                                <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
+                            </div>
+                        </div>
+                        <?php wp_reset_postdata(); ?>
+                    <?php endwhile; ?>
                 <?php else : ?>
-                <div>
-                    <p>条件に合う検索結果はありませんでした。</p>
-                </div>
+                    <div>
+                        <p>条件に合う検索結果はありませんでした。</p>
+                    </div>
                 <?php endif; ?>
             </div>
         </section>
