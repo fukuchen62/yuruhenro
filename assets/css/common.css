@@ -103,7 +103,7 @@ img {
     height: 80px;
     border-radius: 5px;
     color: #fbfaf5;
-    margin: 0 auto ;
+    margin: 0 auto;
     background-color: #79afaf;
     box-shadow: 6px 6px 6px gray;
 }
@@ -243,7 +243,7 @@ img {
     top: 30px;
 }
 /*インスタアイコン*/
-.menu-item-1126{
+.menu-item-1126 {
     margin-left: 24px;
 }
 .menu-item-1136 {
@@ -344,7 +344,7 @@ body.active {
         display: none;
     }
     .menu-item-1136 {
-    display: none;
+        display: none;
     }
 
     .header_nav {
