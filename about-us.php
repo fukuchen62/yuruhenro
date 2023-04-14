@@ -264,7 +264,7 @@
             <div class="small_cap mb_20 js-fadeUp reference">
                 <ul>
                     <li>
-                        <div class="emphasis">四国八十八か所めぐり　同行二人、お大師様とお遍路の旅へ</div>
+                        <div class="emphasis">四国八十八か所めぐり　同行二人、お大師さまとお遍路の旅へ</div>
                         <div>昭文社出版メディア編集部</div>
                     </li>
                     <li>
@@ -273,10 +273,10 @@
                     </li>
                     <li>
                         <div class="emphasis">はじめてのお遍路さん</div>
-                        <div>株式会社ダン／土金哲夫</div>
+                        <div>プレジデント社</div>
                     </li>
                     <li>
-                        <div class="emphasis">四国８８カ所　開運！おへんろ旅</div>
+                        <div class="emphasis">四国８８カ所　開運↑おへんろ旅</div>
                         <div>株式会社あわわ</div>
                     </li>
                     <li>
@@ -292,7 +292,7 @@
                         <div>四国おへんろ倶楽部</div>
                     </li>
                     <li>
-                        <div class="emphasis">てくてく歩き　四国八十八ヶ所ゆとりの旅</div>
+                        <div class="emphasis">てくてく歩き　四国八十八ヵ所ゆとりの旅</div>
                         <div>ブルーガイド編集部</div>
                     </li>
                 </ul>
