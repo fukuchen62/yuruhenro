@@ -38,11 +38,11 @@
                 <li>
                     <ul class="sp_none">
                         <li class="footer_nav_b"><a href="<?php echo home_url('course/easy'); ?>">コース紹介</a></li>
-                        <li><a href="<?php echo home_url('course/easy'); ?>">入門コース</a></li>
-                        <li><a href="<?php echo home_url('course/north'); ?>">車入門コース</a></li>
-                        <li><a href="<?php echo home_url('course/west'); ?>">県西コース</a></li>
-                        <li><a href="<?php echo home_url('course/south'); ?>">県南コース</a></li>
-                        <li><a href="<?php echo home_url('course/city'); ?>">市街コース</a></li>
+                        <li><a href="<?php echo home_url('course/easy'); ?>">入門歩きへんろコース</a></li>
+                        <li><a href="<?php echo home_url('course/north'); ?>">県北　車コース</a></li>
+                        <li><a href="<?php echo home_url('course/west'); ?>">県西　車コース</a></li>
+                        <li><a href="<?php echo home_url('course/south'); ?>">県南　車コース</a></li>
+                        <li><a href="<?php echo home_url('course/city'); ?>">市内　徒歩コース</a></li>
                     </ul>
                 </li>
                 <li>
