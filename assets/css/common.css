@@ -393,23 +393,47 @@ body.active {
 
 .btn1 {
     background-color: #79afaf;
-    box-shadow: 6px 6px 6px gray;
+    box-shadow: 6px 6px 6px #c7c7c7;
 }
+.btn1:hover {
+    background-color: #62a2b4;
+    box-shadow: 6px 6px 6px #c7c7c7;
+}
+
 .btn2 {
     background-color: #8ab53e;
-    box-shadow: 6px 6px 6px gray;
+    box-shadow: 6px 6px 6px #c7c7c7;
 }
+.btn2:hover {
+    background-color: #5da927;
+    box-shadow: 6px 6px 6px #c7c7c7;
+}
+
 .btn3 {
     background-color: #cd5e3c;
-    box-shadow: 6px 6px 6px gray;
+    box-shadow: 6px 6px 6px #c7c7c7;
 }
+.btn3:hover {
+    background-color: #d13b39;
+    box-shadow: 6px 6px 6px #c7c7c7;
+}
+
 .btn4 {
-    background-color: #bc786a;
-    box-shadow: 6px 6px 6px gray;
-}
-.btn5 {
     background-color: #c5a22b;
-    box-shadow: 6px 6px 6px gray;
+    box-shadow: 6px 6px 6px #c7c7c7;
+}
+.btn4:hover {
+    background-color: #c99110;
+    box-shadow: 6px 6px 6px #c7c7c7;
+}
+
+.btn5 {
+    background-color: #bc786a;
+    box-shadow: 6px 6px 6px #c7c7c7;
+}
+.btn5:hover {
+    background-color: #ba5e4b;
+    box-shadow: 6px 6px 6px #c7c7c7;
 }
 
 /*要素フェードイン*/
