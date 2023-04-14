@@ -9,10 +9,12 @@
     border-radius: 30px;
 }
 
-.bookmark p {
-    font-size: 36px;
-    color: #754c24;
+.bookmark p,
+.bookmark i {
+    font-size: 3rem;
     text-align: end;
+    color: #cd5e3c;
+    margin: 0 20px 20px 0;
 }
 
 /* ***********スライダー*********** */
@@ -69,6 +71,10 @@
 /* デスクトップ版のメディアクエリ */
 
 @media screen and (min-width: 1000px) {
+    .bookmark p {
+        font-size: 50px;
+    }
+
     .temple_info {
         flex-direction: row;
     }
@@ -120,7 +126,8 @@
     padding: 20px;
     /* margin: 4px 4px; */
     /* margin: 0 auto 20px; */
-    margin: 0 10px 20px 0;}
+    margin: 0 10px 20px 0;
+}
 
 .shop_info_caption {
     height: 180px;
@@ -133,6 +140,12 @@
     object-fit: cover;
     aspect-ratio: 4/3;
     border-radius: 10px;
+}
+
+.shop_info_fav {
+    font-size: 2rem;
+    text-align: right;
+    color: #cd5e3c;
 }
 
 .shop_info_title {

@@ -160,6 +160,11 @@ Template Name:page-monzen
                         <div class="shop_info_caption">
                             <img src="<?php the_field('t_eyecatch'); ?>" alt="お寺の画像" />
                         </div>
+
+                        <div class="shop_info_fav">
+                            <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
+                        </div>
+
                         <div class="shop_info_title">
                             <p><?php the_field('t_numbername'); ?></p>
                         </div>
@@ -168,7 +173,6 @@ Template Name:page-monzen
                             <p>所在地：<?php the_field('t_area'); ?></p>
                             <p>TEL：<?php the_field('t_tell'); ?></p>
                         </div>
-                        <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
                     </div>
                 </a>
                 <?php endwhile; ?>
