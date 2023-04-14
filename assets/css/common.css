@@ -133,9 +133,7 @@ img {
     background-color: #6a3c2b;
     transition: 0.3s;
 }
-/* .button18 a:hover {
-    text-decoration: none;
-} */
+
 .button18 a:hover::before,
 .button18 a:hover::after {
     right: 0.5em;
