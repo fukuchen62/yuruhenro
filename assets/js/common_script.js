@@ -28,11 +28,11 @@ $(".header_hamburger").on("click", function () {
     //.header_hamburgerと.header_nav.activeを付与
     $(".header_hamburger").toggleClass("active");
     $(".header_nav").toggleClass("active");
-    $(this).toggleClass("active");
-    // メニューに「.active」class付け外し
-    $(".global-nav").toggleClass("active");
-    // bodyに「.active」class付け外し
-    $("body").toggleClass("active");
+    // $(this).toggleClass("active");
+    // // メニューに「.active」class付け外し
+    // $(".global-nav").toggleClass("active");
+    // // bodyに「.active」class付け外し
+    // $("body").toggleClass("active");
 });
 //リンク先が押されたら//
 $(".nav_menu a").click(function () {
