@@ -26,7 +26,7 @@
                     </a>
                 </li>
                 <li>
-                    <ul class="sp_none">
+                    <ul>
                         <li class="footer_nav_b"><a href="<?php echo home_url('about'); ?>">＃ゆるへんろって？</a></li>
                         <li><a href="<?php echo home_url('/'); ?>about#jump_to_abouth2">＃ゆるへんろってなぁに？</a></li>
                         <li><a href="<?php echo esc_url(home_url('/')); ?>about#jump_to_about">おへんろの作法</a></li>
@@ -36,7 +36,7 @@
                     </ul>
                 </li>
                 <li>
-                    <ul class="sp_none">
+                    <ul>
                         <li class="footer_nav_b"><a href="<?php echo home_url('course/easy'); ?>">コース紹介</a></li>
                         <li><a href="<?php echo home_url('course/easy'); ?>">入門歩きへんろコース</a></li>
                         <li><a href="<?php echo home_url('course/north'); ?>">県北　車コース</a></li>
