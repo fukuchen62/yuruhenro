@@ -526,6 +526,10 @@ body.active {
     display: none;
 }
 
+.sp_none li {
+    list-style: none;
+}
+
 @media screen and (min-width: 1000px) {
     .footer_links,
     .sp_none {
