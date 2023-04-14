@@ -5,10 +5,10 @@
 <main class="wrap">
     <article class="main_inner">
 
-        <h1 class="catch_phrase">
-            どこ行くん?<br />
-            　ゆるっとへんろ<br />
-            　　＃ゆるへんろ
+        <h1 class="glowAnime">
+            どこ行くん？
+            ㅤゆるっとへんろ
+            ㅤㅤ井ゆるへんろ
         </h1>
 
         <!-- kv画像 -->
