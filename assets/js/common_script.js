@@ -163,15 +163,29 @@ $(function () {
     $(".thumbnail").slick({
         slidesToShow: 4,
         slideToScroll: 4,
-        // swipe: true,
-        // swipeToSlide: true,
-        // touchMove: true,
+        swipe: true,
+        swipeToSlide: true,
+        touchMove: true,
         asNavFor: ".slider",
         focusOnSelect: true,
         prevArrow: false,
         nextArrow: false,
+        responsive: [{
+            breakpoint: 750,
+            settings: {
+                slidesToShow: 2,
+            }
+        }
+
+        ]
     });
 });
+
+
+
+
+
+
 
 $(function () {
     $(".slider2").slick({

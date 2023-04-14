@@ -10,7 +10,7 @@ Template Name:page-monzen
         <section class="contents_width">
             <!-- 施設名 -->
             <div class="h2_box">
-                <h2 class="h2_bg">霊山寺門前　門前一番街</h2>
+                <h2 class="h2_bg mb_40">霊山寺門前　門前一番街</h2>
             </div>
 
             <!-- ブックマークボタン -->
@@ -24,9 +24,7 @@ Template Name:page-monzen
         </section>
         <!-- 施設について -->
         <section class="contents_width mb_80">
-            <div class="h2_box">
-                <h2 class="h3_bg mb_40">門前一番街について</h2>
-            </div>
+            <h2 class="h3_bg mb_40">門前一番街について</h2>
 
             <div class="temple_about">
                 <!-- おすすめ画像 -->
@@ -53,7 +51,7 @@ Template Name:page-monzen
                         門前名物　焼き餅「あわくった」もおすすめです。<br>
                         粟とよもぎの2種類があります。<br>
                         「お遍路衣装でお参り体験」もできます。<br>
-                        レンタル衣装で1時間散策できるので、1番札所や2番札所に参拝できます。
+                        レンタル衣装で1時間散策できるので、一番札所や二番札所に参拝できます。
                     </p>
                 </div>
             </div>
@@ -135,14 +133,14 @@ Template Name:page-monzen
 
         <!-- 周辺施設 -->
         <section class="contents_width mb_100">
-            <h2 class="h3_bg mb_40">周辺施設</h2>
+            <h2 class="h3_bg mb_40">周辺のお寺</h2>
             <!-- 周辺施設カードが並ぶエリア -->
             <div class="shop_info_list flex">
                 <?php
                 $facility_args = array(
-                    'post_type' => 'facility',
+                    'post_type' => 'temple',
                     'posts_per_page' => 3,
-                    'orderby' => 'rand',
+                    'order' => 'ASC',
                     'tax_query' => array(
                         array(
                             'taxonomy' => 'area',
@@ -155,35 +153,24 @@ Template Name:page-monzen
                 if ($facility_query->have_posts()) :
                     while ($facility_query->have_posts()) : $facility_query->the_post(); ?>
 
-                <!-- 周辺施設カードのデザイン -->
-                <div class="shop_info_card">
-                    <div class="shop_info_caption">
-                        <img src="<?php the_field('f_pic1'); ?>" alt="施設の画像" />
-                    </div>
-                    <div class="shop_info_title">
-                        <p><?php the_field('f_name'); ?></p>
-                    </div>
-                    <div class="shop_info_text">
-                        <p>営業時間：<?php the_field('hours'); ?></p>
-                        <p>定休日：<?php the_field('holiday'); ?></p>
-                        <p>駐車場：<?php the_field('f_parking'); ?></p>
-                        <p>TEL：<?php the_field('f_tell'); ?></p>
-                        <p>公式HP：
-                                    <?php if (get_field('f_url') != '-') { ?>
-                                        <a href="<?php the_field('f_url'); ?>" target=_blank class="link"><?php the_field('f_name'); ?></a>
-                                    <?php } else {
-                                        echo 'なし';
-                                    } ?>
-                                </p>
-                    </div>
-                    <div class="shop_info_article">
-                        <p>
-                                    <?php the_field('f_message'); ?>
-                                </p>
-                    </div>
-                    <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
-                </div>
+                <a href="<?php the_permalink(); ?>">
+                    <div class="shop_info_card">
+                        <!-- お寺カードのデザイン -->
 
+                        <div class="shop_info_caption">
+                            <img src="<?php the_field('t_eyecatch'); ?>" alt="お寺の画像" />
+                        </div>
+                        <div class="shop_info_title">
+                            <p><?php the_field('t_numbername'); ?></p>
+                        </div>
+                        <div class="shop_info_text">
+                            <p>本尊：<?php the_field('honzon'); ?></p>
+                            <p>所在地：<?php the_field('t_area'); ?></p>
+                            <p>TEL：<?php the_field('t_tell'); ?></p>
+                        </div>
+                        <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
+                    </div>
+                </a>
                 <?php endwhile; ?>
                 <?php endif; ?>
                 <?php wp_reset_postdata(); ?>
