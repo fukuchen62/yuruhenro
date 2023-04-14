@@ -100,7 +100,7 @@
                         </tr>
                         <tr>
                             <td><?php if (get_field('t_url') != '-') { ?>
-                                <a href="<?php the_field('t_url'); ?>" target=_blank class="link"><?php the_field('t_name'); ?></a>
+                                    <a href="<?php the_field('t_url'); ?>" target=_blank class="link"><?php the_field('t_name'); ?></a>
                                 <?php } else {
                                     echo 'なし';
                                 } ?>
@@ -136,44 +136,44 @@
                             'terms' => $term_slug, // 取得したタームを指定
                         )
                     )
-                        );
+                );
 
                 $facility_query = new WP_Query($facility_args);
                 if ($facility_query->have_posts()) :
                     while ($facility_query->have_posts()) : $facility_query->the_post(); ?>
 
-                <!-- 周辺施設カードのデザイン -->
-                <div class="shop_info_card">
-                    <div class="shop_info_caption">
-                        <img src="<?php the_field('f_pic1'); ?>" alt="施設の画像" />
-                    </div>
-                    <!-- ブックマークボタン -->
-                    <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
-                    <div class="shop_info_title">
-                        <p><?php the_field('f_name'); ?></p>
-                    </div>
-                    <div class="shop_info_text">
-                        <p>営業時間：<?php the_field('hours'); ?></p>
-                        <p>定休日：<?php the_field('holiday'); ?></p>
-                        <p>TEL：<?php the_field('f_tell'); ?></p>
-                        <p>駐車場：<?php the_field('f_parking'); ?></p>
-                        <p>公式HP：
+                        <!-- 周辺施設カードのデザイン -->
+                        <div class="shop_info_card">
+                            <div class="shop_info_caption">
+                                <img src="<?php the_field('f_pic1'); ?>" alt="施設の画像" />
+                            </div>
+                            <!-- ブックマークボタン -->
+                            <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
+                            <div class="shop_info_title">
+                                <p><?php the_field('f_name'); ?></p>
+                            </div>
+                            <div class="shop_info_text">
+                                <p>営業時間：<?php the_field('hours'); ?></p>
+                                <p>定休日：<?php the_field('holiday'); ?></p>
+                                <p>TEL：<?php the_field('f_tell'); ?></p>
+                                <p>駐車場：<?php the_field('f_parking'); ?></p>
+                                <p>公式HP：
                                     <?php if (get_field('f_url') != '-') { ?>
                                         <a href="<?php the_field('f_url'); ?>" target=_blank class="link">ここをクリック</a>
                                     <?php } else {
                                         echo 'なし';
                                     } ?>
                                 </p>
-                    </div>
-                    <div class="shop_info_article">
-                        <p>
+                            </div>
+                            <div class="shop_info_article">
+                                <p>
                                     <?php the_field('f_message'); ?>
                                 </p>
-                    </div>
+                            </div>
 
-                </div>
+                        </div>
 
-                <?php endwhile; ?>
+                    <?php endwhile; ?>
                 <?php endif; ?>
                 <?php wp_reset_postdata(); ?>
             </div>
@@ -185,26 +185,26 @@
             <div class="course_flex">
                 <a href="<?php echo home_url('course/easy'); ?>">
                     <p class="course_btn btn1">
-                        ゆるへんろ　入門コース<br />第1番札所～第3番札所 &gt;&gt;&gt;
+                        ゆるへんろ　入門コース<br />第一番札所～第三番札所 &gt;&gt;&gt;
                     </p>
                 </a>
                 <a href="<?php echo home_url('course/north'); ?>">
                     <p class="course_btn btn2">
-                        県北　車コース<br />第1番札所～第6番札所&gt;&gt;&gt;
+                        県北　車コース<br />第一番札所～第六番札所&gt;&gt;&gt;
                     </p>
                 </a>
                 <a href="<?php echo home_url('course/west'); ?>">
                     <p class="course_btn btn3">
-                        県西　車コース<br />第7番札所～第12番札所&gt;&gt;&gt;
+                        県西　車コース<br />第七番札所～第十二番札所&gt;&gt;&gt;
                     </p>
                 </a>
                 <a href="<?php echo home_url('course/south'); ?>">
                     <p class="course_btn btn4">
-                        県南　車コース<br />第18番札所～第23番札所&gt;&gt;&gt; </p>
+                        県南　車コース<br />第十八番札所～第二十三番札所&gt;&gt;&gt; </p>
                 </a>
                 <a href="<?php echo home_url('course/city'); ?>">
                     <p class="course_btn btn5">
-                        市内　徒歩コース<br />第13番札所～第17番札所&gt;&gt;&gt;
+                        市内　徒歩コース<br />第十三番札所～第十七番札所&gt;&gt;&gt;
                     </p>
                 </a>
             </div>

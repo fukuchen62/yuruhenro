@@ -4,7 +4,7 @@ Template Name:page-monzen
 <?php get_header(); ?>
 <main>
     <h1 class="h1_bg">施設紹介</h1>
-    <?php get_template_part('template-parts/breadcrumb');?>
+    <?php get_template_part('template-parts/breadcrumb'); ?>
 
     <article class="main_inner">
         <section class="contents_width">
@@ -153,29 +153,29 @@ Template Name:page-monzen
                 if ($facility_query->have_posts()) :
                     while ($facility_query->have_posts()) : $facility_query->the_post(); ?>
 
-                <a href="<?php the_permalink(); ?>">
-                    <div class="shop_info_card">
-                        <!-- お寺カードのデザイン -->
+                        <a href="<?php the_permalink(); ?>">
+                            <div class="shop_info_card">
+                                <!-- お寺カードのデザイン -->
 
-                        <div class="shop_info_caption">
-                            <img src="<?php the_field('t_eyecatch'); ?>" alt="お寺の画像" />
-                        </div>
+                                <div class="shop_info_caption">
+                                    <img src="<?php the_field('t_eyecatch'); ?>" alt="お寺の画像" />
+                                </div>
 
-                        <div class="shop_info_fav">
-                            <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
-                        </div>
+                                <div class="shop_info_fav">
+                                    <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
+                                </div>
 
-                        <div class="shop_info_title">
-                            <p><?php the_field('t_numbername'); ?></p>
-                        </div>
-                        <div class="shop_info_text">
-                            <p>本尊：<?php the_field('honzon'); ?></p>
-                            <p>所在地：<?php the_field('t_area'); ?></p>
-                            <p>TEL：<?php the_field('t_tell'); ?></p>
-                        </div>
-                    </div>
-                </a>
-                <?php endwhile; ?>
+                                <div class="shop_info_title">
+                                    <p><?php the_field('t_numbername'); ?></p>
+                                </div>
+                                <div class="shop_info_text">
+                                    <p>本尊：<?php the_field('honzon'); ?></p>
+                                    <p>所在地：<?php the_field('t_area'); ?></p>
+                                    <p>TEL：<?php the_field('t_tell'); ?></p>
+                                </div>
+                            </div>
+                        </a>
+                    <?php endwhile; ?>
                 <?php endif; ?>
                 <?php wp_reset_postdata(); ?>
             </div>
@@ -187,26 +187,26 @@ Template Name:page-monzen
             <div class="course_flex">
                 <a href="<?php echo home_url('course/easy'); ?>">
                     <p class="course_btn btn1">
-                        ゆるへんろ　入門コース<br />第1番札所～第3番札所&gt;&gt;&gt;
-                                </p>
+                        ゆるへんろ　入門コース<br />第一番札所～第三番札所&gt;&gt;&gt;
+                    </p>
                 </a>
                 <a href="<?php echo home_url('course/north'); ?>">
                     <p class="course_btn btn2">
-                        県北　車コース<br />第1番札所～第6番札所&gt;&gt;&gt;
+                        県北　車コース<br />第一番札所～第六番札所&gt;&gt;&gt;
                     </p>
                 </a>
                 <a href="<?php echo home_url('course/west'); ?>">
                     <p class="course_btn btn3">
-                        県西　車コース<br />第7番札所～第12番札所&gt;&gt;&gt;
+                        県西　車コース<br />第七番札所～第十二番札所&gt;&gt;&gt;
                     </p>
                 </a>
                 <a href="<?php echo home_url('course/south'); ?>">
                     <p class="course_btn btn4">
-                        県南　車コース<br />第18番札所～第23番札所&gt;&gt;&gt; </p>
+                        県南　車コース<br />第十八番札所～第二十三番札所&gt;&gt;&gt; </p>
                 </a>
                 <a href="<?php echo home_url('course/city'); ?>">
                     <p class="course_btn btn5">
-                        市内　徒歩コース<br />第13番札所～第17番札所&gt;&gt;&gt;
+                        市内　徒歩コース<br />第十三番札所～第十七番札所&gt;&gt;&gt;
                     </p>
                 </a>
             </div>

@@ -190,7 +190,7 @@
                 <div class="btn_and_description_area mb_80 flex">
                     <a href="<?php echo home_url('course/easy'); ?>">
                         <p class="course_btn btn1">
-                            ゆるへんろ　入門コース<br />第1番札所～第3番札所&gt;&gt;&gt;
+                            ゆるへんろ　入門コース<br />第一番札所～第三番札所&gt;&gt;&gt;
                         </p>
                     </a>
                     <div class="js-fadeUp small_cap">
@@ -217,7 +217,7 @@
                 <div class="btn_and_description_area flex">
                     <a href="<?php echo home_url('course/north'); ?>">
                         <p class="course_btn btn2">
-                            県北　車コース<br>第1番札所～第6番札所 &gt;&gt;&gt;
+                            県北　車コース<br>第一番札所～第六番札所 &gt;&gt;&gt;
                         </p>
                     </a>
                     <p class="js-fadeUp small_cap">
@@ -230,7 +230,7 @@
                 <div class="btn_and_description_area flex">
                     <a href="<?php echo home_url('course/west'); ?>">
                         <p class="course_btn btn3">
-                            県西　車コース<br />第7番札所～第12番札所
+                            県西　車コース<br />第七番札所～第十二番札所
                             &gt;&gt;&gt;
                         </p>
                     </a>
@@ -243,7 +243,7 @@
                 <div class="btn_and_description_area flex">
                     <a href="<?php echo home_url('course/south'); ?>">
                         <p class="course_btn btn4">
-                            県南　車コース<br />第18番札所～第23番札所
+                            県南　車コース<br />第十八番札所～第二十三番札所
                             &gt;&gt;&gt;
                         </p>
                     </a>
@@ -255,7 +255,7 @@
                 <div class="btn_and_description_area flex">
                     <a href="<?php echo home_url('course/city'); ?>">
                         <p class="course_btn btn5">
-                            市内　徒歩コース<br />第13番札所～第17番札所
+                            市内　徒歩コース<br />第十三番札所～第十七番札所
                             &gt;&gt;&gt;
                         </p>
                     </a>
