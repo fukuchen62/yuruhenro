@@ -103,7 +103,7 @@ img {
     height: 80px;
     border-radius: 5px;
     color: #fbfaf5;
-    margin: 0 auto 15px;
+    margin: 0 auto ;
     background-color: #79afaf;
     box-shadow: 6px 6px 6px gray;
 }
@@ -494,7 +494,7 @@ body.active {
 /*ロゴマーク*/
 .footer_logo {
     width: 180px;
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 
 /*サイトマップ*/
