@@ -77,7 +77,6 @@
                             <p>本尊：<?php the_field('honzon'); ?></p>
                             <p>所在地：<?php the_field('t_area'); ?></p>
                             <p>TEL：<?php the_field('t_tell'); ?></p>
-                            </p>
 
                         </div>
                     </div>
