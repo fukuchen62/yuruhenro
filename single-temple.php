@@ -155,11 +155,11 @@
                     <div class="shop_info_text">
                         <p>営業時間：<?php the_field('hours'); ?></p>
                         <p>定休日：<?php the_field('holiday'); ?></p>
-                        <p>駐車場：<?php the_field('f_parking'); ?></p>
                         <p>TEL：<?php the_field('f_tell'); ?></p>
+                        <p>駐車場：<?php the_field('f_parking'); ?></p>
                         <p>公式HP：
                                     <?php if (get_field('f_url') != '-') { ?>
-                                        <a href="<?php the_field('f_url'); ?>" target=_blank class="link"><?php the_field('f_name'); ?></a>
+                                        <a href="<?php the_field('f_url'); ?>" target=_blank class="link">ここをクリック</a>
                                     <?php } else {
                                         echo 'なし';
                                     } ?>
@@ -185,7 +185,7 @@
             <div class="course_flex">
                 <a href="<?php echo home_url('course/easy'); ?>">
                     <p class="course_btn btn1">
-                        ＃ゆるへんろ　入門コース<br />第1番札所～第3番札所 &gt;&gt;&gt;
+                        ゆるへんろ　入門コース<br />第1番札所～第3番札所 &gt;&gt;&gt;
                     </p>
                 </a>
                 <a href="<?php echo home_url('course/north'); ?>">

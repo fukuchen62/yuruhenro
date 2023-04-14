@@ -187,7 +187,7 @@ Template Name:page-monzen
             <div class="course_flex">
                 <a href="<?php echo home_url('course/easy'); ?>">
                     <p class="course_btn btn1">
-                        ＃ゆるへんろ　入門コース<br />第1番札所～第3番札所&gt;&gt;&gt;
+                        ゆるへんろ　入門コース<br />第1番札所～第3番札所&gt;&gt;&gt;
                                 </p>
                 </a>
                 <a href="<?php echo home_url('course/north'); ?>">

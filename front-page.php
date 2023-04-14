@@ -194,7 +194,7 @@
                 <div class="btn_and_description_area mb_80 flex">
                     <a href="<?php echo home_url('course/easy'); ?>">
                         <p class="course_btn btn1">
-                            ＃ゆるへんろ　入門コース<br />第1番札所～第3番札所&gt;&gt;&gt;
+                            ゆるへんろ　入門コース<br />第1番札所～第3番札所&gt;&gt;&gt;
                         </p>
                     </a>
                     <div class="js-fadeUp small_cap">
@@ -212,7 +212,7 @@
 
                 <!-- チャレンジコース紹介文 -->
                 <div class="btn_description">
-                    「＃入門歩きへんろコース」で自信がついたら<br />
+                    「入門歩きへんろコース」で自信がついたら<br />
                     もう少し遠くのお寺の参拝にも挑戦してみませんか？
                 </div>
 
@@ -273,7 +273,7 @@
         <!-- instagram -->
         <section class="mb_150">
             <div>
-                <p class="text_c">＼＃ゆるへんろ をつけて投稿してね！／</p>
+                <p class="text_c">＼コースを巡ったら「＃ゆるへんろ」を付けてつぶやこう！／</p>
             </div>
             <h2 class="h3_bg">Instagram</h2>
 
