@@ -141,6 +141,12 @@ img {
     right: 0.5em;
 }
 
+/*パンくずリストデザイン*/
+.breadcrumb_inner {
+    padding: 15px 50px;
+    margin-bottom: 100px;
+}
+
 @media screen and (min-width: 1000px) {
     .wrap {
         font-size: 18px;
@@ -166,11 +172,11 @@ img {
     .button18 a {
         width: 170px;
     }
-}
 
-/*パンくずリストデザイン*/
-.breadcrumb_inner {
-    padding: 15px 50px;
+    /*パンくずリストデザイン*/
+    .breadcrumb_inner {
+        margin-bottom: 80px;
+    }
 }
 
 /****************/

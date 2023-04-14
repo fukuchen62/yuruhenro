@@ -118,7 +118,9 @@
                         経本や納経帳のほか、線香、ロウソクなど、お遍路に必要なものを入れる袋。
                     </p>
                 </div>
+            </div>
 
+            <div class="cp_area2_in">
                 <div>
                     <p class="cp_minittl mb_20">
                         ⑤菅笠（すげがさ）
@@ -130,9 +132,6 @@
                         弘法大師を表す梵字が正面になるようにかぶります。
                     </p>
                 </div>
-            </div>
-
-            <div class="cp_area2_in">
                 <div>
                     <p class="cp_minittl mb_20">⑥持鈴（じれい）</p>
                 </div>
