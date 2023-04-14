@@ -170,8 +170,22 @@ $(function () {
         focusOnSelect: true,
         prevArrow: false,
         nextArrow: false,
+        responsive: [{
+            breakpoint: 750,
+            settings: {
+                slidesToShow: 2,
+            }
+        }
+
+        ]
     });
 });
+
+
+
+
+
+
 
 $(function () {
     $(".slider2").slick({
