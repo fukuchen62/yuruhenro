@@ -7,12 +7,16 @@
 <main class="wrap">
 
     <h1 class="h1_bg">参拝スタイル</h1>
+    <?php get_template_part('template-parts/breadcrumb');?>
+
 
     <article class="main_inner">
 
         <!-- 参拝スタイル -->
-        <section>
-            <h2 class="h2_bg">参拝スタイル</h2>
+        <section class="contents_width">
+            <div class="h2_box">
+                <h2 class="h2_bg">参拝スタイル</h2>
+            </div>
             <div class="big_cap mb_40">
                 服装は基本的に自由<br />
                 普段着でお遍路する人も増えています。<br />
@@ -20,7 +24,7 @@
             </div>
         </section>
         <!-- 服装一覧 -->
-        <section class="cp_area1 mb_40 flex">
+        <section class="cp_area1 mb_40 flex js-fadeUp">
             <div class="cp_area1_in">
                 <h3 class="h3_bg mb_20">カジュアル</h3>
                 <div class="small_cap">
@@ -64,7 +68,7 @@
         </section>
 
         <!-- 服装解説 -->
-        <section class="cp_area2 flex">
+        <section class="cp_area2 flex js-fadeUp">
             <div class="cp_area2_in">
                 <div>
                     <p class="cp_minittl mb_20">
@@ -111,10 +115,12 @@
                 </div>
                 <div class="mb_40">
                     <p>
-                        経本や納経帳のほか、線香ロウソクなど、お遍路に必要なものを入れる袋。
+                        経本や納経帳のほか、線香、ロウソクなど、お遍路に必要なものを入れる袋。
                     </p>
                 </div>
+            </div>
 
+            <div class="cp_area2_in">
                 <div>
                     <p class="cp_minittl mb_20">
                         ⑤菅笠（すげがさ）
@@ -126,9 +132,6 @@
                         弘法大師を表す梵字が正面になるようにかぶります。
                     </p>
                 </div>
-            </div>
-
-            <div class="cp_area2_in">
                 <div>
                     <p class="cp_minittl mb_20">⑥持鈴（じれい）</p>
                 </div>
@@ -177,11 +180,11 @@
 
         <!-- 飾り -->
         <div class="cp_deco1">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hanaline.png" alt="">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hanaline.png" alt="区切り飾り">
         </div>
 
         <!-- 豆知識 -->
-        <section class="cp_area2 mb_40">
+        <section class="cp_area2 mb_40 js-fadeUp">
             <div>
                 <h3 class="h3_bg mb_40">その他巡礼用品の豆知識</h3>
                 <!-- <div>
@@ -194,8 +197,8 @@
                 </div>
                 <div class="mb_40">
                     <p>
-                        参拝の証に本堂と大師堂の二カ所で納めます。<br />
-                        １枚づず表に住所、名前、参拝年月日、裏に願い事を書いておきます。<br />
+                        参拝の証に本堂と大師堂の二ヶ所で納めます。<br />
+                        １枚ずつ表に住所、名前、参拝年月日、裏に願い事を書いておきます。<br />
                         お接待を受けたときは名刺代わりに納札を渡しましょう。<br />
                         巡礼回数によって色分けされています。<br />
                         白（１～４回）、緑（５～７回）、赤（８～２４回）、銀（２５～４９回）、金（５０～９９回）、錦（１００回以上）
@@ -262,28 +265,33 @@
             <div class="cp_deco2">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hana.png" alt="花の飾り" />
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hana.png" alt="花の飾り" />
-                <div class="mb_20">
-                    <p>
+                <div class="js-fadeUp">
+                    <div class="mb_20">
+                        <p>
                         ・菅笠はお参りのとき、お堂の中、僧の前でもかぶったままで構いません。靴を脱ぐ場所では笠も脱ぎましょう。
                     </p>
-                </div>
-                <div class="mb_20">
-                    <p>
+                    </div>
+                    <div class="mb_20">
+                        <p>
                         ・和袈裟は食事やトイレのときは首から外しましょう。
                     </p>
-                </div>
-                <div>
-                    <p>
-                        ・金銅杖は大師が修行中に橋の下で一夜を明かしたことから、橋の上で杖を突くのは禁忌とされています。
+                    </div>
+                    <div>
+                        <p>
+                        ・金剛杖は大師が修行中に橋の下で一夜を明かしたことから、橋の上で杖を突くのは禁忌とされています。
                     </p>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- </section> -->
 
         <!-- 持ち物リスト -->
-        <section class="mb_100">
-            <h2 class="h2_bg">持ち物リスト</h2>
+        <section class="contents_width mb_100">
+            <div class="h2_box">
+                <h2 class="h2_bg">持ち物リスト</h2>
+            </div>
+
             <div class="big_cap mb_40">
                 参拝の時に必要なものなどをまとめました！
             </div>
@@ -292,14 +300,14 @@
                 <!-- 必要なもの -->
                 <div class="cp_area3">
                     <h3 class="h3_bg mb_20">参拝の時に必要なもの</h3>
-                    <div class="mb_20">
+                    <div class="mb_20 js-fadeUp">
                         <p>
-                            ・念珠<br />
+                            ・数珠<br />
                             ・経本<br />
                             ・納経帳<br />
                             ・納札<br />
-                            ・お線香<br />
-                            ・ろうそく<br />
+                            ・線香<br />
+                            ・ロウソク<br />
                             ・ライター・マッチ(着火具)<br />
                             ・小銭<br />
                             ・クリアファイル<br>
@@ -313,7 +321,7 @@
                     <h3 class="h3_bg mb_20">
                         歩くときに持っていると<br>便利なもの
                     </h3>
-                    <div class="mb_20">
+                    <div class="mb_20 js-fadeUp">
                         <p>
                             ・コンパス<br />
                             ・笛<br />

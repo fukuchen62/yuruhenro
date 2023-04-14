@@ -2,21 +2,21 @@
 <!-- mainここから -->
 <main>
     <div class="main_inner">
-        <!-- h1 -->
-        <div class="h1_bg">
-            <h1>用語集</h1>
-        </div>
-        <!-- section -->
 
-        <div class="sec_mb40">
-            <h2 class="h2_bg mb_40">用語質問箱</h2>
-            <div class="contents_width">
+        <h1 class="h1_bg">用語集</h1>
+        <?php get_template_part('template-parts/breadcrumb'); ?>
+
+        <article class="sec_mb40">
+            <div class="h2_box">
+                <h2 class="h2_bg mb_40">用語質問箱</h2>
+            </div>
+            <section class="contents_width">
                 <p class="big_cap">
                     見かけるけど良く知らないおへんろの言葉を集めました。
                 </p>
 
-                <!-- 以下、Q&A開始 -->
-                <section class=" mb_40 js-fadeUp">
+                <!-- 用語ループ -->
+                <div class=" mb_40 js-fadeUp">
                     <?php $args = array(
                         'post_type' => 'glossary',
                         'posts_per_page' => -1 //表示件数（-1で全ての記事を表示
@@ -36,9 +36,10 @@
                             </div>
                         <?php endwhile; ?>
                     <?php endif; ?>
-            </div>
+                </div>
             </section>
-        </div>
+        </article>
+    </div>
 </main>
 <!-- mainここまで -->
 <?php get_footer(); ?>

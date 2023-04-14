@@ -1,20 +1,23 @@
 <?php get_header(); ?>
 <!-- mainここから -->
 <main>
-    <h1 class="h1_bg">Q&A</h1>
+    <h1 class="h1_bg">Q&amp;A</h1>
+    <?php get_template_part('template-parts/breadcrumb'); ?>
+
 
     <article class="main_inner">
         <section class="contents_width">
-            <div>
+            <div class="h2_box">
                 <h2 class="h2_bg mb_40">よくあるご質問</h2>
             </div>
             <div>
                 <p class="big_cap">
-                    よくあるご質問をまとめています。おへんろ活動のご参考にどうぞ。
+                    よくあるご質問をまとめています。おへんろ活動のご参考にどうぞ。<br>
+                    用語集は<a href="<?php echo home_url('glossary'); ?>" class="link">こちら！</a>
                 </p>
 
 
-                <!-- 以下、Q&A開始 -->
+                <!-- Q&Aループ -->
                 <div class=" mb_40 js-fadeUp">
                     <?php $args = array(
                         'post_type' => 'qanda',
@@ -40,6 +43,7 @@
                         <?php endwhile; ?>
                     <?php endif; ?>
                 </div>
+            </div>
         </section>
     </article>
 </main>

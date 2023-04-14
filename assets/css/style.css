@@ -1,8 +1,22 @@
 @charset "UTF-8";
 
+/*********************/
+/* ＃ゆるへんろって？ */
+/*********************/
+
+/* h1背景画像 */
+.page-id-24 .h1_bg {
+    background-image: url(../img/h1_bg04.png);
+}
+
 /****************/
 /* 参拝スタイル */
 /****************/
+
+/* h1背景画像 */
+.page-id-28 .h1_bg {
+    background-image: url(../img/h1_bg01.jpg);
+}
 
 .big_cap {
     text-align: center;
@@ -144,6 +158,12 @@
 /****************/
 /* コースページ */
 /****************/
+
+/* コースページh1背景画像 */
+.course-template-default .h1_bg {
+    background-image: url(../img/h1_bg08.jpg);
+}
+
 .course_tab {
     max-width: 1100px;
     margin: 0 auto;
@@ -238,6 +258,13 @@
     padding: 10px 15px;
 }
 
+.course_st {
+    width: 24em;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 15px;
+}
+
 .small_cap {
     padding-left: 20px;
 }
@@ -252,11 +279,16 @@
 .course_contInfo {
     align-items: center;
 }
+
+.course_contInfo:last-child {
+    display: none;
+}
+
 .course_contIcon {
     width: 80px;
     height: 80px;
-    background-color: #eee;
 }
+
 .course_contTime {
     padding-left: 10px;
 }
@@ -269,7 +301,7 @@
     align-self: flex-start;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 1000px) {
     .course_contWrap {
         display: flex;
         /* margin-bottom: 40px; */
@@ -277,11 +309,11 @@
     .course_tabWrap li a {
         font-size: 16px;
     }
-    .course_mainWrap {
+    /* .course_mainWrap {
         padding: 0 20px;
-    }
+    } */
     .course_contPhoto img {
-        width: 50vh;
+        width: 70vh;
     }
     .course_contCap {
         padding-left: 40px;
@@ -292,9 +324,35 @@
 }
 
 /****************/
+/*  門前一番街  */
+/*   お寺一覧   */
+/****************/
+
+/* 門前一番街h1背景画像 */
+.page-id-337 .h1_bg {
+    background-image: url(../img/h1_bg07.jpg);
+}
+
+/* お寺一覧とお寺ページh1背景画像 */
+.post-type-archive-temple .h1_bg,
+.single-temple .h1_bg {
+    background-image: url(../img/h1_bg10.jpg);
+}
+
+/****************/
 /* ブックマーク */
 /*   条件検索   */
 /****************/
+
+/* ブックマーク h1背景画像 */
+.page-id-32 .h1_bg {
+    background-image: url(../img/h1_bg06.jpg);
+}
+
+/* 条件検索h1背景画像 */
+.search-results .h1_bg {
+    background-image: url(../img/h1_bg02.jpg);
+}
 
 .display_area {
     background-color: #fff;
@@ -305,6 +363,12 @@
 /****************/
 /*  Q&Aと用語集  */
 /****************/
+
+/* Q&A h1背景画像 */
+.post-type-archive-qanda .h1_bg {
+    background-image: url(../img/h1_bg09.jpg);
+}
+
 .section_line {
     border-bottom: 2px dotted #c69c6d;
     padding: 0 20px;
@@ -320,6 +384,7 @@
 /* .rowLine > span  */
 .circle_mark1,
 .circle_mark2 {
+    white-space: nowrap;
     width: 40px;
     height: 40px;
     border-radius: 100%;
@@ -336,8 +401,7 @@
     background-color: #baddb4;
 }
 
-@media screen and (min-width: 1400px) {
-
+@media screen and (min-width: 1000px) {
     .rowLine > span {
         width: 60px;
         height: 60px;
@@ -353,4 +417,5 @@
 .link {
     padding: 0 10px;
     border-bottom: 1px solid;
+    width: fit-content;
 }

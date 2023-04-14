@@ -6,6 +6,8 @@
 
 <main>
     <h1 class="h1_bg">マイブックマーク</h1>
+    <?php get_template_part('template-parts/breadcrumb'); ?>
+
     <article class="main_inner">
         <section class="big_cap mb_100">
             <div>
@@ -17,11 +19,11 @@
             </div>
         </section>
 
-        <!-- 寺社お気に入り -->
+        <!-- 寺社ブックマーク -->
         <section class="contents_width mb_100">
             <h2 class="h3_bg mb_40">寺社お気に入り</h2>
 
-            <!-- 寺社お気に入りカードが並ぶエリア -->
+            <!-- 寺社ブックマークカードが並ぶ -->
             <div class="shop_info_list flex">
                 <?php
                 $temple_favorites = get_user_favorites();
@@ -43,6 +45,7 @@
                         <div class="shop_info_caption">
                             <img src="<?php the_field('t_eyecatch'); ?>" alt="寺社の画像" />
                         </div>
+                        <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
                         <div class="shop_info_title">
                             <p><?php the_field('t_name'); ?></p>
                         </div>
@@ -57,6 +60,7 @@
                                                 echo 'なし';
                                             } ?>
                                         </p>
+
                         </div>
                     </div>
                 </a>
@@ -66,17 +70,17 @@
                 <?php endif;
                     wp_reset_postdata(); ?>
                 <?php else : ?>
-                <p class="text-center">お気に入りがありません。</p>
+                <p class="text-center">ブックマーク登録がありません。</p>
                 <?php endif ?>
             </div>
-            <!-- 寺社お気に入りカードが並ぶエリア -->
+            <!-- 寺社ブックマークカードが並ぶエリア -->
         </section>
 
-        <!-- 周辺施設お気に入り -->
-        <section class="contents_width mb_100">
+        <!-- 周辺施設ブックマーク -->
+        <section class="mb_100">
             <h2 class="h3_bg mb_40">周辺施設お気に入り</h2>
 
-            <!-- 周辺施設お気に入りカードが並ぶエリア -->
+            <!-- 周辺施設ブックマークカードが並ぶエリア -->
             <div class="shop_info_list flex">
                 <?php
                 $favorites = get_user_favorites();
@@ -97,6 +101,8 @@
                     <div class="shop_info_caption">
                         <img src="<?php the_field('f_pic1'); ?>" alt="施設の画像" />
                     </div>
+                    <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
+
                     <div class="shop_info_title">
                         <p><?php the_field('f_name'); ?></p>
                     </div>
@@ -112,12 +118,14 @@
                                             echo 'なし';
                                         } ?>
                                     </p>
+
                     </div>
                     <div class="shop_info_article">
                         <p>
                                         <?php the_field('f_message'); ?>
                                     </p>
                     </div>
+
                 </div>
                 <!-- 周辺施設カードのデザイン -->
 
@@ -125,10 +133,10 @@
                 <?php endif;
                     wp_reset_postdata(); ?>
                 <?php else : ?>
-                <p>お気に入りがありません。</p>
+                <p>ブックマーク登録がありません。</p>
                 <?php endif; ?>
             </div>
-            <!-- 周辺施設お気に入りカードが並ぶエリア -->
+            <!-- 周辺施設ブックマークカードが並ぶエリア -->
         </section>
 
     </article>

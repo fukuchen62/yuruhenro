@@ -7,11 +7,16 @@
     <!-- h1 -->
     <div class="h1_bg">
         <h1>お問い合わせ</h1>
+
     </div>
+    <?php get_template_part('template-parts/breadcrumb');?>
+
 
     <div class="contents_width">
-        <section class="sec_mb40">
+        <div class="h2_box">
             <h2 class="h2_bg">お問い合わせフォーム</h2>
-            <?php echo do_shortcode('[mwform_formkey key="548"]')?>
+        </div>
+        <?php echo do_shortcode('[mwform_formkey key="548"]') ?>
+    </div>
 </main>
 <?php get_footer(); ?>

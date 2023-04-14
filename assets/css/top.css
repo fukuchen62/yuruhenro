@@ -1,4 +1,12 @@
 @charset "UTF-8";
+
+/****************/
+/* TOPのheader用 */
+/****************/
+.home header {
+    display: none;
+}
+
 /****************/
 /* キービジュアル */
 /****************/
@@ -9,7 +17,7 @@
     object-fit: cover;
 }
 
-.thumbnail-img {
+.thumbnail_img {
     padding: 5px;
 }
 
@@ -27,7 +35,7 @@
 }
 
 @media screen and (min-width: 1000px) {
-    .thumbnail-img {
+    .thumbnail_img {
         padding: 10px;
     }
 }
@@ -36,34 +44,55 @@
 /*  メイン部分  */
 /****************/
 
-/* .top_flexset {
+.luxy_posi {
+    display: none;
+}
+
+
+.top_flex_dc {
     flex-direction: column;
-} */
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
-/* .top_sanpai_bg1 {
+.top_bc {
+    text-align: center;
+    margin: 0 auto 40px;
+}
+
+.top_flexset1,
+.top_flexset2 {
+    flex-direction: column;
+}
+
+.top_patern {
     position: relative;
-    max-width: 500px;
-    padding: 37%;
-    background: url(../img/top_sanpai.jpg) no-repeat center center / 55% auto,
-        url(../img/flame.png) no-repeat center center / 85% auto;
-} */
+    margin-bottom: 40px;
+}
 
-/* .top_sanpai_bg2 {
+.top_patern1 {
     position: relative;
-    max-width: 500px;
-    padding: 37%;
-    background: url(../img/top_style.jpg) no-repeat center center / 55% auto,
-        url(../img/flame.png) no-repeat center center / 85% auto;
-} */
+    background-image: url(../img/flame.png);
+    background-size: cover;
+    aspect-ratio: 4/3;
+}
 
-/* .top_sanpai_bg1 > img,
-.top_sanpai_bg2 > img {
-    position: absolute;
-    left: 10%;
-    bottom: 10%;
-    max-width: 100px;
+.top_patern1 img {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
     height: auto;
-} */
+}
+
+.top_patern2 {
+    position: relative;
+    left: 0;
+    bottom: -15%;
+    width: 40%;
+    height: auto;
+}
 
 /* ボタンについての説明 */
 .btn_description {
@@ -83,6 +112,31 @@
 }
 
 @media screen and (min-width: 800px) {
+    .top_flex_dc {
+        max-width: 500px;
+        align-items: flex-end;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+    .top_flexset1 {
+        flex-direction: row;
+    }
+
+    .top_flexset2 {
+        flex-direction: row-reverse;
+    }
+
+    .top_flexset1,
+    .top_flexset2 {
+        align-items: flex-end;
+    }
+
+    .top_flexset1 div,
+    .top_flexset2 div {
+        margin-right: 20px;
+    }
+
     .btn_and_description_area {
         text-align: left;
         flex-direction: row;
@@ -113,5 +167,90 @@
         z-index: 2;
         writing-mode: vertical-rl; /* 縦向きにする */
         text-orientation: upright;
+    }
+
+    /* luxy用 */
+    .luxy_posi {
+        display: block;
+        position: relative;
+    }
+
+    .home .luxy_pic1 {
+        width: 400px;
+        position: absolute;
+        top: -50px;
+        left: -10%;
+    }
+
+    .home .luxy_pic2 {
+        width: 150px;
+        position: absolute;
+        top: 50px;
+        left: 15%;
+    }
+
+    .home .luxy_pic3 {
+        width: 400px;
+        position: absolute;
+        top: -50px;
+        right: 20%;
+    }
+
+    .home .luxy_pic4 {
+        width: 150px;
+        position: absolute;
+        top: 50px;
+        right: 40%;
+    }
+
+    /* luxy用 */
+}
+
+
+/*===========================================================*/
+/* テキストが 光りながら出現出現*/
+/*===========================================================*/
+.glowAnime {
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-size: 1.5em;
+    line-height: 1.5em;
+    color: #fff;
+    max-height: 190px;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    z-index: 3;
+    word-break: keep-all;
+}
+
+/*========= 光りながら出現させるためのCSS ===============*/
+
+.glowAnime span {
+    opacity: 0;
+}
+
+/*アニメーションで透過を0から1に変化させtext-shadowをつける*/
+.glowAnime.glow span {
+    animation: glow_anime_on 1s ease-out forwards;
+}
+
+@keyframes glow_anime_on {
+    0% {
+        opacity: 0;
+        text-shadow: 0 0 0 #fff, 0 0 0 #fff;
+    }
+
+    50% {
+        opacity: 1;
+        text-shadow: 0 0 10px #fff, 0 0 15px #fff;
+    }
+
+    100% {
+        opacity: 1;
+        text-shadow: 0 0 0 #fff, 0 0 0 #fff;
     }
 }

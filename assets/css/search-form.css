@@ -1,27 +1,30 @@
 @charset "utf-8";
-/* *{border: 1px solid royalblue;} */
+/* *{border: 1px solid rgb(0, 81, 255);} */
 /*========= レイアウトのためのCSS ===============*/
 
 .search-form{
     margin: 0 auto;
-    max-width: 1000px;
-    background-color: #fff;
+    max-width: 600px;
+    background-color: #ffffff;
     border-radius: 8px;
 }
 
 
 .search-form_checkarea{
     margin: 0 auto;
-    max-width: 1000px;
-    background-color: #fff;
+    max-width: 800px;
+    height: auto;
+    background-color: #ffffff;
     border-radius: 8px;
+    padding-bottom: 8px;
 }
 
 .checkbox{
-margin: 15px 5px 15px 20px;
-width:180px;
-height: 60px;
-padding: 20px;
+margin: 4px 0;
+/* width:180px; */
+width: 50%;
+height: 3vh;
+padding: 0 0 0 20px;
 /* border-radius: 8px; */
 background-color: #fff;
 }
@@ -32,15 +35,16 @@ margin-bottom: 50px;
 
 .searchBtnsArea{
 text-align: center;
+margin: 16px 0;
 }
 
 
 .searchBtns{
 text-align: center;
 width: 150px;
-margin: 40px 10px;
+margin: 16px 10px;
 padding: 10px;
-font-size: 20px;
+font-size: 18px;
 color: #fff;
 background-color: #4A86A4;
 box-shadow: 4px 4px 4px gray;
@@ -57,18 +61,30 @@ border-radius: 8px;
 
 .searchkinds{
 display: flex;
-flex-direction: column;
+flex-direction: row;
+/* align-items: stretch; */
 align-items: center;
 text-align: left;
+flex-wrap: wrap;
+justify-content: center;
 }
 
 
 .search-form_headline {
-    width: 15em;
-    font-size: 18px;
-    text-align: left;
-    padding: 40px 0 0 40px;
+    width: 15rem;
+    font-size: 20px;
+    text-align: center;
+    padding: 24px 0;
+    margin: 0 auto;
 }
+
+.m0auto{
+        max-width: max-content;
+        margin: 0 auto;
+        padding: 0 auto;
+        /* justify-content: center; */
+        }
+
 
 
 
@@ -179,20 +195,25 @@ text-align: center;
 margin: 0 auto;
 }
 
+/* デスクトップ画面になるとき */
 @media screen and (min-width:750px) {
 
 .searchkinds {
 flex-direction: row;
 align-items: left;
-    text-align: left;
-    flex-wrap: wrap;
+text-align: left;
+flex-wrap: wrap;
 }
 .checkbox {
-margin-left: 45px;
+margin-left: 2vw;
+width: fit-content;
 }
 .searchresult_content {
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+}
+.searchBtnsArea {
+    margin: 32px 0;
 }
 }

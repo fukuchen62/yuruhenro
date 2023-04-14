@@ -7,6 +7,20 @@ function my_theme_setup()
     add_theme_support('post-thumbnails'); //アイキャッチ画像を使用可能にする
     add_theme_support('menus'); //カスタムメニュー機能を使用可能にする
 }
+
+//検索ページのタイトル変更
+function change_document_title_parts($title_parts)
+{
+    //デフォルトとしてタグラインとサイト名は表示しないようにセット
+
+    if (is_search()) : //検索結果ページの場合
+        $title_parts['title'] = '条件検索';
+    endif;
+
+    return $title_parts;
+}
+add_filter('document_title_parts', 'change_document_title_parts');
+
 // functions.phpでスタイルシートとJavaScriptファイルを読み込む
 add_action('wp_enqueue_scripts', 'add_my_files');
 function add_my_files()
@@ -30,8 +44,26 @@ function add_my_files()
         true
     );
 
+
+    // luxy.js読み込み
+    wp_enqueue_script(
+        'luxy',
+        get_template_directory_uri() . '/assets/js/luxy.min.js',
+        array('jquery'),
+        true
+    );
+
     //個別slick.js読み込み
     if (is_page('monzen')) {
+        wp_enqueue_script(
+            'slick',
+            get_template_directory_uri() . '/assets/js/slick.js',
+            array('jquery'),
+            '1.8.0',
+            true
+        );
+    }
+    if (is_singular('temple')) {
         wp_enqueue_script(
             'slick',
             get_template_directory_uri() . '/assets/js/slick.js',
@@ -56,8 +88,8 @@ function add_my_files()
 
     //以下はheaderに出力
     // Googleフォント読み込み
-    wp_enqueue_style('google-fonts-kosugi+maru', 'https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
-    wp_enqueue_style('google-fonts-kiwi+maru', 'https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&display=swap');
+    wp_enqueue_style('google-fonts-kosugimaru', 'https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
+    wp_enqueue_style('google-fonts-kiwimaru', 'https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&display=swap');
 
     //fontawesome読み込み
     wp_enqueue_style(
@@ -109,7 +141,7 @@ function add_my_files()
     };
 
     //about-us css
-    if (is_page('about-us')) {
+    if (is_page('aboutus')) {
         wp_enqueue_style(
             'my-aboutus',
             get_template_directory_uri() . '/assets/css/about-us.css'
@@ -124,6 +156,14 @@ function add_my_files()
         );
     };
 
+    //contact css
+    if (is_page('contact')) {
+        wp_enqueue_style(
+            'contact',
+            get_template_directory_uri() . '/assets/css/contact.css'
+        );
+    };
+
 
     // 検索ページ
     if (is_search()) {
@@ -132,6 +172,26 @@ function add_my_files()
             get_template_directory_uri() . '/assets/css/search-form.css',
         );
     };
+    //寺社一覧ページ
+    if (is_post_type_archive('temple')) {
+        wp_enqueue_style(
+            'tempstyle',
+            get_template_directory_uri() . '/assets/css/temple.css'
+        );
+    }
+
+    /*MW WP Formの</p>自動挿入をストップする*/
+    function mvwpform_autop_filter()
+    {
+        if (class_exists('MW_WP_Form_Admin')) {
+            $mw_wp_form_admin = new MW_WP_Form_Admin();
+            $forms = $mw_wp_form_admin->get_forms();
+            foreach ($forms as $form) {
+                add_filter('mwform_content_wpautop_mw-wp-form-' . $form->ID, '__return_false');
+            }
+        }
+    }
+    mvwpform_autop_filter();
 
 
     // wp_enqueue_style(

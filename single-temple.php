@@ -4,10 +4,14 @@
 <?php get_header(); ?>
 <main>
     <h1 class="h1_bg">お寺紹介</h1>
-    <article class="wrap">
-        <section class="contents_width mb_80">
+    <?php get_template_part('template-parts/breadcrumb'); ?>
+
+    <article class="main_inner">
+        <section class="contents_width">
             <!-- お寺名 -->
-            <h2 class="h2_bg"><?php the_field('t_numbername'); ?></h2>
+            <div class="h2_box">
+                <h2 class="h2_bg"><?php the_field('t_numbername'); ?></h2>
+            </div>
 
             <!-- ブックマークボタン -->
             <div class="bookmark">
@@ -16,7 +20,7 @@
 
             <!-- お寺メイン画像 -->
             <div class="temple_img">
-                <img src="<?php the_field('t_eyecatch') ?>" alt="お寺の写真(霊山寺)" />
+                <img src="<?php the_field('t_eyecatch') ?>" alt="お寺の写真" />
             </div>
         </section>
 
@@ -28,13 +32,13 @@
                 <!-- おすすめ画像 -->
                 <ul class="slider2">
                     <li>
-                        <img src="<?php the_field('t_pic1') ?>" alt=" 1" />
+                        <img src="<?php the_field('t_pic1') ?>" alt="寺社の風景1" />
                     </li>
                     <li>
-                        <img src="<?php the_field('t_pic2') ?>" alt="2" />
+                        <img src="<?php the_field('t_pic2') ?>" alt="寺社の風景2" />
                     </li>
                     <li>
-                        <img src="<?php the_field('t_pic3') ?>" alt="3" />
+                        <img src="<?php the_field('t_pic3') ?>" alt="寺社の風景3" />
                     </li>
                 </ul>
 
@@ -54,7 +58,7 @@
             <div class="temple_info flex">
 
                 <!-- google My map -->
-                <?php the_field('t_map') ?>;
+                <?php the_field('t_map'); ?>
                 <!-- google My map -->
 
                 <div>
@@ -95,7 +99,12 @@
                             <th>公式HP</th>
                         </tr>
                         <tr>
-                            <td><a href="<?php echo get_field('t_url') ?>" target=_blank><?php the_field('t_url') ?></a></td>
+                            <td><?php if (get_field('t_url') != '-') { ?>
+                                <a href="<?php the_field('t_url'); ?>" target=_blank class="link"><?php the_field('t_name'); ?></a>
+                                <?php } else {
+                                    echo 'なし';
+                                } ?>
+                            </td>
                         </tr>
                     </table>
                 </div>
@@ -127,42 +136,44 @@
                             'terms' => $term_slug, // 取得したタームを指定
                         )
                     )
-                );
+                        );
 
                 $facility_query = new WP_Query($facility_args);
                 if ($facility_query->have_posts()) :
                     while ($facility_query->have_posts()) : $facility_query->the_post(); ?>
 
-                        <!-- 周辺施設カードのデザイン -->
-                        <div class="shop_info_card">
-                            <div class="shop_info_caption">
-                                <img src="<?php the_field('f_pic1'); ?>" alt="施設の画像" />
-                            </div>
-                            <div class="shop_info_title">
-                                <p><?php the_field('f_name'); ?></p>
-                            </div>
-                            <div class="shop_info_text">
-                                <p>営業時間：<?php the_field('hours'); ?></p>
-                                <p>定休日：<?php the_field('holiday'); ?></p>
-                                <p>駐車場：<?php the_field('f_parking'); ?></p>
-                                <p>TEL：<?php the_field('f_tell'); ?></p>
-                                <p>公式HP：
+                <!-- 周辺施設カードのデザイン -->
+                <div class="shop_info_card">
+                    <div class="shop_info_caption">
+                        <img src="<?php the_field('f_pic1'); ?>" alt="施設の画像" />
+                    </div>
+                    <!-- ブックマークボタン -->
+                    <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
+                    <div class="shop_info_title">
+                        <p><?php the_field('f_name'); ?></p>
+                    </div>
+                    <div class="shop_info_text">
+                        <p>営業時間：<?php the_field('hours'); ?></p>
+                        <p>定休日：<?php the_field('holiday'); ?></p>
+                        <p>駐車場：<?php the_field('f_parking'); ?></p>
+                        <p>TEL：<?php the_field('f_tell'); ?></p>
+                        <p>公式HP：
                                     <?php if (get_field('f_url') != '-') { ?>
                                         <a href="<?php the_field('f_url'); ?>" target=_blank class="link"><?php the_field('f_name'); ?></a>
                                     <?php } else {
                                         echo 'なし';
                                     } ?>
                                 </p>
-                            </div>
-                            <div class="shop_info_article">
-                                <p>
+                    </div>
+                    <div class="shop_info_article">
+                        <p>
                                     <?php the_field('f_message'); ?>
                                 </p>
-                            </div>
-                            <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
-                        </div>
+                    </div>
 
-                    <?php endwhile; ?>
+                </div>
+
+                <?php endwhile; ?>
                 <?php endif; ?>
                 <?php wp_reset_postdata(); ?>
             </div>
@@ -172,21 +183,30 @@
         <section class="contents_width mb_150">
             <h2 class="h3_bg mb_40">コース一覧</h2>
             <div class="course_flex">
-                <button class="course_btn btn1">
-                    ＃ゆるへんろ　入門コース<br />第１番札所～第3番札所＞＞＞
-                </button>
-                <button class="course_btn btn2">
-                    ＃ゆるへんろ　入門コース<br />第１番札所～第3番札所＞＞＞
-                </button>
-                <button class="course_btn btn3">
-                    ＃ゆるへんろ　入門コース<br />第１番札所～第3番札所＞＞＞
-                </button>
-                <button class="course_btn btn4">
-                    ＃ゆるへんろ　入門コース<br />第１番札所～第3番札所＞＞＞
-                </button>
-                <button class="course_btn btn5">
-                    ＃ゆるへんろ　入門コース<br />第１番札所～第3番札所＞＞＞
-                </button>
+                <a href="<?php echo home_url('course/easy'); ?>">
+                    <p class="course_btn btn1">
+                        ＃ゆるへんろ　入門コース<br />第1番札所～第3番札所 &gt;&gt;&gt;
+                    </p>
+                </a>
+                <a href="<?php echo home_url('course/north'); ?>">
+                    <p class="course_btn btn2">
+                        県北　車コース<br />第1番札所～第6番札所&gt;&gt;&gt;
+                    </p>
+                </a>
+                <a href="<?php echo home_url('course/west'); ?>">
+                    <p class="course_btn btn3">
+                        県西　車コース<br />第7番札所～第12番札所&gt;&gt;&gt;
+                    </p>
+                </a>
+                <a href="<?php echo home_url('course/south'); ?>">
+                    <p class="course_btn btn4">
+                        県南　車コース<br />第18番札所～第23番札所&gt;&gt;&gt; </p>
+                </a>
+                <a href="<?php echo home_url('course/city'); ?>">
+                    <p class="course_btn btn5">
+                        市内　徒歩コース<br />第13番札所～第17番札所&gt;&gt;&gt;
+                    </p>
+                </a>
             </div>
         </section>
     </article>
