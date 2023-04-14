@@ -242,6 +242,13 @@ img {
 .header_hamburger span:nth-child(3) {
     top: 30px;
 }
+/*インスタアイコン*/
+.menu-item-1126{
+    margin-left: 24px;
+}
+.menu-item-1136 {
+    margin-left: 24px;
+}
 
 /*ボタンが押されたとき*/
 .header_hamburger.active {
@@ -286,6 +293,7 @@ img {
     margin-bottom: 40px;
     /* line-height: 1em; */
 }
+
 /*下線デザイン*/
 .header_nav li::after {
     position: absolute;
@@ -329,6 +337,14 @@ body.active {
 
     .header_hamburger {
         display: none;
+    }
+
+    /* ハンバーガーメニュー時のみインスタグラムアイコン表示 */
+    .menu-item-1126 {
+        display: none;
+    }
+    .menu-item-1136 {
+    display: none;
     }
 
     .header_nav {
