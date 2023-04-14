@@ -272,7 +272,11 @@
 
         <!-- instagram -->
         <section class="mb_150">
+            <div>
+                <p class="text_c">＼＃ゆるへんろ をつけて投稿してね！／</p>
+            </div>
             <h2 class="h3_bg">Instagram</h2>
+
             <?php echo do_shortcode('[instagram-feed feed=1]'); ?>
         </section>
     </article>
