@@ -61,37 +61,32 @@
 
                 <!-- 記事を表示するループ -->
                 <?php if ($the_query->have_posts()) : ?>
-                    <?php while ($the_query->have_posts()) : ?>
-                        <?php $the_query->the_post(); ?>
+                <?php while ($the_query->have_posts()) : ?>
+                <?php $the_query->the_post(); ?>
 
-                        <a href="<?php the_permalink(); ?>">
-                            <div class="searchresultList">
-                                <div class="searchresultList_thumb">
-                                    <img src="<?php the_field('t_eyecatch'); ?>" alt="寺社のアイキャッチ画像" />
-                                </div>
-                                <div class="searchresultList_data">
-                                    <h3 class="h4_bg text_c"><?php the_field('t_numbername'); ?></h3>
-                                    <!-- <p>拝観時間：10時～17時</p> -->
-                                    <!-- <p>定休日：火曜日</p> -->
-                                    <p>駐車場：<?php the_field('t_parking'); ?></p>
-                                    <p>TEL：<?php the_field('t_tell'); ?></p>
-                                    <p>公式HP：
-                                        <?php if (get_field('t_url') != '-') {
-                                            echo 'あり';
-                                        } else {
-                                            echo 'なし';
-                                        } ?>
-                                    </p>
-                                    <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
-                                </div>
-                            </div>
-                        </a>
-                        <?php wp_reset_postdata(); ?>
-                    <?php endwhile; ?>
-                <?php else : ?>
-                    <div>
-                        <p>条件に合う検索結果はありませんでした。</p>
+                <a href="<?php the_permalink(); ?>">
+                    <div class="searchresultList">
+                        <div class="searchresultList_thumb">
+                            <img src="<?php the_field('t_eyecatch'); ?>" alt="寺社のアイキャッチ画像" />
+                        </div>
+                        <div class="searchresultList_data">
+                            <h3 class="h4_bg text_c"><?php the_field('t_numbername'); ?></h3>
+                            <!-- <p>拝観時間：10時～17時</p> -->
+                            <!-- <p>定休日：火曜日</p> -->
+                            <p>本尊：<?php the_field('honzon'); ?></p>
+                            <p>所在地：<?php the_field('t_area'); ?></p>
+                            <p>TEL：<?php the_field('t_tell'); ?></p>
+                            </p>
+                            <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
+                        </div>
                     </div>
+                </a>
+                <?php wp_reset_postdata(); ?>
+                <?php endwhile; ?>
+                <?php else : ?>
+                <div>
+                    <p>条件に合う検索結果はありませんでした。</p>
+                </div>
                 <?php endif; ?>
                 <!--カードここまで-->
 
