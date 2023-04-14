@@ -69,6 +69,7 @@
                         <div class="searchresultList_thumb">
                             <img src="<?php the_field('t_eyecatch'); ?>" alt="寺社のアイキャッチ画像" />
                         </div>
+                        <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
                         <div class="searchresultList_data">
                             <h3 class="h4_bg text_c"><?php the_field('t_numbername'); ?></h3>
                             <!-- <p>拝観時間：10時～17時</p> -->
@@ -77,7 +78,7 @@
                             <p>所在地：<?php the_field('t_area'); ?></p>
                             <p>TEL：<?php the_field('t_tell'); ?></p>
                             </p>
-                            <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
+
                         </div>
                     </div>
                 </a>

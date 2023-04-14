@@ -33,6 +33,10 @@
                         <div class="shop_info_caption">
                             <img src="<?php the_field('t_eyecatch'); ?>" alt="施設の画像" />
                         </div>
+                        <!-- ブックマークボタン -->
+                        <div>
+                            <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
+                        </div>
                         <!-- 寺社名 -->
                         <div class="shop_info_title">
                             <p><?php the_field('t_numbername'); ?></p>
@@ -44,10 +48,7 @@
 
                             <p>TEL：<?php the_field('t_tell'); ?></p>
                         </div>
-                        <!-- ブックマークボタン -->
-                        <div>
-                            <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
-                        </div>
+
                     </div>
                 </a>
                 <?php endwhile ?>
