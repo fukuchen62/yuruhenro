@@ -16,7 +16,7 @@
             <!-- section区切り -->
             <section class="mb_80">
                 <div class="h2_box">
-                    <h2 id="jump_to_about" class="h2_bg mb_40">＃ゆるへんろってなぁに？</h2>
+                    <h2 id="jump_to_abouth2" class="h2_bg mb_40">＃ゆるへんろってなぁに？</h2>
                 </div>
 
                 <div class="yuru_introduction">
