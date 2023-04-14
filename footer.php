@@ -31,25 +31,26 @@
                         <li><a href="<?php echo home_url('/'); ?>about#jump_to_abouth2">＃ゆるへんろってなぁに？</a></li>
                         <li><a href="<?php echo esc_url(home_url('/')); ?>about#jump_to_about">おへんろの作法</a></li>
                         <li><a href="<?php echo home_url('checkpoint'); ?>">参拝スタイル</a></li>
-                        <li><a href="<?php echo home_url('temple'); ?>">寺社一覧</a></li>
 
                     </ul>
                 </li>
                 <li>
-                    <ul class="sp_none">
-                        <li class="footer_nav_b"><a href="<?php echo home_url('course/easy'); ?>">コース紹介</a></li>
-                        <li><a href="<?php echo home_url('course/easy'); ?>">入門歩きへんろコース</a></li>
-                        <li><a href="<?php echo home_url('course/north'); ?>">県北　車コース</a></li>
-                        <li><a href="<?php echo home_url('course/west'); ?>">県西　車コース</a></li>
-                        <li><a href="<?php echo home_url('course/south'); ?>">県南　車コース</a></li>
-                        <li><a href="<?php echo home_url('course/city'); ?>">市内　徒歩コース</a></li>
+                    <ul>
+                        <li class="footer_nav_b"><a href="<?php echo home_url('course/easy'); ?>" class="sp_none">コース紹介</a></li>
+                        <li><a href="<?php echo home_url('course/easy'); ?>" class="sp_none">入門歩きへんろコース</a></li>
+                        <li><a href="<?php echo home_url('course/north'); ?>" class="sp_none">県北　車コース</a></li>
+                        <li><a href="<?php echo home_url('course/west'); ?>" class="sp_none">県西　車コース</a></li>
+                        <li><a href="<?php echo home_url('course/south'); ?>" class="sp_none">県南　車コース</a></li>
+                        <li><a href="<?php echo home_url('course/city'); ?>" class="sp_none">市内　徒歩コース</a></li>
+                        <li class="footer_nav_b"><a href="<?php echo home_url('temple'); ?>">寺社一覧</a></li>
                     </ul>
                 </li>
                 <li>
                     <ul class="footer_nav_b">
                         <li><a href="<?php echo home_url('bookmark'); ?>" class="sp_none">マイブックマーク</a></li>
                         <li><a href="<?php echo home_url('?s='); ?>" class="sp_none">条件検索</a></li>
-                        <li><a href="<?php echo home_url('qanda'); ?>" class="sp_none">Q&amp;A・用語集</a></li>
+                        <li><a href="<?php echo home_url('qanda'); ?>" class="sp_none">Q&amp;A</a></li>
+                        <li><a href="<?php echo home_url('glossary'); ?>">用語集</a></li>
                         <li><a href="<?php echo home_url('sitemap'); ?>">このサイトについて</a></li>
                         <li><a href="<?php echo home_url('privacy'); ?>">プライバシーポリシー</a></li>
                         <li><a href="<?php echo home_url('aboutus'); ?>">サイト制作にあたって</a></li>
