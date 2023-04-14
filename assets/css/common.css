@@ -162,6 +162,10 @@ img {
         font-size: 22px;
         margin-bottom: 80px;
     }
+
+    .button18 a {
+        width: 170px;
+    }
 }
 
 /*パンくずリストデザイン*/
