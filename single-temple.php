@@ -58,7 +58,7 @@
             <div class="temple_info flex">
 
                 <!-- google My map -->
-                <?php the_field('t_map') ?>;
+                <?php the_field('t_map'); ?>
                 <!-- google My map -->
 
                 <div>
@@ -136,7 +136,7 @@
                             'terms' => $term_slug, // 取得したタームを指定
                         )
                     )
-                );
+                        );
 
                 $facility_query = new WP_Query($facility_args);
                 if ($facility_query->have_posts()) :
