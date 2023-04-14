@@ -30,7 +30,7 @@
                 </p>
 
                 <a href=" <?php echo home_url('contact'); ?> ">
-                    <p class="mb_20">→お問い合わせフォームへ</p>
+                    <p class="mb_20 link">→お問い合わせフォームへ</p>
                 </a>
 
 

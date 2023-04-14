@@ -416,5 +416,8 @@
 /****************/
 .link {
     padding: 0 10px;
-    border-bottom: 1px solid;
+    /* border-bottom: 1px solid; */
+    text-decoration: underline;
+    text-underline-position: under;
+    /* text-decoration-line: underline; */
 }
