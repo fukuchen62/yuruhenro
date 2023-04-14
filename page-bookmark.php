@@ -45,6 +45,7 @@
                         <div class="shop_info_caption">
                             <img src="<?php the_field('t_eyecatch'); ?>" alt="寺社の画像" />
                         </div>
+                        <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
                         <div class="shop_info_title">
                             <p><?php the_field('t_name'); ?></p>
                         </div>
@@ -59,7 +60,7 @@
                                                 echo 'なし';
                                             } ?>
                                         </p>
-                            <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
+
                         </div>
                     </div>
                 </a>
@@ -100,6 +101,8 @@
                     <div class="shop_info_caption">
                         <img src="<?php the_field('f_pic1'); ?>" alt="施設の画像" />
                     </div>
+                    <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
+
                     <div class="shop_info_title">
                         <p><?php the_field('f_name'); ?></p>
                     </div>
@@ -121,7 +124,6 @@
                         <p>
                                         <?php the_field('f_message'); ?>
                                     </p>
-                        <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
                     </div>
 
                 </div>
