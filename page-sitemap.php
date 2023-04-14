@@ -67,7 +67,7 @@
                 </p>
 
                 <a href=" <?php echo home_url('privacy'); ?> ">
-                    <p>→個人情報の取り扱い</p>
+                    <p class="mb_20 link">→個人情報の取り扱い</p>
                 </a>
             </div>
         </section>
