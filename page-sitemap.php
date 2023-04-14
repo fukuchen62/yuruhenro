@@ -5,7 +5,7 @@
 <?php get_header(); ?>
 <!-- mainここから -->
 <main>
-    <h1 class="h1_bg mb_150">このサイトについて</h1>
+    <h1 class="h1_bg">このサイトについて</h1>
     <?php get_template_part('template-parts/breadcrumb');?>
 
     <article class="main_inner">
