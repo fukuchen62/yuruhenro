@@ -48,7 +48,6 @@
     display: none;
 }
 
-
 .top_flex_dc {
     flex-direction: column;
     flex-wrap: wrap;
@@ -172,40 +171,40 @@
     /* luxy用 */
     .luxy_posi {
         display: block;
-        position: relative;
+        /* position: relative;
+        margin: 0 auto; */
     }
 
     .home .luxy_pic1 {
-        width: 400px;
+        max-width: 400px;
         position: absolute;
-        top: -50px;
-        left: -10%;
+        /* top: -50px;
+        left: -10%; */
     }
 
     .home .luxy_pic2 {
-        width: 150px;
+        max-width: 150px;
         position: absolute;
-        top: 50px;
-        left: 15%;
+        /* top: 50px;
+        left: 15%; */
     }
 
     .home .luxy_pic3 {
-        width: 400px;
+        max-width: 400px;
         position: absolute;
-        top: -50px;
-        right: 20%;
+        /* top: -50px;
+        left: -10%; */
     }
 
     .home .luxy_pic4 {
-        width: 150px;
+        max-width: 150px;
         position: absolute;
-        top: 50px;
-        right: 40%;
+        /* top: 50px;
+        left: 15%; */
     }
 
     /* luxy用 */
 }
-
 
 /*===========================================================*/
 /* テキストが 光りながら出現出現*/
