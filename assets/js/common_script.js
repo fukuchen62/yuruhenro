@@ -10,7 +10,7 @@ $(function () {
     var pagetop = $(".home header");
     pagetop.hide();
     $(window).scroll(function () {
-        if ($(this).scrollTop() > 1000) {
+        if ($(this).scrollTop() > 700) {
             pagetop.fadeIn();
         } else {
             pagetop.fadeOut();
@@ -48,16 +48,15 @@ $(".nav_menu a").click(function () {
 //--------------------------------------------------//
 // luxy.js用の記述 //
 
-
 window.onload = function () {
-    if (matchMedia('(min-width: 1000px)').matches) {
+    if (matchMedia("(min-width: 1000px)").matches) {
         luxy.init({
-            wrapper: '#luxy',
-            targets: '.luxy-el',
-            wrapperSpeed: 1
+            wrapper: "#luxy",
+            targets: ".luxy-el",
+            wrapperSpeed: 1,
         });
     }
-}
+};
 
 //--------------------------------------------------//
 // スクロールして表示領域に入ったらclass付与
@@ -116,7 +115,6 @@ $(document).ready(function () {
     GethashID(slugName); //設定したタブの読み込み
 });
 
-
 ///////////////////////////
 /////     footer      /////
 ///////////////////////////
@@ -170,22 +168,16 @@ $(function () {
         focusOnSelect: true,
         prevArrow: false,
         nextArrow: false,
-        responsive: [{
-            breakpoint: 750,
-            settings: {
-                slidesToShow: 2,
-            }
-        }
-
-        ]
+        responsive: [
+            {
+                breakpoint: 750,
+                settings: {
+                    slidesToShow: 2,
+                },
+            },
+        ],
     });
 });
-
-
-
-
-
-
 
 $(function () {
     $(".slider2").slick({
