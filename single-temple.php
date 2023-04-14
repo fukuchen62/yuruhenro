@@ -185,7 +185,7 @@
             <div class="course_flex">
                 <a href="<?php echo home_url('course/easy'); ?>">
                     <p class="course_btn btn1">
-                        ゆるへんろ　入門コース<br />第一番札所～第三番札所 &gt;&gt;&gt;
+                        入門　歩きへんろ<br />第一番札所～第三番札所 &gt;&gt;&gt;
                     </p>
                 </a>
                 <a href="<?php echo home_url('course/north'); ?>">
