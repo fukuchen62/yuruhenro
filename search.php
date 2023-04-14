@@ -77,7 +77,6 @@
                             <p>本尊：<?php the_field('honzon'); ?></p>
                             <p>所在地：<?php the_field('t_area'); ?></p>
                             <p>TEL：<?php the_field('t_tell'); ?></p>
-                            </p>
 
                         </div>
                     </div>
@@ -138,36 +137,35 @@
                 <?php if ($the_query->have_posts()) : ?>
                 <?php while ($the_query->have_posts()) : ?>
                 <?php $the_query->the_post(); ?>
-                <a href="<?php the_permalink(); ?>">
-                    <div class="searchresultList">
-                        <div class="searchresultList_thumb">
-                            <img src="<?php the_field('f_pic1'); ?>" alt="施設の画像" />
-                        </div>
-                        <div class="searchresultList_data">
-                            <h3 class="h4_bg text_c"><?php the_field('f_name'); ?></h3>
-                            <!-- <p>拝観時間：10時～17時</p> -->
-                            <!-- <p>定休日：火曜日</p> -->
-                            <p>営業時間：<?php the_field('hours'); ?></p>
-                            <p>定休日：<?php the_field('holiday'); ?></p>
-                            <p>駐車場：<?php the_field('f_parking'); ?></p>
-                            <p>TEL：<?php the_field('f_tell'); ?></p>
-                            <p>公式HP：
+                <div class="searchresultList">
+                    <div class="searchresultList_thumb">
+                        <img src="<?php the_field('f_pic1'); ?>" alt="施設の画像" />
+                    </div>
+                    <div class="searchresultList_data">
+                        <h3 class="h4_bg text_c"><?php the_field('f_name'); ?></h3>
+                        <!-- <p>拝観時間：10時～17時</p> -->
+                        <!-- <p>定休日：火曜日</p> -->
+                        <p>営業時間：<?php the_field('hours'); ?></p>
+                        <p>定休日：<?php the_field('holiday'); ?></p>
+                        <p>駐車場：<?php the_field('f_parking'); ?></p>
+                        <p>TEL：<?php the_field('f_tell'); ?></p>
+                        <p>公式HP：
                                         <?php if (get_field('f_url') != '-') { ?>
                                             <a href="<?php the_field('f_url'); ?>" target=_blank class="link"><?php the_field('f_name'); ?></a>
                                         <?php } else {
                                             echo 'なし';
                                         } ?>
                                     </p>
-                            <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
-                        </div>
+                        <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
                     </div>
-                    <?php wp_reset_postdata(); ?>
-                    <?php endwhile; ?>
-                    <?php else : ?>
-                    <div>
-                        <p>条件に合う検索結果はありませんでした。</p>
-                    </div>
-                    <?php endif; ?>
+                </div>
+                <?php wp_reset_postdata(); ?>
+                <?php endwhile; ?>
+                <?php else : ?>
+                <div>
+                    <p>条件に合う検索結果はありませんでした。</p>
+                </div>
+                <?php endif; ?>
             </div>
         </section>
         <!-- エリアを使った周辺施設の検索結果ここまで -->
