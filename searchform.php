@@ -2,9 +2,9 @@
         <!-- <h2 class="h2_bg">検索条件</h2> -->
         <div class="mb_40">
 
-            <p>該当する条件で検索することができます。<br>
+            <p>該当する条件でお寺と周辺施設を検索することができます。<br>
                 条件を選択後、「検索」ボタンを押してください。<br>
-                気になるお寺をブックマークすると<a href="<?php echo home_url('bookmark'); ?>" class="link">マイブックマーク</a>ページに登録出来ます。</p>
+                ブックマーク<i class="fa-regular fa-bookmark"></i>を押すと<a href="<?php echo home_url('bookmark'); ?>" class="link">マイブックマーク</a>ページに登録出来ます。</p>
         </div>
     </section>
 
