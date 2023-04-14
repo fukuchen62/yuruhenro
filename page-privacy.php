@@ -118,9 +118,12 @@
 
                 <section class="sec_mb40 mb_100">
                     <h3 class="h3_bg_independent">無断転載の禁止</h3>
-                    <p class="small_cap_independent">
+                    <p class="small_cap_independent mb_20">
                                 　当サイトに存在する、文章や画像、動画等の著作物の情報を無断転載することは固くお断り致します。引用の範囲を超えるものについては、法的処置を行うこともあります。転載をご希望の場合は、当サイトの「お問い合わせ」よりご連絡いただけますよう宜しくお願い致します。
                             </p>
+                    <a href=" <?php echo home_url('contact'); ?> ">
+                        <p class="mb_20 link">→お問い合わせフォームへ</p>
+                    </a>
                 </section>
             </div>
         </article>
