@@ -194,7 +194,7 @@
                 <div class="btn_and_description_area mb_80 flex">
                     <a href="<?php echo home_url('course/easy'); ?>">
                         <p class="course_btn btn1">
-                            ＃ゆるへんろ　入門コース<br />第1番札所～第3番札所＞＞＞
+                            ＃ゆるへんろ　入門コース<br />第1番札所～第3番札所&gt;&gt;&gt;
                         </p>
                     </a>
                     <div class="js-fadeUp small_cap">
