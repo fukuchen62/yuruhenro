@@ -145,6 +145,13 @@ img {
     margin-bottom: 100px;
 }
 
+/*お気に入りボタン*/
+.shop_info_fav {
+    font-size: 2rem;
+    text-align: right;
+    /* color: #cd5e3c; */
+}
+
 @media screen and (min-width: 1000px) {
     .wrap {
         font-size: 18px;
