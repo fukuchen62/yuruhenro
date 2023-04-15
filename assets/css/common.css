@@ -209,8 +209,8 @@ img {
 
 /* safariの場合のヘッダーロゴサイズ指定 */
 _:lang(x)+_:-webkit-full-screen-document,
-img {
-    height: 17vh;
+.header_logo img {
+    /* height: 17vh; */
     width:auto;
     /* background-color: turquoise; */
 }
