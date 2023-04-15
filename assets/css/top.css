@@ -96,7 +96,7 @@
 /* safari用調整 */
 _:lang(x) + _:-webkit-full-screen-document,
 .top_patern1Img {
-    top: 25%;
+    top: 50%;
 }
 
 /* ボタンについての説明 */
