@@ -209,12 +209,12 @@
                                     <p>駐車場：<?php the_field('f_parking'); ?></p>
                                     <p>TEL：<?php the_field('f_tell'); ?></p>
                                     <p>公式HP：
-                                                <?php if (get_field('f_url') != '-') { ?>
-                                                    <a href="<?php the_field('f_url'); ?>" target=_blank class="link"><?php the_field('f_name'); ?></a>
-                                                <?php } else {
-                                                    echo 'なし';
-                                                } ?>
-                                            </p>
+                                    <?php if (get_field('f_url') != '-') { ?>
+                                        <a href="<?php the_field('f_url'); ?>" target=_blank class="link">ここをクリック</a>
+                                    <?php } else {
+                                        echo 'なし';
+                                    } ?>
+                                </p>
                                     <p class="shop_info_article">
                                                 <?php the_field('f_message'); ?>
                                             </p>
