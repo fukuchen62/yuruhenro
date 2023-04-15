@@ -76,7 +76,7 @@
     aspect-ratio: 4/3;
 }
 
-.top_patern1 img {
+.top_patern1Img {
     position: relative;
     top: 50%;
     left: 50%;
@@ -96,8 +96,8 @@
 /* safari用調整 */
 _::-webkit-full-page-media,
 _:future,
-:root .top_patern1 img {
-    top: 0;
+:root .top_patern1Img {
+    top: 50%;
 }
 
 /* ボタンについての説明 */
