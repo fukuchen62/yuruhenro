@@ -93,6 +93,13 @@
     height: auto;
 }
 
+/* safari用調整 */
+_::-webkit-full-page-media,
+_:future,
+:root .top_patern1 img {
+    top: 0;
+}
+
 /* ボタンについての説明 */
 .btn_description {
     max-width: fit-content;
