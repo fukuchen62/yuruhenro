@@ -17,6 +17,13 @@
     object-fit: cover;
 }
 
+/* safariの場合のKV位置調整 */
+_:lang(x)+_:-webkit-full-screen-document,
+.slick-img1 img{
+    width: 100vw;
+    /* background-color: turquoise; */
+}
+
 .thumbnail_img {
     padding: 5px;
 }

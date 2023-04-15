@@ -23,6 +23,8 @@ img {
     width: 100%;
 }
 
+
+
 /* h1装飾 */
 .h1_bg {
     width: 100%;
@@ -86,7 +88,7 @@ img {
 /* h1下のキャプション */
 .big_cap {
     line-height: 1.5em;
-    padding: 0 40px;
+    padding: 0 80px;
 }
 
 /* 画像などの説明キャプション */
@@ -163,7 +165,7 @@ img {
         height: 150px;
         font-size: 36px;
         line-height: 150px;
-        /* margin-top: 100px; */
+        margin-top: 100px;
     }
 
     .h2_bg {
@@ -174,13 +176,6 @@ img {
     .h3_bg {
         font-size: 22px;
         margin-bottom: 0 auto 80px;
-    }
-
-    /* h1下のキャプション */
-    .big_cap {
-        max-width: 800px;
-        text-align: left;
-        margin: 0 auto;
     }
 
     .button18 a {
@@ -214,10 +209,10 @@ img {
 }
 
 /* safariの場合のヘッダーロゴサイズ指定 */
-_:lang(x) + _:-webkit-full-screen-document,
-img {
-    height: 17vh;
-    width: auto;
+_:lang(x)+_:-webkit-full-screen-document,
+.header_logo img {
+    /* height: 17vh; */
+    width:auto;
     /* background-color: turquoise; */
 }
 
