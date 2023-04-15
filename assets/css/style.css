@@ -414,6 +414,11 @@
 /****************/
 /*      404      */
 /****************/
+/* Q&A h1背景画像 */
+.error404 .h1_bg {
+    background-image: url(../img/h1_bg12.jpg);
+}
+
 .link {
     padding: 0 10px;
     border-bottom: 1px solid;

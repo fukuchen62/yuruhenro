@@ -114,7 +114,7 @@ img {
 .button18 a::before {
     content: "";
     position: absolute;
-    top: calc(50% - 2px);
+    top: calc(50% - 1px);
     right: 1.5em;
     transform: translateY(calc(-50% - 2px)) rotate(30deg);
     width: 12px;
@@ -465,7 +465,7 @@ body.active {
     min-width: 320px;
     color: #fbfaf5;
     text-align: center;
-    background-image: url(../img/footer_bg.jpg);
+    background-image: url(../img/footer_bg02.jpg);
     /* background-color: #71674c; */
     padding: 40px 0 15px;
 }
