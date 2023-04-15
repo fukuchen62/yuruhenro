@@ -156,6 +156,7 @@ margin: 0 auto;
     flex-direction: column;
     /* align-items: center; */
     text-align: center;
+    justify-content: center;
 }
 
 .searchresult_content::after {
