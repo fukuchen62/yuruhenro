@@ -66,7 +66,7 @@ flex-direction: row;
 align-items: center;
 text-align: left;
 flex-wrap: wrap;
-justify-content: center;
+/* justify-content: center; */
 }
 
 
@@ -209,7 +209,7 @@ margin-left: 2vw;
 width: fit-content;
 }
 .searchresult_content {
-    justify-content: center;
+    /* justify-content: center; */
     flex-direction: row;
     flex-wrap: wrap;
 }
