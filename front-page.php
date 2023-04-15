@@ -145,7 +145,7 @@
                     <!-- 参拝スタイルの画像 -->
                     <div class="top_patern">
                         <div class="top_patern1">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top_style.jpg" alt="参拝する女性">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top_style.jpg" alt="参拝する女性" class="top_patern1Img">
                             <div class="top_patern2">
                                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/hana.png" alt="花の飾り">
                             </div>
