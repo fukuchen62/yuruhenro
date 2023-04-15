@@ -113,6 +113,17 @@ _:lang(x)+_:-webkit-full-screen-document,
     /* background-color: lawngreen; */
 }
 
+@media print,
+screen and (min-width:800px) {
+
+    _::-webkit-full-page-media,
+    _:future,
+    :root .top_patern2 {
+        position: relative;
+        /* background-color: purple; */
+    }
+}
+
 /* ボタンについての説明 */
 .btn_description {
     max-width: fit-content;
