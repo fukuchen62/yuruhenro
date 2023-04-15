@@ -96,7 +96,14 @@
 /* safari用調整 */
 _:lang(x) + _:-webkit-full-screen-document,
 .top_patern1Img {
-    top: 50%;
+    position:absolute;
+    /* background-color: turquoise; */
+}
+
+_:lang(x)+_:-webkit-full-screen-document,
+.top_patern2 {
+    position: absolute;
+    /* background-color: lawngreen; */
 }
 
 /* ボタンについての説明 */
