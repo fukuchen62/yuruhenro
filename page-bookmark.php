@@ -121,10 +121,10 @@
                         <p>TEL：<?php the_field('f_tell'); ?></p>
                         <p>公式HP：
                                         <?php if (get_field('f_url') != '-') { ?>
-                                            <a href="<?php the_field('f_url'); ?>" target=_blank class="link"><?php the_field('f_name'); ?></a>
-                                        <?php } else {
-                                            echo 'なし';
-                                        } ?>
+                                        <a href="<?php the_field('f_url'); ?>" target=_blank class="link">ここをクリック</a>
+                                    <?php } else {
+                                        echo 'なし';
+                                    } ?>
                                     </p>
 
                     </div>
