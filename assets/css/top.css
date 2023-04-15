@@ -18,8 +18,8 @@
 }
 
 /* safariの場合のKV位置調整 */
-_:lang(x)+_:-webkit-full-screen-document,
-.slick-img1 img{
+_:lang(x) + _:-webkit-full-screen-document,
+.slick-img1 img {
     width: 100vw;
     /* background-color: turquoise; */
 }
@@ -103,19 +103,17 @@ _:lang(x)+_:-webkit-full-screen-document,
 /* safari用調整 */
 _:lang(x) + _:-webkit-full-screen-document,
 .top_patern1Img {
-    position:absolute;
+    position: absolute;
     /* background-color: turquoise; */
 }
 
-_:lang(x)+_:-webkit-full-screen-document,
+_:lang(x) + _:-webkit-full-screen-document,
 .top_patern2 {
     position: absolute;
     /* background-color: lawngreen; */
 }
 
-@media print,
-screen and (min-width:800px) {
-
+@media print, screen and (min-width: 800px) {
     _::-webkit-full-page-media,
     _:future,
     :root .top_patern2 {
@@ -172,9 +170,9 @@ screen and (min-width:800px) {
     .btn_and_description_area {
         text-align: left;
         flex-direction: row;
-        justify-content: flex-start;
-        align-items: center;
-        margin: 0 auto;
+        /* justify-content: flex-start; */
+        /* align-items: center; */
+        /* margin: 0 auto 0 0; */
     }
 
     .btn_and_description_area .course_btn {
@@ -256,7 +254,7 @@ screen and (min-width:800px) {
     -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
     z-index: 3;
-    word-break: keep-all;
+    word-break: normal !important;
 }
 
 /*========= 光りながら出現させるためのCSS ===============*/
