@@ -256,7 +256,7 @@ screen and (min-width:800px) {
     -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
     z-index: 3;
-    word-break: keep-all;
+    word-break: normal !important;
 }
 
 /*========= 光りながら出現させるためのCSS ===============*/
