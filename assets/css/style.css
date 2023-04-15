@@ -457,9 +457,12 @@
 /* お問い合わせ */
 /***************/
 /* お問い合わせ h1背景画像 */
-.page-id-543 .h1_bg {
+.page-id-543 .h1_bg,
+.page-id-554 .h1_bg {
     background-image: url(../img/h1_bg17.jpg);
 }
+
+.page-id-554
 
 /****************/
 /*      404      */
