@@ -132,11 +132,12 @@ Template Name:page-monzen
         </section>
 
         <!-- 周辺施設 -->
-        <section class="contents_width mb_100">
-            <h2 class="h3_bg mb_40">周辺のお寺</h2>
-            <!-- 周辺施設カードが並ぶエリア -->
-            <div class="shop_info_list flex">
-                <?php
+        <section class="mb_100">
+            <div class="contents_width">
+                <h2 class="h3_bg mb_40">周辺のお寺</h2>
+                <!-- 周辺施設カードが並ぶエリア -->
+                <div class="shop_info_list flex">
+                    <?php
                 $facility_args = array(
                     'post_type' => 'temple',
                     'posts_per_page' => 3,
@@ -153,31 +154,32 @@ Template Name:page-monzen
                 if ($facility_query->have_posts()) :
                     while ($facility_query->have_posts()) : $facility_query->the_post(); ?>
 
-                        <a href="<?php the_permalink(); ?>">
-                            <div class="shop_info_card">
-                                <!-- お寺カードのデザイン -->
+                    <a href="<?php the_permalink(); ?>">
+                        <div class="shop_info_card">
+                            <!-- お寺カードのデザイン -->
 
-                                <div class="shop_info_caption">
-                                    <img src="<?php the_field('t_eyecatch'); ?>" alt="お寺の画像" />
-                                </div>
-
-                                <div class="shop_info_fav">
-                                    <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
-                                </div>
-
-                                <div class="shop_info_title">
-                                    <p><?php the_field('t_numbername'); ?></p>
-                                </div>
-                                <div class="shop_info_text">
-                                    <p>本尊：<?php the_field('honzon'); ?></p>
-                                    <p>所在地：<?php the_field('t_area'); ?></p>
-                                    <p>TEL：<?php the_field('t_tell'); ?></p>
-                                </div>
+                            <div class="shop_info_caption">
+                                <img src="<?php the_field('t_eyecatch'); ?>" alt="お寺の画像" />
                             </div>
-                        </a>
+
+                            <div class="shop_info_fav">
+                                <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
+                            </div>
+
+                            <div class="shop_info_title">
+                                <p><?php the_field('t_numbername'); ?></p>
+                            </div>
+                            <div class="shop_info_text">
+                                <p>本尊：<?php the_field('honzon'); ?></p>
+                                <p>所在地：<?php the_field('t_area'); ?></p>
+                                <p>TEL：<?php the_field('t_tell'); ?></p>
+                            </div>
+                        </div>
+                    </a>
                     <?php endwhile; ?>
-                <?php endif; ?>
-                <?php wp_reset_postdata(); ?>
+                    <?php endif; ?>
+                    <?php wp_reset_postdata(); ?>
+                </div>
             </div>
         </section>
 
