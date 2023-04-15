@@ -18,10 +18,6 @@
     background-image: url(../img/h1_bg01.jpg);
 }
 
-.big_cap {
-    text-align: center;
-}
-
 .cp_area1 {
     flex-wrap: wrap;
     justify-content: space-between;

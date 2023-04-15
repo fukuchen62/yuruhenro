@@ -15,9 +15,9 @@
         <!-- 参拝スタイル -->
         <section class="contents_width">
             <div class="h2_box">
-                <h2 class="h2_bg">参拝スタイル</h2>
+                <h2 class="h2_bg">服装</h2>
             </div>
-            <div class="big_cap mb_40">
+            <div class="mb_40">
                 服装は基本的に自由<br />
                 普段着でお遍路する人も増えています。<br />
                 自分に合うのはどんなスタイル？
@@ -28,7 +28,7 @@
             <div class="cp_area1_in">
                 <h3 class="h3_bg mb_20">カジュアル</h3>
                 <div class="small_cap">
-                    <p class="mb_20">ラフなスタイルで<br>リラックス参拝！</p>
+                    <p class="small_cap mb_20">ラフなスタイルで<br>リラックス参拝！</p>
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/henrofuku1.png" alt="カジュアルな服装" class="mb_20">
                     <div>
                         <p class="mb_20">
@@ -42,11 +42,11 @@
             <div class="cp_area1_in">
                 <h3 class="h3_bg mb_20">袖なし白衣</h3>
                 <div class="small_cap">
-                    <p class="mb_20">おへんろアイテムを<br>ほどよくミックス！</p>
+                    <p class="small_cap mb_20">おへんろアイテムを<br>ほどよくミックス！</p>
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/henrofuku2.png" alt="袖なし白衣の服装" class="mb_20">
 
                     <div>
-                        <p>白衣・輪袈裟・金剛杖が基本の三点</p>
+                        <p>白衣・輪袈裟・金剛杖が基本の三点です。</p>
                     </div>
                 </div>
             </div>
@@ -54,13 +54,13 @@
             <div class="cp_area1_in">
                 <h3 class="h3_bg mb_20">正統派</h3>
                 <div class="small_cap">
-                    <p class="mb_20">おへんろさんを<br>服でも満喫！</p>
+                    <p class="small_cap mb_20">おへんろさんを<br>服でも満喫！</p>
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/henrofuku3.png" alt="しっかりお遍路の服装" class="mb_20">
 
                     <div>
                         <p>
-                            伝統的なスタイル<br />
-                            白衣を着ると気持ちが引き締まります
+                            伝統的なスタイルです。<br />
+                            白衣を着ると気持ちが引き締まります。
                         </p>
                     </div>
                 </div>
