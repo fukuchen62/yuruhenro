@@ -267,7 +267,7 @@
         </section>
 
         <!-- instagram -->
-        <section>
+        <section class="contents_width">
             <div>
                 <p class="text_c">＼コースを巡ったら「＃ゆるへんろ」を付けてつぶやこう！／</p>
             </div>
