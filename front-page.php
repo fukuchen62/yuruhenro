@@ -269,7 +269,7 @@
         <!-- instagram -->
         <section class="contents_width">
             <div>
-                <p class="text_c">＼コースを巡ったら「＃ゆるへんろ」を付けて投稿してね！／</p>
+                <p class="text_c"><nobr>＼「＃ゆるへんろ」を付けて投稿してね！／</nobr></p>
             </div>
             <h2 class="h3_bg">Instagram</h2>
 
