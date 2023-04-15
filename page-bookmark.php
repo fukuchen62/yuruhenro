@@ -81,7 +81,7 @@
         </section>
 
         <!-- 周辺施設ブックマーク -->
-        <section class="mb_100">
+        <section class="mb_100 contents_width">
             <h2 class="h3_bg mb_40">周辺施設ブックマーク</h2>
 
             <!-- 周辺施設ブックマークカードが並ぶエリア -->
