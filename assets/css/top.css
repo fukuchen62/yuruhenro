@@ -120,6 +120,7 @@ screen and (min-width:800px) {
     _:future,
     :root .top_patern2 {
         position: relative;
+        top: 70vh;
         /* background-color: purple; */
     }
 }
