@@ -147,11 +147,16 @@
                     <div class="shop_info_caption">
                         <img src="<?php the_field('f_pic1'); ?>" alt="施設の画像" />
                     </div>
+
                     <!-- ブックマークボタン -->
-                    <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
+                    <div class="shop_info_fav">
+                        <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
+                    </div>
+
                     <div class="shop_info_title">
                         <p><?php the_field('f_name'); ?></p>
                     </div>
+
                     <div class="shop_info_text">
                         <p>営業時間：<?php the_field('hours'); ?></p>
                         <p>定休日：<?php the_field('holiday'); ?></p>

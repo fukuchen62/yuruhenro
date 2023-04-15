@@ -194,7 +194,7 @@
                                     <img src="<?php the_field('f_pic1'); ?>" alt="施設の画像" />
                                 </div>
                                 <!-- ブックマークボタン -->
-                                <div>
+                                <div class="shop_info_fav">
                                     <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
                                 </div>
                                 <!-- 周辺施設名 -->
