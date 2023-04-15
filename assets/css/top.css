@@ -87,49 +87,16 @@
 
 .top_patern2 {
     position: relative;
-    left: 0;
-    bottom: -15%;
-    width: 40%;
+    left: 10%;
+    bottom: 0;
+    width: 20%;
     height: auto;
 }
 
 /* safari用調整 */
-
-_::-webkit-full-page-media,
-_:future,
-:root .top_patern {
-    position: relative;
-    margin-bottom: 40px;
-}
-
-_::-webkit-full-page-media,
-_:future,
-:root .top_patern1 {
-    position: relative;
-    background-image: url(../img/flame.png);
-    background-size: cover;
-    aspect-ratio: 4/3;
-}
-
-_::-webkit-full-page-media,
-_:future,
-:root .top_patern1Img {
-    position: relative;
-    top: 100%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 60%;
-    height: auto;
-}
-
-_::-webkit-full-page-media,
-_:future,
-:root .top_patern2 {
-    position: relative;
-    left: 0;
-    bottom: -15%;
-    width: 40%;
-    height: auto;
+_:lang(x) + _:-webkit-full-screen-document,
+.top_patern1Img {
+    top: 25%;
 }
 
 /* ボタンについての説明 */
