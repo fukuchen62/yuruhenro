@@ -160,7 +160,7 @@
                     </div>
 
                     <!-- 周辺施設一覧 -->
-                    <div>
+                    <div class="contents_width">
                         <h2 class="h3_bg mb_40">周辺施設</h2>
 
                         <!-- 周辺施設お気に入りカードが並ぶエリア -->
