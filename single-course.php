@@ -9,8 +9,8 @@
     <?php get_template_part('template-parts/breadcrumb'); ?>
 
     <article class="main_inner">
-        <section class="sec_mb40">
-            <div>
+        <section class="mb_40">
+            <div class="course_pcW1">
                 <p class="big_cap">
                     入門歩きへんろコース・車コース（県北、県西、県南）、市内徒歩コースの５つのモデルコースです。<br>
                     自身を見つめ直したい方も、人や自然との触れ合いを求めている方も、健康志向の方も、立ち寄り施設やタイムスジュールなどもご参考に、ぜひお遍路の旅へお出かけください。
@@ -35,13 +35,13 @@
             <div class="course_mainWrap">
                 <div id="course_cont1" class="course_tabCont">
                     <!-- コースキャプション -->
-                    <div>
-                        <p class="middle_cap mb_100">
+                    <div class="course_pcW2">
+                        <p class="mb_100">
                             <?php the_field('course_info'); ?></p>
                     </div>
 
                     <!-- 参考マップ -->
-                    <div class="sec_mb mb_100">
+                    <div class="course_pcW2 mb_100">
                         <h2 class="h3_bg mb_40">参考マップ</h2>
                         <div>
                             <?php the_field('iframeurl'); ?>
@@ -57,106 +57,110 @@
                         </div>
 
                         <div class="course_flag mb_20">
-                            <p>
-                                START
-                            </p>
+                            <p>START</p>
                         </div>
 
-                        <?php
-                        //①get_pageを利用して情報を得る
-                        $page = get_page(get_the_ID());
-                        //②プロパティからスラッグ名を取得する
+                        <div class="course_pcW2">
 
-                        $slug = $page->post_name;
-                        //echo $slug ;
-                        ?>
-                        <!-- JavaScriptのために、コースのSlugをinputに埋め込む -->
-                        <input type="hidden" id="slug_name" value="<?php echo $slug; ?>">
+                            <?php
+                                //①get_pageを利用して情報を得る
+                                $page = get_page(get_the_ID());
+                                //②プロパティからスラッグ名を取得する
 
-                        <?php
-                        $args = array(
-                            'post_type' => 'course-schedule', //カスタム投稿タイプを指定
-                            'posts_per_page' => -1, //表示する記事数
-                            'orderby' => 'meta_value', //カスタムフィールドで並べ替える指定
-                            'meta_key' => 'order-number', //カスタムフィールドのキーを指定
-                            'order' => 'ASC',
-                            'meta_key' => 'c-slug', //カスタムフィールドのキー
-                            'meta_value' => $slug, //カスタムフィールドの値
-                            'meta_compare' => 'LIKE' //'meta_value'のテスト演算子
-                        );
-                        $course_query = new WP_Query($args); //サブループを変数に格納
+                                $slug = $page->post_name;
+                                //echo $slug ;
+                            ?>
 
-                        if ($course_query->have_posts()) :
-                            while ($course_query->have_posts()) :
-                                $course_query->the_post();
-                        ?>
+                            <!-- JavaScriptのために、コースのSlugをinputに埋め込む -->
+                            <input type="hidden" id="slug_name" value="<?php echo $slug; ?>">
 
-                        <!-- 時間 -->
-                        <div class="course_st mb_20">
-                            <p>【<?php the_field('c_time') ?>】　<?php $hoge = get_field('link');
+                            <?php
+                                $args = array(
+                                'post_type' => 'course-schedule', //カスタム投稿タイプを指定
+                                'posts_per_page' => -1, //表示する記事数
+                                'orderby' => 'meta_value', //カスタムフィールドで並べ替える指定
+                                'meta_key' => 'order-number', //カスタムフィールドのキーを指定
+                                'order' => 'ASC',
+                                'meta_key' => 'c-slug', //カスタムフィールドのキー
+                                'meta_value' => $slug, //カスタムフィールドの値
+                                'meta_compare' => 'LIKE' //'meta_value'のテスト演算子
+                            );
+                            $course_query = new WP_Query($args); //サブループを変数に格納
+
+                            if ($course_query->have_posts()) :
+                                while ($course_query->have_posts()) :
+                                    $course_query->the_post();
+                            ?>
+
+                            <!-- 時間 -->
+                            <div class="course_st mb_20">
+                                <p>【<?php the_field('c_time') ?>】　<?php $hoge = get_field('link');
                                                                         if ($hoge) { ?>
                                         <a href="<?php echo home_url('/') . $hoge ?>">
                                             <?php the_field('name') ?></a><?php } else {
                                                                             the_field('name');
                                                                         } ?>
-                                    </p>
-                        </div>
+                                </p>
+                            </div>
 
-                        <!-- お寺・施設表示 -->
-                        <div class="course_contWrap mb_40">
+                            <!-- お寺・施設表示 -->
+                            <div class="course_contWrap">
 
-                            <!-- お寺・施設画像 -->
-                            <div class="course_contPhoto mb_20">
-                                <?php
+                                <!-- お寺・施設画像 -->
+                                <div class="course_contPhoto mb_20">
+                                    <?php
                                         $hoge = get_field('link');
                                         if ($hoge) { ?>
-                                <a href="<?php echo home_url('/') . $hoge ?>">
-                                    <img src="<?php the_field('a_thumbnail') ?>" alt=""></a> <?php } else { ?><img src="<?php the_field('a_thumbnail') ?>" alt=""> <?php } ?>
-                            </div>
+                                    <a href="<?php echo home_url('/') . $hoge ?>">
+                                        <img src="<?php the_field('a_thumbnail') ?>" alt=""></a> <?php } else { ?><img src="<?php the_field('a_thumbnail') ?>" alt=""> <?php } ?>
+                                </div>
 
-                            <!-- お寺・施設説明文 -->
-                            <div class="course_col">
-                                <div>
-                                    <p class="small_cap mb_40 js-fadeUp">
+                                <!-- お寺・施設説明文 -->
+                                <div class="course_col">
+                                    <div>
+                                        <p class="small_cap mb_40 js-fadeUp">
                                                 <?php the_field('a_description') ?>
                                             </p>
-                                </div>
-                                <!-- もっと読むボタン -->
-                                <div class=" button18">
-                                    <?php $more = get_field('more');
+                                    </div>
+                                    <!-- もっと読むボタン -->
+                                    <div class="button18">
+                                        <?php $more = get_field('more');
                                             if ($more) : ?>
-                                    <a href="<?php echo home_url('/'); ?><?php the_field('link') ?>">
-                                        <p>もっと知る</p>
-                                    </a>
-                                    <?php endif; ?>
+                                        <a href="<?php echo home_url('/'); ?><?php the_field('link') ?>">
+                                            <p>もっと知る</p>
+                                        </a>
+                                        <?php endif; ?>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- 移動情報 -->
+                            <?php $icon = get_field('c_icon');
+                                if ($icon) : ?>
+                            <div class="course_contInfo mb_40 flex">
+                                <!-- 移動情報アイコン -->
+                                <div class="course_contIcon">
+                                    <img src="<?php the_field('c_icon') ?>" alt="">
+                                </div>
+                                <?php endif; ?>
+
+
+                                <!-- 移動情報詳細 -->
+                                <div class="course_contTime">
+                                    <?php the_field('a_time') ?>
                                 </div>
                             </div>
 
-                        </div>
-
-                        <!-- 移動情報 -->
-                        <?php $icon = get_field('c_icon');
-                                if ($icon) : ?>
-                        <div class="course_contInfo mb_20 flex">
-                            <!-- 移動情報アイコン -->
-                            <div class="course_contIcon">
-                                <img src="<?php the_field('c_icon') ?>" alt="">
-                            </div>
-                            <?php endif; ?>
-
-
-                            <!-- 移動情報詳細 -->
-                            <div class="course_contTime">
-                                <?php the_field('a_time') ?>
-                            </div>
-                        </div>
-
-                        <?php endwhile;
-                        endif;
-                        wp_reset_postdata(); //サブループを抜ける
+                            <?php endwhile;
+                            endif;
+                            wp_reset_postdata(); //サブループを抜ける
                             ?>
 
-                        <div class="course_flag">GOAL</div>
+                            <div class="course_flag mb_20">
+                                <p>GOAL</p>
+                            </div>
+                        </div>
                     </div>
 
                     <!-- 周辺施設一覧 -->
@@ -227,7 +231,6 @@
                         </div>
                     </div>
                 </div>
-
 
         </section>
     </article>
