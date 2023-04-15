@@ -419,6 +419,11 @@
     background-image: url(../img/h1_bg12.jpg);
 }
 
+.p404 {
+    max-width: 40em;
+    margin: 0 auto 100px;
+}
+
 .link {
     padding: 0 10px;
     border-bottom: 1px solid;
