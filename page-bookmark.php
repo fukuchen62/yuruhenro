@@ -57,10 +57,9 @@
                         <div class="shop_info_text">
                             <p>駐車場：<?php the_field('t_parking'); ?></p>
                             <p>TEL：<?php the_field('t_tell'); ?></p>
-                            <!-- <p>公式HP：<?php the_field('t_url'); ?></p> -->
                             <p>公式HP：
-                                    <?php if (get_field('f_url') != '-') { ?>
-                                        <a href="<?php the_field('f_url'); ?>" target=_blank class="link">ここをクリック</a>
+                                    <?php if (get_field('t_url') != '-') { ?>
+                                        あり</a>
                                     <?php } else {
                                         echo 'なし';
                                     } ?>
