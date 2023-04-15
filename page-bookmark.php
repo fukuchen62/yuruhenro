@@ -59,7 +59,7 @@
                             <p>TEL：<?php the_field('t_tell'); ?></p>
                             <p>公式HP：
                                     <?php if (get_field('t_url') != '-') { ?>
-                                        あり</a>
+                                        <a href="<?php the_field('t_url')?>">あり</a>
                                     <?php } else {
                                         echo 'なし';
                                     } ?>
