@@ -23,6 +23,8 @@ img {
     width: 100%;
 }
 
+
+
 /* h1装飾 */
 .h1_bg {
     width: 100%;
@@ -203,6 +205,14 @@ img {
     height: 80px;
     padding: 15px 0 15px 40px;
     background-color: none;
+}
+
+/* safariの場合のヘッダーロゴサイズ指定 */
+_:lang(x)+_:-webkit-full-screen-document,
+img {
+    height: 17vh;
+    width:auto;
+    /* background-color: turquoise; */
 }
 
 /**********************/
