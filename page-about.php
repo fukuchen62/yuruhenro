@@ -145,8 +145,8 @@
                 <div class="fuda dashline">
                     <ol class="ol_independent">
                         <li>①巡礼をした年月日</li>
-                        <li>②市区町村までの記入でよい</li>
-                        <li>③自分の名前</li>
+                        <li>②住所は市区町村までの記入でよい</li>
+                        <li>③姓名は自分の名前を記入</li>
                         <li>④お願い事は裏面に記入<br>※お接待の返礼として渡す場合は、お願い事は書かない</li>
                     </ol>
                     <div><img src="<?php echo get_template_directory_uri(); ?>/assets/img/osamefuda.jpg" alt="納札"></div>
