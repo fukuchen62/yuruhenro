@@ -9,7 +9,9 @@
     font-family: "Kiwi Maru";
     font-size: 16px;
     color: #754c24;
-    background-color: #fbfaf5;
+    background-image: url(../img/wasi.jpg);
+    background-repeat: repeat;
+    /* background-color: #fbfaf5; */
     line-height: 1.5rem;
 }
 
@@ -22,8 +24,6 @@ iframe {
 img {
     width: 100%;
 }
-
-
 
 /* h1装飾 */
 .h1_bg {
@@ -95,6 +95,7 @@ img {
 .small_cap {
     line-height: 1.5em;
     /* margin: 0 auto 40px; */
+    padding-left: 20px;
     margin: 0 auto;
 }
 
@@ -209,10 +210,10 @@ img {
 }
 
 /* safariの場合のヘッダーロゴサイズ指定 */
-_:lang(x)+_:-webkit-full-screen-document,
+_:lang(x) + _:-webkit-full-screen-document,
 .header_logo img {
     /* height: 17vh; */
-    width:auto;
+    width: auto;
     /* background-color: turquoise; */
 }
 
