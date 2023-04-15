@@ -149,6 +149,7 @@ img {
 .shop_info_fav {
     font-size: 2rem;
     text-align: right;
+    margin-bottom: 20px;
     /* color: #cd5e3c; */
 }
 
