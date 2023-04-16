@@ -63,7 +63,7 @@
             </div>
         </section>
 
-
+        <!-- luxy設定 -->
         <div id="luxy" class="content_width luxy_posi">
             <img src="<?php echo get_template_directory_uri();
                         ?>/assets/img/asiraikumo_waku.png" alt="背景画像2" class="luxy-el luxy_pic2" data-speed-x="-5" data-offset="-10" data-horizontal="1">
@@ -79,7 +79,7 @@
         </div>
 
         <!-- ＃ゆるへんろって？ -->
-        <section class="contents_width mb_100">
+        <section class="contents_width mb_40">
             <!-- ＃ゆるへんろって？ -->
 
             <div class="h2_box">
@@ -139,7 +139,7 @@
         </section>
 
         <!-- 参拝スタイル -->
-        <section class="contents_width mb_100">
+        <section class="contents_width mb_40">
             <!-- 参拝スタイル -->
             <div>
                 <div class="h2_box">
@@ -174,13 +174,13 @@
         </section>
 
         <!-- コース紹介 -->
-        <section class="contents_width mb_100">
+        <section class="contents_width mb_40">
             <div class="h2_box">
                 <h2 class="h2_bg">コース紹介</h2>
             </div>
 
             <!-- コース紹介の紹介文 -->
-            <div class="text_c mb_40">
+            <div class="btn_description text_c mb_40">
                 徳島二十三ヶ所をゆったり1日で巡れる<br />
                 5コースのご案内
             </div>
@@ -197,72 +197,81 @@
                             ゆるへんろ　入門コース<br />一番札所～三番札所
                         </p>
                     </a>
-                    <div class="js-fadeUp small_cap">
-                        ３つのお寺を巡る入門コース<br />
-                        おへんろを始めるならまずはここから！<br />
-                        歩き遍路の雰囲気を味わってみたい方におすすめ！
+                    <div class="js-fadeUp">
+                        <p class="small_cap">
+                            ３つのお寺を巡る入門コース<br />
+                            おへんろを始めるならまずはここから！<br />
+                            歩き遍路の雰囲気を味わってみたい方におすすめ！
+                        </p>
                     </div>
                 </div>
             </div>
 
             <!-- チャレンジコース -->
-            <div>
-                <!-- イメージ画像 -->
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top_illust03.png" alt="チャレンジコースイメージ画像" class="mb_40" />
+            <!-- イメージ画像 -->
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/top_illust03.png" alt="チャレンジコースイメージ画像" class="mb_40" />
 
-                <!-- チャレンジコース紹介文 -->
-                <div class="btn_description">
-                    「入門歩きへんろコース」で自信がついたら<br />
-                    もう少し遠くのお寺の参拝にも挑戦してみませんか？
-                </div>
+            <!-- チャレンジコース紹介文 -->
+            <div class="btn_description">
+                「入門歩きへんろコース」で自信がついたら<br />
+                もう少し遠くのお寺の参拝にも挑戦してみませんか？
+            </div>
 
-                <!-- ボタンと紹介文 -->
-                <!-- 県北　車コース -->
-                <div class="btn_and_description_area flex">
-                    <a href="<?php echo home_url('course/north'); ?>">
-                        <p class="course_btn btn2">
-                            県北　車コース<br>一番札所～六番札所
-                        </p>
-                    </a>
-                    <p class="js-fadeUp small_cap">
+            <!-- ボタンと紹介文 -->
+            <!-- 県北　車コース -->
+            <div class="btn_and_description_area mb_40 flex">
+                <a href="<?php echo home_url('course/north'); ?>">
+                    <p class="course_btn btn2">
+                        県北　車コース<br>一番札所～六番札所
+                    </p>
+                </a>
+                <div class="js-fadeUp">
+                    <p class="small_cap">
                         お寺メインでお遍路を体験したい方におすすめ！<br />
                         スタート地点から区切りのいいところまで半日で回れます。
                     </p>
                 </div>
+            </div>
 
-                <!-- 県西　車コース -->
-                <div class="btn_and_description_area flex">
-                    <a href="<?php echo home_url('course/west'); ?>">
-                        <p class="course_btn btn3">
-                            県西　車コース<br />七番札所～十二番札所
-                        </p>
-                    </a>
-                    <div class="js-fadeUp small_cap">
+            <!-- 県西　車コース -->
+            <div class="btn_and_description_area mb_40 flex">
+                <a href="<?php echo home_url('course/west'); ?>">
+                    <p class="course_btn btn3">
+                        県西　車コース<br />七番札所～十二番札所
+                    </p>
+                </a>
+                <div class="js-fadeUp">
+                    <p class="small_cap">
                         チャレンジ精神のある方におすすめ！<br />少し歩かなければいけない難所があります。
-                    </div>
+                    </p>
                 </div>
+            </div>
 
-                <!-- 県南　車コース -->
-                <div class="btn_and_description_area flex">
-                    <a href="<?php echo home_url('course/south'); ?>">
-                        <p class="course_btn btn4">
-                            県南　車コース<br />十八番札所～二十三番札所
-                        </p>
-                    </a>
-                    <div class="js-fadeUp small_cap">
+            <!-- 県南　車コース -->
+            <div class="btn_and_description_area mb_40 flex">
+                <a href="<?php echo home_url('course/south'); ?>">
+                    <p class="course_btn btn4">
+                        県南　車コース<br />十八番札所～二十三番札所
+                    </p>
+                </a>
+                <div class="js-fadeUp">
+                    <p class="small_cap">
                         自然に親しみたい方におすすめ！<br />山に海、車窓からの景色も楽しめます。
-                    </div>
+                    </p>
                 </div>
-                <!-- 市内　徒歩コース -->
-                <div class="btn_and_description_area flex">
-                    <a href="<?php echo home_url('course/city'); ?>">
-                        <p class="course_btn btn5">
-                            市内　徒歩コース<br />十三番札所～十七番札所
-                        </p>
-                    </a>
-                    <div class="js-fadeUp small_cap">
+            </div>
+
+            <!-- 市内　徒歩コース -->
+            <div class="btn_and_description_area mb_80 flex">
+                <a href="<?php echo home_url('course/city'); ?>">
+                    <p class="course_btn btn5">
+                        市内　徒歩コース<br />十三番札所～十七番札所
+                    </p>
+                </a>
+                <div class="js-fadeUp">
+                    <p class="small_cap">
                         短い距離で多くのお寺を巡りたい方におすすめ！<br />すべてのお寺が徳島市内にあるため、アクセスがよいです。<br />徳島市内五ヶ所まいりとも呼ばれています。
-                    </div>
+                    </p>
                 </div>
             </div>
         </section>

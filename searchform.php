@@ -1,11 +1,11 @@
     <section class="m0auto">
         <!-- <h2 class="h2_bg">検索条件</h2> -->
         <div class="mb_40">
-
-            <p>該当する条件でお寺と周辺施設を検索することができます。<br>
-                条件を選択後、「検索」ボタンを押してください。<br>
-                ブックマーク<i class="fa-regular fa-bookmark"></i>を押すと<a href="<?php echo home_url('bookmark'); ?>" class="link">マイブックマーク</a>ページに登録出来ます。</p>
-        </div>
+            <div class="course_pcW1">
+                <p>該当する条件でお寺と周辺施設を検索することができます。<br>
+                    条件を選択後、「検索」ボタンを押してください。<br>
+                    ブックマーク<i class="fa-regular fa-bookmark"></i>を押すと<a href="<?php echo home_url('bookmark'); ?>" class="link">マイブックマーク</a>ページに登録出来ます。</p>
+            </div>
     </section>
 
     <section class="contents_width search_form mb_40">

@@ -50,10 +50,12 @@ img {
     position: relative;
     display: inline-block;
     font-family: "Kosugi Maru";
-    font-size: 20px;
+    /* font-size: 20px; */
+    font-size: 18px;
     color: #fbfaf5;
     background-color: #cd5e3c;
-    padding: 20px 60px;
+    /* padding: 20px 60px; */
+    padding: 20px 20px;
     margin-bottom: 40px;
 }
 
@@ -146,7 +148,7 @@ img {
 /*パンくずリストデザイン*/
 .breadcrumb_inner {
     padding: 15px 50px;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
 }
 
 /*インスタプラグインデザイン*/
@@ -177,6 +179,7 @@ img {
     .h2_bg {
         font-size: 24px;
         margin-bottom: 50px;
+        padding: 20px 60px;
     }
 
     .h3_bg {
@@ -422,7 +425,8 @@ body.active {
     height: 80px;
     border-radius: 5px;
     color: #fbfaf5;
-    margin: 4px auto 40px;
+    /* margin: 4px auto 40px; */
+    margin: 4px auto 20px;
     padding: 12px;
     background-color: #79afaf;
     box-shadow: 6px 6px 6px gray;
@@ -499,6 +503,13 @@ body.active {
     /* 30px上に移動する */
     /* transition-delay: 0.5s; */
     /* フェード開始を0.5秒遅らせる */
+}
+
+@media screen and (min-width: 950px) {
+    /* コースボタン */
+    .course_btn {
+        margin: 4px auto 40px;
+    }
 }
 
 /****************/

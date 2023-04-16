@@ -62,7 +62,7 @@ _:lang(x) + _:-webkit-full-screen-document,
 }
 
 .top_bc {
-    text-align: center;
+    /* text-align: center; */
     margin: 0 auto 40px;
 }
 
@@ -100,6 +100,38 @@ _:lang(x) + _:-webkit-full-screen-document,
     height: auto;
 }
 
+/* ボタンについての説明 */
+.btn_description {
+    max-width: fit-content;
+    width: 500px;
+    height: 80px;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin: 4px auto;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+/* ボタンについての説明
+.btn_description {
+    max-width: fit-content;
+    width: 500px;
+    height: 80px;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin: 4px auto;
+    text-align: center;
+    margin-bottom: 30px;
+} */
+
+.btn_and_description_area {
+    /* text-align: center; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 /* safari用調整 */
 _:lang(x) + _:-webkit-full-screen-document,
 .top_patern1Img {
@@ -123,25 +155,17 @@ _:lang(x) + _:-webkit-full-screen-document,
     }
 }
 
-/* ボタンについての説明 */
-.btn_description {
-    max-width: fit-content;
-    width: 500px;
-    height: 80px;
-    padding-left: 10px;
-    padding-top: 10px;
-    margin: 4px auto;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.btn_and_description_area {
-    text-align: center;
-    flex-direction: column;
-    justify-content: center;
-}
 
 @media screen and (min-width: 800px) {
+
+    .contents_width.mb_40 {
+            margin-bottom: 100px;
+        }
+
+    .top_bc {
+        text-align: center;
+    }
+
     .top_flex_dc {
         max-width: 500px;
         align-items: flex-end;
@@ -168,18 +192,27 @@ _:lang(x) + _:-webkit-full-screen-document,
     }
 
     .btn_and_description_area {
-        text-align: left;
+        /* text-align: left; */
         flex-direction: row;
-        /* justify-content: flex-start; */
-        /* align-items: center; */
-        /* margin: 0 auto 0 0; */
+        justify-content: flex-start;
+        /* align-items: flex-start;
+        margin: 0 auto; */
     }
 
     .btn_and_description_area .course_btn {
         margin-right: 0;
         margin-left: 0;
     }
+
+    .btn_and_description_area.mb_40 {
+        margin-bottom: 0;
+    }
+
+    .margin_0a {
+        margin: 0 auto;
+    }
 }
+
 
 @media screen and (min-width: 1000px) {
     .btn_description {
@@ -233,8 +266,6 @@ _:lang(x) + _:-webkit-full-screen-document,
         top: 20px;
         right: 10px;
     }
-
-    /* luxy用 */
 }
 
 /*===========================================================*/

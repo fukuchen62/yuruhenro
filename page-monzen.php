@@ -138,21 +138,21 @@ Template Name:page-monzen
                 <!-- 周辺施設カードが並ぶエリア -->
                 <div class="shop_info_list flex">
                     <?php
-                $facility_args = array(
-                    'post_type' => 'temple',
-                    'posts_per_page' => 3,
-                    'order' => 'ASC',
-                    'tax_query' => array(
-                        array(
-                            'taxonomy' => 'area',
-                            'terms' => array('north'),
-                            'field' => 'slug'
+                    $facility_args = array(
+                        'post_type' => 'temple',
+                        'posts_per_page' => 3,
+                        'order' => 'ASC',
+                        'tax_query' => array(
+                            array(
+                                'taxonomy' => 'area',
+                                'terms' => array('north'),
+                                'field' => 'slug'
+                            ),
                         ),
-                    ),
-                );
-                $facility_query = new WP_Query($facility_args);
-                if ($facility_query->have_posts()) :
-                    while ($facility_query->have_posts()) : $facility_query->the_post(); ?>
+                    );
+                    $facility_query = new WP_Query($facility_args);
+                    if ($facility_query->have_posts()) :
+                        while ($facility_query->have_posts()) : $facility_query->the_post(); ?>
 
                     <a href="<?php the_permalink(); ?>">
                         <div class="shop_info_card">
@@ -189,26 +189,26 @@ Template Name:page-monzen
             <div class="course_flex">
                 <a href="<?php echo home_url('course/easy'); ?>">
                     <p class="course_btn btn1">
-                        ゆるへんろ　入門コース<br />第一番札所～第三番札所&gt;&gt;&gt;
+                        ゆるへんろ　入門コース<br />一番札所～三番札所
                     </p>
                 </a>
                 <a href="<?php echo home_url('course/north'); ?>">
                     <p class="course_btn btn2">
-                        県北　車コース<br />第一番札所～第六番札所&gt;&gt;&gt;
+                        県北　車コース<br>一番札所～六番札所
                     </p>
                 </a>
                 <a href="<?php echo home_url('course/west'); ?>">
                     <p class="course_btn btn3">
-                        県西　車コース<br />第七番札所～第十二番札所&gt;&gt;&gt;
+                        県西　車コース<br />七番札所～十二番札所
                     </p>
                 </a>
                 <a href="<?php echo home_url('course/south'); ?>">
                     <p class="course_btn btn4">
-                        県南　車コース<br />第十八番札所～第二十三番札所&gt;&gt;&gt; </p>
+                        県南　車コース<br />十八番札所～二十三番札所</p>
                 </a>
                 <a href="<?php echo home_url('course/city'); ?>">
                     <p class="course_btn btn5">
-                        市内　徒歩コース<br />第十三番札所～第十七番札所&gt;&gt;&gt;
+                        市内　徒歩コース<br />十三番札所～十七番札所
                     </p>
                 </a>
             </div>
