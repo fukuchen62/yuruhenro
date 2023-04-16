@@ -6,7 +6,7 @@
 
     <article class="main_inner">
         <section class="mb_40">
-            <div>
+            <div class="course_pcW1">
                 <p class="big_cap">
                     本サイト「＃ゆるへんろ」で巡る徳島二十三ヶ所のお寺の一覧ページです。
                     クリックすると各お寺の詳細ページがご覧いただけます。<br>
@@ -27,31 +27,31 @@
                 $temple_query = new WP_Query($temple_args);
                 if ($temple_query->have_posts()) :
                     while ($temple_query->have_posts()) : $temple_query->the_post(); ?>
-                <a href="<?php the_permalink(); ?>">
-                    <div class="shop_info_card">
-                        <!-- 寺社カードのデザイン -->
-                        <div class="shop_info_caption">
-                            <img src="<?php the_field('t_eyecatch'); ?>" alt="施設の画像" />
-                        </div>
-                        <!-- ブックマークボタン -->
-                        <div>
-                            <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
-                        </div>
-                        <!-- 寺社名 -->
-                        <div class="shop_info_title">
-                            <p><?php the_field('t_numbername'); ?></p>
-                        </div>
-                        <!-- 寺社詳細 -->
-                        <div class="shop_info_text">
-                            <p>本尊：<?php the_field('honzon'); ?></p>
-                            <p>所在地：<?php the_field('t_area'); ?></p>
+                        <a href="<?php the_permalink(); ?>">
+                            <div class="shop_info_card">
+                                <!-- 寺社カードのデザイン -->
+                                <div class="shop_info_caption">
+                                    <img src="<?php the_field('t_eyecatch'); ?>" alt="施設の画像" />
+                                </div>
+                                <!-- ブックマークボタン -->
+                                <div>
+                                    <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
+                                </div>
+                                <!-- 寺社名 -->
+                                <div class="shop_info_title">
+                                    <p><?php the_field('t_numbername'); ?></p>
+                                </div>
+                                <!-- 寺社詳細 -->
+                                <div class="shop_info_text">
+                                    <p>本尊：<?php the_field('honzon'); ?></p>
+                                    <p>所在地：<?php the_field('t_area'); ?></p>
 
-                            <p>TEL：<?php the_field('t_tell'); ?></p>
-                        </div>
+                                    <p>TEL：<?php the_field('t_tell'); ?></p>
+                                </div>
 
-                    </div>
-                </a>
-                <?php endwhile ?>
+                            </div>
+                        </a>
+                    <?php endwhile ?>
                 <?php endif; ?>
             </div>
         </section>

@@ -7,7 +7,7 @@
 <main class="wrap">
 
     <h1 class="h1_bg">参拝スタイル</h1>
-    <?php get_template_part('template-parts/breadcrumb');?>
+    <?php get_template_part('template-parts/breadcrumb'); ?>
 
 
     <article class="main_inner">
@@ -17,7 +17,7 @@
             <div class="h2_box">
                 <h2 class="h2_bg">服装</h2>
             </div>
-            <div class="mb_40">
+            <div class="course_pcW1">
                 服装は基本的に自由<br />
                 普段着でお遍路する人も増えています。<br />
                 自分に合うのはどんなスタイル？
@@ -268,18 +268,18 @@
                 <div class="js-fadeUp">
                     <div class="mb_20">
                         <p>
-                        ・菅笠はお参りのとき、お堂の中、僧の前でもかぶったままで構いません。靴を脱ぐ場所では笠も脱ぎましょう。
-                    </p>
+                            ・菅笠はお参りのとき、お堂の中、僧の前でもかぶったままで構いません。靴を脱ぐ場所では笠も脱ぎましょう。
+                        </p>
                     </div>
                     <div class="mb_20">
                         <p>
-                        ・和袈裟は食事やトイレのときは首から外しましょう。
-                    </p>
+                            ・和袈裟は食事やトイレのときは首から外しましょう。
+                        </p>
                     </div>
                     <div>
                         <p>
-                        ・金剛杖は大師が修行中に橋の下で一夜を明かしたことから、橋の上で杖を突くのは禁忌とされています。
-                    </p>
+                            ・金剛杖は大師が修行中に橋の下で一夜を明かしたことから、橋の上で杖を突くのは禁忌とされています。
+                        </p>
                     </div>
                 </div>
             </div>

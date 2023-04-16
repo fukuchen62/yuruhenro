@@ -10,7 +10,7 @@
 
     <article class="main_inner">
         <section class="big_cap mb_100">
-            <div>
+            <div class="course_pcW1">
                 <p>
                     ・本マイブックマークページはお寺紹介または検索ページでブックマークした情報が表示されます。<br>
                     ・ブックマークにはcookieを使用しています。<br>
