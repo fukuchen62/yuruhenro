@@ -26,7 +26,7 @@
 
         <!-- お寺について -->
         <section class="contents_width mb_80">
-            <h2 class="h3_bg mb_40"><?php the_field('t_name') ?>について</h2>
+            <h2 class="h3_bg mb_40"><ruby><?php the_field('t_name') ?><rt><?php the_field('t_kana') ?></rt></ruby>について</h2>
 
             <div class="temple_about">
                 <!-- おすすめ画像 -->
@@ -100,7 +100,7 @@
                         </tr>
                         <tr>
                             <td><?php if (get_field('t_url') != '-') { ?>
-                                <a href="<?php the_field('t_url'); ?>" target=_blank class="link"><?php the_field('t_name'); ?></a>
+                                    <a href="<?php the_field('t_url'); ?>" target=_blank class="link"><?php the_field('t_name'); ?></a>
                                 <?php } else {
                                     echo 'なし';
                                 } ?>
@@ -142,43 +142,43 @@
                 if ($facility_query->have_posts()) :
                     while ($facility_query->have_posts()) : $facility_query->the_post(); ?>
 
-                <!-- 周辺施設カードのデザイン -->
-                <div class="shop_info_card">
-                    <div class="shop_info_caption">
-                        <img src="<?php the_field('f_pic1'); ?>" alt="施設の画像" />
-                    </div>
+                        <!-- 周辺施設カードのデザイン -->
+                        <div class="shop_info_card">
+                            <div class="shop_info_caption">
+                                <img src="<?php the_field('f_pic1'); ?>" alt="施設の画像" />
+                            </div>
 
-                    <!-- ブックマークボタン -->
-                    <div class="shop_info_fav">
-                        <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
-                    </div>
+                            <!-- ブックマークボタン -->
+                            <div class="shop_info_fav">
+                                <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
+                            </div>
 
-                    <div class="shop_info_title">
-                        <p><?php the_field('f_name'); ?></p>
-                    </div>
+                            <div class="shop_info_title">
+                                <p><?php the_field('f_name'); ?></p>
+                            </div>
 
-                    <div class="shop_info_text">
-                        <p>営業時間：<?php the_field('f_hours'); ?></p>
-                        <p>定休日：<?php the_field('f_holiday'); ?></p>
-                        <p>TEL：<?php the_field('f_tell'); ?></p>
-                        <p>駐車場：<?php the_field('f_parking'); ?></p>
-                        <p>公式HP：
+                            <div class="shop_info_text">
+                                <p>営業時間：<?php the_field('f_hours'); ?></p>
+                                <p>定休日：<?php the_field('f_holiday'); ?></p>
+                                <p>TEL：<?php the_field('f_tell'); ?></p>
+                                <p>駐車場：<?php the_field('f_parking'); ?></p>
+                                <p>公式HP：
                                     <?php if (get_field('f_url') != '-') { ?>
                                         <a href="<?php the_field('f_url'); ?>" target=_blank class="link">ここをクリック</a>
                                     <?php } else {
                                         echo 'なし';
                                     } ?>
                                 </p>
-                    </div>
-                    <div class="shop_info_article">
-                        <p>
+                            </div>
+                            <div class="shop_info_article">
+                                <p>
                                     <?php the_field('f_message'); ?>
                                 </p>
-                    </div>
+                            </div>
 
-                </div>
+                        </div>
 
-                <?php endwhile; ?>
+                    <?php endwhile; ?>
                 <?php endif; ?>
                 <?php wp_reset_postdata(); ?>
             </div>
