@@ -9,7 +9,7 @@
     <div class="main_inner">
 
         <h1 class="h1_bg">＃ゆるへんろって？</h1>
-        <?php get_template_part('template-parts/breadcrumb');?>
+        <?php get_template_part('template-parts/breadcrumb'); ?>
 
         <article class="contents_width">
 
@@ -48,7 +48,7 @@
 
                 <div class="yuru_txt">
 
-                    <h3 class="emphasis">お遍路とは</h3>
+                    <h3 class="cp_minittl mb_20">お遍路とは</h3>
                     <div class="mb_40 js-fadeUp">
                         <p class="small_cap_independent mb_40 js-fadeUp">
                             約1200年前、弘法大師（空海）が自らの修行、そして人々を災いから救うために開いた四国八十八ヶ所のお寺を巡る旅のことです。
@@ -58,7 +58,7 @@
                         </p>
                     </div>
 
-                    <h3 class="emphasis">徳島遍路について</h3>
+                    <h3 class="cp_minittl mb_20">徳島遍路について</h3>
                     <div class="mb_40 js-fadeUp">
                         <p class="small_cap_independent mb_40">
                             徳島県は【発心の道場】（ほっしん:悟りを得ようとする心）、高知県は【修行の道場】（しゅぎょう:仏道と精神力を高める）、愛媛県は【菩提の道場】（ぼだい:煩悩を断ち切る）、香川県は【涅槃の道場】（ねはん:解脱の境地に達す）と、修行の道場に例えられています。
@@ -68,7 +68,7 @@
                         </p>
                     </div>
 
-                    <h3 class="emphasis">お遍路の心構え</h3>
+                    <h3 class="cp_minittl mb_20">お遍路の心構え</h3>
                     <div>
                         <p class="small_cap_independent mb_40">
                             ＜十善戒（じゅうぜんかい）＞
