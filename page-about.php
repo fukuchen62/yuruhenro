@@ -9,14 +9,14 @@
     <div class="main_inner">
 
         <h1 class="h1_bg">＃ゆるへんろって？</h1>
-        <?php get_template_part('template-parts/breadcrumb'); ?>
+        <div id="jump_to_abouth2"><?php get_template_part('template-parts/breadcrumb'); ?></div>
 
         <article class="contents_width">
 
             <!-- section区切り -->
             <section class="mb_80">
                 <div class="h2_box">
-                    <h2 id="jump_to_abouth2" class="h2_bg mb_40">＃ゆるへんろってなぁに？</h2>
+                    <h2 class="h2_bg mb_40">＃ゆるへんろってなぁに？</h2>
                 </div>
 
                 <div class="yuru_introduction">
