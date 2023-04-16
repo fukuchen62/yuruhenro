@@ -137,55 +137,62 @@ img {
     background-color: #6a3c2b;
     transition: 0.3s;
 }
+
 .button18 a:hover::before,
 .button18 a:hover::after {
     right: 0.5em;
 }
-    text-align:
+
+/*パンくずリストデザイン*/
 .breadcrumb_inner {
     padding: 15px 50px;
     margin-bottom: 100px;
 }
-    font-fam
+
+/*お気に入りボタン*/
 .shop_info_fav {
     font-size: 2rem;
     text-align: right;
     margin-bottom: 20px;
-    margin-bottom: 40px;
-
+    /* color: #cd5e3c; */
 }
 
 @media screen and (min-width: 1000px) {
     .wrap {
         font-size: 18px;
     }
+
     .h1_bg {
         height: 150px;
         font-size: 36px;
         line-height: 150px;
         margin-top: 100px;
     }
+
     .h2_bg {
         font-size: 24px;
         margin-bottom: 50px;
     }
+
     .h3_bg {
         font-size: 22px;
         margin-bottom: 0 auto 80px;
     }
+
     .button18 a {
         width: 170px;
-    } * h1下のキャプション */
+    }
+
+    /*パンくずリストデザイン*/
     .breadcrumb_inner {
         margin-bottom: 80px;
     }
 }
-}
 
-/* 画像などの説明キャプショ
+/****************/
+/***  header  ***/
+/****************/
 
-/* 画像などの説明キャプション
-/* 画像などの説明キャプション *
 .header_inner {
     position: fixed;
     top: 0;
@@ -195,35 +202,37 @@ img {
     background-color: rgba(255, 255, 255, 0.9);
     display: flex;
 }
+
 .header_logo img {
     height: 80px;
     padding: 15px 0 15px 40px;
     background-color: none;
 }
-    background-image: url(.
+
+/* safariの場合のヘッダーロゴサイズ指定 */
 _:lang(x) + _:-webkit-full-screen-document,
 .header_logo img {
-    background-position
-    width: auto; utton18 a::before {
-    content: "
+    /* height: 17vh; */
+    width: auto;
+    /* background-color: turquoise; */
 }
-    position: absolute;
 
-    top: calc(50%
-    right: 1.5em;
-    tr
-    trans
+/**********************/
+/***ハンバーガーボタン***/
+/**********************/
+/*ボタン位置*/
 .header_hamburger {
     position: fixed;
     z-index: 10;
-    transition
+    /*ボタン最前面*/
     padding: 15px;
     top: 15px;
     right: 15px;
     width: 50px;
     height: 50px;
 }
-    width:
+
+/*ボタンデザイン*/
 .header_hamburger span {
     position: absolute;
     right: 5px;
@@ -241,15 +250,15 @@ _:lang(x) + _:-webkit-full-screen-document,
 .header_hamburger span:nth-child(3) {
     top: 30px;
 }
-.shop_info_f
+/*インスタアイコン*/
 .menu-item-1126 {
     margin-left: 24px;
 }
 .menu-item-1137 {
     margin-left: 24px;
 }
-    .wrap {
 
+/*ボタンが押されたとき*/
 .header_hamburger.active {
     background-color: transparent;
 }
@@ -266,14 +275,11 @@ _:lang(x) + _:-webkit-full-screen-document,
     top: 35px;
     transform: rotate(-45deg) translate(9px, -9px);
 }
-        margin-bottom: 0
-    }
 
-    .button
-
-    .button18 a {
-
-    .button18
+/**********************/
+/***  ナビメニュー  ***/
+/**********************/
+/***メニュー部分***/
 .header_nav {
     opacity: 0;
     width: 100%;
@@ -284,17 +290,19 @@ _:lang(x) + _:-webkit-full-screen-document,
     justify-content: center;
     align-items: center;
 }
+
 .header_nav ul {
     display: none;
     text-align: center;
 }
+
 .header_nav li {
     position: relative;
     margin-bottom: 40px;
-    background-color: rgba(
+    /* line-height: 1em; */
 }
 
-.header_l
+/*下線デザイン*/
 .header_nav li::after {
     position: absolute;
     bottom: -10px;
@@ -310,8 +318,8 @@ _:lang(x) + _:-webkit-full-screen-document,
 .header_nav li:hover::after {
     transform: scale(1, 1);
 }
-/**********************/
-/
+
+/***ハンバーガーボタンが押されたとき表示***/
 .header_nav.active {
     position: fixed;
     right: 0;
@@ -322,29 +330,31 @@ _:lang(x) + _:-webkit-full-screen-document,
 .header_nav.active ul {
     display: block;
 }
-}
-
-/*ボタンデザイン*/
-.header_h
+/*ハンバーガー展開中はスクロールしない設定*/
 body.active {
     height: 100%;
     overflow: hidden;
 }
+
 @media screen and (min-width: 950px) {
     .header_inner {
         position: none;
         justify-content: space-between;
         padding: 0 30px 0 0;
     }
+
     .header_hamburger {
         display: none;
-    } der_hamburger span:nth-child(3)
+    }
+
+    /* ハンバーガーメニュー時のみインスタグラムアイコン表示 */
     .menu-item-1126 {
         display: none;
     }
     .menu-item-1137 {
         display: none;
     }
+
     .header_nav {
         opacity: 1;
         z-index: 2;
@@ -354,9 +364,11 @@ body.active {
         transition: none;
         padding: 0;
     }
+
     .header_nav ul {
         align-items: flex-end;
     }
+
     .header_nav li {
         text-align: center;
         position: relative;
@@ -364,19 +376,21 @@ body.active {
         margin-bottom: 40px;
         line-height: 1em;
     }
+
     .header_nav ul {
         display: flex;
     }
 }
-    width: 100%;
 
-    height: 100vh;
-    background: #f
+/****************/
+/***   main   ***/
+/****************/
+
 .main_inner {
     margin: 0 auto;
 }
 
-.header_nav
+/* コースボタン */
 .course_btn {
     font-size: 20px;
     text-align: center;
@@ -389,13 +403,14 @@ body.active {
     background-color: #79afaf;
     box-shadow: 6px 6px 6px gray;
 }
-.header_nav li::
+/* コースボタン押し込み */
 .course_btn:active {
     -webkit-transform: translateY(4px);
     transform: translateY(4px);
     border-bottom: none;
     box-shadow: 0px 0px 0px;
 }
+
 .btn1 {
     background-color: #79afaf;
     box-shadow: 6px 6px 6px #c7c7c7;
@@ -404,6 +419,7 @@ body.active {
     background-color: #62a2b4;
     box-shadow: 6px 6px 6px #c7c7c7;
 }
+
 .btn2 {
     background-color: #8ab53e;
     box-shadow: 6px 6px 6px #c7c7c7;
@@ -412,6 +428,7 @@ body.active {
     background-color: #5da927;
     box-shadow: 6px 6px 6px #c7c7c7;
 }
+
 .btn3 {
     background-color: #cd5e3c;
     box-shadow: 6px 6px 6px #c7c7c7;
@@ -420,6 +437,7 @@ body.active {
     background-color: #d13b39;
     box-shadow: 6px 6px 6px #c7c7c7;
 }
+
 .btn4 {
     background-color: #c5a22b;
     box-shadow: 6px 6px 6px #c7c7c7;
@@ -428,6 +446,7 @@ body.active {
     background-color: #c99110;
     box-shadow: 6px 6px 6px #c7c7c7;
 }
+
 .btn5 {
     background-color: #bc786a;
     box-shadow: 6px 6px 6px #c7c7c7;
@@ -436,51 +455,42 @@ body.active {
     background-color: #ba5e4b;
     box-shadow: 6px 6px 6px #c7c7c7;
 }
-        opac
-        z-index:
+
+/*要素フェードイン*/
+/* フェードイン(初期値) */
 .js-fadeUp {
     opacity: 0;
-        backgrou
+    /* 最初は非表示 */
     transform: translateY(30px);
-        padding: 0;
-
+    /* 下に30pxの位置から */
     transition: opacity 0.8s, transform 0.8s;
-     .header_nav ul {
-
+    /* 透過率と縦方向の移動を0.8秒 */
 }
-    }
 
-    .header_nav
+/* フェードイン(スクロールした後) */
 .js-fadeUp.is-inview {
     opacity: 1;
-        text-align: c
+    /* 表示領域に入ったら表示 */
     transform: translateY(0);
-        padding: 0 1
-        margin-bottom: 40px;
-
-        line-height: 1em;
-}
-    .header_nav ul
-        display: f
-    }
+    /* 30px上に移動する */
+    /* transition-delay: 0.5s; */
+    /* フェード開始を0.5秒遅らせる */
 }
 
-/********
+/****************/
+/***  footer  ***/
+/****************/
 .footer_inner {
     flex-direction: column;
     min-width: 320px;
     color: #fbfaf5;
-
     text-align: center;
-    background-image: url(../img/footer_bg02.jpg); n_inner {
-    margin: 0 auto;
-}
-
+    background-image: url(../img/footer_bg02.jpg);
+    /* background-color: #71674c; */
     padding: 40px 0 15px;
 }
 
-/* コースボタン */
-
+/*TOPへ戻るボタン*/
 .page-top {
     position: fixed;
     bottom: 40px;
@@ -489,6 +499,7 @@ body.active {
     line-height: 1;
     z-index: 3;
 }
+
 .page-top a {
     position: fixed;
     bottom: 40px;
@@ -497,17 +508,21 @@ body.active {
     line-height: 1;
     z-index: 3;
 }
+
 .page-top a:hover {
     text-decoration: none;
 }
+
 .page-top img {
     width: 60px;
     height: 60px;
 }
+
 .page-top.active {
     display: none;
 }
-    box-sha
+
+/*インスタマーク*/
 .footer_insta {
     justify-content: center;
     margin-bottom: 20px;
@@ -519,54 +534,61 @@ body.active {
 .footer_insta p {
     line-height: 40px;
 }
-    box
+
+/*リンク*/
 .footer_links {
     display: none;
 }
-    box-s
+
+/*ロゴマーク*/
 .footer_logo {
     width: 180px;
-    background-color: #c99110;
+    /* margin-bottom: 50px; */
 }
 
-.btn5 {
-
+/*サイトマップ*/
 .footer_nav {
     line-height: 2em;
     margin-bottom: 20px;
 }
+
 .footer_nav_b {
     font-weight: bold;
 }
-
 .sp_none {
     display: none;
 }
+
 .sp_none li {
     list-style: none;
 }
+
 @media screen and (min-width: 1000px) {
     .footer_links,
     .sp_none {
         display: block;
     }
+
     .footer_links {
         max-width: 870px;
         margin: 0 auto 40px;
     }
     .footer_links ul {
         justify-content: space-around;
-    } *************/
-/***  footer
+    }
+
+    /* バナー比率はaspect3:1で作成のこと */
     .footer_links li img {
         width: 50%;
         height: auto;
     }
-    color: #fbfaf
+
+    /*TOPへ戻るボタン*/
     .page-top {
         bottom: 60px;
         right: 60px;
     }
+
     .page-top a {
         bottom: 60px;
         right: 60px;
@@ -575,35 +597,40 @@ body.active {
         width: 80px;
         height: 80px;
     }
+
     .page-top.active {
         z-index: -100;
     }
+
     .footer_nav {
         max-width: 870px;
         margin: 0 auto 20px;
         text-align: left;
         font-size: 14px;
     }
+
     .footer_nav > ul {
         display: flex;
         justify-content: space-between;
     }
+
     .sp_none {
         list-style: disc;
     }
+
     .footer_nav_b {
         font-size: 16px;
         list-style: none;
     }
 }
-    justify-conten
-    margin-bo
-}
-.fa-instagram {
 
+/****************/
+/* ユーティリティ */
+/****************/
 .text_c {
     text-align: center;
 }
+
 .flex {
     display: flex;
 }
@@ -611,14 +638,15 @@ body.active {
 .flex_d_c {
     flex-direction: column;
     flex-wrap: wrap;
-
     padding: 0 30px;
 }
+
 .contents_width {
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 30px;
 }
+
 @media screen and (min-width: 1000px) {
     .flex_d_c {
         flex-direction: row;
@@ -626,29 +654,36 @@ body.active {
         max-width: 500px;
         text-align: center;
     }
+
     .contents_width {
         max-width: 1000px;
-        margin: 0 auto; e li {
-    list-s
+        margin: 0 auto;
+        /* padding: 0; */
     }
 }
+
 .sec_mb40 {
-    ia screen and (min-width
+    /* max-width: 1000px; */
     padding: 0 10px;
     margin: 0 auto 40px;
 }
+
 .mb_20 {
     margin-bottom: 20px;
 }
+
 .mb_40 {
     margin-bottom: 40px;
 }
+
 .mb_80 {
     margin-bottom: 80px;
 }
+
 .mb_100 {
     margin-bottom: 100px;
 }
+
 .mb_150 {
     margin-bottom: 150px;
 }

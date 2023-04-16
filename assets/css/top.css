@@ -207,31 +207,31 @@ _:lang(x) + _:-webkit-full-screen-document,
     }
 
     .home .luxy_pic1 {
-        max-width: 400px;
+        max-width: 150px;
         position: absolute;
-        /* top: -50px;
-        left: -10%; */
+        top: 80px;
+        left: 25%;
     }
 
     .home .luxy_pic2 {
-        max-width: 150px;
+        max-width: 400px;
         position: absolute;
-        /* top: 50px;
-        left: 15%; */
+        top: -40px;
+        left: 5px;
     }
 
     .home .luxy_pic3 {
-        max-width: 400px;
+        max-width: 150px;
         position: absolute;
-        /* top: -50px;
-        left: -10%; */
+        top: 120px;
+        right: 200px;
     }
 
     .home .luxy_pic4 {
-        max-width: 150px;
+        max-width: 400px;
         position: absolute;
-        /* top: 50px;
-        left: 15%; */
+        top: 20px;
+        right: 10px;
     }
 
     /* luxy用 */

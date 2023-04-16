@@ -382,6 +382,11 @@
     background-image: url(../img/h1_bg09.jpg);
 }
 
+/* 用語集 h1背景画像 */
+.post-type-archive-glossary .h1_bg {
+    background-image: url(../img/h1_bg14.jpg);
+}
+
 .section_line {
     border-bottom: 2px dotted #c69c6d;
     padding: 0 20px;
@@ -424,10 +429,45 @@
     }
 }
 
+/********************/
+/* このサイトについて */
+/********************/
+/* このサイトについて h1背景画像 */
+.page-id-57 .h1_bg {
+    background-image: url(../img/h1_bg15.jpg);
+}
+
+/**********************/
+/* プライバシーポリシー */
+/**********************/
+/* プライバシーポリシー h1背景画像 */
+.page-id-59 .h1_bg {
+    background-image: url(../img/h1_bg13.jpg);
+}
+
+/**********************/
+/* サイト制作にあたって */
+/**********************/
+/* プライバシーポリシー h1背景画像 */
+.page-id-55 .h1_bg {
+    background-image: url(../img/h1_bg16.jpg);
+}
+
+/***************/
+/* お問い合わせ */
+/***************/
+/* お問い合わせ h1背景画像 */
+.page-id-543 .h1_bg,
+.page-id-554 .h1_bg {
+    background-image: url(../img/h1_bg17.jpg);
+}
+
+.page-id-554
+
 /****************/
 /*      404      */
 /****************/
-/* Q&A h1背景画像 */
+/* 404 h1背景画像 */
 .error404 .h1_bg {
     background-image: url(../img/h1_bg12.jpg);
 }
