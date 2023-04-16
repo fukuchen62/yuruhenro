@@ -149,6 +149,11 @@ img {
     margin-bottom: 100px;
 }
 
+/*インスタプラグインデザイン*/
+.sb_instagram_header {
+    padding: 15px 50px;
+    }
+
 /*お気に入りボタン*/
 .shop_info_fav {
     font-size: 2rem;
