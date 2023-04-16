@@ -18,7 +18,7 @@
         </div>
         <div class="mb_40">
             寺社や周辺施設に関する詳細な情報や問い合わせにつきましては、各寺社や各施設に直接お問い合わせください。<br>
-            個人情報の取り扱いについては、<a class="link" href=" <?php echo home_url('privacy'); ?> ">こちら</a>のページをご確認ください。
+            個人情報の取り扱いについては、<a class="link" href=" <?php echo home_url('privacy'); ?> ">プライバシーポリシー</a>のページをご確認ください。
         </div>
         <?php echo do_shortcode('[mwform_formkey key="548"]') ?>
     </div>
