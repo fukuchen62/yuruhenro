@@ -97,14 +97,11 @@
 .hatenagirl2 {
     width: 100px;
     height: auto;
-    /*揺れアニメーション*/
+    /*アニメーション*/
     animation: fuwafuwa 3s infinite ease-in-out .8s alternate;
     background: url(../img/ico-apple.svg) no-repeat center center / 80px auto;
     display: inline-block;
     transition: 1.5s ease-in-out;
-            /* width: 70px;
-            height: 70px;
-            margin-top: 15px; */
         }
 @keyframes fuwafuwa {
     0% {
@@ -146,6 +143,17 @@
 .oinori_img {
     width: 200px;
     height: auto;
+    /*アニメーション*/
+    border-radius: 5px;
+    animation: pikopiko 2s steps(2, start) infinite;
+}
+@keyframes pikopiko {
+    0% {
+        transform: rotate(20deg);
+    }
+    to {
+        transform: rotate(-10deg);
+    }
 }
 
 .oinori_txt {
