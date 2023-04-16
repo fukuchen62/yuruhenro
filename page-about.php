@@ -158,9 +158,10 @@
             <section>
                 <div class="procedure_skin">
                     <div class="procedure">
+                        <div class="emphasis">一．</div>
                         <div class="picto">
+
                             <div class="pictono">
-                                <div class="emphasis">一．</div>
                                 <div class="illust"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/itirei.png" alt="一礼"></div>
                             </div>
                             <div class="notes">
@@ -170,9 +171,9 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="emphasis">二．</div>
                         <div class="picto">
                             <div class="pictono">
-                                <div class="emphasis">二．</div>
                                 <div class="illust"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/temizu.png" alt="手水"></div>
                             </div>
                             <div class="notes">
@@ -182,9 +183,9 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="emphasis">三．</div>
                         <div class="picto">
                             <div class="pictono">
-                                <div class="emphasis">三．</div>
                                 <div class="illust"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/kanetuki.png" alt="鐘撞"></div>
                             </div>
                             <div class="notes">
@@ -194,9 +195,9 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="emphasis">四．</div>
                         <div class="picto">
                             <div class="pictono">
-                                <div class="emphasis">四．</div>
                                 <div class="illust"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/tera.png" alt="礼拝"></div>
                             </div>
                             <div class="notes">
@@ -214,9 +215,9 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="emphasis">五．</div>
                         <div class="picto">
                             <div class="pictono">
-                                <div class="emphasis">五．</div>
                                 <div class="illust"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/gosyuintyou.png" alt="御朱印帳"></div>
                             </div>
                             <div class="notes">
@@ -227,9 +228,9 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="emphasis">六．</div>
                         <div class="picto">
                             <div class="pictono">
-                                <div class="emphasis">六．</div>
                                 <div class="illust"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/itirei.png" alt="一礼" style="transform: scale(-1, 1)"></div>
                             </div>
                             <div class="notes">
