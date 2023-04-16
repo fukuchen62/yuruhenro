@@ -4,7 +4,7 @@
 
 /* h1下のキャプション */
 .big_cap_independent {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 2em;
     margin-bottom: 40px;
 }
@@ -25,7 +25,7 @@
 
 .ol_kanji {
     list-style-type: cjk-ideographic;
-    font-size: 14px;
+    font-size: 16px;
     line-height: 2em;
     padding: 0 40px;
     margin-bottom: 10px;
@@ -97,6 +97,25 @@
 .hatenagirl2 {
     width: 100px;
     height: auto;
+    /*揺れアニメーション*/
+    animation: fuwafuwa 3s infinite ease-in-out .8s alternate;
+    background: url(../img/ico-apple.svg) no-repeat center center / 80px auto;
+    display: inline-block;
+    transition: 1.5s ease-in-out;
+            /* width: 70px;
+            height: 70px;
+            margin-top: 15px; */
+        }
+@keyframes fuwafuwa {
+    0% {
+        transform: translate(0, 0) rotate(-7deg);
+    }
+    50% {
+        transform: translate(0, -7px) rotate(0deg);
+    }
+    100% {
+        transform: translate(0, 0) rotate(7deg);
+    }
 }
 
 .dashline {
@@ -142,7 +161,6 @@
 
 .emphasis {
     font-size: 18px;
-    font-weight: bold;
     line-height: 2em;
 }
 
@@ -211,6 +229,7 @@
 .yuru_txt {
     max-width: 700px;
     margin: 0 auto;
+    margin-bottom: 100px;
 }
 
 .awaodori_bgimg {
@@ -218,7 +237,7 @@
     height: auto;
     min-height: 210px;
     margin: 0 auto;
-    padding: 0 10%;
+    padding: 0 16%;
     background-image: url(../img/henro_silhouette02.png),
         url(../img/henro_silhouette03.png);
 
