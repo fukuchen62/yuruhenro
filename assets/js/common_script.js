@@ -144,7 +144,7 @@ $(function () {
         arrows: false,
         prevArrow: false,
         nextArrow: false,
-        autoplaySpeed: 4000, //次のスライドに切り替わる待ち時間
+        autoplaySpeed: 6000, //次のスライドに切り替わる待ち時間
         speed: 2000, //スライドの動きのスピード。初期値は300。
         infinite: true, //スライドをループさせるかどうか。初期値はtrue。
         pauseOnFocus: false, //フォーカスで一時停止を無効
