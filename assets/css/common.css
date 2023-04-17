@@ -115,7 +115,7 @@ img {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
-    transition: 0.3s;
+    /* transition: 0.3s; */
 }
 .button18 a::before {
     content: "";
