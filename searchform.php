@@ -4,7 +4,8 @@
             <div class="course_pcW1">
                 <p>該当する条件でお寺と周辺施設を検索することができます。<br>
                     条件を選択後、「検索」ボタンを押してください。<br>
-                    ブックマーク<i class="fa-regular fa-bookmark"></i>を押すと<a href="<?php echo home_url('bookmark'); ?>" class="link">マイブックマーク</a>ページに登録出来ます。</p>
+                    ブックマーク<i class="fa-regular fa-bookmark"></i>を押すと<a href="<?php echo home_url('bookmark'); ?>" class="link">マイブックマーク</a>ページに登録出来ます。<br>
+                    なお寺院内設備に関する情報や周辺施設情報は変更されている可能性がありますのでご注意ください。</p>
             </div>
         </div>
     </section>
