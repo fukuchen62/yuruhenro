@@ -206,3 +206,12 @@
         flex-wrap: wrap;
     }
 }
+
+
+/*カード1カラム時のセンタライズ*/
+
+@media screen and (max-width: 699px){
+    .shop_info_list {
+        justify-content: center;
+    }
+}
