@@ -283,6 +283,7 @@ _:lang(x) + _:-webkit-full-screen-document,
     writing-mode: vertical-rl;
     z-index: 3;
     word-break: keep-all !important;
+        display: none;
 }
 
 /*========= 光りながら出現させるためのCSS ===============*/
