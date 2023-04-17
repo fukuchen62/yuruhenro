@@ -232,8 +232,8 @@ _:lang(x) + _:-webkit-full-screen-document,
     /* luxy用 */
     .luxy_posi {
         display: block;
-        /* position: relative;
-        margin: 0 auto; */
+        position: relative;
+        margin: 0 auto;
     }
 
     .home .luxy_pic1 {
