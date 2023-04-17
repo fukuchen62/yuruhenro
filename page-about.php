@@ -156,6 +156,9 @@
 
 
             <section>
+                <div class="h2_box">
+                    <h2 class="h2_bg mb_40">参拝の手順</h2>
+                </div>
                 <div class="procedure_skin">
                     <div class="procedure">
                         <div class="emphasis">一．</div>
