@@ -104,7 +104,7 @@ Template Name:page-monzen
                             <th>公式HP</th>
                         </tr>
                         <tr>
-                            <td><a href="https://monzen-ichibangai.com/">https://monzen-ichibangai.com/</a></td>
+                            <td><a href="https://monzen-ichibangai.com/" target=_blank>https://monzen-ichibangai.com/</a></td>
                         </tr>
                         <tr>
                             <th>駐車場</th>
