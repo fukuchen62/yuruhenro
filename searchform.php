@@ -6,7 +6,9 @@
                     条件を選択後、「検索」ボタンを押してください。<br>
                     ブックマーク<i class="fa-regular fa-bookmark"></i>を押すと<a href="<?php echo home_url('bookmark'); ?>" class="link">マイブックマーク</a>ページに登録出来ます。</p>
             </div>
+        </div>
     </section>
+
 
     <section class="contents_width search_form mb_40">
         <h2 class="h3_bg mb_40">検索条件選択</h2>
