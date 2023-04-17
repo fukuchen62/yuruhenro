@@ -21,9 +21,20 @@
         <nav class="footer_nav">
             <ul>
                 <li class="mb_40">
-                    <a href="<?php echo home_url(); ?>">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/footer_logo.png" alt="とくしま１日＃ゆるへんろロゴ" class="footer_logo">
-                    </a>
+                    <div class="pc_none">
+                        <a href="<?php echo home_url(); ?>">
+                            <!-- sp用ロゴ -->
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/footer_logo.png" alt="とくしま１日＃ゆるへんろロゴ" class="footer_logo">
+                        </a>
+                    </div>
+                </li>
+                <li class="mb_40">
+                    <div class="sp_none">
+                        <!-- pc用ロゴ -->
+                        <a href="<?php echo home_url(); ?>">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/footer_pc.png" alt="とくしま１日＃ゆるへんろロゴ" class="footer_logo">
+                        </a>
+                    </div>
                 </li>
                 <li>
                     <ul class="sp_none">
