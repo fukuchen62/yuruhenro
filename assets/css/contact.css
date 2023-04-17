@@ -50,6 +50,7 @@
 
 .form .form_row .form_content textarea {
     min-height: 200px;
+    min-width: 580.5px;
     /* margin: 0 auto;
     background-color: magenta; */
 }
