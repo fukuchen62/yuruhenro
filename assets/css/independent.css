@@ -163,7 +163,7 @@
 
 .ema {
     /* margin: 0 auto; */
-    width: fit-content;
+    /* width: fit-content; */
     padding: 1px 30px;
     background-image: url(../img/emahaikei.png);
 }
