@@ -220,3 +220,11 @@ width: fit-content;
     margin: 32px 0;
 }
 }
+
+/*カード１カラム時の中央揃え*/
+@media screen and (max-width:699px){
+    .searchresult_content{
+        justify-content: center;
+        flex-direction: row;
+    }
+}
