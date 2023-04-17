@@ -8,19 +8,21 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     /* flex-direction: column; */
     -js-display: flex
-}
-
-.form .form_row:last-child{
-    /* left:200px; */
 }
 
 .form .form_row .form_label {
     width: fit-content;
     font-size: 14px;
-    justify-content:flex-start;
+    justify-content:center;
+}
+
+.form .form_row .form_message {
+    /* background-color: chartreuse; */
+    /* justify-content: space-around; */
+    /* margin: 0 auto 0 3vw; */
 }
 
 .form .form_row .form_label span {
@@ -36,21 +38,20 @@
     /* justify-content: center; */
 }
 
-.form_message {
-    display: flex;
-    justify-content: end;
-}
 
 .form .form_row .form_content input,
 .form .form_row .form_content textarea {
     width: 100%;
     padding: 15px 10px;
     border-radius: 5px 5px 5px 5px !important;
-    border: 1px solid #70462E
+    border: 1px solid #70462E;
+    /* background-color: gold; */
 }
 
 .form .form_row .form_content textarea {
-    min-height: 200px
+    min-height: 200px;
+    /* margin: 0 auto;
+    background-color: magenta; */
 }
 
 .form .form_row .form_content.form_content-tel input {
