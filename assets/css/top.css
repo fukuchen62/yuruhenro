@@ -270,7 +270,7 @@ _:lang(x) + _:-webkit-full-screen-document,
 /*===========================================================*/
 .glowAnime {
     position: absolute;
-    top: 300px;
+    top: 350px;
     left: 50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
@@ -278,11 +278,11 @@ _:lang(x) + _:-webkit-full-screen-document,
     font-size: 1.5em;
     line-height: 1.5em;
     color: #fff;
-    max-height: 190px;
+    height: 42vh;
     -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
     z-index: 3;
-    word-break: normal !important;
+    word-break: keep-all !important;
 }
 
 /*========= 光りながら出現させるためのCSS ===============*/
