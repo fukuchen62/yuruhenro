@@ -225,7 +225,7 @@
         url(../img/tokusimatizu2.png), url(../img/renkon.png);
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: top right, left bottom, left bottom;
-    background-size: 330px, 380px, 90px;
+    background-size: 330px, 330px, 90px;
 }
 
 .yuru_introduction_txt {
