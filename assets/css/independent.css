@@ -62,7 +62,8 @@
     max-width: 1180px;
     border: 1px solid #008080;
     border-radius: 30px;
-    gap: 40px;
+    /* gap: 40px; */
+    gap: 20px;
     padding: 40px;
 }
 .procedure_skin {
