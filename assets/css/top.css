@@ -155,12 +155,10 @@ _:lang(x) + _:-webkit-full-screen-document,
     }
 }
 
-
 @media screen and (min-width: 800px) {
-
     .contents_width.mb_40 {
-            margin-bottom: 100px;
-        }
+        margin-bottom: 100px;
+    }
 
     .top_bc {
         text-align: center;
@@ -195,8 +193,8 @@ _:lang(x) + _:-webkit-full-screen-document,
         /* text-align: left; */
         flex-direction: row;
         justify-content: flex-start;
-        /* align-items: flex-start;
-        margin: 0 auto; */
+        align-items: flex-start;
+        /* margin: 0 auto; */
     }
 
     .btn_and_description_area .course_btn {
@@ -212,7 +210,6 @@ _:lang(x) + _:-webkit-full-screen-document,
         margin: 0 auto;
     }
 }
-
 
 @media screen and (min-width: 1000px) {
     .btn_description {
