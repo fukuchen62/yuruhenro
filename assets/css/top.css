@@ -270,16 +270,16 @@ _:lang(x) + _:-webkit-full-screen-document,
 /*===========================================================*/
 .glowAnime {
     position: absolute;
-    top: 350px;
+    top: 320px;
     left: 50%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
-    font-size: 1.5em;
+    font-size: 2em;
     line-height: 1.5em;
     color: #fff;
     /* max-height: 190px; */
-    height: 32vh;
+    height: 42vh;
     -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
     z-index: 3;
