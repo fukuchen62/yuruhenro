@@ -213,7 +213,7 @@ max-width: 1440px;
 }
 
 /*カード１カラム時の中央揃え*/
-@media screen and (max-width:699px){
+@media screen and (max-width:700px){
     .searchresult_content{
         justify-content: center;
         flex-direction: row;
