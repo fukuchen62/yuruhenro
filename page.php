@@ -11,7 +11,7 @@
     <div class="h1_bg">
         <h1><?php the_title(); ?></h1>
     </div>
-    <div class="big_cap mb_40">
+    <div class="big_cap mb_40 contents_width">
         <?php the_content(); ?>
     </div>
 
