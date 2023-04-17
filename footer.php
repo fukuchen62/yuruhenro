@@ -31,7 +31,7 @@
                         <li><a href="<?php echo home_url('/'); ?>about#jump_to_abouth2">＃ゆるへんろってなぁに？</a></li>
                         <li><a href="<?php echo esc_url(home_url('/')); ?>about#jump_to_about">おへんろの作法</a></li>
                         <li><a href="<?php echo home_url('checkpoint'); ?>">参拝スタイル</a></li>
-
+                        <li><a href="<?php echo home_url('glossary'); ?>">用語集</a></li>
                     </ul>
                 </li>
                 <li>
@@ -50,7 +50,7 @@
                         <li><a href="<?php echo home_url('bookmark'); ?>" class="sp_none">マイブックマーク</a></li>
                         <li><a href="<?php echo home_url('?s='); ?>" class="sp_none">条件検索</a></li>
                         <li><a href="<?php echo home_url('qanda'); ?>" class="sp_none">Q&amp;A</a></li>
-                        <li><a href="<?php echo home_url('glossary'); ?>">用語集</a></li>
+                        <li><a href="<?php echo home_url('contact'); ?>">お問い合わせ</a></li>
                         <li><a href="<?php echo home_url('sitemap'); ?>">このサイトについて</a></li>
                         <li><a href="<?php echo home_url('privacy'); ?>">プライバシーポリシー</a></li>
                         <li><a href="<?php echo home_url('aboutus'); ?>">サイト制作にあたって</a></li>
