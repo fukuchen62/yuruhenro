@@ -278,7 +278,8 @@ _:lang(x) + _:-webkit-full-screen-document,
     font-size: 1.5em;
     line-height: 1.5em;
     color: #fff;
-    height: 42vh;
+    /* max-height: 190px; */
+    height: 32vh;
     -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
     z-index: 3;
