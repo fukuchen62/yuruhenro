@@ -150,7 +150,7 @@ _:lang(x) + _:-webkit-full-screen-document,
     _:future,
     :root .top_patern2 {
         position: relative;
-        top: 70vh;
+        top: 30vh;
         /* background-color: purple; */
     }
 }
