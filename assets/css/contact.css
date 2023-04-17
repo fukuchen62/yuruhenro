@@ -136,4 +136,7 @@
 .form .form_row{
     flex-direction: column;
 }
+.form .form_row .form_content textarea {
+    min-width:fit-content;
+}
 }
