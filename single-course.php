@@ -6,7 +6,9 @@
 <!-- mainここから -->
 <main>
     <h1 class="h1_bg">コース紹介</h1>
-    <?php get_template_part('template-parts/breadcrumb'); ?>
+    <div id="junp_tab">
+        <?php get_template_part('template-parts/breadcrumb'); ?>
+    </div>
 
     <article class="main_inner">
         <section class="mb_40">
@@ -23,11 +25,11 @@
             <!-- タブ -->
             <div>
                 <ul class="course_tabWrap flex">
-                    <li><a id="easy" href="<?php echo get_permalink(308); ?>">入門歩きへんろコース</a></li>
-                    <li><a id="north" href="<?php echo get_permalink(310); ?>">県北　車コース</a></li>
-                    <li><a id="west" href="<?php echo get_permalink(312); ?>">県西　車コース</a></li>
-                    <li><a id="south" href="<?php echo get_permalink(314); ?>">県南　車コース</a></li>
-                    <li><a id="city" href="<?php echo get_permalink(316); ?>">市内　徒歩コース</a></li>
+                    <li><a id="easy" href="<?php echo get_permalink(308); ?>#junp_tab">入門歩きへんろコース</a></li>
+                    <li><a id="north" href="<?php echo get_permalink(310); ?>#junp_tab">県北　車コース</a></li>
+                    <li><a id="west" href="<?php echo get_permalink(312); ?>#junp_tab">県西　車コース</a></li>
+                    <li><a id="south" href="<?php echo get_permalink(314); ?>#junp_tab">県南　車コース</a></li>
+                    <li><a id="city" href="<?php echo get_permalink(316); ?>#junp_tab">市内　徒歩コース</a></li>
                 </ul>
             </div>
 
