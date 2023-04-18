@@ -83,6 +83,11 @@
     /* justify-content: center; */
 }
 
+.course_pcW2 {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
 /* *************************
 チェックボックスに関するCSS
 ************************* */
@@ -191,12 +196,10 @@ max-width: 1440px;
 }
 
 /*safariチェックボックス調整*/
-_:lang(x)+_:-webkit-full-screen-document,
-input[type="checkbox"]::before{
-    transform : translateY(-57%);
+_:lang(x) + _:-webkit-full-screen-document,
+input[type="checkbox"]::before {
+    transform: translateY(-57%);
 }
-
-
 
 /* デスクトップ画面になるとき */
 @media screen and (min-width: 750px) {
@@ -218,11 +221,16 @@ input[type="checkbox"]::before{
     .searchBtnsArea {
         margin: 32px 0;
     }
+
+    .course_pcW2 {
+        max-width: 80%;
+        margin: 0 auto 40px;
+    }
 }
 
 /*カード１カラム時の中央揃え*/
-@media screen and (max-width:700px){
-    .searchresult_content{
+@media screen and (max-width: 700px) {
+    .searchresult_content {
         justify-content: center;
         flex-direction: row;
     }
