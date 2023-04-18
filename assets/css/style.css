@@ -294,7 +294,7 @@
     align-self: flex-start;
 }
 
-.course_contIcon{
+.course_contIcon {
     border-radius: 10px;
 }
 
@@ -344,10 +344,10 @@
     }
 }
 
-@media screen and (max-width:635px){
+@media screen and (max-width: 635px) {
     .course_tabWrap {
         flex-wrap: nowrap;
-}
+    }
 }
 /****************/
 /*  門前一番街  */
@@ -376,7 +376,7 @@
 }
 
 /* 条件検索h1背景画像 */
-.search-results .h1_bg {
+.search .h1_bg {
     background-image: url(../img/h1_bg02.jpg);
 }
 
