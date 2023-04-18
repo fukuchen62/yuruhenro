@@ -17,6 +17,16 @@
     width: fit-content;
     font-size: 14px;
     justify-content:center;
+    /* display:inline-flex; */
+}
+
+_:lang(x)+_:-webkit-full-screen-document,
+.form .form_row .form_label {
+    display:inline-block;
+}
+_:lang(x)+_:-webkit-full-screen-document,
+.form .form_row{
+    flex-direction: column;
 }
 
 .form .form_row .form_message {
