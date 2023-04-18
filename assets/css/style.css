@@ -173,7 +173,7 @@
 }
 .course_tabWrap li a {
     display: block;
-    font-size: 12px;
+    /* font-size: 12px; */
     text-align: center;
     padding-top: 10px;
     padding-bottom: 10px;
