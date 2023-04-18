@@ -279,7 +279,7 @@ _:lang(x) + _:-webkit-full-screen-document,
     line-height: 1.5em;
     color: #fff;
     /* max-height: 190px; */
-    height: 50vh;
+    height: 42vh;
     -ms-writing-mode: tb-rl;
     writing-mode: vertical-rl;
     z-index: 3;
