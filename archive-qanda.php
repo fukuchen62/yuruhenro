@@ -11,7 +11,7 @@
                 <h2 class="h2_bg mb_40">よくあるご質問</h2>
             </div>
             <div>
-                <p class="big_cap">
+                <p class="big_cap mb_40">
                     よくあるご質問をまとめています。おへんろ活動のご参考にどうぞ。
                     用語集は<a href="<?php echo home_url('glossary'); ?>" class="link">こちら！</a>
                 </p>
@@ -35,7 +35,7 @@
                             <p><?php the_title(); ?></p>
                         </div>
                         <div class="rowLine flex">
-                            <span class=" circle_mark2">A</span>
+                            <span class="circle_mark2">A</span>
                             <p><?php the_field('answer'); ?></p>
                         </div>
                     </div>
