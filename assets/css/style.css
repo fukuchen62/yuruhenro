@@ -294,6 +294,10 @@
     align-self: flex-start;
 }
 
+.course_contIcon{
+    border-radius: 10px;
+}
+
 .course_contIcon > img {
     border-radius: 10px;
 }
