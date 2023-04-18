@@ -141,7 +141,7 @@
                             <div class="course_contInfo mb_40 flex">
                                 <!-- 移動情報アイコン -->
                                 <div class="course_contIcon">
-                                    <img src="<?php the_field('c_icon') ?>" alt="">
+                                    <img src="<?php the_field('c_icon') ?>" alt="移動アイコン">
                                 </div>
                                 <?php endif; ?>
 
