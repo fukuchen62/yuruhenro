@@ -25,7 +25,7 @@
                 </div>
                 <div class="slick-img1">
                     <img src="<?php echo get_template_directory_uri();
-                                ?>/assets/img/top_kv03.jpg" alt="" />
+                                ?>/assets/img/top_kv06.jpg" alt="" />
                 </div>
                 <div class="slick-img1">
                     <img src="<?php echo get_template_directory_uri();
@@ -50,7 +50,7 @@
                 </div>
                 <div class="thumbnail_img">
                     <img src="<?php echo get_template_directory_uri();
-                                ?>/assets/img/top_kv03.jpg" alt="" />
+                                ?>/assets/img/top_kv06.jpg" alt="" />
                 </div>
                 <div class="thumbnail_img">
                     <img src="<?php echo get_template_directory_uri();
