@@ -53,8 +53,14 @@
                     <input type="hidden" name="s" value="<?php the_search_query(); ?>">
 
                     <input class="searchBtns" type="submit" value="検索">
-                    <input class="searchBtns" type="reset" name="reset" value="リセット">
+                    <input class="searchBtns" type="reset" name="reset" value="リセット" onclick="fnReset()">
                 </p>
             </div>
         </form>
     </section>
+
+    <script>
+function fnReset() {
+    location.href = '<?php echo home_url('/?s=') ?>';
+}
+    </script>
