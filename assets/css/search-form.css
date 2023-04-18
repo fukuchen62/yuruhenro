@@ -190,6 +190,14 @@ max-width: 1440px;
     margin: 0 auto;
 }
 
+/*safariチェックボックス調整*/
+_:lang(x)+_:-webkit-full-screen-document,
+input[type="checkbox"]::before{
+    transform : translateY(-57%);
+}
+
+
+
 /* デスクトップ画面になるとき */
 @media screen and (min-width: 750px) {
     .searchkinds {
