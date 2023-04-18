@@ -18,7 +18,7 @@ Template Name:page-monzen
                 <p><?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?></p>
             </div>
             <!-- 施設メイン画像 -->
-            <div class="temple_img">
+            <div class="temple_img mb_80">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/monzen_03.jpg" alt="門前一番街" />
             </div>
         </section>

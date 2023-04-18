@@ -19,7 +19,7 @@
             </div>
 
             <!-- お寺メイン画像 -->
-            <div class="temple_img">
+            <div class="temple_img mb_80">
                 <img src="<?php the_field('t_eyecatch') ?>" alt="お寺の写真" />
             </div>
         </section>
