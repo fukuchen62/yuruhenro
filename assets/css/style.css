@@ -294,6 +294,14 @@
     align-self: flex-start;
 }
 
+.course_contIcon{
+    border-radius: 10px;
+}
+
+.course_contIcon > img {
+    border-radius: 10px;
+}
+
 @media screen and (min-width: 1000px) {
     /* ちょっと横幅狭い所用 */
     .course_pcW1 {
