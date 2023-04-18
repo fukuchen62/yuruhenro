@@ -83,7 +83,7 @@
 .illust {
     width: 300px;
     height: auto;
-    margin-right: 40px;
+    /* margin-right: 40px; */
 }
 .notes {
     max-width: 450px;
@@ -99,11 +99,11 @@
     width: 100px;
     height: auto;
     /*アニメーション*/
-    animation: fuwafuwa 3s infinite ease-in-out .8s alternate;
+    animation: fuwafuwa 3s infinite ease-in-out 0.8s alternate;
     background: url(../img/ico-apple.svg) no-repeat center center / 80px auto;
     display: inline-block;
     transition: 1.5s ease-in-out;
-        }
+}
 @keyframes fuwafuwa {
     0% {
         transform: translate(0, 0) rotate(-7deg);
@@ -194,6 +194,9 @@
         flex-direction: row;
     }
 
+    .illust {
+        margin-right: 40px;
+    }
     .oinori {
         flex-direction: row;
     }
@@ -221,8 +224,8 @@
     height: auto;
     min-height: 500px;
     margin: 0 auto;
-    background-image: url(../img/soubi.png),
-        url(../img/tokusimatizu2.png), url(../img/renkon.png);
+    background-image: url(../img/soubi.png), url(../img/tokusimatizu2.png),
+        url(../img/renkon.png);
     background-repeat: no-repeat, no-repeat, no-repeat;
     background-position: top right, left bottom, left bottom;
     background-size: 330px, 330px, 90px;
