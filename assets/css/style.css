@@ -336,6 +336,11 @@
     }
 }
 
+@media screen and (max-width:635px){
+    .course_tabWrap {
+        flex-wrap: nowrap;
+}
+}
 /****************/
 /*  門前一番街  */
 /*   お寺一覧   */
