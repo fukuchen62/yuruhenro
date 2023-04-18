@@ -45,7 +45,7 @@
                 <p class="search-form_headline h4_bg">寺院内設備</p>
                 <div class="searchkinds">
                     <div class="checkbox"><label><input type="checkbox" name="searchh[]" value="parking" <?= $checked["searchh"]["parking"] ?>> 無料駐車場</label></div>
-                    <div class="checkbox"><label><input type="checkbox" name="searchh[]" value="eatin" <?= $checked["searchh"]["eatin"] ?>> 食事</label></div>
+                    <div class="checkbox"><label><input type="checkbox" name="searchh[]" value="eatin" <?= $checked["searchh"]["eatin"] ?>> 宿坊</label></div>
                     <div class="checkbox"><label><input type="checkbox" name="searchh[]" value="bell" <?= $checked["searchh"]["bell"] ?>> 鐘撞き可</label></div>
                     <div class="checkbox"><label><input type="checkbox" name="searchh[]" value="shop" <?= $checked["searchh"]["shop"] ?>> 売店</label></div>
                 </div>
