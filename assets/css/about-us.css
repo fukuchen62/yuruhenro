@@ -53,6 +53,7 @@
 }
 .each_temple {
     width: 300px;
+    padding: 0 50px;
 }
 
 .ref_site {
