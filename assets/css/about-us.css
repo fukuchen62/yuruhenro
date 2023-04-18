@@ -9,49 +9,41 @@
 .shisetu {
     align-items: center;
     flex-direction: column;
-    justify-content:  center;
+    justify-content: center;
     flex-wrap: wrap;
     max-height: 2400px;
 }
-
 
 @media screen and (min-width: 900px) {
     .shisetu {
         max-height: 1200px;
     }
 
-    .shisetu_unit{
+    .shisetu_unit {
         width: 300px;
     }
-
-
 }
 .emphasis {
     font-weight: bold;
 }
 
-
-
-
-.shisetu_unit{
+.shisetu_unit {
     width: 400px;
 }
 
-.shisetu li{
-    line-height: 2.0em;
+.shisetu li {
+    line-height: 2em;
 }
 .mt_10 {
     margin: 10px 0 10px;
 }
 
-
-.temple_list{
-    line-height: 3.0em;
+.temple_list {
+    line-height: 3em;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-left: 40px;
-
 }
 
 .temple_list::after {
@@ -59,15 +51,13 @@
     display: block;
     width: 300px;
 }
-.each_temple{
+.each_temple {
     width: 300px;
 }
 
-
-
-.ref_site{
+.ref_site {
     align-items: center;
-    line-height: 3.0em;
+    line-height: 3em;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -76,13 +66,11 @@
     padding: 0;
 }
 
-.each_ref_site{
+.each_ref_site {
     width: 250px;
 }
 
-
-
-.reference{
+.reference {
     max-width: 700px;
     margin: 0 auto;
 }
@@ -91,35 +79,15 @@
     padding: 10px 10px;
 }
 
-
-.reference li:nth-child(2n+1) {
-        background: #F0EBCF;
-      }
-
-
-
+.reference li:nth-child(2n + 1) {
+    background: #f0ebcf;
+}
 
 @media screen and (min-width: 750px) {
-
     /* .shisetu {
         flex-direction: row; */
 
-
-        .ref_site{
-            flex-direction: row;
-        }
-        
-
-
-
-
-
-
-
-
-
-
-
+    .ref_site {
+        flex-direction: row;
     }
-
-    
+}
