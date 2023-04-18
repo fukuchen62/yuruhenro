@@ -149,7 +149,7 @@
                         <li>③姓名は自分の名前を記入</li>
                         <li>④お願い事は裏面に記入<br>※お接待の返礼として渡す場合は、お願い事は書かない</li>
                     </ol>
-                    <div><img src="<?php echo get_template_directory_uri(); ?>/assets/img/osamefuda.jpg" alt="納札"></div>
+                    <div><img src="<?php echo get_template_directory_uri(); ?>/assets/img/osamefuda.png" alt="納札"></div>
                 </div>
             </section>
             <!-- section区切り -->
