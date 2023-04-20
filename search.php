@@ -61,37 +61,37 @@
 
                 <!-- 記事を表示するループ -->
                 <?php if ($the_query->have_posts()) : ?>
-                <?php while ($the_query->have_posts()) : ?>
-                <?php $the_query->the_post(); ?>
+                    <?php while ($the_query->have_posts()) : ?>
+                        <?php $the_query->the_post(); ?>
 
-                <a href="<?php the_permalink(); ?>">
-                    <div class="searchresultList">
-                        <div class="searchresultList_thumb">
-                            <img src="<?php the_field('t_eyecatch'); ?>" alt="寺社のアイキャッチ画像" />
-                        </div>
+                        <a href="<?php the_permalink(); ?>">
+                            <div class="searchresultList">
+                                <div class="searchresultList_thumb">
+                                    <img src="<?php the_field('t_eyecatch'); ?>" alt="寺社のアイキャッチ画像" />
+                                </div>
 
-                        <!-- お気に入りボタン -->
-                        <div class="shop_info_fav">
-                            <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
-                        </div>
+                                <!-- お気に入りボタン -->
+                                <div class="shop_info_fav">
+                                    <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
+                                </div>
 
-                        <div class="searchresultList_data">
-                            <h3 class="h4_bg text_c"><?php the_field('t_numbername'); ?></h3>
-                            <!-- <p>拝観時間：10時～17時</p> -->
-                            <!-- <p>定休日：火曜日</p> -->
-                            <p>本尊：<?php the_field('honzon'); ?></p>
-                            <p>所在地：<?php the_field('t_area'); ?></p>
-                            <p>TEL：<?php the_field('t_tell'); ?></p>
+                                <div class="searchresultList_data">
+                                    <h3 class="h4_bg text_c"><?php the_field('t_numbername'); ?></h3>
+                                    <!-- <p>拝観時間：10時～17時</p> -->
+                                    <!-- <p>定休日：火曜日</p> -->
+                                    <p>本尊：<?php the_field('honzon'); ?></p>
+                                    <p>所在地：<?php the_field('t_area'); ?></p>
+                                    <p>TEL：<?php the_field('t_tell'); ?></p>
 
-                        </div>
-                    </div>
-                </a>
-                <?php wp_reset_postdata(); ?>
-                <?php endwhile; ?>
+                                </div>
+                            </div>
+                        </a>
+                        <?php wp_reset_postdata(); ?>
+                    <?php endwhile; ?>
                 <?php else : ?>
-                <div>
-                    <p>条件に合う検索結果はありませんでした。</p>
-                </div>
+                    <div>
+                        <p>条件に合う検索結果はありませんでした。</p>
+                    </div>
                 <?php endif; ?>
                 <!--カードここまで-->
 
@@ -140,39 +140,39 @@
                 <!--カードここから-->
                 <!-- 記事を表示するループ -->
                 <?php if ($the_query->have_posts()) : ?>
-                <?php while ($the_query->have_posts()) : ?>
-                <?php $the_query->the_post(); ?>
-                <div class="searchresultList">
-                    <div class="searchresultList_thumb">
-                        <img src="<?php the_field('f_pic1'); ?>" alt="施設の画像" />
-                    </div>
+                    <?php while ($the_query->have_posts()) : ?>
+                        <?php $the_query->the_post(); ?>
+                        <div class="searchresultList">
+                            <div class="searchresultList_thumb">
+                                <img src="<?php the_field('f_pic1'); ?>" alt="施設の画像" />
+                            </div>
 
-                    <!-- お気に入りボタン -->
-                    <div class="shop_info_fav">
-                        <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
-                    </div>
+                            <!-- お気に入りボタン -->
+                            <div class="shop_info_fav">
+                                <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
+                            </div>
 
-                    <div class="searchresultList_data">
-                        <h3 class="h4_bg text_c"><?php the_field('f_name'); ?></h3>
-                        <p>営業時間：<?php the_field('f_hours'); ?></p>
-                        <p>定休日：<?php the_field('f_holiday'); ?></p>
-                        <p>駐車場：<?php the_field('f_parking'); ?></p>
-                        <p>TEL：<?php the_field('f_tell'); ?></p>
-                        <p>公式HP：
+                            <div class="searchresultList_data">
+                                <h3 class="h4_bg text_c"><?php the_field('f_name'); ?></h3>
+                                <p>営業時間：<?php the_field('f_hours'); ?></p>
+                                <p>定休日：<?php the_field('f_holiday'); ?></p>
+                                <p>住所：<?php the_field('f_address'); ?></p>
+                                <p>TEL：<?php the_field('f_tell'); ?></p>
+                                <p>公式HP：
                                     <?php if (get_field('f_url') != '-') { ?>
                                         <a href="<?php the_field('f_url'); ?>" target=_blank class="link">ここをクリック</a>
                                     <?php } else {
                                         echo 'なし';
                                     } ?>
                                 </p>
-                    </div>
-                </div>
-                <?php wp_reset_postdata(); ?>
-                <?php endwhile; ?>
+                            </div>
+                        </div>
+                        <?php wp_reset_postdata(); ?>
+                    <?php endwhile; ?>
                 <?php else : ?>
-                <div>
-                    <p>条件に合う検索結果はありませんでした。</p>
-                </div>
+                    <div>
+                        <p>条件に合う検索結果はありませんでした。</p>
+                    </div>
                 <?php endif; ?>
             </div>
         </section>

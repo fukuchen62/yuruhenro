@@ -6,7 +6,7 @@
 
 <main>
     <h1 class="h1_bg">404 NOT FOUND</h1>
-    <?php get_template_part('template-parts/breadcrumb');?>
+    <?php get_template_part('template-parts/breadcrumb'); ?>
 
     <article class="main_inner">
         <section class="contents_width">
