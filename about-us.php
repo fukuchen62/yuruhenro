@@ -253,9 +253,7 @@
                     <div class="each_ref_site"><a href="https://www.awanavi.jp/" target="_blank">阿波ナビ</a></div>
                 </div>
                 <div>
-                    <!-- <div class="each_ref_site"><a href="https://88shikokuhenro.jp/" target="_blank">
-                            <nobr>（一社）四国八十八ヶ所霊場会</nobr>
-                        </a></div> -->
+
                     <div class="each_ref_site"><a href="https://www.seichijunrei-shikokuhenro.jp/" target="_blank">聖地巡礼　四国遍路</a></div>
                 </div>
             </div>
