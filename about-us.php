@@ -2,7 +2,7 @@
 <!-- mainここから -->
 <main>
     <h1 class="h1_bg">サイト制作にあたって</h1>
-    <?php get_template_part('template-parts/breadcrumb');?>
+    <?php get_template_part('template-parts/breadcrumb'); ?>
 
     <article class="main_inner">
         <section class="contents_width mb_80">
@@ -35,12 +35,12 @@
                 $the_query = new WP_Query($args);
                 if ($the_query->have_posts()) :
                     while ($the_query->have_posts()) : $the_query->the_post(); ?>
-                <!-- <li> -->
-                <div class="each_temple">
-                    <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-                    <!-- </li> -->
-                </div>
-                <?php endwhile; ?>
+                        <!-- <li> -->
+                        <div class="each_temple">
+                            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+                            <!-- </li> -->
+                        </div>
+                    <?php endwhile; ?>
                 <?php endif; ?>
                 <!-- </ul> -->
             </div>
@@ -253,9 +253,9 @@
                     <div class="each_ref_site"><a href="https://www.awanavi.jp/" target="_blank">阿波ナビ</a></div>
                 </div>
                 <div>
-                    <div class="each_ref_site"><a href="https://88shikokuhenro.jp/" target="_blank">
+                    <!-- <div class="each_ref_site"><a href="https://88shikokuhenro.jp/" target="_blank">
                             <nobr>（一社）四国八十八ヶ所霊場会</nobr>
-                        </a></div>
+                        </a></div> -->
                     <div class="each_ref_site"><a href="https://www.seichijunrei-shikokuhenro.jp/" target="_blank">聖地巡礼　四国遍路</a></div>
                 </div>
             </div>
