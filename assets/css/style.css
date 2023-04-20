@@ -422,6 +422,7 @@
     text-align: center;
     line-height: 40px;
     margin-right: 20px;
+    flex-shrink: 0;
 }
 
 .circle_mark1 {
