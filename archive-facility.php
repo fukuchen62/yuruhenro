@@ -45,7 +45,7 @@
                                 <div class="shop_info_text">
                                     <p>営業時間：<?php the_field('f_hours'); ?></p>
                                     <p>定休日：<?php the_field('f_holiday'); ?></p>
-                                    <p>定休日：<?php the_field('f_address'); ?></p>
+                                    <p>住所：<?php the_field('f_address'); ?></p>
                                     <p>TEL：<?php the_field('f_tell'); ?></p>
                                     <p>公式HP：
                                         <?php if (get_field('f_url') != '-') { ?>

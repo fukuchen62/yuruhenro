@@ -126,7 +126,7 @@ function add_my_files()
     };
 
     //temple css
-    if (is_singular(array('temple', 'course'))) {
+    if (is_singular(array('temple', 'course', 'facility'))) {
         wp_enqueue_style(
             'my-temples',
             get_template_directory_uri() . '/assets/css/temple.css'
