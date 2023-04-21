@@ -29,7 +29,9 @@
                 <!-- <ul> -->
                 <?php $args = array(
                     'post_type' => 'temple',
-                    'posts_per_page' => -1 //表示件数（-1で全ての記事を表示
+                    'posts_per_page' => -1, //表示件数（-1で全ての記事を表示
+                    'post__not_in' => array(248), //特定の投稿のみ除外
+
                 );
 
                 $the_query = new WP_Query($args);
