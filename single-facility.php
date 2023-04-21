@@ -44,7 +44,7 @@
             <div class="temple_info flex">
 
                 <!-- 施設メイン画像 -->
-                <div class="temple_img mb_80">
+                <div class="shop_info_caption mb_80">
                     <img src="<?php the_field('f_pic1') ?>" alt="施設の写真" />
                 </div>
 
