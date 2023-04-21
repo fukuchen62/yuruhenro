@@ -343,6 +343,12 @@
     background-image: url(../img/h1_bg10.jpg);
 }
 
+/*周辺施設一覧と周辺施設ページh1背景画像*/
+.post-type-archive-facility .h1_bg,
+.single-facility .h1_bg {
+    background-image: url(../img/sb_kv.png);
+}
+
 /****************/
 /* ブックマーク */
 /*   条件検索   */
