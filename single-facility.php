@@ -143,36 +143,38 @@
                     while ($facility_query->have_posts()) : $facility_query->the_post(); ?>
 
                         <!-- 周辺のお寺カードのデザイン -->
-                        <div class="shop_info_card">
-                            <div class="shop_info_caption">
-                                <img src="<?php the_field('t_eyecatch') ?>" alt="お寺の画像" />
-                            </div>
+                        <a href="<?php the_permalink(); ?>">
+                            <div class="shop_info_card">
+                                <div class="shop_info_caption">
+                                    <img src="<?php the_field('t_eyecatch') ?>" alt="お寺の画像" />
+                                </div>
 
-                            <!-- ブックマークボタン -->
-                            <div class="shop_info_fav">
-                                <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
-                            </div>
+                                <!-- ブックマークボタン -->
+                                <div class="shop_info_fav">
+                                    <?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?>
+                                </div>
 
-                            <div class="shop_info_title">
-                                <p><?php the_field('t_name') ?></p>
-                            </div>
+                                <div class="shop_info_title">
+                                    <p><?php the_field('t_name') ?></p>
+                                </div>
 
-                            <div class="shop_info_text">
-                                <p>本尊：<?php the_field('honzon'); ?></p>
-                                <p>所在地：<?php the_field('t_area'); ?></p>
-                                <p>TEL：<?php the_field('t_tell'); ?></p>
-                            </div>
-                            <!-- <div class="shop_info_article">
+                                <div class="shop_info_text">
+                                    <p>本尊：<?php the_field('honzon'); ?></p>
+                                    <p>所在地：<?php the_field('t_area'); ?></p>
+                                    <p>TEL：<?php the_field('t_tell'); ?></p>
+                                </div>
+                                <!-- <div class="shop_info_article">
                                 <p>
 
                                 </p>
                             </div> -->
 
-                        </div>
+                            </div>
 
-                    <?php endwhile; ?>
-                <?php endif; ?>
-                <?php wp_reset_postdata(); ?>
+                        <?php endwhile; ?>
+                    <?php endif; ?>
+                        </a>
+                        <?php wp_reset_postdata(); ?>
             </div>
         </section>
 
