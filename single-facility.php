@@ -30,17 +30,6 @@
 
             <div class="temple_about">
                 <!-- おすすめ画像 -->
-                <ul class="slider2">
-                    <li>
-                        <img src="" alt="施設の写真1" />
-                    </li>
-                    <li>
-                        <img src="" alt="施設の写真2" />
-                    </li>
-                    <li>
-                        <img src="" alt="施設の写真3" />
-                    </li>
-                </ul>
 
                 <!-- 説明文 -->
                 <div class="temple_about_text">
@@ -88,12 +77,6 @@
                         </tr>
                         <tr>
                             <td><?php the_field('f_tell'); ?></td>
-                        </tr>
-                        <tr>
-                            <th>所在地</th>
-                        </tr>
-                        <tr>
-                            <td><?php the_field('t_area') ?></td>
                         </tr>
                         <tr>
                             <th>公式HP</th>
