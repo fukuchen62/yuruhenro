@@ -78,28 +78,22 @@
 
     .temple_info {
         flex-direction: row;
+        justify-content: space-around;
     }
     .temple_map {
         width: 50%;
         margin: 0 auto;
         height: fit-content;
+        margin-right: 70px;
     }
 
     .temple_info_table {
+        width: 450px;
         margin-left: 10px;
     }
 
     .temple_about {
         flex-direction: row;
-    }
-    .temple_info {
-        justify-content: space-around;
-    }
-    .temple_info_map {
-        margin-right: 70px;
-    }
-    .temple_info_table {
-        width: 450px;
     }
 
     .slider2 {

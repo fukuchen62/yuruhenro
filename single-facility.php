@@ -25,27 +25,25 @@
         <section class="contents_width mb_80">
             <!-- <h2 class="h3_bg mb_40"><? /*php the_field('f_name') */ ?>について</h2> -->
 
-            <div class="temple_about">
-                <!-- おすすめ画像 -->
-
-                <!-- 説明文 -->
-                <div class="temple_about_text">
-                    <p class="small_cap">
-                        <?php the_field('f_message') ?>
-                    </p>
-                </div>
+            <!-- <div class="temple_about"> -->
+            <!-- 説明文 -->
+            <div class="temple_about_text">
+                <p class="small_cap">
+                    <?php the_field('f_message') ?>
+                </p>
             </div>
+            <!-- </div> -->
         </section>
 
         <!-- 施設情報 -->
         <section class="contents_width mb_80">
             <h2 class="h3_bg mb_40">施設情報</h2>
 
-            <div class="temple_info flex">
-
+            <!-- <div class="temple_info flex"> -->
+            <div class="temple_about">
                 <!-- 施設メイン画像 -->
-                <div class="temple_img mb_80">
-                    <img src="<?php the_field('f_pic1') ?>" alt="施設の写真" />
+                <div class="mb_40">
+                    <img src="<?php the_field('f_pic1') ?>" alt="施設の写真">
                 </div>
 
                 <div>
