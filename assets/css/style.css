@@ -160,6 +160,7 @@
 
 .course_tabWrap li {
     flex-grow: 1;
+    width: 20%;
 }
 
 .course_tabWrap li:nth-child(1) a {
