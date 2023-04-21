@@ -53,6 +53,7 @@
                         <li><a href="<?php echo home_url('course/south'); ?>" class="sp_none">県南　車コース</a></li>
                         <li><a href="<?php echo home_url('course/city'); ?>" class="sp_none">市内　徒歩コース</a></li>
                         <li class="footer_nav_b"><a href="<?php echo home_url('temple'); ?>">お寺一覧</a></li>
+                        <li class="footer_nav_b"><a href="<?php echo home_url('facility'); ?>">周辺施設一覧</a></li>
                     </ul>
                 </li>
                 <li>
