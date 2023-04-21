@@ -136,7 +136,7 @@
                                 </div>
 
                                 <div class="shop_info_title">
-                                    <p><?php the_field('t_name') ?></p>
+                                    <p><?php the_field('t_numbername') ?></p>
                                 </div>
 
                                 <div class="shop_info_text">
