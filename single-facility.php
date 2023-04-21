@@ -18,15 +18,12 @@
                 <p><?php echo do_shortcode('[favorite_button post_id="" site_id=""]'); ?></p>
             </div>
 
-            <!-- 施設メイン画像 -->
-            <div class="temple_img mb_80">
-                <img src="<?php the_field('f_pic1') ?>" alt="施設の写真" />
-            </div>
+
         </section>
 
         <!-- 施設について -->
         <section class="contents_width mb_80">
-            <h2 class="h3_bg mb_40"><?php the_field('f_name') ?>について</h2>
+            <!-- <h2 class="h3_bg mb_40"><? /*php the_field('f_name') */ ?>について</h2> -->
 
             <div class="temple_about">
                 <!-- おすすめ画像 -->
@@ -46,9 +43,10 @@
 
             <div class="temple_info flex">
 
-                <!-- google My map -->
-                <iframe src="" frameborder="0"></iframe>
-                <!-- google My map -->
+                <!-- 施設メイン画像 -->
+                <div class="temple_img mb_80">
+                    <img src="<?php the_field('f_pic1') ?>" alt="施設の写真" />
+                </div>
 
                 <div>
                     <table class="temple_info_table">
