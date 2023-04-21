@@ -96,12 +96,18 @@
 
                                     <!-- 時間 -->
                                     <div class="course_st mb_20">
-                                        <p>【<?php the_field('c_time') ?>】　<?php $hoge = get_field('link');
-                                                                            if ($hoge) { ?>
-                                            <a href="<?php echo home_url('/') . $hoge ?>">
-                                                <?php the_field('name') ?></a><?php } else {
-                                                                                the_field('name');
-                                                                            } ?>
+                                        <p class="mb_20">
+                                            【<?php the_field('c_time') ?>】
+                                        </p>
+                                        <p>
+                                            <?php $hoge = get_field('link');
+                                            if ($hoge) { ?>
+                                                <a href="<?php echo home_url('/') . $hoge ?>">
+                                                    <?php the_field('name') ?>
+                                                </a>
+                                            <?php } else {
+                                                the_field('name');
+                                            } ?>
                                         </p>
                                     </div>
 
