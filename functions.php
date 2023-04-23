@@ -1,4 +1,6 @@
 <?php
+//HTMLのWPVer非表示
+remove_action('wp_head', 'wp_generator');
 //after_setup_themeアクションフックを使用する関数をまとめる
 add_action('after_setup_theme', 'my_theme_setup');
 function my_theme_setup()
